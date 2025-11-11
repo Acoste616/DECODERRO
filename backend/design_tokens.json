@@ -1,0 +1,29 @@
+{
+  "font_family": {
+    "sans": "Inter, sans-serif"
+  },
+  "border_radius": {
+    "default": "0.75rem"
+  },
+  "themes": {
+    "light": {
+      "background": "#FFFFFF",
+      "surface": "#F2F2F7",
+      "text_primary": "#000000",
+      "text_secondary": "#6E6E73",
+      "accent": "#007AFF",
+      "accent_text": "#FFFFFF",
+      "border": "#D1D1D6"
+    },
+    "dark": {
+      "background": "#000000",
+      "surface": "#1C1C1E",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#8E8E93",
+      "accent": "#0D84FF",
+      "accent_text": "#FFFFFF",
+      "border": "#38383A"
+    }
+  }
+}
+

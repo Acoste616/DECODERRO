@@ -1,0 +1,108 @@
+==============================================
+ULTRA v3.0 - INSTRUKCJA URUCHOMIENIA
+==============================================
+
+🔥 SYSTEM JEST JUŻ URUCHOMIONY!
+
+Frontend: http://localhost:5174
+Backend:  http://127.0.0.1:8000
+
+
+📝 KROK 1: DODAJ KLUCZE API
+==============================================
+
+1. Otwórz plik:
+   C:\Users\barto\OneDrive\Pulpit\decoder\backend\.env
+
+2. Znajdź te linie:
+
+   GEMINI_API_KEY=
+   OLLAMA_API_KEY=
+
+3. Wklej swoje klucze (NIE USUWAJ ZNAKÓW RÓWNOŚCI!):
+
+   GEMINI_API_KEY=AIzaSy... (twój klucz Gemini)
+   OLLAMA_API_KEY=ollama_... (twój klucz Ollama)
+
+4. Zapisz plik (Ctrl+S)
+
+
+📝 KROK 2: ZRESTARTUJ BACKEND
+==============================================
+
+1. W terminalu PowerShell naciśnij: Ctrl+C (zatrzyma backend)
+
+2. Uruchom ponownie:
+   cd C:\Users\barto\OneDrive\Pulpit\decoder\backend
+   .\venv\Scripts\python.exe -m uvicorn app.main:app --reload
+
+3. Poczekaj na komunikat: "🎯 ULTRA v3.0 Backend ready!"
+
+
+📝 KROK 3: OTWÓRZ APLIKACJĘ
+==============================================
+
+Przejdź do przeglądarki:
+http://localhost:5174
+
+
+✅ CO ZOBACZYSZ:
+==============================================
+
+1. Dashboard z przyciskiem "Rozpocznij Nową Sesję"
+2. Przełączniki języka (PL/EN) i motywu (jasny/ciemny)
+3. Po kliknięciu "Nowa Sesja" → widok konwersacji
+
+
+⚠️ JEŚLI STRONA JEST PUSTA:
+==============================================
+
+1. Otwórz DevTools (F12)
+2. Sprawdź zakładkę Console
+3. Skopiuj błędy i wklej w chat
+
+
+🔍 GDZIE WZIĄĆ KLUCZE API:
+==============================================
+
+GEMINI API KEY (WYMAGANY):
+→ https://makersuite.google.com/app/apikey
+→ Zaloguj się kontem Google
+→ Kliknij "Create API key"
+→ Skopiuj klucz
+
+OLLAMA API KEY (OPCJONALNY):
+→ https://ollama.com/settings/keys  
+→ Zaloguj się
+→ Wygeneruj klucz
+→ Skopiuj klucz
+
+
+💡 WSKAZÓWKI:
+==============================================
+
+- Backend MUSI działać (http://127.0.0.1:8000)
+- Frontend MUSI działać (http://localhost:5174)
+- Bez GEMINI_API_KEY Fast Path nie zadziała
+- PostgreSQL NIE jest wymagany (tryb demo)
+- OLLAMA_API_KEY jest opcjonalny
+
+
+🎯 TESTOWANIE:
+==============================================
+
+1. Kliknij "Rozpocznij Nową Sesję"
+2. Wpisz: "Klient pyta o Model 3"
+3. Kliknij SEND
+4. Odpowiedź AI powinna pojawić się < 2s
+5. Po 15-20s panel Opus Magnum się zaktualizuje
+
+
+📞 POMOC:
+==============================================
+
+Jeśli coś nie działa:
+1. Sprawdź czy oba serwery działają
+2. Sprawdź console w przeglądarce (F12)
+3. Sprawdź terminal backend (szukaj ERROR)
+4. Wklej błędy w chat

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nul)",
+      "Bash(test:*)",
+      "Bash(python:*)",
+      "Bash(timeout 5 bash -c 'until curl -s http://localhost:8000/health > /dev/null 2>&1; do sleep 0.5; done; echo \"\"Backend ready\"\"')",
+      "Bash(curl:*)",
+      "Bash(npm run dev:*)",
+      "Bash(cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
