@@ -1,0 +1,32 @@
+[
+  {
+    "trigger_context": "Klient pyta o zasięg Model 3 w zimie",
+    "golden_response": "Świetne pytanie! Model 3 Long Range ma zasięg WLTP 629 km. W zimie (poniżej 0°C) realistycznie spodziewaj się 480-520 km, czyli redukcja ~20-30%. To normalne dla wszystkich EVs - bateria pracuje optymalnie w 20-25°C. Ale mamy rozwiązania: pre-heating (ogrzewanie przed jazdą gdy auto jest na ładowarce - zużycie energii z sieci, nie z baterii), pompa ciepła (standard w nowych Model 3, zwiększa efektywność o 10-15%), tryb ekonomiczny. Po 1-2 tygodniach użytkowania nauczysz się planować zasięg naturalnie - to jak z telefonem, przestajesz o tym myśleć.",
+    "tags": ["zasięg", "zima", "model_3"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Klient obawia się długiego czasu ładowania",
+    "golden_response": "Rozumiem tę obawę - to najczęstsza obiekcja. Ale zmieńmy perspektywę. W aucie spalinowym tankujesz ~5 min, ale tracisz czas na dojazd do stacji, czekanie w kolejce. Średnio 2x w miesiącu = 240 minut rocznie. Z Teslą: 95% ładowań odbywa się w domu/pracy - podłączasz wieczorem jak telefon, rano masz pełny zasięg. Czas faktycznie poświęcony? 5 sekund na podłączenie. Na dłuższe trasy: Supercharger ładuje 300 km w 15 minut - dokładnie tyle ile potrzebujesz na kawę i toaletę. Klienci mówią, że po przejściu na EV nigdy więcej nie stoją na stacji benzynowej w deszczu o 7 rano.",
+    "tags": ["ładowanie", "czas", "obiekcja"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Klient pyta o koszty eksploatacji Model 3 vs auto spalinowe",
+    "golden_response": "Doskonałe pytanie - tu Tesla wygrywa. Porównajmy Model 3 vs BMW 320i (podobna klasa). Tesla: ładowanie domowe ~0.70 zł/kWh × 15 kWh/100km = 10.50 zł/100km. BMW: 7L/100km × 7 zł/L = 49 zł/100km. Oszczędność: 38.50 zł/100km. Przy 20,000 km/rok to 7,700 zł. Serwis: Tesla - praktycznie brak (płyn spryskiwaczy, opony, płyn hamulcowy co 2 lata). BMW: przeglądy co 15k km (~1500 zł/rok), olej, filtry, świece, paski, hamulce co 30k. W 5 lat różnica to ~50,000-60,000 zł. Plus brak akcyzy, niższe ubezpieczenie dla EV. Tesla zwraca się po 3-4 latach, potem czyste oszczędności.",
+    "tags": ["koszty", "oszczędności", "tco"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Klient porównuje Teslę z BMW i4",
+    "golden_response": "Świetne porównanie - oba to doskonałe auta. BMW i4 to solidny wybór, ale Tesla ma kilka przewag: 1) Zasięg: Model 3 LR 629 km vs i4 eDrive40 590 km WLTP. Real-world przewaga Tesli ~30-40 km. 2) Ładowanie: Supercharger network (50+ stacji w PL, 250 kW moc) vs mieszane ładowarki BMW (często zajęte, wolniejsze). 3) Software: OTA updates - Tesla dostaje nowe funkcje co miesiąc (ostatnio: lepszy Autopilot, +5% zasięg software-only). BMW updates tylko w ASO. 4) Autopilot vs Driving Assistant Pro - Tesla bardziej zaawansowany i tańszy. 5) Cena: Model 3 LR ~230k, BMW i4 ~280k. Oszczędność 50k pozwala na FSD lub ładowarkę domową + 3 lata darmowych przejazdów. BMW wygrywa w wykończeniu wnętrza (skóra, materiały) - jeśli to priorytet, warto rozważyć. Dla technologii, zasięgu i value for money - Tesla jest lepsza.",
+    "tags": ["porównanie", "bmw", "i4", "konkurencja"],
+    "category": "competitive"
+  },
+  {
+    "trigger_context": "Klient pyta o leasing dla firmy",
+    "golden_response": "Leasing operacyjny Tesla dla firmy to świetna decyzja finansowa. Korzyści: 1) 100% raty leasingowej = koszt uzyskania przychodu (KUP). 2) VAT marża 23% - pełne odliczenie (samochód spalinowy: tylko 50% VAT do 150k). 3) 0% emisji = brak podatku od środków transportu (~2000 zł/rok oszczędności). 4) Brak limitów amortyzacji (spalinowe max 150k - reszta 'marnotrawstwo'). 5) Niskie OpEx: ~10 zł/100km energia vs ~50 zł paliwo. Przykład Model 3 LR (250k): wpłata 20% (50k), 48 m-cy, rata ~2800 zł netto. Miesięczny koszt realny dla firmy ~2100 zł (po odliczeniach). Porównaj z BMW 320i leasing ~3500-4000 zł + wyższe paliwo + serwis. ROI: Tesla zwraca się w 3-4 lata, potem czyste oszczędności. Dodam: prestiż marki Tesla wśród klientów B2B (innowacyjność, ekologia) = wartość wizerunkowa.",
+    "tags": ["leasing", "firma", "b2b", "vat"],
+    "category": "financial"
+  }
+]

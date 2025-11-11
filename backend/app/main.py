@@ -514,25 +514,48 @@ Respond ONLY in this JSON format:
 
 def build_prompt_2(language: str, session_history: str, last_seller_input: str) -> str:
     """
-    Prompt 2: Fast Path - SPIN Questions (SUPER-BLUEPRINT Section 4.2)
-    ENHANCED: Now includes full session history for contextual questions
+    Prompt 2: Fast Path - Strategic SPIN Questions (SUPER-BLUEPRINT Section 4.2)
+    ENHANCED: Now generates goal-oriented, contextual questions with clear purpose
     """
-    return f"""You are a SPIN methodology sales analyst. Your task is to generate 3 open-ended follow-up questions based on the last note and the provided session history. Analyze the full conversation to identify gaps in understanding and areas requiring deeper exploration. The questions should aim to uncover "Problems" (P) and "Implications" (I) that haven't been addressed yet. Respond ONLY in JSON format. Respond in the language defined by the 'language' tag.
+    return f"""You are an elite sales strategist specializing in SPIN methodology and customer psychology. Your task is to generate 3 highly strategic, open-ended questions that the seller should ask the CLIENT (not themselves). These questions will help uncover critical information needed for deep customer analysis.
 
 Context:
 - Language: {language}
 - Session History: {session_history}
 - Last Seller Note: {last_seller_input}
 
-Instructions:
-- Review the FULL session history to understand what has already been discussed
-- Identify uncovered areas, unresolved objections, or emerging concerns
-- Generate questions that build on the conversation flow, not repeat topics
-- Focus on Problems (P) and Implications (I) in SPIN methodology
-- Ensure questions are contextually relevant to the client's journey stage
+CRITICAL REQUIREMENTS:
+1. Questions must be SPECIFIC to this client's situation (no generic AI questions like "Jakie są Pana oczekiwania?")
+2. Each question must have a CLEAR STRATEGIC PURPOSE:
+   - Uncover hidden needs, motivations, or concerns
+   - Identify decision-makers and their priorities
+   - Reveal budget constraints or timeline pressures
+   - Discover competitive alternatives being considered
+   - Understand family/stakeholder dynamics
+
+3. Build on what's ALREADY DISCUSSED - don't repeat topics
+4. Use SPIN framework strategically:
+   - Situation: Missing context about current situation
+   - Problem: Unexplored pain points or frustrations
+   - Implication: Consequences of current problems
+   - Need-Payoff: Benefits of solving the problem
+
+5. Questions should feel NATURAL, not robotic or templated
+6. Tie questions to CONCRETE DETAILS from the conversation (specific car models, mentioned concerns, timeline hints)
+
+EXAMPLES OF GOOD vs BAD QUESTIONS:
+
+BAD (generic): "Jakie są Pana oczekiwania wobec nowego samochodu?"
+GOOD: "Wspomniał Pan o jeździe 200km dziennie - czy obecny samochód powoduje jakieś problemy przy tak długich trasach, które chciałby Pan rozwiązać?"
+
+BAD (vague): "Czy rozważał Pan inne opcje?"
+GOOD: "Porównując Model 3 Long Range z konkurencją jak BMW i3 czy Polestar 2, co najbardziej przemawia za Teslą w Pana przypadku?"
+
+BAD (too broad): "Kiedy planuje Pan zakup?"
+GOOD: "Czy brak możliwości odliczenia VAT w tym roku wpływa na Pana decyzję o terminie zakupu, czy może przełożyć to na Q1 2024?"
 
 Respond ONLY in this JSON format:
-{{ "suggested_questions": ["string (Question 1)", "string (Question 2)", "string (Question 3)"] }}
+{{ "suggested_questions": ["string (Strategic Question 1)", "string (Strategic Question 2)", "string (Strategic Question 3)"] }}
 """
 
 def build_prompt_3(language: str, original_input: str, bad_suggestion: str, feedback_note: str) -> str:
@@ -1642,6 +1665,201 @@ async def delete_rag_nugget(nugget_id: str):
         
     except Exception as e:
         logger.error(f"✗ Delete RAG failed: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+# =============================================================================
+# Endpoint 12.5: [POST] /api/v1/admin/rag/bulk-import (Bulk Import RAG Nuggets)
+# =============================================================================
+
+class BulkRagImportRequest(BaseModel):
+    nuggets: List[dict]
+    language: str = "pl"
+
+@app.post("/api/v1/admin/rag/bulk-import", dependencies=[Depends(verify_admin_key)])
+async def bulk_import_rag_nuggets(request: BulkRagImportRequest):
+    """
+    Bulk import RAG nuggets from JSON array
+    Expected format: [{"title": "...", "content": "...", "type": "...", ...}, ...]
+    """
+    try:
+        language = normalize_language(request.language)
+
+        # Validate and prepare points for Qdrant
+        points_to_upsert = []
+        success_count = 0
+        error_count = 0
+        errors = []
+
+        for idx, nugget in enumerate(request.nuggets):
+            try:
+                # Validate required fields
+                if "title" not in nugget or "content" not in nugget:
+                    errors.append(f"Item {idx+1}: Missing title or content")
+                    error_count += 1
+                    continue
+
+                # Generate embedding for content
+                content_to_embed = f"{nugget['title']} {nugget['content']}"
+                embedding = genai.embed_content(
+                    model="models/text-embedding-004",
+                    content=content_to_embed,
+                    task_type="retrieval_document"
+                )["embedding"]
+
+                # Create point
+                point_id = str(uuid.uuid4())
+                payload = {
+                    "title": nugget["title"],
+                    "content": nugget["content"],
+                    "type": nugget.get("type", "general"),
+                    "tags": nugget.get("tags", []),
+                    "language": language,
+                    "keywords": nugget.get("keywords", ""),
+                    "archetype_filter": nugget.get("archetype_filter", []),
+                    "created_at": datetime.now(timezone.utc).isoformat()
+                }
+
+                points_to_upsert.append(
+                    models.PointStruct(
+                        id=point_id,
+                        vector=embedding,
+                        payload=payload
+                    )
+                )
+                success_count += 1
+
+            except Exception as e:
+                errors.append(f"Item {idx+1}: {str(e)}")
+                error_count += 1
+
+        # Upsert all valid points to Qdrant
+        if points_to_upsert:
+            qdrant_client.upsert(
+                collection_name=QDRANT_COLLECTION_NAME,
+                points=points_to_upsert
+            )
+
+        logger.info(f"✓ Bulk import completed: {success_count} success, {error_count} errors")
+
+        return GlobalAPIResponse(
+            status="success" if error_count == 0 else "partial",
+            data={
+                "success_count": success_count,
+                "error_count": error_count,
+                "errors": errors[:10]  # Return first 10 errors
+            }
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Bulk RAG import failed: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+# =============================================================================
+# Endpoint 12.6: [POST] /api/v1/admin/golden-standards/bulk-import (Bulk Import Golden Standards)
+# =============================================================================
+
+class BulkGoldenStandardRequest(BaseModel):
+    standards: List[dict]
+    language: str = "pl"
+
+@app.post("/api/v1/admin/golden-standards/bulk-import", dependencies=[Depends(verify_admin_key)])
+async def bulk_import_golden_standards(request: BulkGoldenStandardRequest):
+    """
+    Bulk import golden standards from JSON array
+    Expected format: [{"trigger_context": "...", "golden_response": "...", "tags": []}, ...]
+    """
+    try:
+        language = normalize_language(request.language)
+        cursor = db_conn.cursor()
+
+        success_count = 0
+        error_count = 0
+        errors = []
+
+        for idx, standard in enumerate(request.standards):
+            try:
+                # Validate required fields
+                if "trigger_context" not in standard or "golden_response" not in standard:
+                    errors.append(f"Item {idx+1}: Missing trigger_context or golden_response")
+                    error_count += 1
+                    continue
+
+                # Insert into database
+                cursor.execute(
+                    """
+                    INSERT INTO golden_standards
+                    (trigger_context, golden_response, tags, language, created_at)
+                    VALUES (%s, %s, %s, %s, %s)
+                    """,
+                    (
+                        standard["trigger_context"],
+                        standard["golden_response"],
+                        standard.get("tags", []),
+                        language,
+                        datetime.now(timezone.utc)
+                    )
+                )
+
+                # Generate embedding and add to Qdrant
+                embedding_content = f"{standard['trigger_context']} {standard['golden_response']}"
+                embedding = genai.embed_content(
+                    model="models/text-embedding-004",
+                    content=embedding_content,
+                    task_type="retrieval_document"
+                )["embedding"]
+
+                point_id = str(uuid.uuid4())
+                qdrant_client.upsert(
+                    collection_name=QDRANT_COLLECTION_NAME,
+                    points=[
+                        models.PointStruct(
+                            id=point_id,
+                            vector=embedding,
+                            payload={
+                                "title": f"Golden Standard: {standard['trigger_context'][:50]}...",
+                                "content": standard["golden_response"],
+                                "type": "golden_standard",
+                                "tags": standard.get("tags", []),
+                                "language": language,
+                                "trigger_context": standard["trigger_context"],
+                                "created_at": datetime.now(timezone.utc).isoformat()
+                            }
+                        )
+                    ]
+                )
+
+                success_count += 1
+
+            except Exception as e:
+                errors.append(f"Item {idx+1}: {str(e)}")
+                error_count += 1
+
+        # Commit all database changes
+        db_conn.commit()
+        cursor.close()
+
+        logger.info(f"✓ Bulk golden standard import completed: {success_count} success, {error_count} errors")
+
+        return GlobalAPIResponse(
+            status="success" if error_count == 0 else "partial",
+            data={
+                "success_count": success_count,
+                "error_count": error_count,
+                "errors": errors[:10]  # Return first 10 errors
+            }
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Bulk golden standard import failed: {e}")
+        if 'cursor' in locals():
+            db_conn.rollback()
+            cursor.close()
         return GlobalAPIResponse(
             status="error",
             message=str(e)

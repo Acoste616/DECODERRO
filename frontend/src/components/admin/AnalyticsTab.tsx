@@ -85,13 +85,13 @@ export default function AnalyticsTab() {
     <div className="space-y-6">
       {/* Filters */}
       <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-4">
-        <h2 className="text-lg font-bold mb-4">{t('admin.filters')}</h2>
+        <h2 className="text-lg font-bold mb-4">{t('view3_admin.filters')}</h2>
         
         <div className="grid grid-cols-4 gap-4">
           {/* Date From */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.date_from')}
+              {t('view3_admin.date_from')}
             </label>
             <input
               type="date"
@@ -104,7 +104,7 @@ export default function AnalyticsTab() {
           {/* Date To */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.date_to')}
+              {t('view3_admin.date_to')}
             </label>
             <input
               type="date"
@@ -117,7 +117,7 @@ export default function AnalyticsTab() {
           {/* Language */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.language')}
+              {t('view3_admin.language')}
             </label>
             <select
               value={filterLanguage}
@@ -137,7 +137,7 @@ export default function AnalyticsTab() {
               disabled={loading}
               className="w-full px-4 py-2 rounded bg-accent-light dark:bg-accent-dark text-accent-text-light hover:opacity-90 transition font-semibold disabled:opacity-50"
             >
-              {loading ? t('common.loading') : t('admin.apply_filters')}
+              {loading ? t('common.loading') : t('view3_admin.apply_filters')}
             </button>
           </div>
         </div>
@@ -158,19 +158,19 @@ export default function AnalyticsTab() {
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-4">
                 <div className="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-1">
-                  {t('admin.total_sessions')}
+                  {t('view3_admin.total_sessions')}
                 </div>
                 <div className="text-3xl font-bold">{data.summary.total_sessions}</div>
               </div>
               <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-4">
                 <div className="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-1">
-                  {t('admin.avg_confidence')}
+                  {t('view3_admin.avg_confidence')}
                 </div>
                 <div className="text-3xl font-bold">{data.summary.avg_confidence}%</div>
               </div>
               <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-4">
                 <div className="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-1">
-                  {t('admin.top_playbook')}
+                  {t('view3_admin.top_playbook')}
                 </div>
                 <div className="text-lg font-bold truncate">{data.summary.top_playbook}</div>
               </div>
@@ -179,7 +179,7 @@ export default function AnalyticsTab() {
 
           {/* Chart 1: Playbook Effectiveness (BarChart) */}
           <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-6">
-            <h3 className="text-lg font-bold mb-4">{t('admin.chart1_title')}</h3>
+            <h3 className="text-lg font-bold mb-4">{t('view3_admin.chart1_title')}</h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={data.chart1_data}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#333" />
@@ -193,22 +193,22 @@ export default function AnalyticsTab() {
                   }}
                 />
                 <Legend />
-                <Bar dataKey="effectiveness" fill="#3b82f6" name={t('admin.effectiveness')} />
-                <Bar dataKey="usage_count" fill="#10b981" name={t('admin.usage_count')} />
+                <Bar dataKey="effectiveness" fill="#3b82f6" name={t('view3_admin.effectiveness')} />
+                <Bar dataKey="usage_count" fill="#10b981" name={t('view3_admin.usage_count')} />
               </BarChart>
             </ResponsiveContainer>
           </div>
 
           {/* Chart 2: DISC Correlation (RadarChart) */}
           <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-6">
-            <h3 className="text-lg font-bold mb-4">{t('admin.chart2_title')}</h3>
+            <h3 className="text-lg font-bold mb-4">{t('view3_admin.chart2_title')}</h3>
             <ResponsiveContainer width="100%" height={400}>
               <RadarChart data={data.chart2_data}>
                 <PolarGrid stroke="#333" />
                 <PolarAngleAxis dataKey="disc_type" tick={{ fill: '#999', fontSize: 12 }} />
                 <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: '#999' }} />
                 <Radar
-                  name={t('admin.conversion_rate')}
+                  name={t('view3_admin.conversion_rate')}
                   dataKey="conversion_rate"
                   stroke="#f59e0b"
                   fill="#f59e0b"
@@ -228,7 +228,7 @@ export default function AnalyticsTab() {
 
           {/* Chart 3: Temperature Validation (LineChart) */}
           <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark p-6">
-            <h3 className="text-lg font-bold mb-4">{t('admin.chart3_title')}</h3>
+            <h3 className="text-lg font-bold mb-4">{t('view3_admin.chart3_title')}</h3>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={data.chart3_data}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#333" />
@@ -247,14 +247,14 @@ export default function AnalyticsTab() {
                   dataKey="predicted_temp"
                   stroke="#3b82f6"
                   strokeWidth={2}
-                  name={t('admin.predicted_temp')}
+                  name={t('view3_admin.predicted_temp')}
                 />
                 <Line
                   type="monotone"
                   dataKey="actual_temp"
                   stroke="#10b981"
                   strokeWidth={2}
-                  name={t('admin.actual_temp')}
+                  name={t('view3_admin.actual_temp')}
                 />
               </LineChart>
             </ResponsiveContainer>
@@ -265,7 +265,7 @@ export default function AnalyticsTab() {
       {/* Empty State */}
       {!loading && !data && (
         <div className="text-center py-12 text-text-secondary-light dark:text-text-secondary-dark">
-          {t('admin.no_analytics_data')}
+          {t('view3_admin.no_analytics_data')}
         </div>
       )}
     </div>

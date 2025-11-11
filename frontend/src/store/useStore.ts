@@ -21,7 +21,8 @@ interface UltraStore {
   // Session State
   session_id: string | null;
   current_stage: 'Odkrywanie' | 'Analiza' | 'Decyzja';
-  
+  suggested_stage: 'Odkrywanie' | 'Analiza' | 'Decyzja' | null;
+
   // Conversation Data
   conversation_log: IConversationLogEntry[];
   slow_path_data: IOpusMagnumJSON | null;
@@ -40,6 +41,7 @@ interface UltraStore {
   // Actions
   setSessionId: (id: string | null) => void;
   setCurrentStage: (stage: 'Odkrywanie' | 'Analiza' | 'Decyzja') => void;
+  setSuggestedStage: (stage: 'Odkrywanie' | 'Analiza' | 'Decyzja' | null) => void;
   setConversationLog: (log: IConversationLogEntry[]) => void;
   addConversationEntry: (entry: IConversationLogEntry) => void;
   setSlowPathData: (data: IOpusMagnumJSON | null) => void;
@@ -64,6 +66,7 @@ export const useStore = create<UltraStore>()(
       // Initial State
       session_id: null,
       current_stage: 'Odkrywanie',
+      suggested_stage: null,
       conversation_log: [],
       slow_path_data: null,
       app_status: 'idle',
@@ -74,9 +77,11 @@ export const useStore = create<UltraStore>()(
       
       // Simple Setters
       setSessionId: (id) => set({ session_id: id }),
-      
+
       setCurrentStage: (stage) => set({ current_stage: stage }),
-      
+
+      setSuggestedStage: (stage) => set({ suggested_stage: stage }),
+
       setConversationLog: (log) => set({ conversation_log: log }),
       
       addConversationEntry: (entry) => set((state) => ({
@@ -85,9 +90,23 @@ export const useStore = create<UltraStore>()(
       
       setSlowPathData: (data) => {
         set({ slow_path_data: data });
-        
-        // If slow path suggests a different stage, we could auto-update
-        // (but per spec, we just highlight the button - handled in UI)
+
+        // Update suggested stage from Slow Path AI
+        if (data?.suggested_stage) {
+          // Normalize stage to Polish format
+          const stageMap: Record<string, 'Odkrywanie' | 'Analiza' | 'Decyzja'> = {
+            'Odkrywanie': 'Odkrywanie',
+            'Discovery': 'Odkrywanie',
+            'Analiza': 'Analiza',
+            'Analysis': 'Analiza',
+            'Decyzja': 'Decyzja',
+            'Decision': 'Decyzja',
+          };
+          const normalizedStage = stageMap[data.suggested_stage];
+          if (normalizedStage) {
+            set({ suggested_stage: normalizedStage });
+          }
+        }
       },
       
       setAppStatus: (status) => set({ app_status: status }),
@@ -120,6 +139,7 @@ export const useStore = create<UltraStore>()(
       resetSession: () => set({
         session_id: null,
         current_stage: 'Odkrywanie',
+        suggested_stage: null,
         conversation_log: [],
         slow_path_data: null,
         app_status: 'idle',

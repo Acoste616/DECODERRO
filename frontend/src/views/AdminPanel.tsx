@@ -38,7 +38,7 @@ export default function AdminPanel() {
   // F-3.1: Handle admin login
   const handleLogin = () => {
     if (!keyInput.trim()) {
-      setLoginError(t('admin.login_error_empty'));
+      setLoginError(t('view3_admin.login_error_empty'));
       return;
     }
 
@@ -76,16 +76,16 @@ export default function AdminPanel() {
             </div>
 
             <h1 className="text-2xl font-bold text-center mb-2">
-              {t('admin.login_title')}
+              {t('view3_admin.login_title')}
             </h1>
             <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark text-center mb-6">
-              {t('admin.login_subtitle')}
+              {t('view3_admin.login_subtitle')}
             </p>
 
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold mb-2">
-                  {t('admin.admin_key')}
+                  {t('view3_admin.admin_key')}
                 </label>
                 <input
                   type="password"
@@ -99,7 +99,7 @@ export default function AdminPanel() {
                       handleLogin();
                     }
                   }}
-                  placeholder={t('admin.admin_key_placeholder')}
+                  placeholder={t('view3_admin.admin_key_placeholder')}
                   className={`w-full px-4 py-3 rounded bg-bg-light dark:bg-bg-dark border ${
                     loginError
                       ? 'border-red-500'
@@ -115,7 +115,7 @@ export default function AdminPanel() {
                 onClick={handleLogin}
                 className="w-full px-6 py-3 rounded bg-accent-light dark:bg-accent-dark text-accent-text-light hover:opacity-90 transition font-semibold"
               >
-                {t('admin.login_button')}
+                {t('view3_admin.login_button')}
               </button>
             </div>
           </div>
@@ -137,14 +137,14 @@ export default function AdminPanel() {
             >
               <ArrowLeftIcon className="w-5 h-5" />
             </button>
-            <h1 className="text-2xl font-bold">{t('admin.panel_title')}</h1>
+            <h1 className="text-2xl font-bold">{t('view3_admin.panel_title')}</h1>
           </div>
 
           <button
             onClick={handleLogout}
             className="px-4 py-2 rounded border border-border-light dark:border-border-dark hover:bg-bg-light dark:hover:bg-bg-dark transition text-sm"
           >
-            {t('admin.logout')}
+            {t('view3_admin.logout')}
           </button>
         </div>
 
@@ -159,7 +159,7 @@ export default function AdminPanel() {
                   : 'border-transparent text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark'
               }`}
             >
-              {t('admin.tab_feedback')}
+              {t('view3_admin.tab_feedback')}
             </button>
             <button
               onClick={() => setActiveTab('rag')}
@@ -169,7 +169,7 @@ export default function AdminPanel() {
                   : 'border-transparent text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark'
               }`}
             >
-              {t('admin.tab_rag')}
+              {t('view3_admin.tab_rag')}
             </button>
             <button
               onClick={() => setActiveTab('analytics')}
@@ -179,7 +179,7 @@ export default function AdminPanel() {
                   : 'border-transparent text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark'
               }`}
             >
-              {t('admin.tab_analytics')}
+              {t('view3_admin.tab_analytics')}
             </button>
           </div>
         </div>

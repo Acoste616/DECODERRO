@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Model 3 Long Range - zasięg WLTP 2024",
+    "content": "Tesla Model 3 Long Range (2024) osiąga zasięg do 629 km (WLTP). W rzeczywistych warunkach (trasa mieszana, 120 km/h autostrada + miasto) realistyczny zasięg to ~480-520 km. Zimą (poniżej 0°C) spodziewaj się redukcji o 20-30%.",
+    "type": "technical",
+    "tags": ["model_3", "long_range", "zasięg", "WLTP", "zima"],
+    "keywords": "model 3, zasięg, long range, wltp, zima, autostrada",
+    "archetype_filter": ["range_conscious", "tech_enthusiast"]
+  },
+  {
+    "title": "Model 3 Performance - przyspieszenie 0-100 km/h",
+    "content": "Tesla Model 3 Performance przyspiesza od 0 do 100 km/h w 3.1 sekundy. To najszybszy wariant Model 3, wyposażony w tryb Track Mode do optymalizacji osiągów na torze.",
+    "type": "technical",
+    "tags": ["model_3", "performance", "przyspieszenie", "track_mode"],
+    "keywords": "model 3, performance, 0-100, track mode, szybki",
+    "archetype_filter": ["performance_seeker"]
+  },
+  {
+    "title": "Autopilot - podstawowe funkcje 2024",
+    "content": "Standardowy Autopilot w Tesli (2024) obejmuje: Traffic-Aware Cruise Control (adaptacyjny tempomat) i Autosteer (prowadzenie w pasie ruchu). Działa na autostradach i drogach szybkiego ruchu z wyraźnymi liniami. Wymaga aktywnego nadzoru kierowcy.",
+    "type": "technical",
+    "tags": ["autopilot", "tacc", "autosteer", "adas"],
+    "keywords": "autopilot, tempomat adaptacyjny, autosteer, autonomiczna jazda",
+    "archetype_filter": ["tech_enthusiast", "safety_conscious"]
+  },
+  {
+    "title": "Supercharger network Polska 2024",
+    "content": "W Polsce (2024) działa ponad 50 stacji Supercharger Tesla z ~400 stanowiskami ładowania. Kluczowe lokalizacje: Warszawa (5 stacji), Kraków (3), Wrocław (2), Poznań (2), Gdańsk/Gdynia (2). Ładowanie 10-80% zajmuje ~25-30 minut przy mocy do 250 kW.",
+    "type": "infrastructure",
+    "tags": ["supercharger", "ładowanie", "polska", "infrastruktura"],
+    "keywords": "supercharger, ładowanie, stacje, polska, szybkie ładowanie",
+    "archetype_filter": ["range_conscious", "practical_buyer"]
+  },
+  {
+    "title": "OTA Updates - jak działają aktualizacje",
+    "content": "Tesla dostarcza aktualizacje Over-The-Air (OTA) bezprzewodowo przez WiFi. Średnio 1-2 aktualizacje miesięcznie dodają nowe funkcje, poprawiają wydajność i naprawiają błędy. Przykłady: nowe gry, zwiększony zasięg (+5-10% software-only), ulepszone Autopilot. Instalacja trwa 20-45 min, najlepiej w nocy.",
+    "type": "technology",
+    "tags": ["ota", "aktualizacje", "software", "funkcje"],
+    "keywords": "ota, aktualizacje, software, nowe funkcje, bezprzewodowo",
+    "archetype_filter": ["tech_enthusiast", "innovation_seeker"]
+  },
+  {
+    "title": "Leasing operacyjny Tesla - korzyści dla firm",
+    "content": "Leasing operacyjny Tesla dla firm: opłata leasingowa 100% kosztem uzyskania przychodu, 0% emisji = brak podatku od środków transportu, VAT marża 23% odliczalny, brak akcyzy. Typowe warunki: 20-30% wpłata własna, 36-48 miesięcy, rata od ~2500 zł/m-c (Model 3).",
+    "type": "financial",
+    "tags": ["leasing", "b2b", "firma", "vat", "koszty"],
+    "keywords": "leasing, operacyjny, firma, b2b, vat, koszty",
+    "archetype_filter": ["business_buyer", "cost_conscious"]
+  },
+  {
+    "title": "Ulga podatkowa Polska - zakup EV 2024",
+    "content": "Ulga na zakup pojazdu zeroemisyjnego w Polsce (2024): możliwość odliczenia 18% lub 27% VAT-u (zależnie od przeznaczenia pojazdu). Dla firm: samochody elektryczne traktowane jako koszty uzyskania przychodu bez limitów dla aut spalinowych.",
+    "type": "financial",
+    "tags": ["ulga", "podatki", "ev", "polska"],
+    "keywords": "ulga podatkowa, vat, elektryk, zeroemisyjny, odliczenie",
+    "archetype_filter": ["business_buyer", "cost_conscious"]
+  },
+  {
+    "title": "Model 3 vs BMW i4 - porównanie zasięgu",
+    "content": "Tesla Model 3 Long Range (629 km WLTP) vs BMW i4 eDrive40 (590 km WLTP). Real-world: Tesla ~480-520 km, BMW ~450-490 km. Tesla przewaga: większa sieć Superchargerów (szybsze ładowanie), lepsza efektywność energetyczna (14.9 kWh/100km vs 16.1 kWh/100km).",
+    "type": "competitive",
+    "tags": ["porównanie", "bmw", "i4", "model_3", "zasięg"],
+    "keywords": "bmw i4, porównanie, model 3, zasięg, konkurencja",
+    "archetype_filter": ["data_driven", "comparative_shopper"]
+  },
+  {
+    "title": "Obiekcja: lęk zasięgowy (range anxiety)",
+    "content": "Jak odpowiedzieć na lęk zasięgowy: 'Rozumiem obawy. Statystyki pokazują, że średni Polak jeździ 40-50 km/dzień - to tylko 8% zasięgu Model 3. Przy ładowaniu w domu każdego ranka masz pełny bak. Do dalszych tras: 50+ Superchargerów w Polsce, ładowanie 300 km w 15 minut. Po tygodniu użytkowania ten lęk całkowicie znika - mówią to wszyscy nasi klienci.'",
+    "type": "objection_handling",
+    "tags": ["obiekcja", "zasięg", "range_anxiety", "rebuttal"],
+    "keywords": "lęk zasięgowy, obiekcja, zasięg, odpowiedź",
+    "archetype_filter": ["range_conscious", "skeptical"]
+  },
+  {
+    "title": "Obiekcja: długi czas ładowania vs tankowanie",
+    "content": "Rebuttal: 'To częsta obiekcja, ale zmieńmy perspektywę. Przez 95% czasu ładujesz w domu/pracy podczas gdy robisz inne rzeczy - 0 minut traconych. Auto spalinowe: 2x w miesiącu na stację (10 min każda) = 240 min/rok. Tesla: 2-3 dłuższe trasy/rok z ładowaniem Supercharger (20 min przerwa przy ~400 km) = 60-80 min/rok. Realnie oszczędzasz ~150 minut rocznie.'",
+    "type": "objection_handling",
+    "tags": ["obiekcja", "ładowanie", "czas", "rebuttal"],
+    "keywords": "ładowanie, obiekcja, czas, tankowanie, odpowiedź",
+    "archetype_filter": ["time_conscious", "skeptical"]
+  }
+]

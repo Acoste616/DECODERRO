@@ -8,7 +8,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { TrashIcon, PlusIcon } from '@heroicons/react/24/outline';
+import { TrashIcon, PlusIcon, ArrowUpTrayIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from '../../utils/i18n';
 import { api } from '../../utils/api';
 import { useStore } from '../../store/useStore';
@@ -41,6 +41,15 @@ export default function RagTab() {
   const [formSubmitting, setFormSubmitting] = useState(false);
   const [formSuccess, setFormSuccess] = useState(false);
 
+  // Bulk import state
+  const [showBulkImportModal, setShowBulkImportModal] = useState(false);
+  const [bulkImporting, setBulkImporting] = useState(false);
+  const [bulkImportResult, setBulkImportResult] = useState<{
+    success_count: number;
+    error_count: number;
+    errors: string[];
+  } | null>(null);
+
   // Load nuggets on mount and language change
   useEffect(() => {
     loadNuggets();
@@ -62,7 +71,7 @@ export default function RagTab() {
 
   // Handle delete nugget
   const handleDelete = async (nuggetId: string) => {
-    if (!confirm(t('admin.confirm_delete'))) {
+    if (!confirm(t('view3_admin.confirm_delete'))) {
       return;
     }
 
@@ -106,10 +115,10 @@ export default function RagTab() {
           keywords: '',
           language: current_language,
         });
-        
+
         // Reload nuggets
         loadNuggets();
-        
+
         setTimeout(() => setFormSuccess(false), 3000);
       }
     } catch (error) {
@@ -119,15 +128,87 @@ export default function RagTab() {
     }
   };
 
+  // Handle bulk import
+  const handleBulkImport = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    setBulkImporting(true);
+    setBulkImportResult(null);
+
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+
+      // Validate that it's an array
+      if (!Array.isArray(data)) {
+        alert('Invalid JSON format. Expected an array of nuggets.');
+        return;
+      }
+
+      // Call bulk import API
+      const response = await fetch('http://localhost:8000/api/v1/admin/rag/bulk-import', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Admin-Key': 'ultra-admin-key-2024',
+        },
+        body: JSON.stringify({
+          nuggets: data,
+          language: current_language,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.status === 'success' || result.status === 'partial') {
+        setBulkImportResult(result.data);
+        loadNuggets(); // Reload the list
+      } else {
+        alert(`Import failed: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('Bulk import failed:', error);
+      alert('Failed to import file. Please check the JSON format.');
+    } finally {
+      setBulkImporting(false);
+      // Reset file input
+      event.target.value = '';
+    }
+  };
+
   return (
     <div className="grid grid-cols-2 gap-6">
       {/* Left: Nuggets List */}
       <div className="bg-surface-light dark:bg-surface-dark rounded-lg border border-border-light dark:border-border-dark overflow-hidden flex flex-col">
         <div className="p-4 border-b border-border-light dark:border-border-dark">
-          <h2 className="text-lg font-bold">{t('admin.rag_nuggets')}</h2>
-          <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark">
-            {t('admin.rag_nuggets_desc')}
-          </p>
+          <div className="flex items-start justify-between mb-2">
+            <div>
+              <h2 className="text-lg font-bold">{t('view3_admin.rag_nuggets')}</h2>
+              <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                {t('view3_admin.rag_nuggets_desc')}
+              </p>
+            </div>
+            <div>
+              <input
+                type="file"
+                accept=".json"
+                onChange={handleBulkImport}
+                disabled={bulkImporting}
+                className="hidden"
+                id="bulk-import-file"
+              />
+              <label
+                htmlFor="bulk-import-file"
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600 transition cursor-pointer ${
+                  bulkImporting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+              >
+                <ArrowUpTrayIcon className="w-4 h-4" />
+                {bulkImporting ? 'Importing...' : 'Bulk Import JSON'}
+              </label>
+            </div>
+          </div>
         </div>
 
         <div className="flex-1 overflow-y-auto">
@@ -137,7 +218,7 @@ export default function RagTab() {
             </div>
           ) : nuggets.length === 0 ? (
             <div className="p-6 text-center text-text-secondary-light dark:text-text-secondary-dark">
-              {t('admin.no_nuggets')}
+              {t('view3_admin.no_nuggets')}
             </div>
           ) : (
             <div className="divide-y divide-border-light dark:divide-border-dark">
@@ -171,7 +252,7 @@ export default function RagTab() {
 
                   {nugget.keywords && (
                     <div className="text-xs text-text-secondary-light dark:text-text-secondary-dark">
-                      <span className="font-semibold">{t('admin.keywords')}:</span> {nugget.keywords}
+                      <span className="font-semibold">{t('view3_admin.keywords')}:</span> {nugget.keywords}
                     </div>
                   )}
                 </div>
@@ -186,7 +267,7 @@ export default function RagTab() {
         <div className="p-4 border-b border-border-light dark:border-border-dark">
           <h2 className="text-lg font-bold flex items-center gap-2">
             <PlusIcon className="w-5 h-5" />
-            {t('admin.add_rag_nugget')}
+            {t('view3_admin.add_rag_nugget')}
           </h2>
         </div>
 
@@ -194,13 +275,13 @@ export default function RagTab() {
           {/* Title */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.nugget_title')} *
+              {t('view3_admin.nugget_title')} *
             </label>
             <input
               type="text"
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              placeholder={t('admin.nugget_title_placeholder')}
+              placeholder={t('view3_admin.nugget_title_placeholder')}
               required
               className="w-full px-3 py-2 rounded bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark text-sm"
             />
@@ -209,12 +290,12 @@ export default function RagTab() {
           {/* Content */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.nugget_content')} *
+              {t('view3_admin.nugget_content')} *
             </label>
             <textarea
               value={formData.content}
               onChange={(e) => setFormData({ ...formData, content: e.target.value })}
-              placeholder={t('admin.nugget_content_placeholder')}
+              placeholder={t('view3_admin.nugget_content_placeholder')}
               rows={8}
               required
               className="w-full px-3 py-2 rounded bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark text-sm"
@@ -224,24 +305,24 @@ export default function RagTab() {
           {/* Keywords */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.keywords')}
+              {t('view3_admin.keywords')}
             </label>
             <input
               type="text"
               value={formData.keywords}
               onChange={(e) => setFormData({ ...formData, keywords: e.target.value })}
-              placeholder={t('admin.keywords_placeholder')}
+              placeholder={t('view3_admin.keywords_placeholder')}
               className="w-full px-3 py-2 rounded bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark text-sm"
             />
             <p className="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">
-              {t('admin.keywords_hint')}
+              {t('view3_admin.keywords_hint')}
             </p>
           </div>
 
           {/* Language */}
           <div>
             <label className="block text-sm font-semibold mb-2">
-              {t('admin.language')} *
+              {t('view3_admin.language')} *
             </label>
             <select
               value={formData.language}
@@ -259,17 +340,74 @@ export default function RagTab() {
             disabled={formSubmitting}
             className="w-full px-4 py-3 rounded bg-accent-light dark:bg-accent-dark text-accent-text-light hover:opacity-90 transition font-semibold disabled:opacity-50"
           >
-            {formSubmitting ? t('common.submitting') : t('admin.add_button')}
+            {formSubmitting ? t('common.submitting') : t('view3_admin.add_button')}
           </button>
 
           {/* Success Message */}
           {formSuccess && (
             <div className="p-3 rounded bg-green-100 dark:bg-green-900/30 border border-green-500 text-green-700 dark:text-green-300 text-sm">
-              {t('admin.nugget_added')}
+              {t('view3_admin.nugget_added')}
             </div>
           )}
         </form>
       </div>
+
+      {/* Bulk Import Results Modal */}
+      {bulkImportResult && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-surface-light dark:bg-surface-dark rounded-lg shadow-2xl max-w-2xl w-full">
+            <div className="p-5 border-b border-border-light dark:border-border-dark">
+              <h3 className="text-lg font-semibold">Bulk Import Results</h3>
+            </div>
+
+            <div className="p-5 space-y-4">
+              <div className="flex gap-4">
+                <div className="flex-1 p-4 rounded bg-green-100 dark:bg-green-900/30 border border-green-500">
+                  <div className="text-2xl font-bold text-green-700 dark:text-green-300">
+                    {bulkImportResult.success_count}
+                  </div>
+                  <div className="text-sm text-green-600 dark:text-green-400">
+                    Successfully Imported
+                  </div>
+                </div>
+
+                {bulkImportResult.error_count > 0 && (
+                  <div className="flex-1 p-4 rounded bg-red-100 dark:bg-red-900/30 border border-red-500">
+                    <div className="text-2xl font-bold text-red-700 dark:text-red-300">
+                      {bulkImportResult.error_count}
+                    </div>
+                    <div className="text-sm text-red-600 dark:text-red-400">
+                      Failed
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {bulkImportResult.errors.length > 0 && (
+                <div>
+                  <h4 className="font-semibold mb-2">Errors:</h4>
+                  <div className="bg-red-50 dark:bg-red-900/20 rounded p-3 max-h-60 overflow-y-auto">
+                    {bulkImportResult.errors.map((error, idx) => (
+                      <div key={idx} className="text-sm text-red-700 dark:text-red-300 mb-1">
+                        • {error}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="p-5 border-t border-border-light dark:border-border-dark flex justify-end">
+              <button
+                onClick={() => setBulkImportResult(null)}
+                className="px-6 py-2 rounded bg-accent-light dark:bg-accent-dark text-accent-text-light hover:opacity-90 transition"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

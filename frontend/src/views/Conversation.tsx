@@ -25,6 +25,8 @@ import { useTranslation } from '../utils/i18n';
 import { api } from '../utils/api';
 import { WebSocketManager } from '../utils/websocket';
 import OpusMagnumPanel from '../components/OpusMagnumPanel';
+import JourneyStageSelector from '../components/JourneyStageSelector';
+import QuestionAnswerModal from '../components/QuestionAnswerModal';
 import type { IConversationLogEntry } from '../types';
 
 export default function Conversation() {
@@ -36,6 +38,7 @@ export default function Conversation() {
     session_id,
     setSessionId,
     current_stage,
+    suggested_stage,
     setCurrentStage,
     conversation_log,
     setConversationLog,
@@ -50,13 +53,12 @@ export default function Conversation() {
   const [userInput, setUserInput] = useState('');
   const [suggestedQuestions, setSuggestedQuestions] = useState<string[]>([]);
   const [showEndModal, setShowEndModal] = useState(false);
+  const [showQuestionModal, setShowQuestionModal] = useState(false);
+  const [selectedQuestion, setSelectedQuestion] = useState('');
   const [feedbackState, setFeedbackState] = useState<{ [key: number]: 'positive' | 'negative' | null }>({});
-  
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const wsManagerRef = useRef<WebSocketManager | null>(null);
-
-  // Journey stages
-  const stages = ['Odkrywanie', 'Analiza', 'Decyzja'] as const;
 
   // Auto-scroll to bottom on new messages
   useEffect(() => {
@@ -245,13 +247,74 @@ export default function Conversation() {
     }
   };
 
+  // Handle strategic question click - open modal
+  const handleQuestionClick = (question: string) => {
+    setSelectedQuestion(question);
+    setShowQuestionModal(true);
+  };
+
+  // Handle question answer submission
+  const handleQuestionAnswer = async (answer: string) => {
+    // Format the message as "P: [question] A: [answer]"
+    const formattedMessage = `P: ${selectedQuestion}\n\nO: ${answer}`;
+
+    // Send formatted message directly
+    if (!id) return;
+
+    setAppStatus('fast_path_loading');
+
+    // Optimistic: Add seller's message immediately
+    const sellerEntry: IConversationLogEntry = {
+      log_id: Date.now(),
+      session_id: id,
+      timestamp: new Date().toISOString(),
+      role: 'Sprzedawca',
+      content: formattedMessage,
+      language: current_language,
+      journey_stage: current_stage,
+    };
+    addConversationEntry(sellerEntry);
+
+    try {
+      const { data, status } = await api.sendMessage(id, formattedMessage, current_stage);
+
+      if (status === 'success' && data) {
+        // Add AI response if available
+        if (data.suggested_response) {
+          const aiEntry: IConversationLogEntry = {
+            log_id: Date.now() + 1,
+            session_id: id,
+            timestamp: new Date().toISOString(),
+            role: 'FastPath',
+            content: data.suggested_response,
+            language: current_language,
+            journey_stage: current_stage,
+          };
+          addConversationEntry(aiEntry);
+        }
+
+        // Update suggested questions
+        if (data.suggested_questions && data.suggested_questions.length > 0) {
+          setSuggestedQuestions(data.suggested_questions);
+        }
+
+        setAppStatus('slow_path_loading');
+      } else {
+        setAppStatus('error');
+      }
+    } catch (error) {
+      console.error('Send message failed:', error);
+      setAppStatus('error');
+    }
+  };
+
   // F-2.6: End session
   const handleEndSession = async (finalStatus: string) => {
     if (!id) return;
 
     try {
       await api.endSession(id, finalStatus);
-      
+
       // Save to recent sessions in localStorage
       const recentSessions = JSON.parse(localStorage.getItem('ultra_recent_sessions') || '[]');
       const newSession = {
@@ -300,25 +363,12 @@ export default function Conversation() {
       <div className="flex-1 flex overflow-hidden">
         {/* Left Column: Conversation */}
         <div className="flex-1 flex flex-col border-r border-border-light dark:border-border-dark">
-          {/* F-2.1: Journey Stage Selector */}
-          <div className="bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark p-4">
-            <div className="text-sm font-semibold mb-2">{t('view2_conversation.journey_stage')}</div>
-            <div className="flex gap-2">
-              {stages.map((stage) => (
-                <button
-                  key={stage}
-                  onClick={() => setCurrentStage(stage)}
-                  className={`flex-1 px-4 py-2 rounded transition ${
-                    current_stage === stage
-                      ? 'bg-accent-light dark:bg-accent-dark text-accent-text-light font-semibold'
-                      : 'bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark'
-                  }`}
-                >
-                  {stage}
-                </button>
-              ))}
-            </div>
-          </div>
+          {/* F-2.1: Journey Stage Selector with AI Suggestion */}
+          <JourneyStageSelector
+            currentStage={current_stage}
+            suggestedStage={suggested_stage}
+            onStageChange={setCurrentStage}
+          />
 
           {/* Conversation Log */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
@@ -367,18 +417,26 @@ export default function Conversation() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Suggested Questions */}
+          {/* Strategic Questions */}
           {suggestedQuestions.length > 0 && (
-            <div className="border-t border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-3">
-              <div className="text-sm font-semibold mb-2">{t('view2_conversation.suggested_questions')}</div>
-              <div className="flex flex-wrap gap-2">
+            <div className="border-t border-border-light dark:border-border-dark bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-4">
+              <div className="text-sm font-semibold mb-2 flex items-center gap-2">
+                💡 {t('view2_conversation.suggested_questions')}
+              </div>
+              <div className="text-xs text-purple-600 dark:text-purple-400 mb-3">
+                Kliknij pytanie, aby otworzyć okno do wpisania odpowiedzi klienta
+              </div>
+              <div className="space-y-2">
                 {suggestedQuestions.map((question, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setUserInput(question)}
-                    className="px-3 py-1 text-sm rounded bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition"
+                    onClick={() => handleQuestionClick(question)}
+                    className="w-full text-left px-4 py-3 text-sm rounded bg-white dark:bg-gray-800 border-2 border-purple-200 dark:border-purple-800 hover:border-purple-500 dark:hover:border-purple-500 hover:shadow-md transition transform hover:-translate-y-0.5"
                   >
-                    {question}
+                    <div className="flex items-start gap-2">
+                      <span className="text-purple-500 mt-0.5 font-bold">{idx + 1}.</span>
+                      <span className="flex-1 text-purple-900 dark:text-purple-100">{question}</span>
+                    </div>
                   </button>
                 ))}
               </div>
@@ -455,6 +513,15 @@ export default function Conversation() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Question Answer Modal */}
+      {showQuestionModal && (
+        <QuestionAnswerModal
+          question={selectedQuestion}
+          onClose={() => setShowQuestionModal(false)}
+          onSubmit={handleQuestionAnswer}
+        />
       )}
     </div>
   );
