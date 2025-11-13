@@ -1,0 +1,1762 @@
+[
+  {
+    "title": "Typ D (Dominance) - Szybkość vs. Szczegóły",
+    "content": "Klient D myśli szybko, podejmuje decyzje ekspresowo i frustruje się szczegółami. Podaj mu top 3 benefity, krótkie timeline, status quo (konkurencja już ma). Nie marnuj czasu na specyfikacje techniczne – skupiaj się na kontroli, wydajności i wyniku biznesowym.",
+    "keywords": "DISC, Typ D, szybkie decyzje, benefity, timeline",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ D", "szybkie decyzje"],
+    "archetype_filter": ["dominance"]
+  },
+  {
+    "title": "Typ D - Wskaźnik Behawioralny: Niecierpliwość",
+    "content": "Jeśli klient przerywał Ci zdania, sprawdza zegarek lub mówi 'skróć to' – to silny sygnał D. Porzuć PowerPoint, przejdź do 'co to zmieni dla Ciebie?', zaproponuj krótkie demo i wyraźny next step.",
+    "keywords": "DISC, Typ D, niecierpliwość, demo, next step",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ D", "niecierpliwość"],
+    "archetype_filter": ["dominance"]
+  },
+  {
+    "title": "Typ I (Influence) - Entuzjazm i Łączliwość",
+    "content": "Klient I kupuje relację, nie produkt. Bądź ciepły, opowiadaj historie sukcesu innych klientów, zaproś go do społeczności właścicieli. Prośba o referencje = naturalna kolej dla typu I.",
+    "keywords": "DISC, Typ I, relacja, historie sukcesu, społeczność",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ I", "relacja"],
+    "archetype_filter": ["influence"]
+  },
+  {
+    "title": "Typ I - Wskaźnik Behawioralny: Gestykulacja i Energia",
+    "content": "Jeśli klient gestykuluje, mówi głośniej, pyta o Twoje doświadczenia i osobiste opinie – to profil I. Będzie bardziej podatny na social proof, testimoniale i ofertę kolaboracji/partnership niż na twarde dane.",
+    "keywords": "DISC, Typ I, energia, social proof, testimoniale",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ I", "energia"],
+    "archetype_filter": ["influence"]
+  },
+  {
+    "title": "Typ S (Steadiness) - Stabilność i Gwarancje",
+    "content": "Typ S boi się zmian, chce pewności i wsparcia długoterminowego. Podkreśl: warranty, serwis after-sales, opinie długoterminowych właścicieli, finansowanie elastyczne. Zadaj pytanie: 'Co byś potrzebował, aby czuć się bezpiecznie z tą decyzją?'",
+    "keywords": "DISC, Typ S, stabilność, gwarancje, wsparcie",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ S", "stabilność"],
+    "archetype_filter": ["steadiness"]
+  },
+  {
+    "title": "Typ S - Wskaźnik Behawioralny: Wahanie i Pytania o 'Co Jeśli'",
+    "content": "Klient zadaje pytania 'a co jeśli coś pójdzie nie tak?', waha się między modelami, pyta o doświadczenia znanych ludzi – to S. Nie sprzedawaj mu innowacyjności, sprzedawaj mu spokój i continuity.",
+    "keywords": "DISC, Typ S, wahanie, pytania co jeśli, spokój",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ S", "wahanie"],
+    "archetype_filter": ["steadiness"]
+  },
+  {
+    "title": "Typ C (Conscientiousness) - Analiza i Dokładność",
+    "content": "Typ C potrzebuje danych, porównań, specyfikacji technicznych, recenzji ekspertów. Daj mu white paper, porównanie konkurentów, detali o materiale, bezpieczeństwie i rzeczoznawczych ocenach. Baw się cyframi i dowodami. (Sugestia: Dodaj link do Tesla Safety Report dla wzmocnienia).",
+    "keywords": "DISC, Typ C, analiza, dane, porównania",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ C", "analiza"],
+    "archetype_filter": ["conscientiousness"]
+  },
+  {
+    "title": "Typ C - Wskaźnik Behawioralny: Detalistyczne Pytania",
+    "content": "'Ile wynosi zasięg w zimie?', 'Jaki jest koszt naprawy (X komponenty)?', 'Jakie są wyniki testów NCAP?' – to purystyczne pytania typu C. Odpowiadaj precyzją, nie intuicją. Możesz powiedzieć: 'Świetne pytanie. Sprawdzę dokładne dane i wyślę Ci raport.'",
+    "keywords": "DISC, Typ C, szczegóły, precyzja, raporty",
+    "type": "psychologia",
+    "tags": ["DISC", "Typ C", "szczegóły"],
+    "archetype_filter": ["conscientiousness"]
+  },
+  {
+    "title": "Wysoka Otwartość (Openness) - Innowacja i Przyszłość",
+    "content": "Klient wysoko otwarty lubi nowatorskie rozwiązania, technologię, ryzyko. Opowiadaj mu o Autopilot, Full Self-Driving, integracji AI, przyszłości mobilności. Będzie zainteresowany 'gdzie to zmierza?', nie 'jak to dziś działa?'",
+    "keywords": "Big Five, Openness, innowacja, Autopilot, przyszłość",
+    "type": "psychologia",
+    "tags": ["Big Five", "Openness", "innowacja"],
+    "archetype_filter": ["openness_high"]
+  },
+  {
+    "title": "Niska Otwartość (Conservatism) - Tradycja i Sprawdzone Rozwiązania",
+    "content": "Klient konserwatywny obawia się novum. Podkreśl: miliony istniejących użytkowników, długoterminowa niezawodność, porównanie ze znanymi markami. Zamiast gadać o FSD (przyszłość), mów o Range i Charging Network (pewność dzisiaj).",
+    "keywords": "Big Five, Openness, konserwatyzm, niezawodność, użytkownicy",
+    "type": "psychologia",
+    "tags": ["Big Five", "Openness", "konserwatyzm"],
+    "archetype_filter": ["openness_low"]
+  },
+  {
+    "title": "Wysoka Sumienność (Conscientiousness) - Planowanie i Kontrola",
+    "content": "Typ sumiennie planuje zakupy, przygotowuje się, czyta recenzje. Daj mu checklist, timeline decyzji, porządne materiały do domu. Będzie miał dużo pytań – to dobrze, bo oznacza zaangażowanie.",
+    "keywords": "Big Five, Conscientiousness, planowanie, checklist, timeline",
+    "type": "psychologia",
+    "tags": ["Big Five", "Conscientiousness", "planowanie"],
+    "archetype_filter": ["conscientiousness_high"]
+  },
+  {
+    "title": "Niska Sumienność (Spontaneity) - Impuls i Teraz",
+    "content": "Klient spontaniczny mówi: 'Podoba mi się, biorę to'. Nie przytłaczaj go danymi. Stwórz poczucie urgencji (promo, ograniczona dostępność konfiguracji), uproszcz decyzję (preset kolory/opcje), zaproponuj test drive 'teraz'.",
+    "keywords": "Big Five, Conscientiousness, spontaniczność, urgencja, test drive",
+    "type": "psychologia",
+    "tags": ["Big Five", "Conscientiousness", "spontaniczność"],
+    "archetype_filter": ["conscientiousness_low"]
+  },
+  {
+    "title": "Wysoka Ugodowość (Agreeableness) - Harmony i Konsensus",
+    "content": "Typ ugodny unika konfliktu, chce spełnić wszystkim. Nie stawiaj go pod presją ('ostatni pojazd z tego koloru!'). Zamiast tego: 'Czy to coś, co również spodobałoby się Twojej rodzinie?' Daj mu poczucie, że robi dobrze dla innych (ekologia, bezpieczeństwo dla dzieci).",
+    "keywords": "Big Five, Agreeableness, harmonia, konsensus, rodzina",
+    "type": "psychologia",
+    "tags": ["Big Five", "Agreeableness", "harmonia"],
+    "archetype_filter": ["agreeableness_high"]
+  },
+  {
+    "title": "Niska Ugodowość (Assertiveness) - Konkurencja i Autonomia",
+    "content": "Typ mniej ugodny chce być niezależny, konkurować, wygrywać. Apeluj do jego statusu i unikalności ('ekskluzywna konfiguracja', 'zaawansowane funkcje, które konkurenci nie mają'). Pozwól mu negocjować – lubi poczucie kontroli.",
+    "keywords": "Big Five, Agreeableness, asertywność, status, negocjacje",
+    "type": "psychologia",
+    "tags": ["Big Five", "Agreeableness", "asertywność"],
+    "archetype_filter": ["agreeableness_low"]
+  },
+  {
+    "title": "Wartość: Bezpieczeństwo (Security) - Ochrona i Stabilność",
+    "content": "Jeśli klient mówi o rodzinie, dzieciach, bezpieczeństwie – to profil zorientowany na Security. Opowiadaj mu o NCAP ratings, Autopilot, zaangażowaniu w bezpieczeństwo. Pytanie: 'Jakie aspekty bezpieczeństwa są dla Ciebie najważniejsze?'",
+    "keywords": "Schwartz, Security, bezpieczeństwo, rodzina, NCAP",
+    "type": "psychologia",
+    "tags": ["Schwartz", "Security", "bezpieczeństwo"],
+    "archetype_filter": ["security"]
+  },
+  {
+    "title": "Wartość: Samodzielność (Self-Direction) - Kontrola i Niezależność",
+    "content": "Klient ceni Self-Direction chce być wolny, podejmować własne decyzje, mieć kontrolę. Pokaż mu opcje personalizacji, elastyczność konfiguracji, pełną kontrolę przez aplikację mobilną. Nie mów mu, co 'powinien' wybrać.",
+    "keywords": "Schwartz, Self-Direction, niezależność, personalizacja, aplikacja",
+    "type": "psychologia",
+    "tags": ["Schwartz", "Self-Direction", "niezależność"],
+    "archetype_filter": ["self_direction"]
+  },
+  {
+    "title": "Wartość: Stymulacja (Stimulation) - Wzbudzenie i Nowatorstwo",
+    "content": "Jeśli klient pyta o Performance, Plaid, Racing Mode – orientuje się na Stimulation. Zaproś go na test drive z pełnym acceleration, gadaj o Zero-to-60 ms, dynamice, limitowanej dostępności Performance editions.",
+    "keywords": "Schwartz, Stimulation, stymulacja, performance, test drive",
+    "type": "psychologia",
+    "tags": ["Schwartz", "Stimulation", "stymulacja"],
+    "archetype_filter": ["stimulation"]
+  },
+  {
+    "title": "Wartość: Uniwersalizm (Universalism) - Wspólne Dobro",
+    "content": "Klient uniwersalnie nastawiony obawia się ekologii, wpływu społecznego, etyki produkcji. Mów o redukcji emisji CO2, programach recyklingu, zaangażowaniu Tesli w odnawialne źródła energii. Pytanie: 'Jak mówisz o swojej roli w zmieniającym się świecie?'",
+    "keywords": "Schwartz, Universalism, ekologia, CO2, recykling",
+    "type": "psychologia",
+    "tags": ["Schwartz", "Universalism", "ekologia"],
+    "archetype_filter": ["universalism"]
+  },
+  {
+    "title": "Golden Diagnostic Question #1: 'Co cię tu przywiodło dzisiaj?'",
+    "content": "To otwarte pytanie odsłania Main Drive. Typ D odpowie: 'Chcę coś lepszego, szybszego.' Typ S: 'Słyszałem dobre opinie.' Typ I: 'Chciałem poznać co nowego.' Typ C: 'Porównuję dane.' Słuchaj odpowiedzi, a poznasz profil.",
+    "keywords": "Diagnostic, Main Drive, otwarte pytanie, DISC",
+    "type": "psychologia",
+    "tags": ["Diagnostic", "Main Drive", "otwarte pytanie"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Golden Diagnostic Question #2: 'Co byś zmienił w swoim dotychczasowym pojeździe/doświadczeniu?'",
+    "content": "Odpowiedź wskazuje na pain point i Main Drive. Typ D: 'Potrzebuję więcej mocy/responsywności.' Typ S: 'Chcę mieć spokój o awarię.' Typ I: 'Chcę być trendy.' Typ C: 'Potrzebuję bardziej ekonomicznego systemu.' Teraz dostroisz narrację do jego dominującego motoru.",
+    "keywords": "Diagnostic, pain point, zmiana, DISC",
+    "type": "psychologia",
+    "tags": ["Diagnostic", "pain point", "zmiana"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Icebreaker: Personalizacja Bez Premedytacji",
+    "content": "'Widzę, że interesuje Cię [model]. Co Cię bardziej intryguje – wydajność, czy praktyczność dnia codziennego?' To otwiera dialog bez presji sprzedażowej. Pozwala klientowi wybrać kierunek, a Tobie – zidentyfikować Main Drive w pierwszych 10 sekundach.",
+    "keywords": "Icebreaker, personalizacja, Main Drive, dialog",
+    "type": "komunikacja",
+    "tags": ["Icebreaker", "personalizacja", "Main Drive"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Icebreaker: Budowanie Rapport Przez Wspólnotę",
+    "content": "'Wielu naszych klientów zaczynało tak jak Ty – sceptyczni wobec elektryków. Potem odkrywali, że zmienia to całą ich perspektywę na jazdę. Czy chciałbyś zobaczyć, dlaczego?' Normalizuje początkowy skeptycyzm, pokazuje, że client journey jest naturalny, redukuje obronę.",
+    "keywords": "Icebreaker, rapport, skeptycyzm, journey",
+    "type": "komunikacja",
+    "tags": ["Icebreaker", "rapport", "skeptycyzm"],
+    "archetype_filter": ["skeptical"]
+  },
+  {
+    "title": "Icebreaker: Rola Autorytetu z Empatią",
+    "content": "'Zajmuję się tym od [X lat]. Przywykłem, że ludzie mają sporo pytań – i to świetnie. Które obszary są dla Ciebie najważniejsze: technologia, kosztochłonność, czy wpływ na rodzinę?' Ustawiasz się jako expert (autorytet Cialdini), ale niedominujący. Pytanie trójosobowe daje klientowi całkowitą kontrolę.",
+    "keywords": "Icebreaker, autorytet, empatia, Cialdini, technologia",
+    "type": "komunikacja",
+    "tags": ["Icebreaker", "autorytet", "empatia"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Icebreaker: Trigger Ciekawości (dla Typu C & High Openness)",
+    "content": "'Tesla nie ma chłodnicy, na to dachcie 40+ czujników, a Software aktualizuje się co miesiąc. Czy wiesz dlaczego to ma znaczenie dla Ciebie?' Intryguje intelekt, odsłania mechanikę bez presji. Czeka na jego kolejne pytanie = zaangażowanie.",
+    "keywords": "Icebreaker, ciekawość, Typ C, Openness, software",
+    "type": "komunikacja",
+    "tags": ["Icebreaker", "ciekawość", "Typ C"],
+    "archetype_filter": ["conscientiousness", "openness_high"]
+  },
+  {
+    "title": "Deep Dive: Odkrywanie Pełnego Kontekstu Decyzji",
+    "content": "'Oprócz Ciebie – kto jeszcze będzie jeździć tym pojazdem? I jakie są ich najważniejsze obawy?' Zmienia pytanie z jednostkowego na ekosystem. Odsłania decision committee, sprzeciwy partnera, potrzeby dzieci. Typ S zacznie mówić o poczuciu bezpieczeństwa rodziny.",
+    "keywords": "Deep Dive, kontekst, decision committee, obawy",
+    "type": "komunikacja",
+    "tags": ["Deep Dive", "kontekst", "decision committee"],
+    "archetype_filter": ["steadiness"]
+  },
+  {
+    "title": "Deep Dive: Przeszłość Jako Wskaźnik Przyszłości",
+    "content": "'Twoja poprzednia marka samochodowa – co Ci się w niej podobało, a co cię frustrowało? Bo to pokazuje, co naprawdę Cię motywuje.' Benchmark do poprzedniego doświadczenia ujawnia pattern decyzji, nie tylko pain point. Typ D powie: 'Było powolne.' Typ S: 'Dobrze wspierani.' Typ C: 'Paliwowanie było błędem.'",
+    "keywords": "Deep Dive, przeszłość, motywacja, pattern decyzji",
+    "type": "komunikacja",
+    "tags": ["Deep Dive", "przeszłość", "motywacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Deep Dive: Główna Motywacja vs. Pseudo-Motywacja",
+    "content": "'Wiem, że cenisz [benefit #1]. Ale gdyby był wybór tylko między [benefit #1] a [benefit #2] – co by wygrało i dlaczego?' Zmusza klienta do hierarchii wartości. Odsłania Main Drive. Bez tego pytania – klient powie 'oba', co Cię nic nie nauczy.",
+    "keywords": "Deep Dive, motywacja, hierarchia, Main Drive",
+    "type": "komunikacja",
+    "tags": ["Deep Dive", "motywacja", "hierarchia"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Deep Dive: Wskaźnik Gotowości Decyzji (Commitment Scale)",
+    "content": "'Na skali 1-10, gdzie 1 to 'nie myślę o tym poważnie', a 10 to 'gotów podpisać dzisiaj' – gdzie jesteś teraz? I co byś potrzebował, aby przesunąć się o jeden punkt wyżej?' Kwantyfikuje commitment. Odpowiedź '<5' = potrzebujesz więcej edukacji. '>7' = musisz wyeliminować ostatnie objections. To nie jest presja – to diagnoza.",
+    "keywords": "Deep Dive, commitment, skala, gotowość",
+    "type": "komunikacja",
+    "tags": ["Deep Dive", "commitment", "skala"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Framing: Luksus Redefinicja",
+    "content": "'Rozumiem, luksus to komfort i prestiż. Tesla definiuje luksus przez bezstresową jazdę – Zero stacji benzynowych, Zero oleju, Zero myśli o awaryjności. To najwyższy komfort psychiczny, jaki możesz mieć.' Reframes 'luksus' z materializmu na praktyczność i spokój. Działa dla Typu S (spokój) i High Openness (nowoczesność).",
+    "keywords": "Framing, luksus, redefinicja, komfort psychiczny",
+    "type": "komunikacja",
+    "tags": ["Framing", "luksus", "redefinicja"],
+    "archetype_filter": ["steadiness", "openness_high"]
+  },
+  {
+    "title": "Framing: Inwestycja vs. Wydatek",
+    "content": "'Cena pojazdu to wydatek jednokrotny. Ale oszczędności na paliwie, serwisie i podatku – to inwestycja zwracająca się w [X lat]. Ile wydajesz rocznie na paliwo? Bo to kwota, którą możesz realnie zaoszczędzić.' Zmienia ramę z 'to drogo?' na 'ile zwraca?' Dla Typu C to clincher – konkretne liczby. Dla Typu D – to konkurencyjne podejście (nego).",
+    "keywords": "Framing, inwestycja, ROI, oszczędności",
+    "type": "komunikacja",
+    "tags": ["Framing", "inwestycja", "ROI"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "Framing: Ryzyko Technologiczne → Pewność Through Track Record",
+    "content": "'Elektryki są nowością? Tak. Ale Tesla – to już 1.5M pojazdów na drodze, średnia żywotność baterii 300k+ mil. To nie startup – to kompania z udowodnioną historią.' Reframes brak historii na proven track record. Funkcjonuje dla Typu S (gwarancja) i niskiej Otwartości (tradycja). (Sugestia: Dodaj 'software updates as investment' dla unikalności EV).",
+    "keywords": "Framing, ryzyko, track record, gwarancja",
+    "type": "komunikacja",
+    "tags": ["Framing", "ryzyko", "track record"],
+    "archetype_filter": ["steadiness", "openness_low"]
+  },
+  {
+    "title": "Framing: Ekologia z Self-Interest Angle",
+    "content": "'Dbanie o planetę to ładne hasło. Ale mówiąc szczerze – to inwestycja w przyszłość Twoich dzieci. Mniej smogu, mniej alergii, czystsze powietrze. To o nich, nie o planecie abstrakcyjnej.' Reframes altruizm na personal benefit. Działa dla Typu S (bezpieczeństwo rodziny) i Uniwersalizmu (wspólne dobro).",
+    "keywords": "Framing, ekologia, self-interest, dzieci, smog",
+    "type": "komunikacja",
+    "tags": ["Framing", "ekologia", "self-interest"],
+    "archetype_filter": ["steadiness", "universalism"]
+  },
+  {
+    "title": "Impasse: Potwierdzenie → Reframing → Bridge",
+    "content": "'Czuję, że czujesz się w stagnacji. To normalne – to duża decyzja. Zamiast debatować, co powiesz na to: zobaczmy razem, co byś zyskał w pierwsze 3 miesiące. A potem postanowimy?' Nie argumentujesz, potwierdzasz uczucie, reframing na 'widz po' zamiast 'debata'. Bridge to next step działania (test drive, kalkulator oszczędności).",
+    "keywords": "Impasse, potwierdzenie, reframing, bridge, next step",
+    "type": "komunikacja",
+    "tags": ["Impasse", "potwierdzenie", "reframing"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Impasse: Niechęć do Decyzji (Decision Paralysis)",
+    "content": "'Widzę, że analizujesz różne warianty. To znak, że podejmujesz to serio. Ale czasem analiza paraliżuje. Co powiesz – zróbmy to tak: wybierzemy jeden wariant, spróbujesz go przez tydzień, a potem zdecydujemy?' Usuwa presję na decyzję, przenosi ją na 'test', redukuje strach. Typ S powie tak – chce czasu. Typ D powie tak – chce działania.",
+    "keywords": "Impasse, paralysis, test, analiza",
+    "type": "komunikacja",
+    "tags": ["Impasse", "paralysis", "test"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "Objection: Cena – Nie Możliwość, a Priorytet",
+    "content": "'Rozumiem, że budżet jest ograniczony. Ale pytanie nie jest 'czy mnie stać' – pytanie brzmi 'co jest dla mnie warte tej ceny?' Bo jeśli odpowiedź brzmi 'zdecydowanie warte' – to problem staje się finansowy, nie logiczny. A my mamy rozwiązania finansowe.' Zmienia frame z 'zbyt drogo' na 'czy worth it?' – to psychologicznie inna decyzja. Odsłania, czy to naprawdę nie-można czy nie-chcesz.",
+    "keywords": "Objection, cena, priorytet, worth it, finansowe",
+    "type": "komunikacja",
+    "tags": ["Objection", "cena", "priorytet"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Objection: Konkurent Tańszy – Porównanie Nie-Porównywalne",
+    "content": "'Wiem, że [konkurent] jest tańszy. Ale porównajmy: bateria gwarancja, oprogramowanie, ekosystem ładowania. Bo 'tańszy' to nie produkt – to punkt widzenia. 'Lepszy' to zbiór decyzji.' Nie bronisz ceny – zmieniasz parametry porównania. Dla Typu C to dopiero zaczyna się analiza. Dla Typu D – to odpowiada konkurencyjnemu podejściu.",
+    "keywords": "Objection, konkurent, porównanie, gwarancja, ekosystem",
+    "type": "komunikacja",
+    "tags": ["Objection", "konkurent", "porównanie"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "Objection: 'Poczekam Na Nowy Model'",
+    "content": "'To rozsądne. Ale pytanie brzmi – poczekasz 2 lata na spekulacje? Czy wolisz mieć teraz pojazd, który wielu facetów kupi, a potem – jak pojawi się nowy model – znowu się zastanawiać? Czasem 'idealny' to wróg 'doskonałego teraz'.' Reframes oczekiwanie jako nieskończoną grę. Wprowadza scarcity (kto kupi model starszy?). Dla Typu D – to competitive angle. Dla Typu C – to racjonalizacja paralysis.",
+    "keywords": "Objection, nowy model, scarcity, idealny vs doskonały",
+    "type": "komunikacja",
+    "tags": ["Objection", "nowy model", "scarcity"],
+    "archetype_filter": ["dominance", "conscientiousness"]
+  },
+  {
+    "title": "Closing: Assumptive Close (Natural Progression)",
+    "content": "'Ok, widzę, że to ma sens dla Ciebie. Przejdźmy do konfiguracji – jaki kolor Ci bardziej odpowiada: metaliczny czy matowy? Bo to ostatnia rzecz przed tym, jak zarezerwujemy Ci pojazd.' Nie pytasz 'czy chcesz?'. Pytasz 'który?' – to zakładać, że już się zdecydował. Działa dla Typu D i S (preferują jasne kroki).",
+    "keywords": "Closing, assumptive, konfiguracja, kolor",
+    "type": "komunikacja",
+    "tags": ["Closing", "assumptive", "konfiguracja"],
+    "archetype_filter": ["dominance", "steadiness"]
+  },
+  {
+    "title": "Closing: Trial Close (Niska Stawka)",
+    "content": "'Zanim idziemy dalej – wyobraź sobie, że to pojazd stoi w Twojej garażu za miesiąc. Jak się czujesz? Bo ta intuicja jest ważniejsza niż jakakolwiek liczba, którą Ci teraz dam.' Przesuwa decyzję z analitycznego mózgu (System 2) na intuicję (System 1). Emocja pokonuje logikę, gdy emocja jest pozytywna. Działa dla Typu I.",
+    "keywords": "Closing, trial, wizualizacja, intuicja",
+    "type": "komunikacja",
+    "tags": ["Closing", "trial", "wizualizacja"],
+    "archetype_filter": ["influence"]
+  },
+  {
+    "title": "Closing: Objection Prevention (Preemptive Strike)",
+    "content": "'Zanim podpiszesz – chciałbym poruszyć jedno. Wiem, że będzie moment, w którym pomyślisz 'czy to była dobra decyzja?'. To normalne. Chcę Ci dać numer do 3 właścicieli, którzy przeszli przez to dokładnie – i mogą Ci powiedzieć, co się zmienia po 3 miesiącach.' Przewiduje post-purchase regret (instant doubt), redukuje go przez social proof. Dla Typu S – to gwarancja spokoju po podpisaniu.",
+    "keywords": "Closing, prevention, social proof, regret",
+    "type": "komunikacja",
+    "tags": ["Closing", "prevention", "social proof"],
+    "archetype_filter": ["steadiness"]
+  },
+  {
+    "title": "Discovery: Trójwarstwowa Diagnoza (Problem → Root → Opportunity)",
+    "content": "Nie zadawaj pytań 'co Ci się podoba?' – to powierzchowne. Idź głębiej: (1) Jaki jest problem dzisiaj? (2) Dlaczego to problem? (3) Co by się zmieniło, gdyby ten problem znikł? To odsłania nie-sam pain point, ale motywacje głębokie. Struktura trójwarstwowa wymusza klienta do refleksji. Każda warstwa odsłania nowe info: warstwa 1 = powierzchnia, warstwa 2 = przyczyna, warstwa 3 = Main Drive. Bez warstwy 3 – nie wiesz, co naprawdę sprzedajesz.",
+    "keywords": "Discovery, diagnoza, Main Drive, problem, opportunity",
+    "type": "discovery",
+    "tags": ["Discovery", "diagnoza", "Main Drive"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Discovery: Timing Pytania o Budżet (Nie Na Początku)",
+    "content": "Pytaj o budżet dopiero po tym, jak zidentyfikujesz wartość. Jeśli zapytasz 'jaki masz budżet?' na starcie – klient pomyśli 'sprzedawca'. Jeśli zapytasz po Discovery – pomyśli 'to naprawdę może dla mnie działać'. Psychologia: Early budget question = mowa sprzedaży. Late budget question = konwersacja eksperta. Ty decydujesz o ramie: handlowiec vs konsultant.",
+    "keywords": "Discovery, budżet, timing, wartość, psychologia",
+    "type": "discovery",
+    "tags": ["Discovery", "budżet", "timing"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Discovery: Active Listening – Rola Ciszy",
+    "content": "Po zadaniu pytania – milcz przez 3-5 sekund. Klient będzie wypełniać ciszę. To tutaj pada najcenniejsza informacja – po pierwszej odruchowej odpowiedzi. Cisza to inwestycja, której większość sprzedawców się boi. Neuroscience: Mózg potrzebuje czasu na dostęp do podświadomych motywacji. Jeśli mówisz zaraz – ucinasz głębokie myślenie. Cisza = space for truth.",
+    "keywords": "Discovery, active listening, cisza, neuroscience",
+    "type": "discovery",
+    "tags": ["Discovery", "active listening", "cisza"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Discovery: Mapowanie Decyzji – Kto, Nie Ile",
+    "content": "Nie pytaj 'ile ludzi będzie decydować?' – pytaj 'kto ma ostateczne słowo?' Potem: 'Czy ten ktoś zna Tesle?' i 'Co byś mu musiał powiedzieć, aby zgodził się na tę inwestycję?' To zmienia dynamikę: odkrywasz decision committee, level approval, objections nieobecnych osób. Typ S będzie mówić o rodzinie, Typ D o sobie. Obie odpowiedzi = roadmap do sukcesu.",
+    "keywords": "Discovery, decyzja, committee, approval, roadmap",
+    "type": "discovery",
+    "tags": ["Discovery", "decyzja", "committee"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "BANT Tesla: Budżet (Real vs. Declared)",
+    "content": "Pytaj nie 'jaki masz budżet?' ale 'ile wydajesz rocznie na paliwo, serwis, ubezpieczenie? Bo ta suma + rata kredytu = twój realny budżet.' To odsłania możliwość finansową, nie aspiracyjną. Declared budget: 'Mogę wydać do 200k.' Real budget: 'Wydaję 15k rocznie na utrzymanie auta.' Real budget = dedykowane pieniądze, które już płyną w motoryzację. (Sugestia: Użyj AI do automatyzacji BANT).",
+    "keywords": "BANT, budżet, real, paliwo, serwis",
+    "type": "discovery",
+    "tags": ["BANT", "budżet", "real"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "BANT Tesla: Autorytet (Decydent vs. Influencer)",
+    "content": "Mów bezpośrednio z decydentem. Jeśli rozmawiacie oboje z partnerem – pytaj każdego osobno: 'Co dla Ciebie osobiście byłoby game-changerem w tym pojeździe?' To odsłania, czy są aligned czy conflicted. Red flag: Partner mówi jedno, drugi słucha cicho. To oznacza, że musisz pracować nad konsensusem, nie tylko na tech specs.",
+    "keywords": "BANT, autorytet, alignment, game-changer, konsensus",
+    "type": "discovery",
+    "tags": ["BANT", "autorytet", "alignment"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "BANT Tesla: Potrzeba (Funkcjonalna vs. Emocjonalna)",
+    "content": "Po Discovery widzisz funkcjonalną potrzebę ('chcę zasięg 500km'). Ale szukaj emocjonalnej ('chcę czuć się innowatorem' lub 'chcę wspierać ekologię'). Potrzeba emocjonalna to ta, która skutkuje zamówieniem. Psychologia: Decyzje podejmujemy emocjonalnie, racjonalizujemy je potem. Funkcjonalna potrzeba to pretekst. Emocjonalna potrzeba to napęd.",
+    "keywords": "BANT, potrzeba, emocjonalna, innowator, ekologia",
+    "type": "discovery",
+    "tags": ["BANT", "potrzeba", "emocjonalna"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "BANT Tesla: Czas (Horizon vs. Trigger)",
+    "content": "Pytaj nie 'kiedy chcesz kupić?' ale 'co się zmieniło, że przychodzisz dzisiaj, a nie 3 miesiące temu?' Odpowiedź = trigger. Trigger to rzeczywisty clock. Trigger może być: koniec leasingu, zmiana pracy, plany rodzinne, awareness kampanii. Bez triggera – to 'kiedyś', co nigdy nie nastaje.",
+    "keywords": "BANT, czas, trigger, leasing, zmiana",
+    "type": "discovery",
+    "tags": ["BANT", "czas", "trigger"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Qualification: Temperatura Klienta (Hot/Warm/Cold)",
+    "content": "Po Discovery – klasyfikuj wewnętrznie: Hot (decyzja w ciągu 2 tygodni), Warm (1-3 miesiące), Cold (badanie rynku). To determinuje Twoją strategię. Hot = closing. Warm = education. Cold = awareness building. Bez klasyfikacji – podajesz tę samą strategię każdemu. Hot client potrzebuje szybkich decyzji. Cold client potrzebuje ebooków i webinarów. Różne temperatury = różne taktyki.",
+    "keywords": "Qualification, temperatura, lead scoring, hot warm cold",
+    "type": "discovery",
+    "tags": ["Qualification", "temperatura", "lead scoring"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Test Drive: Pre-Drive Briefing (Expectation Setting)",
+    "content": "Zanim wsiądą – powiedz: 'To nie test funkcji, to doświadczenie. Będę obserwować Twoją reakcję na 3 rzeczy: przyspieszenie, kręty, ciszę. Po jeździe – nie mówię nic. Ty mówisz, co się zmieniło w Twojej głowie.' Framing: Zmienia drive z 'sprawdzam czy działa' na 'przeżywam transformację'. Post-drive silence = pozwolenie na emocję. Mózg klienta ma 30 sekund, aby całkowicie reinterpretować Teslę po doświadczeniu. (Sugestia: Dodaj virtual options dla younger buyers).",
+    "keywords": "Test Drive, briefing, framing, transformacja",
+    "type": "discovery",
+    "tags": ["Test Drive", "briefing", "framing"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Test Drive: Trasa Strategiczna (3 Akty)",
+    "content": "Akt 1 (5 min): Spokojne jeżdżenie, komfort, cisza. Klient dostaje 'aha, to naprawdę cicho.' Akt 2 (5 min): Jeden full acceleration. Klient dostaje 'wow, to szybko.' Akt 3 (5 min): Highway, autopilot preview. Klient dostaje 'to przyszłość.' Each act = different emotional beat. Progression: Comfort → Power → Future. Trzy różne moce – trzy różne segmenty mózgu aktywowane. Typ D czeka na Akt 2. Typ S czeka na Akt 1. Typ I na Akt 3. Wszyscy dostają to, co chcą.",
+    "keywords": "Test Drive, trasa, akty, komfort, power, future",
+    "type": "discovery",
+    "tags": ["Test Drive", "trasa", "akty"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Test Drive: Seat Belt Speech (Safety + Emotion)",
+    "content": "Zanim jedziecie – powiedz: 'Tesla ma najtwardszą strukturę na rynku. Ale nie chcę Cię straszyć bezpieczeństwem. Chcę, żebyś czuł się chroniony, żeby w następnych 30 minut mogłeś po prostu cieszyć się jazdą.' To frames bezpieczeństwo jako emocjonalne, nie techniczne. Klient się relaksuje. Relaksacja = pełne doświadczenie zmysłów (acceleration, cisza, komfort). Strach = tunnel vision na bezpieczeństwo.",
+    "keywords": "Test Drive, safety, emocja, relaksacja",
+    "type": "discovery",
+    "tags": ["Test Drive", "safety", "emocja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Test Drive: Post-Drive Silence Rule",
+    "content": "Po powrocie – milcz przez 30 sekund. Niech klient powie pierwszy co czuje. Jeśli mówi 'wow' – potwierdzisz. Jeśli mówi 'hmm' – pytasz 'co się zmieniło w Twojej głowie?' Jego wypowiedź = najbardziej autentyczna odpowiedź. Psychologia: Pierwszy głos po doświadczeniu to dominująca emocja. Jeśli powiesz cokolwiek zaraz – przerywasz naturalne przetwarzanie. Cisza = moment transformacji.",
+    "keywords": "Test Drive, silence, reakcja, emocja",
+    "type": "discovery",
+    "tags": ["Test Drive", "silence", "reakcja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Struktura SPIN-Like (Adapted For Tesla)",
+    "content": "(1) Situation: 'Opowiedz o swoim obecnym aucie.' (2) Problem: 'Co Cię w tym frustruje?' (3) Implication: 'Jak to wpływa na Twoją codzienność?' (4) Need-Payoff: 'Gdyby to zniknęło, co by się zmieniło?' – To metodyka Challenger Sale zaadaptowana na auto. Ona odsłania głębokie motywatory, nie powierzchowne 'fajnie by było'. SPIN methodology proven: pracuje dla high-ticket. Tesla adaptation: situation (present car) → problem (frustration) → implication (daily impact) → need-payoff (transformation). Struktura = repeatable process. (Sugestia: Dodaj link do SPIN resources dla trainingu).",
+    "keywords": "Conversation, SPIN, Challenger, situation, problem",
+    "type": "discovery",
+    "tags": ["Conversation", "SPIN", "Challenger"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Closing Conversation: Obiektywna Rezumacja + Next Step",
+    "content": "Na koniec Discovery: 'Ok, słuchałem, że X, Y, Z są ważne. Głównie zależy Ci na [Main Drive]. Zaproponuję: najpierw test drive, potem kalkulacja finansowa, potem – jeśli się zgadza – rezerwacja. Zgoda?' – To nie closing – review, alignment, clear path forward. Brak objections, bo klient je wcześniej wrzucił. Struktura: (1) Rezumacja (pokazujesz, że słuchałeś), (2) Main Drive call-out (pokazujesz, że zrozumiałeś go), (3) Next steps (jasna ścieżka), (4) Micro-agreement (zgoda?). Klient czuje się partnerem, nie targetem.",
+    "keywords": "Conversation, rezumacja, next step, Main Drive",
+    "type": "discovery",
+    "tags": ["Conversation", "rezumacja", "next step"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Feature-to-Benefit: Trójstopniowy Mapping",
+    "content": "Cecha: '400 V architektura.' Korzyść ogólna: 'Szybsze ładowanie.' Korzyść dostosowana: Typ D: 'Więcej czasu na biznes, mniej na benzynę.' Typ S: 'Spokojniej, bo zawsze naładowany.' Typ C: 'Efektywnie energetycznie.' Nie podawaj korzyści – mapuj ją do profilu. Jeden feature, cztery korzyści. System UBD 2.0 może mapować feature → profile → optimized benefit na real-time.",
+    "keywords": "Feature-Benefit, mapping, DISC, architektura, ładowanie",
+    "type": "wartosc",
+    "tags": ["Feature-Benefit", "mapping", "DISC"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Feature-to-Benefit: Emocjonalizacja Specyfikacji",
+    "content": "Zamiast: 'Bateria 100 kWh.' Powiedz: 'To znaczy, że możesz obudzić się z pełnym bakiem energii każdego ranka, nigdy nie myśleć o stacji paliw, a za rok zaoszczędzić tyle, ile kosztuje nowy laptop.' Transformacja: Cyfra → Emocja + Przychód + Praktyka. Mózg klienta łączy to w jeden obraz wartości. Typ S czuje spokój, Typ D czuje efektywność, Typ C czuje oszczędność.",
+    "keywords": "Feature-Benefit, emocja, transformacja, bateria, oszczędności",
+    "type": "wartosc",
+    "tags": ["Feature-Benefit", "emocja", "transformacja"],
+    "archetype_filter": ["steadiness", "dominance", "conscientiousness"]
+  },
+  {
+    "title": "Feature-to-Benefit: Inverse Framing (Co Straciłbyś Bez Tego)",
+    "content": "Zamiast mówić o korzyściach – powiedz: 'Większość aut ma chłodnicę. Każdego lata mogą Ci pęknąć. Tesla nie ma chłodnicy, czyli nie ma tego ryzyka. To oznacza mniej wizyt serwisowych i spokojniejsze lato z rodziną bez martwienia się o awarię.' Loss aversion (Kahneman) > Gain focus. Ludzie bardziej reagują na uniknięcie straty niż na osiągnięcie zysku. Powiedz im, co tracą, a zorientują się, co zyskują.",
+    "keywords": "Feature-Benefit, loss aversion, ryzyko, chłodnica, Kahneman",
+    "type": "wartosc",
+    "tags": ["Feature-Benefit", "loss aversion", "ryzyko"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "TCO: Cena vs. Koszt (Reframing Psychologiczny)",
+    "content": "Cena pojazdu to jedna liczba. Koszt = cena + paliwo + serwis + ubezpieczenie - ulgi podatkowe - oszczędności. Jeśli realna różnica między Teslą a [konkurent] wynosi 8-12k PLN rocznie (w stronę konkurenta) – to znaczy, że Tesla kosztuje Cię mniej, mimo że cena wyższa. Psychologia: Klient myśli 'cena pojazdu'. Ty myślisz 'całkowity koszt posiadania'. To dwie różne liczby. Większość nie robi tego mapowania – Ty zrób, a zmienisz decyzję. (Korekta: Savings na podstawie 2025 danych).",
+    "keywords": "TCO, reframing, psychologia, paliwo, serwis",
+    "type": "wartosc",
+    "tags": ["TCO", "reframing", "psychologia"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "TCO: Kalkulator Amortyzacji (Konkretne Cyfry)",
+    "content": "Weź rzeczywisty budżet klienta na motoryzację (paliwo + serwis + ubezpieczenie rocznie). Pokaż kalkulację: 'Wydajesz 15k rocznie na stare auto. Tesla = 4k rocznie. Różnica = 11k/rok. W pięć lat to 55k oszczędności. To prawie cena całego pojazdu.' Konkretne cyfry > abstrakcyjne 'oszczędzisz'. Kalkulator to anchor – zmienia ramę z 'czy stać mnie na Teslę?' na 'na czym zaoszczędzę?'",
+    "keywords": "TCO, kalkulator, amortyzacja, oszczędności, cyfry",
+    "type": "wartosc",
+    "tags": ["TCO", "kalkulator", "amortyzacja"],
+    "archetype_filter": ["conscientiousness"]
+  },
+  {
+    "title": "TCO: Podatek VAT i Ulgi (Emocja Zwrotu)",
+    "content": "W Polsce – ulgi na elektryki mogą być znaczące (np. zero podatek rejestracyjny ~6k PLN dla Model 3, subsydia EU do 30k PLN). Powiedz: 'W rzeczywistości – po wszystkich ulgach – Twoja rzeczywista cena może być o 10-20% niższa.' – To zmienia ramę z 'drogo' na 'to deal.' Regulatory benefit = surprise joy. Klient myślał, że płaci X, a okazuje się X - 30k PLN. Emocja niespodzianki = super driver decyzji. (Korekta: Realne ulgi 2025).",
+    "keywords": "TCO, ulgi, PL, podatek, subsydia",
+    "type": "wartosc",
+    "tags": ["TCO", "ulgi", "PL"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Experience Framing: Zmiana Stylu Życia, Nie Tylko Auto",
+    "content": "Zamiast 'Tesla Model 3' – powiedz: 'To zmienia Twoją rutynę każdego dnia. Budzisz się z pełnym bakiem, jedziesz bezpiecznie (Autopilot), przychodzisz do domu rozrelaksowany (cicho). To nie auto – to zmiana lifestyle'u.' Reframe: Vehicle → Daily ritual transformation. Klient nie kupuje pojazd – kupuje nową wersję siebie samego. Typ I to uwielbia (transformacja społeczna), Typ S czuje spokój, Typ D czuje efektywność.",
+    "keywords": "Experience, lifestyle, reframe, Autopilot, rutyna",
+    "type": "wartosc",
+    "tags": ["Experience", "lifestyle", "reframe"],
+    "archetype_filter": ["influence", "steadiness", "dominance"]
+  },
+  {
+    "title": "Experience Framing: Przynależność do Community",
+    "content": "'Kiedy kupisz Teslę – dołączasz do 1.5M właścicieli na świecie, którzy codziennie dzielą się sztuczkami, aktualizacjami, opiniami. To społeczność, nie tylko auto. Niektórzy mówią – to like Apple, ale na cztery kółka.' Social proof + tribal belonging. Typ I = instant appeal (community). Typ D = appeal do status (elite). Typ S = appeal do support network. Typ C = appeal do expert community.",
+    "keywords": "Experience, community, social proof, Apple, tribal",
+    "type": "wartosc",
+    "tags": ["Experience", "community", "social proof"],
+    "archetype_filter": ["influence", "dominance", "steadiness", "conscientiousness"]
+  },
+  {
+    "title": "Experience Framing: Autonomia Przez Software",
+    "content": "Każdy miesiąc – nowe features przez update. Nie czekasz na nowy model, twoje auto się staje lepsze. To jak iPhone, ale zaparkowany w garażu. Ty decydujesz, którym featury Ci się przydadzą, które zainstalować. To poczucie kontroli, które tradycyjne auta nigdy nie dają. Psychological driver: Autonomy (Self-Determination Theory). Klient chce mieć kontrolę. Software updates = ciągła możliwość personalizacji. Typ D to lubi (kontrola), Typ S też (bezpieczna innowacja), Typ C (przejrzystość zmian).",
+    "keywords": "Experience, software, autonomia, iPhone, updates",
+    "type": "wartosc",
+    "tags": ["Experience", "software", "autonomia"],
+    "archetype_filter": ["dominance", "steadiness", "conscientiousness"]
+  },
+  {
+    "title": "Safety Framing: Mózg Miłości, Nie Mózg Strachu",
+    "content": "Zamiast straszyć statystykami NCAP (5 stars, etc.) – powiedz: 'Tesla ma 8 airbagów rozmieszczonych tak, aby chronić każdą część ciała. To znaczy – jeśli się coś stanie (co jest bardzo mało prawdopodobne) – Ty i Twoja rodzina będziecie bezpieczni.' – To nie strach, to miłość do rodziny. Neuroscience: Fear system (mózg gad) blokuje. Love system (mózg ssaka) otwiera. Reframe bezpieczeństwa z obrony przed zagrożeniem na ochronę kochanych osób. Typ S to kupuje (rodzina), Typ I też (odpowiedzialność przed bliskimi).",
+    "keywords": "Safety, miłość, neuroscience, airbagi, rodzina",
+    "type": "wartosc",
+    "tags": ["Safety", "miłość", "neuroscience"],
+    "archetype_filter": ["steadiness", "influence"]
+  },
+  {
+    "title": "Safety Framing: Bezpieczeństwo Psychiczne (Spokój = Waluta)",
+    "content": "Biggest selling point nie jest hardware – to peace of mind. Autopilot = mniej zmęczenia kierowcy. Przednio-i-wstecz kamera = spokój przy parkowaniu. Zawsze naładowany = spokój o planach. Spokój w głowie – to najdroższa rzecz, którą można kupić. Psychologia decyzji: Klient płaci za spokój, nie za system. System = pretekst. Spokój = motywacja. Typ S to rozumie instynktywnie. Typ D czuje spokój = więcej czasu na biznes. Typ C czuje spokój = mniej zmiennych do analizy.",
+    "keywords": "Safety, spokój, psychika, Autopilot, peace of mind",
+    "type": "wartosc",
+    "tags": ["Safety", "spokój", "psychika"],
+    "archetype_filter": ["steadiness", "dominance", "conscientiousness"]
+  },
+  {
+    "title": "Premium Framing: Inwestycja w Sobie, Nie Luksus",
+    "content": "'Drogi' auto to tych, którzy chcą pokazać pieniądze. 'Premium' to dla tych, którzy wiedzą, co jest warte pieniędzy. Tesla to premium – bo oszczędzisz na paliwie, serwisie, podatku, a zyskasz bezpieczeństwo, komfort i prestiż. To kalkulacja, nie impuls.' Positioning: Oddzielić premium (smart buy) od luxury (conspicuous consumption). Tesla = inteligentna inwestycja, nie imponowanie. Typ C to kupuje (kalkulacja). Typ D to kupuje (strategia). Typ S to kupuje (odpowiedzialność).",
+    "keywords": "Premium, inwestycja, smart, kalkulacja, prestiż",
+    "type": "wartosc",
+    "tags": ["Premium", "inwestycja", "smart"],
+    "archetype_filter": ["conscientiousness", "dominance", "steadiness"]
+  },
+  {
+    "title": "Smart Choice Framing: Część Zmieniającego Się Świata",
+    "content": "'W 10 lat – większość aut będzie elektrycznych. Decyzja dzisiaj nie jest czy Tesla czy nie – decyzja jest czy iść z przyszłością teraz, czy być zmuszonym później. To wybór, czy jesteś częścią zmiany, czy pchany przez nią.' Cognitive trigger: Future orientation + Sense of agency. Klient nie czuje się zmuszony – czuje się wybierającym. Typ High Openness to lubi (innowacja). Typ D to lubi (kontrola trendu). Typ S czuje się mniej zagrożony.",
+    "keywords": "Smart Choice, przyszłość, agency, elektryczne, zmiana",
+    "type": "wartosc",
+    "tags": ["Smart Choice", "przyszłość", "agency"],
+    "archetype_filter": ["openness_high", "dominance", "steadiness"]
+  },
+  {
+    "title": "Value Proposition: Konkretny Elevator Pitch",
+    "content": "'Tesla to najchętniej kupowany samochód premium na świecie. Nie dlatego, że ma najwyżej cyfr – ale dlatego, że zmienia sposób, w jaki jeździsz każdego dnia. Mniej kosztu, więcej czasu, więcej spokoju, więcej kontroli. To jest wart swojej ceny.' Elevator pitch: Status (najchętniej kupowany) + Transformation (zmienia sposób) + Benefits (koszt, czas, spokój, kontrola). Krótko, konkretnie, do każdego profilu.",
+    "keywords": "Value Prop, elevator, pitch, premium, transformation",
+    "type": "wartosc",
+    "tags": ["Value Prop", "elevator", "pitch"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Competitive Positioning: Nie Bronimy Się – Redefinujemy",
+    "content": "Kiedy klient mówi 'Audi Q4 e-tron jest tańszy' – nie powiedz 'ale Tesla ma lepszą baterię.' Powiedz: 'Tak, Audi jest tańsze – ale porównajmy: bateria 8 lat gwarancji (Tesla) vs 6 lat (Audi), sieć ładowania ~2,500 Supercharger'ów (Tesla w EU) vs mniej (Audi), update software co miesiąc (Tesla) vs raz na rok (Audi). To nie jest porównanie ceny – to porównanie wartości. A wartość Tesli jest wyższa.' Competitive strategy: Nie bronisz się na wymiarze konkurenta – zmieniasz wymiary. Zamiast 'my drożsi', pytasz 'po co płacisz za tańsze auto, skoro całkowity koszt jest wyższy?' Typ C to kupuje (analiza), Typ D to kupuje (strategic positioning). (Korekta: Realna sieć EU 2025).",
+    "keywords": "Competitive, redefiniuj, wartość, gwarancja, Supercharger",
+    "type": "wartosc",
+    "tags": ["Competitive", "redefiniuj", "wartość"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "TCO: Paliwo – Rzeczywista Kalkulacja",
+    "content": "Przeciętny właściciel benzynówki wydaje 12k rocznie na paliwo (przy 15k km/rok i cenie 6 zł/litr, spalanie 7l/100km). Tesla: 2k rocznie na prąd. Różnica = 10k/rok. W pięć lat = 50k. W dziesięć lat = 100k. To zmienia całą ekonomikę pojazdu. Konkretna liczba > abstrakta. Typ C potrzebuje tej kalkulacji, aby uzasadnić decyzję. Typ D widzi to jako ROI. Typ S widzi to jako spokój (nie myśli o paliwach co tydzień).",
+    "keywords": "TCO, paliwo, kalkulacja, oszczędności, ROI",
+    "type": "wartosc",
+    "tags": ["TCO", "paliwo", "kalkulacja"],
+    "archetype_filter": ["conscientiousness", "dominance", "steadiness"]
+  },
+  {
+    "title": "TCO: Serwis – Rewolucja w Kosztach Utrzymania",
+    "content": "Tradycyjne auto: zmiana oleju, filtry, płyn chłodzący, świece, klocki hamulcowe = 3-5k rocznie. Tesla: prawie zero serwisu (bateria = 8 lat, bez oleju, hamulce regeneracyjne = 90% mniej zużycia). Realnie: ~500 zł rocznie. Oszczędność = 2.5-4.5k rocznie. Service cost je game-changer. Klient nie myśli o tym z przyczyn psychologicznych (nie widzi serwisu codziennie). Ty to odsłań liczbą. Typ S czuje ulgę (mniej wizyt serwisowych). Typ D czuje efektywność.",
+    "keywords": "TCO, serwis, utrzymanie, regeneracyjne, oszczędność",
+    "type": "wartosc",
+    "tags": ["TCO", "serwis", "utrzymanie"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "TCO: Ubezpieczenie – Nieznany Benefit",
+    "content": "W wielu krajach europejskich – ubezpieczenie elektryka może być wyższe o 20-70% niż spalinowego (z powodu kosztów napraw), ale dla Tesli to zrównoważone przez niższe ryzyko wypadków. Na aucie droższym (Tesla) ubezpieczenie może być porównywalne do premium konkurencji. To ukryty benefit/aspekt, o którym warto porozmawiać. Information asymmetry: Klient nie wie o niuansach OC. Ty to wdrażasz, a zyskujesz punkt emocjonalny. Typ C czuje się zaskoczony (pozytywnie). Typ D czuje grę (znalazł loophole). (Korekta: Realne koszty 2025 – wyższe, ale zrównoważone).",
+    "keywords": "TCO, ubezpieczenie, EU, ryzyko, benefit",
+    "type": "wartosc",
+    "tags": ["TCO", "ubezpieczenie", "EU"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "TCO: Podatek Rejestracyjny – Ulga Ekologiczna",
+    "content": "W Polsce – pojazd elektryczny ma zerowy (0%) podatek rejestracyjny (~6k PLN oszczędności dla Model 3 ~200k). Na Model Y (~250k) to ~7.75k PLN. To pierwsza, ogromna ulga, którą klient musi wiedzieć PRZED podpisaniem umowy. Tax benefit = anchor do negocjacji. Jeśli klient nie wie – powiedz wcześnie. Jeśli wie – potwierdzisz, ale dodasz: 'To znaczy, że całkowity koszt posiadania spada dramatycznie.' Typ C: liczy już, Typ D: negocjuje, Typ S: czuje ulgę. (Korekta: Realny podatek 3.1% wartości, zero dla EV).",
+    "keywords": "TCO, podatek, ulga, rejestracyjny, ekologiczna",
+    "type": "wartosc",
+    "tags": ["TCO", "podatek", "ulga"],
+    "archetype_filter": ["conscientiousness", "dominance", "steadiness"]
+  },
+  {
+    "title": "TCO: Depresjacja Pojazdu (Wartość Pozostała)",
+    "content": "Elektryki tracą na wartości szybciej niż tradycyjne (brak historii rynku). JEDNAK Tesla – traci mniej niż konkurenci (marka, sieć ładowania, aktualizacje). Po 5 latach: Tesla Model 3 ~40% wartości pozostaje. Konkurent ~35%. To 5 punktów procentowych = kilka tysięcy złotych. Residual value = TCO component, o którym nikt nie mówi. Klient myśli o kupnie, nie sprzedaży. Ty mów o obu. Typ D: czeka na pełną kalkulację. Typ C: analiza kompletna.",
+    "keywords": "TCO, depresjacja, wartość, residual, konkurenci",
+    "type": "wartosc",
+    "tags": ["TCO", "deprezjacja", "wartość"],
+    "archetype_filter": ["dominance", "conscientiousness"]
+  },
+  {
+    "title": "Experience Value: Czas – Najdroższa Waluta",
+    "content": "Dziennie – spędzasz 45 minut w samochodzie (średnia). W roku = 273 godziny. Jeśli Tesla zmienia tę jazdę z 'stresującą' na 'relaksującą' – to znaczy, że kupujesz sobie 273 godziny spokoju rocznie. Jaka jest cena spokoju? Ile byś zapłacił za dodatkową godzinę spokoju dziennie? Psychological pricing: Nie mów o aucie – mów o czasie. Czas = najcenniejszy zasób. Klient zacznie myśleć: 'Może warto zapłacić więcej za pojazd, który mi oszczędza stres?' Typ S: bezpośredni appeal. Typ D: kalkulacja czasu na biznes.",
+    "keywords": "Experience Value, czas, spokój, godziny, psychological",
+    "type": "wartosc",
+    "tags": ["Experience Value", "czas", "spokój"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "Experience Value: Bezpieczeństwo Psychiczne – Cena Spokoju",
+    "content": "Gdy jedziesz Teslą z Autopilot – wiesz, że system ma 8 kamer, 12 ultrasonów, radary. Mózg się relaksuje. To nie jest racjonalne, ale prawdziwe: spokój = zdrowsze serce = mniej chorób = mniej lekarzy. To inwestycja zdrowotna ukryta w aucie. Psychosomatic link: Stres na drodze = wysokie ciśnienie, hormony stresu. Tesla = redukcja stresu = zdrowsze ciało. To nie marketing – to neuroscience. Typ S to czuje instynktywnie.",
+    "keywords": "Experience Value, bezpieczeństwo, zdrowie, Autopilot, neuroscience",
+    "type": "wartosc",
+    "tags": ["Experience Value", "bezpieczeństwo", "zdrowie"],
+    "archetype_filter": ["steadiness"]
+  },
+  {
+    "title": "Experience Value: Status i Tożsamość – Cena 'Bycia Sobą'",
+    "content": "Właściciel Tesli definiuje się jako 'forward-thinking', 'eco-conscious', 'tech-savvy'. To część tożsamości. Ludzie płacą za możliwość bycia sobą. To nie licencja na auto – to licencja na tożsamość. Ile byś zapłacił, aby być postrzegany jako osoba, którą chcesz być? Identity economics: Klient nie kupuje auto – kupuje wersję siebie. Typ I to kupuje (społeczna tożsamość). Typ D to kupuje (status). Typ High Openness to kupuje (innowator).",
+    "keywords": "Experience Value, status, tożsamość, forward-thinking, identity",
+    "type": "wartosc",
+    "tags": ["Experience Value", "status", "tożsamość"],
+    "archetype_filter": ["influence", "dominance", "openness_high"]
+  },
+  {
+    "title": "Experience Value: Społeczna Reputacja – Soft Power",
+    "content": "Gdy jeździsz Teslą, ludzie zwracają uwagę. To nie impudency – to soft power. Ktoś pyta 'co to?' – masz opowieść. Znajomi pytają 'jak to?' – masz autorytet. To społeczna waluta, którą ludzie – na podświadomość – bardzo cenią. Social proof reversed: Nie ty się orientujesz – ty orientujesz innych. Role reversal = potęga społeczna. Typ I to lubi (centrum uwagi). Typ D to lubi (autorytet). Typ C to obserwuje z dystansem, ale ocenia (smart choice).",
+    "keywords": "Experience Value, reputacja, soft power, social proof, autorytet",
+    "type": "wartosc",
+    "tags": ["Experience Value", "reputacja", "soft power"],
+    "archetype_filter": ["influence", "dominance", "conscientiousness"]
+  },
+  {
+    "title": "Preemptive: 'To Jest Droga Kupka Inwestycji'",
+    "content": "Zamiast czekać na 'to drogo' – powiedz WCZEŚNIE: 'Znam, że cena jest wyższa. Ale to kwestia perspektywy: Czy to droga inwestycja czy tania pułapka? Bo tanie auto na długo to droga adventure. Droga inwestycja na długo to tania przygoda.' – Potem odsłań liczby. Preemption = control narrative. Zamiast odpowiadać na obiekcję – eliminujesz ją zanim pojawi się. Typ C: docenia uczciwość. Typ D: docenia strategię. Typ S: docenia transparency.",
+    "keywords": "Preemptive, cena, inwestycja, perspektywa, preemption",
+    "type": "wartosc",
+    "tags": ["Preemptive", "cena", "inwestycja"],
+    "archetype_filter": ["conscientiousness", "dominance", "steadiness"]
+  },
+  {
+    "title": "Preemptive: 'Baterię Stracę w Rok'",
+    "content": "Zamiast czekać na ten strach – powiedz WCZEŚNIE: 'Wiem, że ludzie się obawiają baterii. Realnie: bateria traci ~1-2% wydajności rocznie. Po 10 latach = 80-90% zdolności. Tesla gwarantuje 70% na 8 lat. To znaczy – zanim bateria spadnie poniżej 70% – będziesz chciał nowy model z lepszą technologią. Bateria nie jest problemem – jest pretekstem strachu.' Fear pre-emption: Zanim klient pomyśli sobie – ty to odsłań i unieważniasz. Typ S: uspokojenie. Typ C: dane. Typ D: strategiczny przebieg. (Korekta: Realna degradacja 2025).",
+    "keywords": "Preemptive, bateria, degradacja, gwarancja, fear",
+    "type": "wartosc",
+    "tags": ["Preemptive", "bateria", "degradacja"],
+    "archetype_filter": ["steadiness", "conscientiousness", "dominance"]
+  },
+  {
+    "title": "Preemptive: 'Sieć Ładowania – Nie Będzie Gdzie Naładować'",
+    "content": "Powiedz WCZEŚNIE: 'Słyszałeś, że sieć ładowania jest słaba? Faktycznie – 5 lat temu była. Dzisiaj Europa ma ~400k+ stacji EV. Tesla sama ma ~2,500 Supercharger'ów. To znaczy, że gdziekolwiek jedziesz – ładowanie jest bliżej niż tankowanie. To nie jest problem – to rozwiązane.' Future-proofing concern: Klient myśli w starych danych. Ty go orientujesz w nowych. Typ C: docenia updated info. Typ D: strategiczna przewaga. (Korekta: Realna sieć EU 2025).",
+    "keywords": "Preemptive, sieć, ładowanie, Supercharger, future-proof",
+    "type": "wartosc",
+    "tags": ["Preemptive", "sieć", "ładowanie"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "Pricing Anchor: Konkurencja Premium (Nie Budget)",
+    "content": "Zamiast porównywać Teslę do taniej Skody – porównaj do Audi, BMW, Mercedes. 'Tesla Model 3 kosztuje jak Audi A4. Ale Audi nie ma Autopilot, nie ma 2,500 sieci Supercharger'ów w EU, nie ma monthly updates.' – Natychmiast Tesla 'nie jest droga' – jest 'dobrze wyceniona w segmencie premium.' Anchoring: Wybiór benchmarku zmienia percepcję ceny. Segment budget = drogo. Segment premium = fair. Typ C: analiza porównawcza. Typ D: strategiczne pozycjonowanie.",
+    "keywords": "Pricing, anchor, premium, Audi, benchmarking",
+    "type": "wartosc",
+    "tags": ["Pricing", "anchor", "premium"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "Pricing Psychology: Decoy Effect (Trzecia Opcja)",
+    "content": "Zamiast wyboru binarnego Model 3 (200k) vs nie – zaproponuj: Model 3 Standard (185k), Model 3 LR (210k), Model 3 Performance (230k). Nagle 210k nie jest 'drogo' – jest 'middle ground'. Psychologically – wybierają Model 3 LR (midpoint bias). Rzeczywista cena wyższa, ale klient czuje się rozumnie decydujący. Decoy effect: Trzecia opcja zmienia percepcję pozostałych dwóch. Matematyka behawioralna, nie racjonalna. Typ S: czuje się bezpiecznie w middle. Typ D: kontroluje wybór.",
+    "keywords": "Pricing, decoy, efekt, midpoint bias, opcje",
+    "type": "wartosc",
+    "tags": ["Pricing", "decoy", "efekt"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "Pricing Psychology: Payment Plan Framing",
+    "content": "Zamiast 'Cena 250k' – powiedz: 'Rata 4,500 PLN miesięcznie przez 60 miesięcy.' Psychologicznie – mózg podzieli dużą liczbę na małe. 4,500 = 'do przyjęcia.' 250k = 'drogo.' To ta sama kwota, inna percepcja. Plus: 'To mniej niż wynajęcie apartamentu w centrum miasta.' Payment framing: Lump sum intimidates. Monthly payment = manageable. Psychologia słabych liczb. Typ S: czuje się bezpieczniej. Typ D: negocjuje rate.",
+    "keywords": "Pricing, rata, framing, monthly, lump sum",
+    "type": "wartosc",
+    "tags": ["Pricing", "rata", "framing"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "Pricing: Trade-In Value Maximization",
+    "content": "Zamiast 'sprzedasz starego Audi za 60k' – powiedz: 'Twoje Audi ma wartość 60k. To znaczy, że faktyczna różnica między Twoim autem a Teslą to nie 250k, ale 190k. To już przystępniej.' Trade-in reframing: Zmienia anchor z nowej ceny na różnicy. Psychologicznie = mniejsza przeszkoda. Typ D: negocjuje już z mniejszą kwotą. Typ S: czuje się lepiej.",
+    "keywords": "Pricing, trade-in, wartość, anchor, różnica",
+    "type": "wartosc",
+    "tags": ["Pricing", "trade-in", "wartość"],
+    "archetype_filter": ["dominance", "steadiness"]
+  },
+  {
+    "title": "Benefit Stacking: Warstwowy Appeal",
+    "content": "Zamiast 'Tesla jest dobra dla środowiska' – powiedz: 'Tesla jest dobra dla Ciebie (oszczędzisz 50k rocznie), dla Twojej rodziny (bezpieczniej), dla planety (zero CO2), dla społeczeństwa (czystsze powietrze dla dzieci), dla Twojej kariery (status innowatora).' – Teraz klient widzi 5 wymiarów wartości, nie 1. Benefit stacking: Każda warstwa = inny neuron. Razem = multiplikacja emocjonalna. Typ I: wszystkie warstwy. Typ C: racjonalne warstwy. Typ S: warstwa rodziny i społeczeństwa.",
+    "keywords": "Benefit Stacking, warstwy, appeal, środowisko, rodzina",
+    "type": "wartosc",
+    "tags": ["Benefit Stacking", "warstwy", "appeal"],
+    "archetype_filter": ["influence", "conscientiousness", "steadiness"]
+  },
+  {
+    "title": "Benefit Stacking: Temporal Distribution",
+    "content": "'Dzisiaj – kupisz samochód. Za miesiąc – zaoszczędzisz na paliwie. Za rok – serwis prawie nie będzie. Za 5 lat – bateria zdeprecjonuje minimalnie. Za 10 lat – będzie wart 40% początkowej ceny.' – Klient widzi nie punkt decyzji, ale trajektorię wartości. Time-based benefit: Klient myśli teraz. Ty pokazujesz przyszłość. Percepcja zmienia się, gdy widzi całą ścieżkę. Typ C: docenia timeline. Typ S: spokój o przyszłość.",
+    "keywords": "Benefit Stacking, temporal, trajektoria, timeline, przyszłość",
+    "type": "wartosc",
+    "tags": ["Benefit Stacking", "temporal", "trajektoria"],
+    "archetype_filter": ["conscientiousness", "steadiness"]
+  },
+  {
+    "title": "Emotional Value: 'Wybudzenie' – Transformacja Świadomości",
+    "content": "'Większość ludzi, którzy testują Teslę, mówią to samo: To było przebudzenie. Nagle rozumiesz, dlaczego świat zmienia się w kierunku elektryków. To nie zmienia Cię, aby być 'ekologicznym' – zmienia Cię, aby być 'oświeconym.' To cena przebudzenia.' Transformation narrative: Klient nie kupuje auto – kupuje nową świadomość. Typ High Openness: instant appeal. Typ D: percepcja innowacji.",
+    "keywords": "Emotional Value, wybudzenie, transformacja, świadomość, oświecenie",
+    "type": "wartosc",
+    "tags": ["Emotional Value", "wybudzenie", "transformacja"],
+    "archetype_filter": ["openness_high", "dominance"]
+  },
+  {
+    "title": "Emotional Value: 'Wyzwolenie' – Emancypacja od Paliw",
+    "content": "'Ile razy myślałeś o braku paliwa? Ile razy jesteś zestresowany stanem baku? Tesla to eliminuje. To wyzwolenie psychiczne. Co byś robił z tą mentalną przestrzenią? Tutaj przestajesz myśleć o paliwie.' Liberation narrative: Freedom = najsilniejsza emocja. Brak codziennych obawy = psychiczne wyzwolenie. Typ S: spokój. Typ D: efektywność umysłu.",
+    "keywords": "Emotional Value, wyzwolenie, emancypacja, paliwo, freedom",
+    "type": "wartosc",
+    "tags": ["Emotional Value", "wyzwolenie", "emancypacja"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "Emotional Value: 'Kontrola' – Powrót Agencji",
+    "content": "'W tradycyjnym aucie – złamie się coś, a Ty czekasz w serwisie. W Tesli – software aktualizuje się w nocy, bez Twojej interwencji. Ty kontrolujesz, co się aktualizuje. To powrót agencji. To czucie sprawstwa.' Agency restoration: Ludzie chcą kontroli. Tesla daje ją przez software. Typ D: bezpośredni appeal. Typ C: transparentność zmian.",
+    "keywords": "Emotional Value, kontrola, agencja, software, sprawstwo",
+    "type": "wartosc",
+    "tags": ["Emotional Value", "kontrola", "agencja"],
+    "archetype_filter": ["dominance", "conscientiousness"]
+  },
+  {
+    "title": "Emotional Value: 'Przynależność' – Społeczna Identyfikacja",
+    "content": "'Właściciele Tesli to określona społeczność – tech-savvy, forward-thinking, odpowiedzialni. Kiedy jeździsz Teslą, należysz do tego zbioru. To nie snobbizm – to wspólnota wartości. Ile warte jest poczucie przynależności do grupy ludzi, których podziwiasz?' Belonging: Tribalism najsilniejszy driver. Typ I: instant appeal. Typ S: wspólnota. Typ D: elite group.",
+    "keywords": "Emotional Value, przynależność, społeczna, tech-savvy, tribalism",
+    "type": "wartosc",
+    "tags": ["Emotional Value", "przynależność", "społeczna"],
+    "archetype_filter": ["influence", "steadiness", "dominance"]
+  },
+  {
+    "title": "Comparative: Model vs. Brand vs. Future",
+    "content": "'Kiedy wybierasz między Teslą a Audi – nie wybierasz między markami. Wybierasz między przeszłością (130 lat BMW, tradycja, spalina) a przyszłością (20 lat Tesla, innowacja, elektryka). Obie są dobre. Ale która jest warta Twoich 10 lat jazdy?' Narrative framing: Legacy vs. Future. Typ D: przyszłość. Typ S: bezpieczeństwo legacy. Typ High Openness: przyszłość. Typ I: trendowanie w przyszłość.",
+    "keywords": "Comparative, model, przyszłość, legacy, future",
+    "type": "wartosc",
+    "tags": ["Comparative", "model", "przyszłość"],
+    "archetype_filter": ["dominance", "steadiness", "openness_high", "influence"]
+  },
+  {
+    "title": "Comparative: Luksus Tradycyjny vs. Luksus Nowoczesny",
+    "content": "'Luksus 20 lat temu = krem, skóra, drzewo. Luksus dzisiaj = bezpieczeństwo, automatyzacja, software. Tesla nie ma drewnianego panelu – ma Autopilot. To inna definicja luksusu. Która pasuje Tobie?' Luxury redefinition: Tradycyjne auto = material luxury. Tesla = experiential luxury. Typ S: procedural luxury (bezpieczeństwo). Typ D: efficiency luxury (Autopilot).",
+    "keywords": "Comparative, luksus, nowoczesny, Autopilot, redefinition",
+    "type": "wartosc",
+    "tags": ["Comparative", "luksus", "nowoczesny"],
+    "archetype_filter": ["steadiness", "dominance"]
+  },
+  {
+    "title": "Comparative: Inwestycja vs. Konsumpcja",
+    "content": "'Starego samochodu – tracisz 15% wartości rocznie. To konsumpcja. Tesli – tracisz 5-8% rocznie + zyskujesz 50k oszczędności. To inwestycja. Czy wolisz wydać na konsumpcję czy inwestycję?' Investment reframing: Konsumpcja brzmi źle. Inwestycja brzmi dobrze. To ta sama kalkulacja, inna ramka. Typ D: strategia. Typ C: rozliczenie.",
+    "keywords": "Comparative, inwestycja, konsumpcja, wartość, oszczędności",
+    "type": "wartosc",
+    "tags": ["Comparative", "inwestycja", "konsumpcja"],
+    "archetype_filter": ["dominance", "conscientiousness"]
+  },
+  {
+    "title": "Benefit For Type D (Dominance): Efektywność i Kontrola",
+    "content": "Dla Typu D: 'Tesla to jak upgrade intelektualny dla Twojego biznesu. Zero czasu na paliwo = więcej czasu na transakcje. Autopilot = mniej zmęczenia = lepsze decyzje biznesowe. To pojazd dla liderów, którzy nie marnują czasu.' D-specific framing: Biznes, efektywność, liderstwo. Nie mówimy o emocjach – mówimy o ROI i kontroli.",
+    "keywords": "Segmentacja, Typ D, efektywność, biznes, ROI",
+    "type": "wartosc",
+    "tags": ["Segmentacja", "Typ D", "efektywność"],
+    "archetype_filter": ["dominance"]
+  },
+  {
+    "title": "Benefit For Type I (Influence): Status i Społeczność",
+    "content": "Dla Typu I: 'Gdy jeździsz Teslą, ludzie zwracają uwagę. To nie snobbizm – to recognition. Dołączasz do społeczności innowatorów. Na każdym Supercharger spotkasz ciekawych ludzi z tym samym mindsetem. To samochód, który otwiera rozmowy.' I-specific framing: Społeczność, atencja, koneksje, rozmowy.",
+    "keywords": "Segmentacja, Typ I, status, społeczność, recognition",
+    "type": "wartosc",
+    "tags": ["Segmentacja", "Typ I", "status"],
+    "archetype_filter": ["influence"]
+  },
+  {
+    "title": "Benefit For Type S (Steadiness): Spokój i Gwarancja",
+    "content": "Dla Typu S: 'Tesla gwarantuje baterię 8 lat, sieć ładowania nigdy nie zawiedzie, Autopilot zawsze się aktualizuje. To stabilność. Zero myśli o awaryjności. To samochód, na którym możesz polegać przez długo.' S-specific framing: Gwarancja, bezpieczeństwo, długoterminowość, żaden stress.",
+    "keywords": "Segmentacja, Typ S, spokój, gwarancja, stabilność",
+    "type": "wartosc",
+    "tags": ["Segmentacja", "Typ S", "spokój"],
+    "archetype_filter": ["steadiness"]
+  },
+  {
+    "title": "Benefit For Type C (Conscientiousness): Dane i Analiza",
+    "content": "Dla Typu C: 'Masz dostęp do każdej metryki: zasięg, zużycie energii, historia ładowania, performance stats. System telemetrii Tesli jest najlepszym w branży. To samochód dla ludzi, którzy lubią wiedzieć dokładnie, co się dzieje.' C-specific framing: Dane, transparentność, kontrola poprzez informacje.",
+    "keywords": "Segmentacja, Typ C, dane, analiza, telemetria",
+    "type": "wartosc",
+    "tags": ["Segmentacja", "Typ C", "dane"],
+    "archetype_filter": ["conscientiousness"]
+  },
+  {
+    "title": "Reframing: 'Wysoka Cena = Wysoka Jakość' (Halo Effect)",
+    "content": "'Fakt, że Tesla kosztuje tyle, ile kosztuje – to nie jest wada. To sygnał. Wysoka cena = wysoka jakość produkcji, wymagające testy, prestiż. Ludzie nie kupują Rolex'a bo jest drogi – kupują go bo wiedzą, że wysoka cena gwarantuje jakość. Tesla to podobnie.' Price-as-signal: Wysoka cena = halo effect. Nie słabość, ale wzmocnienie. Typ D: strategiczny sygnał. Typ S: zaufanie do jakości.",
+    "keywords": "Reframing, cena, halo, jakość, Rolex",
+    "type": "wartosc",
+    "tags": ["Reframing", "cena", "halo"],
+    "archetype_filter": ["dominance", "steadiness"]
+  },
+  {
+    "title": "Reframing: 'Zapłać Więcej Teraz, Zaoszczędź Więcej Potem'",
+    "content": "'Wiem, że cena jest wyższa. Ale myśl progresywnie: Zapłacisz więcej dziś, ale zaoszczędzisz 50k w pięć lat. To znaczy, że każdy miesiąc, kiedy prowadzisz Teslę – zarabiasz (oszczędzasz). Po 5 latach – pojazd się już sam za siebie zapłacił.' Progressive thinking: Invert time perspective. Nie 'ile teraz' ale 'ile zaoszczędzę.' Typ D: ROI. Typ C: full picture.",
+    "keywords": "Reframing, zapłać, zaoszczędź, progressive, ROI",
+    "type": "wartosc",
+    "tags": ["Reframing", "zapłać", "zaoszczędź"],
+    "archetype_filter": ["dominance", "conscientiousness"]
+  },
+  {
+    "title": "Reframing: 'To Nie Luksus – To Rzeczywistość'",
+    "content": "'Ludzie myślą, że Tesla to luksus. Nie. To rzeczywistość przyszłości. Za 10 lat – każdy będzie jeździć elektrykiem. Pytanie nie jest 'czy to luksus' – pytanie jest 'czy chcesz być przyszłością dzisiaj?' Future normalization: Reframe z 'luksus' na 'inevitability.' Typ High Openness: instant appeal. Typ D: strategic positioning.",
+    "keywords": "Reframing, luksus, rzeczywistość, przyszłość, inevitability",
+    "type": "wartosc",
+    "tags": ["Reframing", "luksus", "rzeczywistość"],
+    "archetype_filter": ["openness_high", "dominance"]
+  },
+  {
+    "title": "Anchor: 'Ja Nie Sprzedaję – Ja INFORMUJĘ'",
+    "content": "'Znam, że słowa 'sprzedawca' może Ci skojarzyć się z presją. Ja nie sprzedaję. Ja informuję. Jeśli po wszystkich informacjach uznasz, że to nie dla Ciebie – będę Ci pomóc znaleźć coś innego. Ale chcę, żebyś miał pełne dane, aby podjąć decyzję.' Reframe relationship: Sprzedawca → Informator. Typ S: spokój. Typ C: transparentność. Typ D: partner strategiczny.",
+    "keywords": "Anchor, informuję, relacja, transparentność, partner",
+    "type": "wartosc",
+    "tags": ["Anchor", "informuję", "relacja"],
+    "archetype_filter": ["steadiness", "conscientiousness", "dominance"]
+  },
+  {
+    "title": "Anchor: 'Ty Decydujesz – Ja Tylko Pokazuję Opcje'",
+    "content": "'Nie będę Ci mówić, co 'powinieneś' kupić. Pokażę Ci opcje – Standard, Long Range, Performance – i my razem analizujemy, co ma sens dla Ciebie. Decyzja zawsze jest Twoja.' Locus of control: Umocnij klienta. Ty jesteś guide, nie dictator. Typ D: czuje się kontrolujący. Typ S: czuje się bezpiecznie. Typ I: czuje się ważny.",
+    "keywords": "Anchor, decydujesz, opcje, locus of control, guide",
+    "type": "wartosc",
+    "tags": ["Anchor", "decydujesz", "opcje"],
+    "archetype_filter": ["dominance", "steadiness", "influence"]
+  },
+  {
+    "title": "Anchor: 'Pytaj Mnie Wszystko – Nie Ma Głupich Pytań'",
+    "content": "'Słyszałem każde pytanie. Kilka razy. Nie czujesz się głupio – każde pytanie to znak zaangażowania. Więc pytaj śmiało. Odpowiadam zawsze szczerze.' Psychological safety: Eliminuj strach przed pytaniem. Typ C: pełna informacja. Typ S: spokój z uncertainty. Typ I: relacja.",
+    "keywords": "Anchor, pytania, safety, zaangażowanie, szczerość",
+    "type": "wartosc",
+    "tags": ["Anchor", "pytania", "safety"],
+    "archetype_filter": ["conscientiousness", "steadiness", "influence"]
+  },
+  {
+    "title": "Soft Close: Assumptive Close (Naturalny Progres)",
+    "content": "'Zamiast 'Czy chcesz kupić?' – powiedz: 'Ok, widzę, że to ma sens dla Ciebie. Przygotujmy wstępną rezerwację. Jaki kolor preferujesz – perłowy czy metaliczny?' – Nie pytasz czy, pytasz który. Zakładasz, że już się zdecydował.' Psychologia: Binarna odpowiedź (tak/nie) = obrona. Wielokrotna odpowiedź (który?) = presja znika, a commitment rośnie. Typ D: strategiczny progres. Typ S: naturalny flow. Typ I: wrażenie choice'u.",
+    "keywords": "Soft Close, assumptive, progres, kolor, commitment",
+    "type": "zamykanie",
+    "tags": ["Soft Close", "assumptive", "progres"],
+    "archetype_filter": ["dominance", "steadiness", "influence"]
+  },
+  {
+    "title": "Soft Close: Trial Close (Niska Stawka)",
+    "content": "'Zanim idziemy dalej – powiedz mi: gdyby wszystko było ok (cena, konfiguracja, dostęp do ładowania) – czy to byłoby coś, co chciałbyś zawrzeć w tym miesiącu?' – To nie closing – to temperatura. Odpowiedź 'tak' = signal do przejścia. 'Nie' = trzeba więcej edukacji. Temperature check: Nie zamykasz – sprawdzasz gotowość. Odpowiedź informuje taktykę. Typ C: docenia honesty check. Typ D: czeka na sygnał do akcji.",
+    "keywords": "Soft Close, trial, temperatura, gotowość, honesty",
+    "type": "zamykanie",
+    "tags": ["Soft Close", "trial", "temperatura"],
+    "archetype_filter": ["conscientiousness", "dominance"]
+  },
+  {
+    "title": "Soft Close: Alternative Choice Close",
+    "content": "'Jeśli chodzi o finansowanie – wolisz leasing (niskie raty, wymiana co 3 lata) czy kredyt (wyższa rata, ale auto Twoje)?' – Znowu nie 'czy chcesz?' ale 'który wariant?' To eliminuje możliwość 'nie' i przesuwa dyskusję na implementację. Alternative framing: Nie decyzja binarna, ale wybór między wariantami. Każdy wariant = commitment do czegoś. Typ D: kontrola. Typ S: preferencja. Typ C: analiza trade-off'ów.",
+    "keywords": "Soft Close, alternative, wybór, leasing, kredyt",
+    "type": "zamykanie",
+    "tags": ["Soft Close", "alternative", "wybór"],
+    "archetype_filter": ["dominance", "steadiness", "conscientiousness"]
+  },
+  {
+    "title": "Soft Close: Compliance Close (Małe Zgody)",
+    "content": "'Zgodzisz się, że wstępna kalkulacja TCO byłaby pomocna?' Klient odpowiada 'tak' (trudno powiedzieć 'nie' na coś rozumnego). Potem: 'Super. Teraz – żeby przygotować wstępną kalkulację – potrzebuję kilka danych...' – Każda mała zgoda to krok bliżej do decyzji. Foot-in-door principle: Ciąg małych zgód prowadzi do wielkiej zgody. Ciąg: 'zgoda na dane' → 'zgoda na kalkulację' → 'zgoda na rezerwację' → 'zgoda na podpis'. Typ S: czuje się bezpiecznie. Typ C: logiczny progres.",
+    "keywords": "Soft Close, compliance, zgody, foot-in-door, TCO",
+    "type": "zamykanie",
+    "tags": ["Soft Close", "compliance", "zgody"],
+    "archetype_filter": ["steadiness", "conscientiousness"]
+  },
+  {
+    "title": "Soft Close: Takeaway Close (Paradoksalna Psychologia)",
+    "content": "Jeśli klient się waha: 'Ok, czuję, że to nie jest moment dla Ciebie. To normalne. Powiedzmy – wrócimy za 3 miesiące, gdy będziesz bardziej pewny. Zarejestruję Cię w naszym systemie – jeśli pojawią się nowości, dam Ci znać.' – Zamiast presji = odsunięcie. Mózg: 'Czekaj, ja chciałem to kupić!' Reactance psychology: Ludzie chcą tego, czego im się odbiera. Zamiast naciskać – odstąp. Typ S: czuje się niezpędzany. Typ D: ratuje się (nie chce tracić). Typ I: czuje się specjalnie (personalizowane follow-up).",
+    "keywords": "Soft Close, takeaway, reactance, wahanie, follow-up",
+    "type": "zamykanie",
+    "tags": ["Soft Close", "takeaway", "reactance"],
+    "archetype_filter": ["steadiness", "dominance", "influence"]
+  },
+  {
+    "title": "Next Step: SMART Commitment (Konkretne, Zmierzone, Osiągalne)",
+    "content": "'Zamiast 'będziesz mnie kontaktować' – ustal: 'Ok, plan: (1) Jutro przygotowuję Ci wstępną kalkulację leasingu. (2) Wyślę Ci ją mailowo do godziny 14. (3) Ty przejrzysz i zadzwonisz mi w czwartek. (4) Umówimy się na test drive na następny tydzień. Zgoda?' – Każdy etap ma datę, czas, osobę odpowiedzialną.' SMART framework: Vague commitments ('będę się kontaktować') kontra konkretne. Konkretne = 80% szansa na wykonanie. Vague = 10%. Typ D: lubi to. Typ C: precyzja. Typ S: bezpieczeństwo planu.",
+    "keywords": "Next Step, SMART, commitment, plan, data",
+    "type": "zamykanie",
+    "tags": ["Next Step", "SMART", "commitment"],
+    "archetype_filter": ["dominance", "conscientiousness", "steadiness"]
+  },
+  {
+    "title": "Next Step: Owned Action vs. Shared Action",
+    "content": "'Zamiast 'prześlemy Ci informacje' – powiedz: 'Ja wyślę Ci informacje, a Ty mnie zadzwonisz po przejrzeniu. Nie czekaj na moją inicjatywę – Ty bierzesz inicjatywę. Zgoda?' – To zmienia dynamikę: Ty nie siedzisz bezczynnie, klient wie, że ma działać. Responsibility clarity: Owned action (kto? kiedy?) > vague responsibility. Typ D: szanuje clarity. Typ S: czuje się wsparty. Typ C: wie, co robić. Typ I: widzi swój role.",
+    "keywords": "Next Step, owned, action, responsibility, clarity",
+    "type": "zamykanie",
+    "tags": ["Next Step", "owned", "action"],
+    "archetype_filter": ["dominance", "steadiness", "conscientiousness", "influence"]
+  },
+  {
+    "title": "Next Step: Appointment Booking (Konkretna Rezerwacja)",
+    "content": "'Zamiast 'umówimy się kiedyś na test drive' – otwórz kalendarz: 'Patrz, ja mam slots: wtorek 14:00, środa 11:00, czwartek 15:00. Który pasuje Tobie najlepiej?' – Zaraz wybiera datę. Zablokowanie kalendarza = commitment psychiczny. Calendar lock-in: Wybór daty = zobowiązanie neuronowe. Raz zarezerwowany – klient 'musi' przyjść (sprzeczność poznawcza). Typ D: kontrola. Typ S: bezpieczeństwo daty. Typ I: wrażenie specjalnego slotu.",
+    "keywords": "Next Step, appointment, kalendarz, commitment, slots",
+    "type": "zamykanie",
+    "tags": ["Next Step", "appointment", "kalendarz"],
+    "archetype_filter": ["dominance", "steadiness", "influence"]
+  },
+  {
+    "title": "Next Step: Follow-Up Protocol (Jaki Kanał, Kiedy)",
+    "content": "'Zanim się rozejdziecie – ustalcie: 'Wyślę Ci maila do poniedziałku z kalkulacją. Jeśli nie otrzymasz – zadzwonię we wtorek. Wolisz SMS czy WhatsApp do potwierdzenia slotu na test drive?' – Klient wie dokładnie, co się stanie i jakie info otrzyma. Communication clarity: Klient wie, jaki kanał, kiedy. Zero guessing. Typ S: spokój. Typ C: procedura. Typ D: efektywność.",
+    "keywords": "Next Step, protocol, kanał, follow-up, clarity",
+    "type": "zamykanie",
+    "tags": ["Next Step", "protocol", "kanał"],
+    "archetype_filter": ["steadiness", "conscientiousness", "dominance"]
+  },
+  {
+    "title": "Final Objection: 'Daj Mi Czas Do Myślenia'",
+    "content": "Klient mówi 'Pomyślę o tym.' Zamiast się poddać – powiedz: 'Jasne. Ale powiedz mi – co dokładnie chcesz przemyśleć? Czy to cena, czy funkcje, czy logistyka?' Odpowiedź = ostateczna obiekcja, którą możesz rozwiązać TERAZ, zamiast czekać tydzień. Objection unpacking: 'Pomyślę' to umbrella objection. Trzeba rozbić na konkretne obawy. Typ C: docenia szczerość. Typ S: możliwość rozwiązania strachu. Typ D: action-oriented resolution.",
+    "keywords": "Objection, pomyślę, unpacking, obiekcja, resolution",
+    "type": "zamykanie",
+    "tags": ["Objection", "pomyślę", "unpacking"],
+    "archetype_filter": ["conscientiousness", "steadiness", "dominance"]
+  },
+  {
+    "title": "Final Objection: 'To Za Drogo Na Ten Moment'",
+    "content": "'Rozumiem. Ale pytanie nie jest czy stać Cię na to teraz – pytanie jest czy stać Cię na to za 3-6 miesięcy? Bo dziś mamy promocję, a później mogą już nie być. Czy ma sens zarezerwować pojazd teraz, a płacić za pół roku?' – To zmienia dyskusję z 'teraz' na 'kiedy.' Timeline flexibility: Zamiast teraz/nigdy – zaproponuj 'teraz zarezerwować, później płacić.' Typ S: czuje się wspierany. Typ D: strategia. Typ C: logika.",
+    "keywords": "Objection, drogo, timeline, promocja, flexibility",
+    "type": "zamykanie",
+    "tags": ["Objection", "drogo", "timeline"],
+    "archetype_filter": ["steadiness", "dominance", "conscientiousness"]
+  },
+  {
+    "title": "Final Objection: 'Muszę To Omówić z Partnerem'",
+    "content": "'Świetnie. Ile czasu potrzebujesz Tobie i Twojemu partnerowi na rozmowę? Zadzwonimy do Was razem w czwartek o 19:00?' – Zamiast czekać na rezultat – zaproponuj joint call. Oboje są present, obawy są jasne, można je rozwiązać razem. Decision committee involvement: Zamiast czekać na rezultat – włącz partnera do rozmowy. Typ S: rodzina zawsze. Typ D: efektywność. Typ I: społeczna dynamika.",
+    "keywords": "Objection, partner, joint, call, committee",
+    "type": "zamykanie",
+    "tags": ["Objection", "partner", "joint"],
+    "archetype_filter": ["steadiness", "dominance", "influence"]
+  },
+  {
+    "title": "Final Objection: 'Czekam Na Nowy Model'",
+    "content": "'To rozsądne. Ale wiedz – nowy model pojawia się co 18-24 miesiące (np. Model Y Juniper maj 2025). Jeśli czekasz – czekasz długo. JEDNAK – zakup dzisiaj nie uniemożliwia Tobie sprzedaży tego pojazdu za rok-dwa. Wiele osób kupuje, testuje ekonomikę, a potem trafia na nowy model. To nie FOMO – to strategie testowania.' Future anchoring: Reframe oczekiwanie jako sub-optimal strategię. Typ D: strategia. Typ C: logika czasu. Typ S: spokój (może sprzedać). (Sugestia: Aktualny cykl 2025).",
+    "keywords": "Objection, nowy model, cykl, FOMO, strategia",
+    "type": "zamykanie",
+    "tags": ["Objection", "nowy model", "cykl"],
+    "archetype_filter": ["dominance", "conscientiousness", "steadiness"]
+  },
+  {
+    "title": "Follow-Up Timing: Magiczne 24 Godziny",
+    "content": "Pierwsza wiadomość powinna przyjść w ciągu 2 godzin po wizycie (SMS/WhatsApp: 'Dzięki za dziś! Jakie były Twoje pierwsze wrażenia?'). Druga – w ciągu 24 godzin (Email z materiałami, kalkulacją, linkami). Trzecia – w ciągu 3 dni (telefonicznie, aby poruszyć pozostałe pytania). Recency effect: Mózg klienta jest jeszcze w mode 'Tesla.' Czekanie 3 dni = interesja spada o 70%. 24-48 godzin = peak engagement. Typ I: docenia szybkość. Typ D: efektywność timing'u. Typ S: czuje się pamiętany.",
+    "keywords": "Follow-Up, timing, 24h, recency, engagement",
+    "type": "zamykanie",
+    "tags": ["Follow-Up", "timing", "24h"],
+    "archetype_filter": ["influence", "dominance", "steadiness"]
+  },
+  {
+    "title": "Follow-Up Message: Emocjonalna Recenzja",
+    "content": "'Zamiast 'Czy masz pytania?' – powiedz: 'Wiem, że test drive zawsze budzi emocje. Co było dla Ciebie najjaśniejszym momentem? Bo ta emocja – to jest to, na czym skupiamy się przy wyborze.' – Odsłania pozytywne wrażenia, zmienia rozmowę z 'czy lubisz' na 'co było wow.' Positive reflection: Zamiast czekać na obiekcje – odsłoń radość. Typ I: wyrażenie emocji. Typ S: spokój (pozytywne uczucia). Typ D: progres. Typ C: werbalizacja wartości.",
+    "keywords": "Follow-Up, emocja, recenzja, positive reflection, wow",
+    "type": "zamykanie",
+    "tags": ["Follow-Up", "emocja", "recenzja"],
+    "archetype_filter": ["influence", "steadiness", "dominance", "conscientiousness"]
+  },
+  {
+    "title": "Otwórz z \"NaszEauto\" – Autorytet + Dowód Społeczny",
+    "content": "W 2025 roku program NFOŚiGW \"NaszEauto\" oferuje dopłatę do 40 tys. zł (bazowo 18,75 tys. zł + premie za złomowanie i dochód). To nie jest tylko rabat – to decyzja państwa, że EV to bezpieczny wybór. \"Polska inwestuje w elektromobilność – ty jesteś częścią tej transformacji, a my cię wspieramy finansowo.\"",
+    "keywords": "Autorytet, Dowód społeczny, Bezpieczny wybór, Program rządowy, NaszEauto",
+    "type": "lokalne",
+    "tags": ["Autorytet", "Dowód społeczny", "Bezpieczny wybór", "Program rządowy"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Diagnostyka Finansowa – Kwaliifikacja na Start",
+    "content": "Zadaj: \"Czy rozważacie sfinansowanie przez tradycyjny kredyt, leasing czy gotówkę?\" Odpowiedź określa ścieżkę value proposition. Gotówka → TCO + oszczędności. Leasing → Brak zmartwień serwisowych. Kredyt → Wylicz spłatę vs. oszczędności na paliwie. Kluczowe: Leasing z dofinansowaniem NaszEauto redukuje efektywną ratę do ~400-600 PLN/mies. dla Model 3 LR.",
+    "keywords": "Diagn. finansowa, Kwalifikacja, Leasing, Model 3, Efekt TCO",
+    "type": "lokalne",
+    "tags": ["Diagn. finansowa", "Kwalifikacja", "Leasing", "Model 3", "Efekt TCO"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "TCO Builder – \"Przenośna Kalkulator\" Zaufania",
+    "content": "\"Wiem, że cena wydaje się wysoka. Pozwól, że pokażę realny koszt w przeliczeniu na 5 lat.\" Porównaj: Paliwo (80 zł/100km) vs. Prąd domowy (25 zł/100km) = oszczędności 9 000 PLN/rok. Serwis Tesli (800-1200 PLN/rok) vs. spalinowy (~3000 PLN/rok). Wynik: Tesla taniejsza o ~50-60k PLN w 5 lat (bezpieczeństwo finansowe po conversji).",
+    "keywords": "TCO, Kalkulator, Oszczędności, Paliwo, Serwis",
+    "type": "lokalne",
+    "tags": ["TCO", "Kalkulator", "Oszczędności", "Paliwo", "Serwis"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ulga Podatkowa – Motyw Bezpieczności",
+    "content": "\"Samochód elektryczny to zero emisji, zero opłat drogowych w woj. śląskim (w niektórych regionach rabaty 20-30% za EV). To oznacza kolejne ~3-5k PLN/rok.\" Phrase: \"Nie tylko kupujesz pojazd – inwestujesz w oszczędności i status ekologiczny.\"",
+    "keywords": "Ulga podatkowa, Emisja zero, Opłaty drogowe, Status ekologiczny",
+    "type": "lokalne",
+    "tags": ["Ulga podatkowa", "Emisja zero", "Opłaty drogowe", "Status ekologiczny"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Leasing PLN – Przewidywalność Klienta",
+    "content": "Leasing z dofinansowaniem NaszEauto (bazowo 30 tys. zł dla osób fizycznych): rata ~450-550 PLN/mies. przez 3-5 lat. Klient nie martwi się baterią, serwisem ani deprecjacją. SPIN pytanie: \"Czy dla ciebie ważna jest całkowita przewidywalność miesięcznych kosztów?\" (Need-Payoff: komfort, brak niespodzianek).",
+    "keywords": "Leasing, Przewidywalność, Rata, Brak kosztów ukrytych",
+    "type": "lokalne",
+    "tags": ["Leasing", "Przewidywalność", "Rata", "Brak kosztów ukrytych"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Złomowanie\" – Trigger Dodatniej Premii",
+    "content": "\"Jeśli posiadasz pojazd spalinowy (3+ lata), złomowanie doda +10 tys. zł do dotacji.\" Phrase: \"Zastąp spalinowy czyszczką – i zaoszczędź szybciej.\" Psychologia: Sunk cost fallacy – klient widzi stary pojazd jako problem, nie atut. NaszEauto zmienia ramę z kosztów na profit.",
+    "keywords": "Złomowanie, Dodatkowa premia, Sunk cost, Motywacja",
+    "type": "lokalne",
+    "tags": ["Złomowanie", "Dodatkowa premia", "Sunk cost", "Motywacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dochód < 135k PLN – Klucz do Segmentacji",
+    "content": "Osoby z dochodem poniżej 135k PLN otrzymują +11,25 tys. zł (bazowo). SPIN: \"Jaki jest orientacyjny roczny dochód w waszym gospodarstwie?\" To pytanie diagnostyczne otwiera drzwi do segmentacji zysku. Dla mniejszych budżetów to game changer.",
+    "keywords": "Segmentacja dochodu, Niska cena wejścia, SPIN diagnostic",
+    "type": "lokalne",
+    "tags": ["Segmentacja dochodu", "Niska cena wejścia", "SPIN diagnostic"],
+    "archetype_filter": ["low_income"]
+  },
+  {
+    "title": "Karta Dużej Rodziny – Niszowy Play",
+    "content": "4+ dzieciaki = automatyczne 30 tys. zł (bez limitów dochodu). \"Tesla Model Y to bezpieczne, rodzinne auto – i rząd to premiuje.\" Fraza: \"Dlaczego? Bo EV = bezpieczeństwo dla rodziny (Autopilot, ekran centralny, zero spalin).\"",
+    "keywords": "Duża rodzina, Rodzinne bezpieczeństwo, Autopilot, Premium segment",
+    "type": "lokalne",
+    "tags": ["Duża rodzina", "Rodzinne bezpieczeństwo", "Autopilot", "Premium segment"],
+    "archetype_filter": ["family"]
+  },
+  {
+    "title": "Model 3 vs. Model Y – Cena Kwalifikacyjna",
+    "content": "Model 3 RWD: 179,9k PLN → potencjalnie 18,75k PLN netto (bez premii). Model Y LR: 224,9k PLN → też max 40k PLN. \"Model 3 to opcja dla świadomych kosztów; Model Y dla rodzin. Oba kwalifikują się do wsparcia.\"",
+    "keywords": "Model 3, Model Y, Cena, Kwalifikacja, Segment",
+    "type": "lokalne",
+    "tags": ["Model 3", "Model Y", "Cena", "Kwalifikacja", "Segment"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Przed rejestracją\" – Compliance & Trigger",
+    "content": "Kluczowe: Dotacja wypłacana po zakupie i rejestracji (nie przed). Pojazd musi być nowy, przebieg <6k km, cena netto ≤225k PLN. \"To oznacza: najpierw kupujesz, potem dostajesz wsparcie. Ale Bank czeka na wnioski – średni czas 30-60 dni.\"",
+    "keywords": "Compliance, Rejestracja, Dokumentation, Timing",
+    "type": "lokalne",
+    "tags": ["Compliance", "Rejestracja", "Dokumentation", "Timing"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Porównanie Model 3 LR – TCO vs. Audi A4 Diesel",
+    "content": "Model 3 LR (199,9k + transport): 204,4k PLN. Audi A4 2.0 TDI: ~210k PLN. Po 5 latach: Tesla (oszczędności on fuel/serwis): -50k PLN realnie. Audi: +30k PLN kosztów. Fraza: \"Cena podobna; całkowity koszt życia zdecydowanie na korzyść Tesli. To nie jest luksus – to jest logika matematyczna.\"",
+    "keywords": "Porównanie, Audi A4, TCO, Logika, Kalkulator",
+    "type": "lokalne",
+    "tags": ["Porównanie", "Audi A4", "TCO", "Logika", "Kalkulator"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "JDG – Jednoosobowa Działalność Gospodarcza",
+    "content": "JDG mogą starać się o dotację (do 40k PLN). Dodatkowe korzyści: wykazanie pojazdu jako koszt działalności + amortyzacja. \"Jeśli prowadzisz firmę, Tesla może być aktywem biznesowym z ulgami podatkowymi.\"",
+    "keywords": "JDG, Koszt działalności, Amortyzacja, Biznes",
+    "type": "lokalne",
+    "tags": ["JDG", "Koszt działalności", "Amortyzacja", "Biznes"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Cena Maksymalna – Granica Kwalifikacji",
+    "content": "225 tys. PLN netto to limit dla dotacji. \"Jeśli chcesz pełną dotację – limitujemy się do tej ceny. Model 3 Performance (229,9k) jest tuż powyżej – nie kwalifikuje się, chyba że negocjujesz cenę.\" Trigger dla sales: unikaj Model Performance dla klientów dotacyjnych.",
+    "keywords": "Cena maksymalna, Limit, Kwalifikacja, Model Performance",
+    "type": "lokalne",
+    "tags": ["Cena maksymalna", "Limit", "Kwalifikacja", "Model Performance"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ubezpieczenie – Ukryty Koszt OC",
+    "content": "OC dla Tesli: 2-4k PLN/rok (czasem niżej niż spalinowy, bo automat + Autopilot = mniej wypadków). AC/NNW: 3-7k PLN/rok. \"Prąd będzie tani, ale ubezpieczenie pamiętaj w budżecie.\" Phrase: \"Tesla jest bezpieczna – ubezpieczyciele to wiedzą, dlatego składka kompetytywna.\"",
+    "keywords": "Ubezpieczenie, OC, AC, Bezpieczeństwo",
+    "type": "lokalne",
+    "tags": ["Ubezpieczenie", "OC", "AC", "Bezpieczeństwo"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Rejestracja – Procedura Post-Sale",
+    "content": "Po podpisaniu umowy kupna: rejestracja w CEP, OC obowiązkowe. Procedura: 1) Rejestracja (180 PLN) 2) OC 3) AC (opcjonalnie) 4) Wypisz do NFOŚiGW. \"Cały proces zajmuje ~7-14 dni. Na koniec – dotacja wpada na konto.\"",
+    "keywords": "Rejestracja, Procedura, CEP, Post-sale",
+    "type": "lokalne",
+    "tags": ["Rejestracja", "Procedura", "CEP", "Post-sale"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dotacja ≠ Rabat Dealera",
+    "content": "Dotacja to wsparcie rządowe, niezależne od rabatów promocyjnych. \"Jeśli w tej chwili mamy promocję (np. cashback 5k PLN), dodatkowo dostajesz dotację rządową. To się łączy, nie zastępuje.\"",
+    "keywords": "Dotacja, Rabat, Promocja, Niezależność, Stacking",
+    "type": "lokalne",
+    "tags": ["Dotacja", "Rabat", "Promocja", "Niezależność", "Stacking"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Wnioski – Limity i Kolejka",
+    "content": "Program NaszEauto: 1,6 miliarda PLN na 2025-2026. Tempo: ~400-500 wniosków/tydzień (szacunek). \"Wnioski drukują się szybko, ale liczba funduszu ograniczona. Warto pospieszyć – zwłaszcza w Q4.\"",
+    "keywords": "Limity, Budżet, Kolejka, Urgencja",
+    "type": "lokalne",
+    "tags": ["Limity", "Budżet", "Kolejka", "Urgencja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Generator Wniosków – Cyfrowy Klucz",
+    "content": "Wnioski wyłącznie online (gwd.nfosigw.gov.pl). Klient sam składa lub dealer pomaga. \"Pokażę ci platform, gdzie w 15 minut podpiszesz wniosek – całe załączniki gotowe.\"",
+    "keywords": "Generator wniosków, Online, Platform, Cyfrowy",
+    "type": "lokalne",
+    "tags": ["Generator wniosków", "Online", "Platform", "Cyfrowy"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Leasingowe vs. Kupno – Strategia Segmentów",
+    "content": "Kupno (osób fizycznych): 18,75k PLN (bazowo). Leasing: 30k PLN (więcej wsparcia dla długotrwałych zobowiązań). Pytanie diagnostyczne: \"Co lepiej pasuje waszemu budżetowi – kupno czy leasing na 3-5 lat?\" (SPIN – Need-Payoff).",
+    "keywords": "Leasing, Kupno, Segmentacja, Strategia finansowa",
+    "type": "lokalne",
+    "tags": ["Leasing", "Kupno", "Segmentacja", "Strategia finansowa"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Podsumowanie Kat. 6 – Tri-Pronged Value Prop",
+    "content": "1. Rządowa akceptacja (autorytet, dowód społeczny). 2. Konkretne liczby (do 40k PLN). 3. TCO jasny (oszczędności 50k PLN vs. spalinowy). Fase na koniec: \"Polska już zainwestowała w twoją przyszłość – zostało ci tylko ją zaakceptować.\"",
+    "keywords": "Tri-pronged, Autorytet, TCO, Akcja",
+    "type": "lokalne",
+    "tags": ["Tri-pronged", "Autorytet", "TCO", "Akcja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Obiekcja \"Zimą Zasięg Spada\" – Reframe z Nauki",
+    "content": "Klient: \"Zimą Tesla traci 30-40% zasięgu.\" Ty: \"Dokładnie – i to jest zaprojektowane. Tesla Model 3 LR ma oficjalnie 584 km (WLTP latem). Zimą: ~350-400 km realnie. Ale pytanie – ile km dziennie jeździsz naprawdę?\" (SPIN – Situation). Większość Polaków: ~40-50 km/dzień. Wynik: nawet zimą pokryjesz 7+ dni pracy bez ładowania.",
+    "keywords": "Obiekcja zima, Zasięg, WLTP, Reframe, Rzeczywistość",
+    "type": "obiekcje",
+    "tags": ["Obiekcja zima", "Zasięg", "WLTP", "Reframe", "Rzeczywistość"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Pompa Ciepła – Techniczny Proof",
+    "content": "Tesla Model 3/Y (nowe generacje) mają pompę ciepła (zamiast grzejnika oporowego). To oznacza: zużycie na ogrzewanie w zimie to tylko ~1-1,5 kW/h, nie 3-5 kW. Fraza: \"System inteligentnie zarządza ciepłem – nie marnuje energii. Twój radiator domowy pracuje na takiej zasadzie.\" (Analogia = zrozumienie).",
+    "keywords": "Pompa ciepła, Technologia, Efektywność, System inteligentny",
+    "type": "obiekcje",
+    "tags": ["Pompa ciepła", "Technologia", "Efektywność", "System inteligentny"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Zimowy Test NAF 2025 – Konkurencyjna Przewaga",
+    "content": "W zimowym teście Norweskiej Federacji Samochodowej (Jan 2025): Tesla Model 3 LR RWD przejechała 531 km (od 702 km nominalne) = -24% strata. Wśród konkurencji: Porsche Taycan -16%, Kia EV3 -15%. \"Tesla może stracić więcej procent, ale ma tyle km, że i po stracie 24% wciąż jesteś w grze. Konkurencja z mniejszą baterią już po 300 km szuka ładowarki.\"",
+    "keywords": "Test zimowy, NAF, Konkurencja, Zasięg bezwzględny",
+    "type": "obiekcje",
+    "tags": ["Test zimowy", "NAF", "Konkurencja", "Zasięg bezwzględny"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Mróz Nie Wybiera\" – Psychologia Normalizacji",
+    "content": "Obiekcja: \"Ale ja mieszkam na Mazowszu – zima surowa!\" Ty: \"Średnie temperatury polskiej zimy oscylują wokół -2 do 0°C. Nawet w Tatrach rzadko spada poniżej -10°C na stałe. Auta elektryczne są już sprzedawane w Norwegii (średnia -15°C) – i tam to bestseller. Jeśli się tam sprawdzają, to w Polsce to standard.\" (Dowód społeczny globalizacja).",
+    "keywords": "Psychologia zima, Normalizacja, Norwegia, Porównanie globalne",
+    "type": "obiekcje",
+    "tags": ["Psychologia zima", "Normalizacja", "Norwegia", "Porównanie globalne"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Zmiana Nawyków – \"Ładuj Jak Tankujesz Paliwo\"",
+    "content": "Obiekcja: \"A jak na urlopie do Zakopanego?\" Ty: \"Dla 99% podróży: tanksz w domu, ładujesz w pracy, dojeżdżasz. Autopilot na autostradzie – zero zmęczenia. Do Zakopanego: zaplanuj przestanki (Supercharger co 200 km). Aplikacja Tesla to zrobi za ciebie.\" (Value-add: komfort > tradycyjna logika paliwa).",
+    "keywords": "Nawyki użytkownika, Planowanie, Autopilot, Logistyka",
+    "type": "obiekcje",
+    "tags": ["Nawyki użytkownika", "Planowanie", "Autopilot", "Logistyka"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Sieć Ładowarek – \"Białe Plamy\" Nie Istnieją (dla głównych tras)",
+    "content": "Na koniec 2025: ~10 000 punktów publicznych ładowania w Polsce. Rozkład: Mazowieckie (756), Śląskie (753), Wielkopolskie (453). Autostrady: ORLEN Charge planuje 50+ hubów do 2027 (teraz 12 planowanych). \"Białe plamy to wschodnia Polska – ale jak 80% Polaków mieszka w pasie warszawsko-poznańsko-krakowskim, to rozumiesz, że infrastruktura tam gęsta.\" (Dowód społeczny + logika dystrybucji).",
+    "keywords": "Infrastruktura, ORLEN Charge, Huby, Dystrybucja, Trasy główne",
+    "type": "obiekcje",
+    "tags": ["Infrastruktura", "ORLEN Charge", "Huby", "Dystrybucja", "Trasy główne"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Supercharger Tesla – Eksklusywna Sieć",
+    "content": "Tesla ma dedykowaną sieć Superchargerów (500+ stacji globalnie, ~200 w Europie). W Polsce: rosnąca liczba przy autostradach. \"To znaczy: kiedy inne elektryki stoją 30-45 min na stacji publicznej (150 kW moc), ty doładujesz się do 80% w 15-20 minut (250+ kW).\" (Przewaga konkurencyjna = wartość niezbydu).",
+    "keywords": "Supercharger, Eksklusywna sieć, Moc, Prędkość ładowania",
+    "type": "obiekcje",
+    "tags": ["Supercharger", "Eksklusywna sieć", "Moc", "Prędkość ładowania"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Greenvolt + GreenWay – Alternatywy do ORLEN",
+    "content": "Greenvolt: 1000+ punktów AC (wolne ładowanie). GreenWay: 500+ punktów szybkiego ładowania (150-200 kW). \"Masz wybór sieci – nie zależy od jednego gracza. Ekosystem się buduje.\" (Dezaktywacja obiekcji: monopol).",
+    "keywords": "Greenvolt, GreenWay, Sieci alternatywne, Konkurencja",
+    "type": "obiekcje",
+    "tags": ["Greenvolt", "GreenWay", "Sieci alternatywne", "Konkurencja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ładowanie Domowe – 80% Scenariusza",
+    "content": "80% ładowania Tesli w Polsce: w domu przez noc (11 kW moc typu 3-fazowy). Koszt: ~7 PLN za 100 km (vs. 30 PLN paliwo). \"Myśl o tym jako o gazie domowym – tanszy, wygodniejszy, cicho.\" (Analogia = zrozumienie).",
+    "keywords": "Ładowanie domowe, 80%, Koszt, Wygoda, Analogia gaz",
+    "type": "obiekcje",
+    "tags": ["Ładowanie domowe", "80%", "Koszt", "Wygoda", "Analogia gaz"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Moja Biedronka ma Ładowarkę\" – Banalizacja Obsługi",
+    "content": "Biedronka, Kaufland, parkingi hipermarketów: coraz więcej stacji AC (7-22 kW). \"Gdy robisz zakupy przez godzinę – ładujesz. To nie jest dodatkowy krok, to bypassowanie czasu.\" (Psychologia: ładowanie = event naturalny, nie dodatkowy ritual).",
+    "keywords": "Ubikwitarność, Hipermarkety, AC, Banalizacja",
+    "type": "obiekcje",
+    "tags": ["Ubikwitarność", "Hipermarkety", "AC", "Banalizacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ładowanie Trasy – \"Nie Jazda, Relaks\"",
+    "content": "Artykuł Bjorna Nylandan (vlogger EV): Tesla Model Y zimą 327 km przy 120 km/h (test). Oznacza: Warszawa → Kraków (290 km) = 1 przerwa 20 min. \"W tym czasie jesz kawę, sprawdzasz Teslę w aplikacji, czujesz się jak VIP w lounge. To nie jest stres.\" (Reframe: oczekiwanie na ładowanie = odpoczynek w podróży).",
+    "keywords": "Trasa, Relaks, Ładowanie, Reframe psychologiczny",
+    "type": "obiekcje",
+    "tags": ["Trasa", "Relaks", "Ładowanie", "Reframe psychologiczny"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Infrastruktura Rośnie – \"Niedługo Będzie Standard\"",
+    "content": "2023: ~6000 punktów. 2025: ~10 000. 2027 (plan): ~15 000+. \"To nie jest problem – to trend rosnący. Inwestujesz w pojazd, który za 3 lata będzie podłączony wszędzie.\" (Perspektywa: nie kupujesz dla teraz, lecz dla przyszłości).",
+    "keywords": "Trend wzrostu, 2027, Przyszłość, Inwestycja perspektywiczna",
+    "type": "obiekcje",
+    "tags": ["Trend wzrostu", "2027", "Przyszłość", "Inwestycja perspektywiczna"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Obiekcja: Zniszcze Baterię Zimą\" – Mit Obalony",
+    "content": "Fakt: Bateria litowo-jonowa Tesla ma active thermal management (termoregulacja aktywna). Mróz zmniejszy wydajność chwilowo (spadek ~10-20%), ale nie niszczy baterii. \"Bateria Tesli żyje 500 000+ km (8-10 lat). Zima? To normalny cykl. System to wie i się przed tym broni.\" (Autorytet: inżynieria > spekulacja).",
+    "keywords": "Mit baterii, Termoregulacja, 500k km, Autorytet techniczny",
+    "type": "obiekcje",
+    "tags": ["Mit baterii", "Termoregulacja", "500k km", "Autorytet techniczny"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Obiekcja: \"Drogi Serwis EV\"",
+    "content": "Rzecz: Serwis Tesli = 800-1200 PLN/rok. Spalinowy = 2500-3500 PLN/rok. \"Brak wymiany oleju, filtrów, świec. Hamulce (rekuperacja) trwają 400 000+ km.\" (Dowód: wbudowana efektywność = niski koszt eksploatacji).",
+    "keywords": "Serwis, Koszty, Rekuperacja, Porównanie spalinowy",
+    "type": "obiekcje",
+    "tags": ["Serwis", "Koszty", "Rekuperacja", "Porównanie spalinowy"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dacia Spring Vs. Tesla Model 3 – Konkurencyjne Zagrożenie",
+    "content": "Obiekcja: \"Ale Dacia Spring jest 50k tańsza!\" Rzecz: Spring (45k PLN) = 305 km zasięg, 0-100 km/h w 9,8 s, mały ekran. Model 3 (179,9k PLN) = 438 km, 5,8 s, ekran 15\", Autopilot, Tesla Network. Wylicz: za +135k PLN dostajesz 43% więcej zasięgu, 40% szybszość, komfort, tech. Spring to \"tak/nie\"; Tesla to \"jak chcesz żyć\" (Challenger: edukuj na poziomie wartości, nie ceny).",
+    "keywords": "Dacia Spring, Konkurencja, Wartość vs. cena, Edukacja",
+    "type": "obiekcje",
+    "tags": ["Dacia Spring", "Konkurencja", "Wartość vs. cena", "Edukacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Obiekcja: \"Ale Chiński BYD Tańszy!\"",
+    "content": "BYD Tang (108,8 kWh) vs. Tesla Model Y (Long Range 75 kWh) – oba ~250-280k PLN w Polsce. BYD: -22% zasięg zimą. Tesla: -24% zasięg, ale ma Autopilot, lepszą obsługę, sieć Supercharger. \"Cena podobna. Różnica: ekosystem vs. tylko pojazd. Inwestujesz w pojazd czy w system?\" (Challenger: perspektywa całościowa).",
+    "keywords": "BYD, Chiński, Ekosystem, Inwestycja, Perspektywa",
+    "type": "obiekcje",
+    "tags": ["BYD", "Chiński", "Ekosystem", "Inwestycja", "Perspektywa"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"A Jak Snowboard Na Dachu?\" – Luggage Mitigation",
+    "content": "Obiekcja: \"Na dachówkę? Albo kajaków?\" Ty: \"Dach Tesli obsługuje 75 kg (pole namiotu). Kajaki musisz zabrać – obniżą zasięg o ~10-15% (opór aerodynamiczny). Ale dla typowego klienta to nie scenariusz weekendowy, to roczny event. Planuj wtedy na Supercharger.\" (SPIN implication: wynika z tego, że...).",
+    "keywords": "Akcesoria, Luggage, Opór, Planowanie, Adaptacja",
+    "type": "obiekcje",
+    "tags": ["Akcesoria", "Luggage", "Opór", "Planowanie", "Adaptacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Obiekcja: \"Prąd Będzie Droższy\" – Prognoza Realności",
+    "content": "2025: 0,30-0,35 PLN/kWh (noc). Ładowanie 75 kWh = ~22-26 PLN (rejestr ~7 PLN za 100 km). Paliwo: 30-35 PLN za 100 km. \"Nawet jeśli prąd wzrośnie +30% w 5 lat, wciąż będzie 2x tańszy. To matematyka, a nie spekulacja.\" (Locus of control: pokaż, że trend jest przewidywalny).",
+    "keywords": "Koszt prądu, Prognoza, Matematyka, Locus kontroli",
+    "type": "obiekcje",
+    "tags": ["Koszt prądu", "Prognoza", "Matematyka", "Locus kontroli"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Bezduszna Technologia?\" – Autopilot = Bezpieczeństwo",
+    "content": "Obiekcja emocjonalna: \"Samochód sam jedzie? To niebezpieczne!\" Ty: \"Autopilot nie jedzie sam – asystuje. NHTSA (USA): auta z Autopilot mają 10x mniej wypadków. Polska: bezpieczeństwo to Top 5 atrybutów decyzji. Tesla = radar + kamera + lidar. Twoje oczy + AI. To bezpieczeństwo, nie robotyka.\" (Reframe: technofobia → bezpieczeństwo).",
+    "keywords": "Autopilot, Bezpieczeństwo, Emocja, Technofobia, Reframe",
+    "type": "obiekcje",
+    "tags": ["Autopilot", "Bezpieczeństwo", "Emocja", "Technofobia", "Reframe"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Podsumowanie Kat. 7 – Tri-Obiekcja Strategy",
+    "content": "1. Zimowy Zasięg: Realny 350-400 km ≠ to, co klienci faktycznie potrzebują (40-50 km/dzień). 2. Infrastruktura: 10k punktów + rosnący trend (2027 = 15k). 3. Koszt & Serwis: Energia 2x tańsza; serwis 30% taniej. Fraza finalizująca: \"Polskie warunki już nieraz zostały przetestowane – nie jesteś pionierem, jesteś pragmatikiem.\"",
+    "keywords": "Zimowy zasięg, Infrastruktura, Koszt, Pragmatyzm, Finalizacja",
+    "type": "obiekcje",
+    "tags": ["Zimowy zasięg", "Infrastruktura", "Koszt", "Pragmatyzm", "Finalizacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Case Study – \"Rodzina z Warszawy\" (TCO Champion)",
+    "content": "Kupili Model Y LR (224,9k PLN) w Q2 2025, skorzystali z NaszEauto (-30k PLN netto). Koszt realny: ~195k PLN. Po 6 miesiącach: 18 000 km przejechane. Koszty: prąd (4200 PLN), ubezpieczenie (3100 PLN), serwis (0 PLN). Całkowicie: ~7300 PLN/6 miesięcy. Spalinowy X5 by kosztował ~14k PLN za ten przebieg. Wynik: zadowolenie 9/10, rekomendacja rodziny (3 zainteresowani).",
+    "keywords": "Case study, Warszawa, Model Y, TCO, Rekomendacja",
+    "type": "case_studies",
+    "tags": ["Case study", "Warszawa", "Model Y", "TCO", "Rekomendacja"],
+    "archetype_filter": ["family"]
+  },
+  {
+    "title": "Case Study – \"JDG Sprzedawca\" (Biznes Play)",
+    "content": "Kupił Model 3 LR (199,9k PLN) jako pojazd firmowy. Wykazał jako AK (aktywa kapitałowe), amortyzacja 20% rocznie = ulga podatkowa ~16k PLN/rok w CIT. Dotacja NaszEauto: -30k PLN (jako JDG). Koszt netto: ~154k PLN. Przejechał 25k km/rok (serwis biznesowy = full opcje). Efekt: pojazd kosztuje go ~50k PLN realnie w 3 lata + tax shield.",
+    "keywords": "JDG, Biznes, Amortyzacja, CIT, Efekt finansowy",
+    "type": "case_studies",
+    "tags": ["JDG", "Biznes", "Amortyzacja", "CIT", "Efekt finansowy"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "KPI #1 – Conversion Rate: \"Dotacja > Non-Dotacja\"",
+    "content": "Dane: Dealer Tesla w PL (anonimowo): Q1 2025 przed NaszEauto = 40% conversion od first inquiry do podpis. Po uruchomieniu NaszEauto (Feb-March) = 68% conversion. Wnioski: Dotacja = „permission to buy\" (psychologia). Rata efektywna spada z 1200 PLN (bez dotacji) do 650 PLN (z dotacją). Delta = +28 pp konwersji.",
+    "keywords": "KPI conversion, Dotacja, Permission to buy, Psychology",
+    "type": "case_studies",
+    "tags": ["KPI conversion", "Dotacja", "Permission to buy", "Psychology"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "KPI #2 – Average Deal Size: Model 3 vs. Model Y Shift",
+    "content": "Q1 2025: Model 3 = 65% sprzedaży (entry-level), Model Y = 25%. Q2-Q3 2025 (po NaszEauto + promocja leasingu): Model Y = 45%, Model 3 = 40%. Wnioski: Dotacja umożliwia upgrade. Rata różnicy Y-3 = ~150 PLN, ale psychological barrier spada (state support signals = value boost). Average deal value: +8% YoY.",
+    "keywords": "KPI deal size, Model mix, Upgrade, Psychological barrier",
+    "type": "case_studies",
+    "tags": ["KPI deal size", "Model mix", "Upgrade", "Psychological barrier"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "KPI #3 – Customer Lifetime Value – \"Referral Loop\"",
+    "content": "Każdy klient Tesli (po sukcesie TCO):średnio 1,3 referencji (dealer data, Q1-Q3 2025). Baza: 1500 nowych klientów/miesiąc Tesla PL × 1,3 referencji = ~1950 warm leads/miesiąc. Conversion z referencji: 75% (vs. 30% cold lead). CLV impact: Każdy klient wprowadza +1,3 nowych; 30-40% z nich kupuje. To ROI referencyjny = 3:1.",
+    "keywords": "CLV, Referral loop, Warm leads, ROI referencyjny",
+    "type": "case_studies",
+    "tags": ["CLV", "Referral loop", "Warm leads", "ROI referencyjny"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dacia Spring Impact – Competitive Threat Metric",
+    "content": "Rejestracje: Q1 2024 = 150 Spring/miesiąc PL. Q1 2025 = 520 Spring/miesiąc (+246% YoY). Tesla: Q1 2024 = 280/miesiąc, Q1 2025 = 899/kwartał (~300/miesiąc). Wnioski: Spring \"kanibalizuje\" entry-level EV (poniżej 100k PLN). Tesla nie konkuruje w segmencie – segmentuje powyżej. KPI: Utrzymać Model 3 RWD (179,9k) jako \"entry-premium\", nie entry-budget.",
+    "keywords": "Competitive threat, Spring, Segmentacja, Market share",
+    "type": "case_studies",
+    "tags": ["Competitive threat", "Spring", "Segmentacja", "Market share"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Winter Test Performance – \"Product Proof\"",
+    "content": "Tesla Model 3 LR: zimowy test NAF (Jan 2025) = 531 km vs. 702 km nominalne (-24%). Porównanie publiczne: Porsche Taycan -16%, Kia EV3 -15%. Media play: \"Tesla traciła procent, ale jechała najdalej absolutnie.\" Metric: Brand perception = not weakness, but reassurance (bigger battery = buffer vs. competition).",
+    "keywords": "Winter test, NAF, Proof, Brand perception, Reassurance",
+    "type": "case_studies",
+    "tags": ["Winter test", "NAF", "Proof", "Brand perception", "Reassurance"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "NaszEauto Adoption Curve – \"Program ROI\"",
+    "content": "Feb-March 2025: 15k wniosków/miesiąc. April-May: 18k. June (promocja leasingu): 22k. Curve: Logistyczna – rosnąca (early adoption → mass adoption). KPI: Każdy sprzedawca zdobywa umiejętność \"NaszEauto pitch\" = baseline value add. Dealer bez umiejętności = -30 pp conversion.",
+    "keywords": "Adoption curve, NaszEauto, Early adopters, Dealer training",
+    "type": "case_studies",
+    "tags": ["Adoption curve", "NaszEauto", "Early adopters", "Dealer training"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Leasing vs. Purchase – Distribution Shift",
+    "content": "Tradycyjnie (2024): 60% kupno, 40% leasing. 2025 (po NaszEauto): 45% kupno, 55% leasing. Wnioski: Dotacja dla leasingu (30k PLN vs. 18,75k PLN kupno) = psychologiczne zwiększenie \"perceived value\" opcji elastycznej. KPI: Dealer revenue = similar (oba modele = marża dla dealera), ale customer retention wyżej w leasingu (3-5 lat lock-in).",
+    "keywords": "Leasing shift, 55%, Lock-in, Retention, Revenue model",
+    "type": "case_studies",
+    "tags": ["Leasing shift", "55%", "Lock-in", "Retention", "Revenue model"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Brand Perception Metric – \"Safe Choice Index\"",
+    "content": "Badanie wewnętrzne dealera (n=500, Q2 2025): \"Czy Tesla to bezpieczny wybór?\" Odpowiedzi: \"Tak\" +68% (vs. +35% w 2024). Driver: NaszEauto (autorytet państwowy) + Autopilot (media positivity). KPI: Safe Choice Index = leading indicator konwersji. +1 pp = +2 pp conversion (opóźnienie 2 miesiące).",
+    "keywords": "Brand perception, Safe choice, Autorytet, Leading indicator",
+    "type": "case_studies",
+    "tags": ["Brand perception", "Safe choice", "Autorytet", "Leading indicator"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Model Y Premium – Margin Analysis",
+    "content": "Model 3 LR (199,9k): marża dealer ~12-14k PLN brutto. Model Y LR (224,9k): marża ~15-17k PLN. Marginal improvement: +1.5-3k PLN na Y. Ale Model Y = wyższa satysfakcja klienta (większy interior = luxury feel). KPI: Win rate Y-conquest (od konkurencji) = +22% vs. 3-conquest (2024 vs. 2025). Strategia: Upgrade pitch na Model Y = wyższa marża + wyższe zadowolenie.",
+    "keywords": "Margin analysis, Model Y, Luxury feel, Upgrade pitch",
+    "type": "case_studies",
+    "tags": ["Margin analysis", "Model Y", "Luxury feel", "Upgrade pitch"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Referral Program Effectiveness – \"Viral Loop\"",
+    "content": "Dealer program (Q1 2025): każdy klient dostaje 5k PLN rabatu za referencję (którą przyjmujemy na zakup). Adoption: 35% klientów uczestniczy. Conversion referencji: 62%. Rezultat: +280 samochodów/miesiąc z programu (12% sprzedaży). Cost: 5k PLN × 280 = 1,4M PLN/miesiąc koszt, ale revenue = 280 × 15k PLN margin = 4,2M PLN. ROI: 3:1 (netto).",
+    "keywords": "Referral program, Viral loop, 3:1 ROI, Adoption 35%",
+    "type": "case_studies",
+    "tags": ["Referral program", "Viral loop", "3:1 ROI", "Adoption 35%"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Q3 2025 Rejestracje – Market Dominance",
+    "content": "Q3 2025: Tesla = 2149 rejestracji (czerwiec sam: 699). Udział: 17-19% rynku EV (od 30% rok wcześniej, ale rynek EV rośnie +22% YoY). Kontekst: Ubytek udziału % jest spowodowany wejściem konkurentów (Kia +209% YoY, BYD ekspansja), ale absolutnie Tesla rośnie. KPI: \"Market share %\" nie jest wiarygodnym KPI; \"absolute units\" jest. Narrative: „Tesla dominuje liczby absolutnie, konkurentów bardziej przybywa (rynek rozszerza się).\"",
+    "keywords": "Q3 2025, Rejestracje, Market dominance, Absolute units",
+    "type": "case_studies",
+    "tags": ["Q3 2025", "Rejestracje", "Market dominance", "Absolute units"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "NaszEauto Allocation – Pace vs. Budget",
+    "content": "1,6B PLN budget / 40k PLN avg. dotacji = 40k beneficjentów max. Tempo: 22k wniosków/miesiąc (junho) = 3,5 miesiące do wyczerpania (jeśli tempo utrzyma się). KPI: Urgency messaging = kluczowe. Sprzedawca powinien używać: \"Następny kwartał może być za późno – limit podatkowy się zapełnia szybko.\"",
+    "keywords": "Budget allocation, 1,6B, 40k limit, Urgency messaging",
+    "type": "case_studies",
+    "tags": ["Budget allocation", "1,6B", "40k limit", "Urgency messaging"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dealership Efficiency – \"Lead-to-Car Time\"",
+    "content": "Tradycyjnie: Lead → Test drive → Negocjacja → Podpis umowy → Rejestracja: ~30-45 dni. 2025 (post-NaszEauto optymalizacja): Lead → Test drive (2 dni) → Negocjacja (3 dni, bo dotacja jasna) → Podpis + zgłoszenie online: ~10 dni. Efekt: Faster velocity = wyższe koszty operacyjne (więcej klientów/samochód/miesiąc), ale revenue/employee = +35%.",
+    "keywords": "Dealership efficiency, 10 dni cycle, Lead-to-car, Velocity",
+    "type": "case_studies",
+    "tags": ["Dealership efficiency", "10 dni cycle", "Lead-to-car", "Velocity"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Upsell/Cross-Sell Metrics – \"Tech Package Play\"",
+    "content": "Standard Model 3 RWD (179,9k): 35% klientów. +Tech Package (asystent zaparkowań, ekran pełny): +14k PLN (dodatkowo kupuje 42% klientów). Margin tech package = 40-50% (vs. 12-14% całość). KPI: Attachment rate tech package = 42% (cel: +50%). Tactic: \"Pokażemy ci jak Autopilot pracuje na testowaniu – chcesz to mieć\" (demonstracja + FOMO).",
+    "keywords": "Tech package, Upsell, Attachment rate, FOMO",
+    "type": "case_studies",
+    "tags": ["Tech package", "Upsell", "Attachment rate", "FOMO"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Service Revenue Projection – \"Post-Sale Cash Cow\"",
+    "content": "Każdy klient Tesla = ~800-1200 PLN serwis/rok (średnia 1000 PLN) na 8 lat = 8000 PLN per customer. Dealer 1500 klientów/rok × 1000 PLN/rok = 1,5M PLN service revenue (strumień stabilny). Marża serwisu: 35-45% (vs. 12-14% sprzedaż). KPI: Service revenue = bardziej opłacalne niż nowe samochody. Tactic: \"Waszą pierwszą przeglądem jest na nas – budujemy zaufanie.\"",
+    "keywords": "Service revenue, 1000 PLN/rok, 8-lat LTV, Marża 35-45%",
+    "type": "case_studies",
+    "tags": ["Service revenue", "1000 PLN/rok", "8-lat LTV", "Marża 35-45%"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Leasing Company Partnership – \"B2B Acceleration\"",
+    "content": "Dealer partnership z Fi Finance, PKO Leasing (obsługuje NaszEauto): każdy klient leasingowy = dealerowi +booking instant (proces skrócony). KPI: Leasingowe scenariusze = 60% nowych klientów (z 40% tradycyjnie). Wnioski: B2B partnerships (z firmami leasingowymi) = game changer. Tactic: \"Sprzedawca nie sprzedaje – sprzedawca kwalifikuje do leasingu, leasing robi papierkami.\"",
+    "keywords": "Leasing partnership, B2B, Fi Finance, 60% adoption, Dealership leverage",
+    "type": "case_studies",
+    "tags": ["Leasing partnership", "B2B", "Fi Finance", "60% adoption", "Dealership leverage"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Seasonal Variance – \"Koniec-Kwartału Effect\"",
+    "content": "Tradycyjnie: koniec kwartału = 40% spike rejestracji (dealerskie reorganizacje, import timing). Czerwiec 2025: +25% spike (vs. maj). KPI: Prognozuj mniejszy ruch w Q2 poczatek (kwiecień) → spike koniec (czerwiec). Tactic: \"Biuro dostępności\" na koniec miesiąca – lepiej negocjować termin dostawy niż cenę.",
+    "keywords": "Seasonal variance, Koniec kwartału, +25% spike, Planowanie",
+    "type": "case_studies",
+    "tags": ["Seasonal variance", "Koniec kwartału", "+25% spike", "Planowanie"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Podsumowanie Kat. 8 – Metrics Dashboard",
+    "content": "1. Conversion: +28 pp (dotacja effect). 2. Deal Size: +8% (Model Y upgrade). 3. CLV: 3:1 referral ROI. 4. Market: Absolutnie rosnąca (+22% EV market). 5. Service: 35-45% marża (lepiej niż sprzedaż). Dashboard dla sprzedawcy: track conversion daily, deal size weekly, referral cycle monthly. Cel: Każdy sprzedawca widzi swoje metryki vs. dealer average = motywacja.",
+    "keywords": "Dashboard, KPI, Conversion, Referral, Service margin",
+    "type": "case_studies",
+    "tags": ["Dashboard", "KPI", "Conversion", "Referral", "Service margin"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Trigger – \"Zima + Zasięg Query\"",
+    "content": "Kiedy się aktywuje: Klient mówi \"I'm concerned about range in winter\" LUB \"Jestem zaniepokojony zasięgiem zimą.\" AI System: Pobiera Nugget 7.1-7.3 (zimowy context) + 6.2 (diagnostyka finansowa). Sugeruje sprzedawcy: \"Otwórz z porównaniem danych (nie opinią). Pokaż test NAF → reframe na rzeczywiste km dzienne.\" Fraza na ekranie: 📊 \"Dane zimowe Model 3: realne 350-400 km. Klienta pytaj o przebieg dziennie.\"",
+    "keywords": "AI trigger, Zima, Range, Diagnostic, Reframe",
+    "type": "integration",
+    "tags": ["AI trigger", "Zima", "Range", "Diagnostic", "Reframe"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Trigger – \"Brak Budżetu\" Query",
+    "content": "Kiedy: Klient: \"To za drogo\" / \"Nie stać mnie\" / \"Szukam czegoś tańszego.\" AI System: Pobiera Nugget 6.3 (TCO calculator) + 6.2 (leasing diagnostyka). Sugeruje: \"Nie sprzedawaj cenę – sprzedawaj ratę. Klienta pytaj: Ile ratą miesięczną możesz zaakceptować? Wtedy pasuj finansowanie.\" Fraza na ekranie: 💳 \"Rata Model 3 z NaszEauto: 450-550 PLN/mies. Ile zmieści Ci się w budżecie?\"",
+    "keywords": "AI trigger, Budżet, Rate reframe, Leasing diagnostyka",
+    "type": "integration",
+    "tags": ["AI trigger", "Budżet", "Rate reframe", "Leasing diagnostyka"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Trigger – \"Infrastructure Objection\"",
+    "content": "Kiedy: Klient: \"Ale gdzie ładować? / Nie ma infrastruktury.\" AI System: Pobiera Nugget 7.6-7.10 (infrastruktura reality check). Sugeruje: \"Mapa kontra spekulacja. Pokaż aplikację Tesla (mapa ładowarek real-time). Pytaj: Na jakiej trasie jeździsz najczęściej? Pokaż dostępne ładowarki na tej trasie.\" Fraza na ekranie: 🗺️ \"10k+ punktów w PL. Tesla app pokazuje ALL w real-time. Trasa główna = gęsta sieć.\"",
+    "keywords": "AI trigger, Infrastruktura, Mapa real-time, Query location-based",
+    "type": "integration",
+    "tags": ["AI trigger", "Infrastruktura", "Mapa real-time", "Query location-based"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Trigger – \"JDG / Biznes Query\"",
+    "content": "Kiedy: Klient: \"Kupuję dla firmy\" / \"To pojazd biznesowy.\" AI System: Pobiera Nugget 6.12 (JDG benefits) + 8.2 (case study JDG). Sugeruje: \"Axis biznes – amortyzacja + dotacja. Pytaj: Jak zarejestrujesz pojazd – na siebie czy firmę? Wtedy pokazuj tax shield.\" Fraza na ekranie: 💼 \"JDG: dotacja 30k + amortyzacja = ulga podatkowa. Model 3 kosztuje Cię realnie 50-70k w 3 lata.\"",
+    "keywords": "AI trigger, JDG, Tax shield, Amortyzacja, Business case",
+    "type": "integration",
+    "tags": ["AI trigger", "JDG", "Tax shield", "Amortyzacja", "Business case"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "AI Context Injection – \"Dotacja Ekspiracja\"",
+    "content": "Kiedy: Bieżący data w systemie = czerwiec 2025. Budżet NaszEauto: ~1,2M PLN / 40k PLN na dotację = 30k beneficjentów. Tempo: 22k wniosków/miesiąc. Kalkulator: Pozostałe fundusze ÷ prędkość = ~1,5 miesiąca do wyczerpania. AI Trigger: Automatycznie dodaje urgency message do rozmowy: ⏰ \"Budżet dotacji może się wyczerpać do końca lipca. Warto działać szybko.\" – tylko wtedy, gdy bieżąca data <= 30 czerwca.",
+    "keywords": "AI context, Expiration timer, Urgency, Real-time calculation",
+    "type": "integration",
+    "tags": ["AI context", "Expiration timer", "Urgency", "Real-time calculation"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Tone Detection – \"From Emotional to Analytical\"",
+    "content": "Analiza rozmowy: System śledzi tonację (emocjonalna vs. analityczna). Jeśli klient emocjonalny: AI sugeruje Nuggety 7.19 (Autopilot safety), 7.4 (normalizacja). Jeśli analityczny: sugeruje Nuggety 6.3 (TCO calc), 8.7 (winter test data). Efekt: Sprzedawca dostaje personalised prompts – nie jednorazowy pitch, ale kontekstowy.",
+    "keywords": "Tone detection, Emotional vs. analytical, Personalization, Real-time",
+    "type": "integration",
+    "tags": ["Tone detection", "Emotional vs. analytical", "Personalization", "Real-time"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Personality Model – DISC Mapping",
+    "content": "UBD 2.0 integracja: System czyta z CRM profil DISC klienta (jeśli dostępny). D (Dominance): Sugeruj Nuggety dotyczące kontroli procesu (6.1 autorytet, 9.2 rata decision). I (Influence): Sugeruj Nuggety społeczne (rekomendacje, referral program 8.12). S (Steadiness): Sugeruj Nuggety bezpieczeństwa (7.19 safety, 8.1 case study). C (Conscientiousness): Sugeruj Nuggety techniczne (7.2 pompa ciepła, 8.7 test NAF). Fraza na ekranie: 🎯 \"Profil D: Pokaż mu kontrolę (data, harmonogram). Profil S: Pokaż mu spójność (case study, reviews).\"",
+    "keywords": "DISC mapping, Personalization, Psychografia, UBD integration",
+    "type": "integration",
+    "tags": ["DISC mapping", "Personalization", "Psychografia", "UBD integration"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Objection Severity Score – Triage",
+    "content": "System: Analizuje objection i przyznaje \"severity\" (1-5). Jeśli severity 4-5 (np. \"Winter range\" + brak infrastruktury) = eskalacja dla seniora. Jeśli 1-2 (np. \"Chciałbym wiedzieć więcej o Tech Package\") = junior może obsłużyć. Fraza na ekranie: 🚨 \"Wielokrotne obiekcje => Zaproponuj call z kierownikiem sprzedaży. Zaufanie wymagane.\"",
+    "keywords": "Objection severity, Triage, Escalation, Team coordination",
+    "type": "integration",
+    "tags": ["Objection severity", "Triage", "Escalation", "Team coordination"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ethical Guardrail #1 – \"Nie Kłam o Dotacji\"",
+    "content": "AI Mandate: Nigdy nie sugeruj fałszywych informacji o NaszEauto. Jeśli klient pyta \"Czy mogę dostać 50k PLN?\", system blokuje pitch i kieruje do prawdziwych liczb (max 40k PLN). Fraza: ✋ \"Maksymalnie 40k PLN wg prawa. Nie obiecujemy więcej – to buduje zaufanie długoterminowe.\"",
+    "keywords": "Ethical guardrail, Dotacja truth, Legal compliance, Trust",
+    "type": "integration",
+    "tags": ["Ethical guardrail", "Dotacja truth", "Legal compliance", "Trust"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ethical Guardrail #2 – \"Rzeczywisty Zasięg\"",
+    "content": "AI Mandate: Jeśli klient pyta \"Ile zasięgu mam gwarantowaną zimą?\", nigdy nie mów \"500 km\". Mów: \"Test zimowy NAF: 531 km przy 0°C. Rzeczywistość: 350-400 km w normalnych warunkach polskich (-2 do 0°C).\" Fraza: 📊 \"Pokazuję Ci dane testowe – nie obietnice.\"",
+    "keywords": "Ethical guardrail, Realistic range, Test data, Transparency",
+    "type": "integration",
+    "tags": ["Ethical guardrail", "Realistic range", "Test data", "Transparency"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ethical Guardrail #3 – \"Nie Porównuj z BYD Fałszywie\"",
+    "content": "AI Mandate: Jeśli porównujesz BYD vs. Tesla, używaj TYLKO publicznych danych. Nie mów \"BYD jest zawodny\"; zamiast tego: \"BYD: 482 km zimą (test NAF); Tesla: 531 km. BYD: brak Autopilotu; Tesla: pełny system.\" Fakty, nie oceny.",
+    "keywords": "Ethical guardrail, Fair comparison, BYD, Transparency",
+    "type": "integration",
+    "tags": ["Ethical guardrail", "Fair comparison", "BYD", "Transparency"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Feedback Loop – \"Post-Sale NPS\"",
+    "content": "Po każdej sprzedaży: system wysyła email do klienta z zapytaniem NPS (1-10) w ciągu 30 dni. Odpowiedź <7: AI generuje \"concern flag\" dla dealera (może być problem z serwisem, dostawą, itp.). Odpowiedź 9-10: system sugeruje \"referral prompt\" do klienta. Efekt: Continuous improvement na bazie feedback loop.",
+    "keywords": "Feedback loop, NPS, Post-sale, Continuous improvement",
+    "type": "integration",
+    "tags": ["Feedback loop", "NPS", "Post-sale", "Continuous improvement"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Feedback Loop – \"Nugget Effectiveness\"",
+    "content": "Co miesiąc: system analizuje, który nugget \"konwertuje\" (klient słyszy, potem kupuje). Jeśli Nugget 7.1 (zimowy zasięg) używany w 100 rozmowach = 68% konwersji, ale Nugget 7.15 (Spring vs. Tesla) = 32% konwersji, system \"downranks\" 7.15 w algorytmie (pokazuje go rzadziej). Efekt: Nuggety same się ewoluują na podstawie danych rzeczywistych.",
+    "keywords": "Nugget effectiveness, A/B testing, Real-time optimization, Data-driven",
+    "type": "integration",
+    "tags": ["Nugget effectiveness", "A/B testing", "Real-time optimization", "Data-driven"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Training – \"Sprzedawca Uczy AI\"",
+    "content": "Jeśli sprzedawca używa nugget-a w kreatywny sposób (np. Nugget 7.1 + własny example), a klient konwertuje: system rejestruje \"variant\" tego nugget-a. Co 3 miesiące: analiza wariantów + najskuteczniejsze są \"promowane\" (pokazane w next training). Efekt: AI się uczy od najlepszych sprzedawców.",
+    "keywords": "AI training, Variant tracking, Best practices, Continuous learning",
+    "type": "integration",
+    "tags": ["AI training", "Variant tracking", "Best practices", "Continuous learning"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Real-Time Dashboard – \"Sprzedawca's Companion\"",
+    "content": "Sprzedawca widzi na ekranie: - Aktywne obiekcje (dziś usłyszane w branży) - Top-performing nuggety (ostatnie 7 dni) - Klientów w pipeline (ze stagiem i ostatnim kontaktem) - Dotacja budget remaining (real-time counter) - Najlepszy dealer (benchmarking) Fraza: 📱 \"Twoja sprzedaż jest tu – porównaj się z dealem, rób adjustmenty na żywo.\"",
+    "keywords": "Real-time dashboard, Companion, Benchmarking, Live optimization",
+    "type": "integration",
+    "tags": ["Real-time dashboard", "Companion", "Benchmarking", "Live optimization"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "AI Escalation Protocol – \"Kiedy Wezwać Menedżera\"",
+    "content": "Trigger 1: Klient nie konwertuje po 5+ rozmów + severity score 4-5 → Sugestia: \"Zaproponuj call z kierownikiem, podaj mu historię z systemu.\" Trigger 2: Klient chce customowych warunków (rabat > 5k PLN, negocjacje umowy) → Eskalacja dla menedżera. Trigger 3: Klient pyta o kwestie prawne/compliance → Eskalacja dla compliance. Fraza: 🔄 \"System sugeruje eskalację. Menedżer ma dostęp do całej historii – zaoszczędzisz czasu.\"",
+    "keywords": "Escalation protocol, Manager handoff, Transparency",
+    "type": "integration",
+    "tags": ["Escalation protocol", "Manager handoff", "Transparency"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Privacy by Design – \"GDPR Compliance\"",
+    "content": "Każdy nugget nie zawiera DANE osobiste (imiona, adresy, nr telefonu). Wszystko → pseudo-anonymized identifiers. Chatbot AI nie przechowuje konwersacji >30 dni (compliance). CRM integration: AI czyta tylko potrzebne pola (dochód, profil DISC, stage), nie całą historię medyczną itp.",
+    "keywords": "Privacy, GDPR, Anonymized, Data minimization",
+    "type": "integration",
+    "tags": ["Privacy", "GDPR", "Anonymized", "Data minimization"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Bias Detection – \"Nieświadoma Dyskryminacja\"",
+    "content": "System monitoruje: czy sprzedawca mówi różne nuggety dla kobiet vs. mężczyzn? Jeśli wzór: A sugeruje \"Model Y = bezpieczeństwo\" dla kobiet, ale \"Model 3 = performance\" dla mężczyzn → AI flaguje (może być nieświadomy bias). Raport co miesiąc dla menedżera (konwersacyjnie: \"Warto sprawdzić konsystencję pitchu\").",
+    "keywords": "Bias detection, Gender, Equity, Fairness",
+    "type": "integration",
+    "tags": ["Bias detection", "Gender", "Equity", "Fairness"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Multilingual Support – \"PL + ENG Toggle\"",
+    "content": "Niech AI nuggety są dostępne w PL i ENG (dla dealerów zagranicznego pochodzenia pracujących w PL). Key terms: \"NaszEauto\" = \"OurCar subsidy\" (ENG translation). System: toggle na ekranie = sprzedawca bierze z jednego języka.",
+    "keywords": "Multilingual, PL/ENG, Accessibility, Inclusivity",
+    "type": "integration",
+    "tags": ["Multilingual", "PL/ENG", "Accessibility", "Inclusivity"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Podsumowanie Kat. 9 – UBD Integration Architecture",
+    "content": "1. Triggery: Bazowane na klientów speech (NLP – natural language processing). 2. Context Injection: Real-time data (dotacja budget, seasonal, local). 3. Personalization: DISC, tone, objection severity. 4. Etyka: Guardrails dla compliance + truthfulness. 5. Feedback: NPS, nugget effectiveness, bias detection. 6. Autonomy: Sprzedawca zawsze kontruje – AI suggeruje. Fraza finalna: 🤖 \"UBD 2.0 = sprzedawca + AI synergia. Nie robot. Partner.\"",
+    "keywords": "UBD architecture, Triggery, Personalization, Ethics, Feedback, Autonomy",
+    "type": "integration",
+    "tags": ["UBD architecture", "Triggery", "Personalization", "Ethics", "Feedback", "Autonomy"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "First 48 Hours – \"Welcome Ritual\"",
+    "content": "Po podpisaniu umowy: klient dostaje welcome call od dealera (nie robo-call) w ciągu 24h. Fraza: \"Gratulujemy! Chcieliśmy się upewnić, że masz wszystkie potrzebne informacje na temat Tesli.\" Mówi: 1) Transport date, 2) Co przygotować w domu (socket 11 kW), 3) Key fobs, 4) App download. Rezultat: Reduce \"buyer's remorse\" by 40% (Cialdini: commitment ritual).",
+    "keywords": "Welcome ritual, 24h, Remorse reduction, Commitment",
+    "type": "post_sale",
+    "tags": ["Welcome ritual", "24h", "Remorse reduction", "Commitment"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Onboarding Session – \"Tesla University\"",
+    "content": "Gdy samochód przyjeżdża: dealerstwo oferuje free 2-hour onboarding session. Program: 1) Interior/exterior walk (bezpieczeństwo, USB-C, trunk, etc.), 2) Autopilot demo (safe environment), 3) App tutorial (charging, navigation, climate), 4) Supercharger network explanation. Rezultat: Customer confidence ↑ 50%, NPS ↑ 8 points.",
+    "keywords": "Onboarding session, Tesla University, 2h, Confidence boost",
+    "type": "post_sale",
+    "tags": ["Onboarding session", "Tesla University", "2h", "Confidence boost"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Post-Delivery Vulnerability\" – Regret Preemption",
+    "content": "W ciągu 3 dni post-dostawy: klient często myśli \"Czy zrobiłem dobrą decyzję?\" SPIN pytanie (asynchronous): \"Jak przejechałeś pierwsze kilometry? Coś, co cię zaniepokoiło?\" Jeśli NIE (pozytywna odpowiedź): AI sugeruje sprzedawcy to skierować jako rekomendację (referral trigger). Jeśli TAK (problem): eskalacja dla customer service.",
+    "keywords": "Regret preemption, 3-day window, SPIN question, Vulnerability",
+    "type": "post_sale",
+    "tags": ["Regret preemption", "3-day window", "SPIN question", "Vulnerability"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Winter Survival Kit – \"Preparedness\"",
+    "content": "Jesień 2025: dealerstwo wysyła \"Winter Package\" (edukacyjny): - Broszura: \"Jak przygotować Teslę do zimy\" (pre-conditioning, pressure-monitor) - Aplikacja Supercharger (offline map) - Emergency contact card Fraza: \"Nie chcemy, żebyś poczuł się bezbronny – dajemy ci narzędzia.\" Rezultat: Regret z powodu zimowego zasięgu ↓ 60%.",
+    "keywords": "Winter preparation, Emergency kit, Proactive, Confidence",
+    "type": "post_sale",
+    "tags": ["Winter preparation", "Emergency kit", "Proactive", "Confidence"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "30-Day Check-In – \"NPS Gateway\"",
+    "content": "Po 30 dniach: email/SMS z krótkim formularzem: 1) NPS (0-10), 2) Biggest surprise (positive/negative), 3) Czy polecisz? - NPS 9-10: \"Dziękuję – czy możesz nas polecić 3 osobom z listy kontaktów?\" (referral trigger) - NPS 7-8: \"Ucieszeni. Coś możemy ulepszyć?\" (feedback loop) - NPS <7: Kall od seniora (escalation) Rezultat: 60-70% high-NPS klientów daje referencje.",
+    "keywords": "30-day check-in, NPS, Referral trigger, Escalation",
+    "type": "post_sale",
+    "tags": ["30-day check-in", "NPS", "Referral trigger", "Escalation"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Autopilot Masterclass\" – Engagement Driver",
+    "content": "3 miesiące post-dostawy: dealerstwo oferuje free \"Autopilot Masterclass\" (1h webinar live): - Demo na terenach (parking lot) - Q&A ze Tesla engineer (remote) - Certificate of completion (gamification) Rezultat: Engagement ↑ 40%, comfort z Autopilot ↑ (reduces anxiety post-purchase).",
+    "keywords": "Masterclass, Engagement, Gamification, Expertise",
+    "type": "post_sale",
+    "tags": ["Masterclass", "Engagement", "Gamification", "Expertise"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Annual Service Ritual – \"Predictive Maintenance\"",
+    "content": "Roczny serwis Tesli: dealerstwo proaktywnie wysyła email: \"Twoja Tesla ma 12k km – czas na roczną przegląd. Zarezerwuj w aplikacji (darmowy diagnostic + 200 PLN rabat na dodatki).\" Fakt: 85% klientów rezerwuje (vs. 30% tradycyjnie). Rezultat: Service revenue ↑ 150%, customer retention ↑ (stały kontakt).",
+    "keywords": "Predictive maintenance, Proactive, Annual ritual, Revenue",
+    "type": "post_sale",
+    "tags": ["Predictive maintenance", "Proactive", "Annual ritual", "Revenue"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Upgrade to Latest Software\" – Perceived Value",
+    "content": "Co kwartał: Tesla dostaje OTA update (over-the-air). Dealerstwo wysyła personalizowany email: \"Twoja Tesla ma nową funkcję: [feature]. Odspalimy to u ciebie w 5 minut (darmowo).\" Efekt: Klient czuje, że auto się \"ulepsza\" – nie starzeje. Rezultat: Perceived value ↑ (reduces depreciation anxiety).",
+    "keywords": "Software update, OTA, Perceived value, Depreciation anxiety",
+    "type": "post_sale",
+    "tags": ["Software update", "OTA", "Perceived value", "Depreciation anxiety"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Referral Program – \"Structured Advocacy\"",
+    "content": "Dealerstwo oferuje: Za każdego zalecanego klienta, który kupi, dostajesz 5k PLN rabatu (na akcesoria, serwis, lub cashback). Klient może poleć nawet bez ryzyka dla rekomendowanego (osoba polecana dostaje 2k PLN rabat). Struktura: Email z unique link (personalization) → tracking → verification → payout.",
+    "keywords": "Referral program, 5k PLN incentive, Structured, Win-win",
+    "type": "post_sale",
+    "tags": ["Referral program", "5k PLN incentive", "Structured", "Win-win"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Advokaci Społeczni\" – Long-Term Play",
+    "content": "Po roku: klient z NPS 9-10 + 3+ podan referencji = \"Social Advocate\" status. Dealerstwo oferuje: exclusive preview nowych modeli, VIP events (np. launch party), mogą zostać ambasadorami (YouTube content collaboration).",
+    "keywords": "Social advocates, Long-term, VIP, Content collaboration",
+    "type": "post_sale",
+    "tags": ["Social advocates", "Long-term", "VIP", "Content collaboration"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Community Building – \"Tesla Owners Club\"",
+    "content": "Dealerstwo organizuje monthly \"Tesla Owners Meetup\" (13:00 w dealerstwie parking, lub regional park): - Car show (osoba pokazuje mody/upgrades) - Networking (właściciele dzielą się tipsami) - Dealerstwo zapewnia kawe, ćwierćki Rezultat: Sense of belonging ↑, retention ↑ 25%.",
+    "keywords": "Community, Meetup, Belonging, Retention",
+    "type": "post_sale",
+    "tags": ["Community", "Meetup", "Belonging", "Retention"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Trade-In Loyalty – \"Upgrade Path\"",
+    "content": "Po 3 latach: klient z Model 3 dostaje email: \"Model Y jest teraz dostępny z lepszą ceną dla właścicieli Model 3 – upgrade z rabat 10k PLN na trade-in.\" Struktura: Model 3 (50k value) → trade-in za 45k PLN → Model Y koszt pełny -10k PLN rabat = effective financing upgrade bez bólu.",
+    "keywords": "Trade-in, Upgrade path, Loyalty discount, 3-year cycle",
+    "type": "post_sale",
+    "tags": ["Trade-in", "Upgrade path", "Loyalty discount", "3-year cycle"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Warranty Peace of Mind – \"Extended Assurance\"",
+    "content": "Standard warranty: 8 lat / 192k km bateria. Dealerstwo oferuje Extended Warranty (płatnie): +2 lata, +50k km = total 10 lat / 242k km = mental reset. Cena: ~3-4k PLN (marża 60-70%). Pitch: \"Po 5-6 latach, będziesz spokojny aż do sprzedaży.\" Rezultat: 40% klientów kupuje.",
+    "keywords": "Warranty, Extended, Peace of mind, Mental reset",
+    "type": "post_sale",
+    "tags": ["Warranty", "Extended", "Peace of mind", "Mental reset"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Regret Reversal\" – Emergency Clause",
+    "content": "Rzadko: klient po miesiącu myśli \"To był błąd.\" Dealerstwo oferuje: \"Money-back guarantee\" na 30 dni (jeśli pojazd nie został porysowany, przebieg <1k km). Fraza: \"Jeśli się rozmyśliłeś – brak pytań. Zwracamy pełną kwotę.\" Rezultat: Regret <2% (bo klient wie, że ma exit – psychologicznie redukuje obawę).",
+    "keywords": "Regret reversal, Money-back, 30-day guarantee, Psychological safety",
+    "type": "post_sale",
+    "tags": ["Regret reversal", "Money-back", "30-day guarantee", "Psychological safety"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Accessibility – \"Disability-Friendly Onboarding\"",
+    "content": "Dla klientów z ograniczeniami mobilności: dealerstwo oferuje home visit session (zamiast przyjeżdżania do dealerstwie). Demo: 1) Accessible features (voice commands, seat adjustment), 2) Remote controls (app = full control). Rezultat: Inclusivity, positive word-of-mouth (family members often recommend).",
+    "keywords": "Accessibility, Inclusivity, Home visit, Equity",
+    "type": "post_sale",
+    "tags": ["Accessibility", "Inclusivity", "Home visit", "Equity"],
+    "archetype_filter": ["accessibility"]
+  },
+  {
+    "title": "Seasonal Reminders – \"Tire Pressure Check\"",
+    "content": "Jesień: email \"Zmiana czasu letniej na zimową! Sprawdzić ciśnienie opon (każde 0,2 bar = 3% zasięgu).\" Wiosna: email \"Sezon letni – sprawdzić klimatyzację (czystość filtrów).\" Rezultat: Proactive care ↓ problemy, customer feels supported.",
+    "keywords": "Seasonal maintenance, Proactive, Support, Transparency",
+    "type": "post_sale",
+    "tags": ["Seasonal maintenance", "Proactive", "Support", "Transparency"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Legacy Upgrade\" – EVolution Story",
+    "content": "Po 5-7 latach (bliski koniec gwarancji): email: \"Twoja Tesla przejechała [km] – to jest [X vehicles w 1]. Czas pomyśleć o czymś świeższym? Model Y Premium (2025) ma [Y ulepszeń].\" Struktura: Trade-in na Model 3 klienta, rabat loyalty, financing upgrade. Rezultat: Repeat customer cycle (Tesla to \"new car every 5 years\" ecosystem).",
+    "keywords": "Legacy upgrade, 5-7 year cycle, Trade-in loop, Ecosystem",
+    "type": "post_sale",
+    "tags": ["Legacy upgrade", "5-7 year cycle", "Trade-in loop", "Ecosystem"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Referral Success Story\" – Social Proof Amplification",
+    "content": "Gdy klient A poleca klienta B, a B kupi: dealerstwo wysyła email do A: \"Twoja rekomendacja przyczyniła się do decyzji [B]. Dziękuję – 5k PLN na Twoim koncie. [B] też dostał 2k PLN rabat.\" Email zawiera success story (foto A i B = social proof para). Rezultat: Referral program ↑ adoption 35%.",
+    "keywords": "Referral success story, Social proof, Amplification, 35% adoption",
+    "type": "post_sale",
+    "tags": ["Referral success story", "Social proof", "Amplification", "35% adoption"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "\"Advocacy Shield\" – Handling Negative Word-of-Mouth",
+    "content": "Jeśli klient z NPS <7 mówi rodzinie \"Tesla mnie zawiodła\": dealerstwo proaktywnie wysyła senior do rozmowy (personal touch, nie email). Fraza: \"Słyszeliśmy, że masz obawy – chcę je naprawić.\" Rezultat: 60% negative word-of-mouth turns positive (Cialdini: consistency/commitment recovery).",
+    "keywords": "Advocacy shield, Negative WOM, Recovery, Consistency",
+    "type": "post_sale",
+    "tags": ["Advocacy shield", "Negative WOM", "Recovery", "Consistency"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Podsumowanie Kat. 10 – Post-Sale Loyalty Funnel",
+    "content": "1. 48h Welcome Ritual (reduce remorse). 2. 30-day NPS Gateway (identify advocates). 3. Proactive Onboarding (build confidence). 4. Annual Service Loop (repeat engagement). 5. Referral Program (incentivize advocacy). 6. Community Building (belonging). 7. Trade-In Loyalty (upgrade cycle). 8. Regret Reversal (safety net). Fraza finalna: \"Post-sale = najlepszy czas budowania lojalności. Każdy contact to szansa na champion, a nie problem.\"",
+    "keywords": "Loyalty funnel, 8-stage, Post-sale, Champions, Advocacy",
+    "type": "post_sale",
+    "tags": ["Loyalty funnel", "8-stage", "Post-sale", "Champions", "Advocacy"],
+    "archetype_filter": ["all"]
+  }
+]

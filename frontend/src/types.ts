@@ -252,17 +252,38 @@ export interface IGlobalAPIResponse<T> {
 // =============================================================================
 
 /**
- * (K7) Response data for Fast Path AI suggestions.
- * 
+ * Fast Path v2.0: Enhanced response data with JARVIS metadata.
+ *
  * Returned by POST /api/v1/sessions/send (Endpoint 3, F-2.2).
  * Must deliver within 2-second P95 latency (per UAT-1).
- * 
+ *
  * @see IGlobalAPIResponse for wrapper structure
  */
-export interface ISendResponseData {
-  /** AI-generated seller response text */
+export interface IFastPathResponse {
+  /** Session ID (for TEMP-* conversion tracking) */
+  session_id?: string;
+  /** AI-generated seller response text (answers client's question) */
   suggested_response: string;
-  /** Follow-up question suggestions (typically 2-3) */
+  /** Legacy field: contains optional_followup if present */
+  suggested_questions: string[];
+  /** Single strategic follow-up question (or null if not needed) */
+  optional_followup: string | null;
+  /** Questions for the seller about client's behavior/context */
+  seller_questions: string[];
+  /** Detected client communication style */
+  client_style: 'technical' | 'spontaneous' | 'emotional';
+  /** AI confidence in response (0.0-1.0) */
+  confidence_score: number;
+  /** Explanation of confidence level */
+  confidence_reason: string;
+}
+
+/**
+ * @deprecated Use IFastPathResponse instead
+ * Legacy interface kept for backward compatibility
+ */
+export interface ISendResponseData {
+  suggested_response: string;
   suggested_questions: string[];
 }
 

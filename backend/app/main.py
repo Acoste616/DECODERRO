@@ -22,6 +22,7 @@ import random
 import string
 import asyncio
 import json
+import uuid
 from datetime import datetime, timezone
 from typing import Optional, List, Dict, Any, cast
 from contextlib import asynccontextmanager
@@ -102,6 +103,30 @@ embedding_model: Optional[SentenceTransformer] = None
 websocket_connections: Dict[str, WebSocket] = {}
 
 # =============================================================================
+# Database Connection Helper
+# =============================================================================
+
+def get_fresh_db_connection():
+    """
+    Get a fresh PostgreSQL connection with autocommit enabled.
+    This avoids 'transaction aborted' errors when using global connection.
+    """
+    try:
+        conn = psycopg2.connect(
+            user=POSTGRES_USER,
+            password=POSTGRES_PASSWORD,
+            host=POSTGRES_HOST,
+            port=POSTGRES_PORT,
+            database=POSTGRES_DB
+        )
+        # Set autocommit FIRST, before any operations
+        conn.autocommit = True
+        return conn
+    except Exception as e:
+        logger.error(f"✗ Failed to create fresh DB connection: {e}")
+        return None
+
+# =============================================================================
 # Application Lifespan
 # =============================================================================
 
@@ -128,10 +153,12 @@ async def lifespan(app: FastAPI):
             port=POSTGRES_PORT,
             database=POSTGRES_DB
         )
-        logger.info("✓ PostgreSQL connected")
+        db_conn.autocommit = True
+        logger.info("✓ PostgreSQL connected (autocommit enabled)")
     except Exception as e:
         logger.error(f"✗ PostgreSQL connection failed: {e}")
-    
+        db_conn = None
+
     # Initialize Qdrant
     try:
         if QDRANT_HOST.startswith('http'):
@@ -141,13 +168,15 @@ async def lifespan(app: FastAPI):
         logger.info("✓ Qdrant connected")
     except Exception as e:
         logger.error(f"✗ Qdrant connection failed: {e}")
-    
+        qdrant_client = None
+
     # Load embedding model
     try:
         embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
         logger.info(f"✓ Embedding model loaded: {EMBEDDING_MODEL_NAME}")
     except Exception as e:
         logger.error(f"✗ Embedding model load failed: {e}")
+        embedding_model = None
     
     logger.info("🎯 ULTRA v3.0 Backend ready!")
     
@@ -229,6 +258,7 @@ async def verify_admin_key(x_admin_key: str = Header(None)):
     Verify admin API key from header (PEGT Module 5)
     """
     if not x_admin_key or x_admin_key != ADMIN_API_KEY:
+        logger.warning(f"Unauthorized admin access attempt")
         raise HTTPException(status_code=401, detail="Unauthorized: Invalid or missing X-Admin-Key")
     return True
 
@@ -270,7 +300,7 @@ def query_rag(query_text: str, language: str = "pl", top_k: int = 3) -> str:
                 ]
             ),
             limit=top_k,
-            score_threshold=0.75  # PEGT Module 11.1
+            score_threshold=0.50  # Lowered to 0.50 to capture more queries (leasing/subsidies score ~0.50-0.60)
         )
         
         if not results:
@@ -284,6 +314,56 @@ def query_rag(query_text: str, language: str = "pl", top_k: int = 3) -> str:
     except Exception as e:
         logger.error(f"RAG query failed: {e}")
         return "No specific product knowledge available. Use general sales principles."
+
+def get_smart_session_history(db_conn, session_id: str, max_recent: int = 20) -> str:
+    """
+    Get session history with smart truncation for Fast Path v2.0:
+    - Last 20 messages in full detail
+    - Earlier messages as concise summary
+    This prevents token overflow while maintaining context
+    """
+    try:
+        cursor = db_conn.cursor(cursor_factory=RealDictCursor)
+        cursor.execute(
+            """
+            SELECT timestamp, role, content
+            FROM conversation_log
+            WHERE session_id = %s
+            ORDER BY timestamp ASC
+            """,
+            (session_id,)
+        )
+        logs = cursor.fetchall()
+        cursor.close()
+
+        if len(logs) <= max_recent:
+            # All messages fit - return full history
+            return "\n".join([
+                f"[{log['timestamp']}] {log['role']}: {log['content']}"
+                for log in logs
+            ])
+        else:
+            # Split: early + recent
+            early_logs = logs[:-max_recent]
+            recent_logs = logs[-max_recent:]
+
+            # Summarize early conversation
+            first_content = early_logs[0]['content']
+            first_topic = first_content[:80] + "..." if len(first_content) > 80 else first_content
+            summary = f"[WCZEŚNIEJSZA ROZMOWA: {len(early_logs)} wiadomości, rozpoczęto od: {first_topic}]"
+
+            # Full detail for recent
+            recent_history = "\n".join([
+                f"[{log['timestamp']}] {log['role']}: {log['content']}"
+                for log in recent_logs
+            ])
+
+            return f"{summary}\n\n{recent_history}"
+
+    except Exception as e:
+        logger.warning(f"Could not fetch smart session history: {e}")
+        # Fallback to just current timestamp
+        return f"[{datetime.now(timezone.utc)}] Sprzedawca: (Historia niedostępna)"
 
 # =============================================================================
 # AI Functions (PEGT Module 4, 7, 11)
@@ -490,72 +570,84 @@ def call_ollama_slow_path(prompt: str, temperature: float = 0.3, max_tokens: int
 
 def build_prompt_1(language: str, session_history: str, last_seller_input: str, relevant_context: str) -> str:
     """
-    Prompt 1: Fast Path - Suggested Response with RAG (SUPER-BLUEPRINT Section 4.1)
-    ENHANCED: Now includes full session history for contextual responses
+    Fast Path v2.0: JARVIS - AI Coach for Salesperson in Real-Time
+    Returns: suggested_response, optional_followup, seller_questions, confidence, client_style
     """
-    return f"""You are a world-class Tesla sales ambassador. Your task is to generate one concise "Suggested Response" based on the seller's last note and the overall session history. Analyze the full conversation context to provide empathetic, contextually-aware suggestions. Use the provided "Relevant Facts" to support your response naturally. Respond ONLY in JSON format. Respond in the language defined by the 'language' tag.
+    return f"""You are JARVIS - an AI sales coach helping a Tesla salesperson during LIVE client conversation.
 
-Context:
-- Language: {language} (e.g., 'pl' or 'en')
-- Session History: {session_history}
-- Last Seller Note: {last_seller_input}
-- Relevant Fact (from RAG): {relevant_context}
-
-Instructions:
-- Review the FULL session history to understand the client's journey, concerns, and evolution
-- Consider previous objections, questions, and seller's approach
-- Generate a response that builds on the conversation context, not just the last note
-- Be empathetic and reference earlier discussion points when relevant
-- Weave in the RAG fact naturally and contextually
-
-Respond ONLY in this JSON format:
-{{ "suggested_response": "string (Your generated response in the correct language)" }}
-"""
-
-def build_prompt_2(language: str, session_history: str, last_seller_input: str) -> str:
-    """
-    Prompt 2: Fast Path - Strategic SPIN Questions (SUPER-BLUEPRINT Section 4.2)
-    ENHANCED: Now generates goal-oriented, contextual questions with clear purpose
-    """
-    return f"""You are an elite sales strategist specializing in SPIN methodology and customer psychology. Your task is to generate 3 highly strategic, open-ended questions that the seller should ask the CLIENT (not themselves). These questions will help uncover critical information needed for deep customer analysis.
-
-Context:
+CONTEXT:
 - Language: {language}
-- Session History: {session_history}
-- Last Seller Note: {last_seller_input}
+- Full Session History: {session_history}
+- Current Seller Note: {last_seller_input} (This is what the CLIENT just said/asked)
+- Tesla Knowledge Base: {relevant_context}
 
-CRITICAL REQUIREMENTS:
-1. Questions must be SPECIFIC to this client's situation (no generic AI questions like "Jakie są Pana oczekiwania?")
-2. Each question must have a CLEAR STRATEGIC PURPOSE:
-   - Uncover hidden needs, motivations, or concerns
-   - Identify decision-makers and their priorities
-   - Reveal budget constraints or timeline pressures
-   - Discover competitive alternatives being considered
-   - Understand family/stakeholder dynamics
+YOUR ROLE:
+You're coaching the salesperson in REAL-TIME. The seller will take your response and say it in their own words to the client.
 
-3. Build on what's ALREADY DISCUSSED - don't repeat topics
-4. Use SPIN framework strategically:
-   - Situation: Missing context about current situation
-   - Problem: Unexplored pain points or frustrations
-   - Implication: Consequences of current problems
-   - Need-Payoff: Benefits of solving the problem
+YOUR TASK - 6 OUTPUTS:
 
-5. Questions should feel NATURAL, not robotic or templated
-6. Tie questions to CONCRETE DETAILS from the conversation (specific car models, mentioned concerns, timeline hints)
+1. SUGGESTED RESPONSE (CRITICAL - ANSWER CLIENT'S QUESTION):
+   - FIRST: Answer the client's specific question using Tesla Knowledge Base
+   - Use concrete facts, numbers, specifications from the knowledge base
+   - Match the CLIENT'S STYLE detected from conversation:
+     * Technical client → precise data, specs, comparisons
+     * Spontaneous client → simple language, benefits-focused
+     * Emotional client → empathetic, lifestyle-focused
+   - SECOND: Add empathetic context connecting to their situation
+   - Keep it concise (2-4 sentences) - seller will expand naturally
 
-EXAMPLES OF GOOD vs BAD QUESTIONS:
+2. OPTIONAL FOLLOW-UP (0 or 1 question, NOT 3):
+   - Suggest ONE strategic question IF it genuinely helps
+   - Only if: uncovers budget/timeline/decision-makers/objections
+   - If no strategic value → return null
+   - Natural, conversational, not robotic
 
-BAD (generic): "Jakie są Pana oczekiwania wobec nowego samochodu?"
-GOOD: "Wspomniał Pan o jeździe 200km dziennie - czy obecny samochód powoduje jakieś problemy przy tak długich trasach, które chciałby Pan rozwiązać?"
+3. SELLER QUESTIONS (Meta-information you CAN'T deduce from text):
+   - Ask the SELLER 1-2 questions about client's behavior
+   - Focus on: tone of voice, body language, mood, who's present
+   - These help you understand client psychology
+   - Max 2 questions, or [] if not needed
+   - Example: "Jak brzmi ton głosu klienta - pewny czy wahający się?"
 
-BAD (vague): "Czy rozważał Pan inne opcje?"
-GOOD: "Porównując Model 3 Long Range z konkurencją jak BMW i3 czy Polestar 2, co najbardziej przemawia za Teslą w Pana przypadku?"
+4. CLIENT STYLE ANALYSIS:
+   - Detect from conversation history: technical | spontaneous | emotional
+   - This helps seller adjust their delivery
 
-BAD (too broad): "Kiedy planuje Pan zakup?"
-GOOD: "Czy brak możliwości odliczenia VAT w tym roku wpływa na Pana decyzję o terminie zakupu, czy może przełożyć to na Q1 2024?"
+5. CONFIDENCE SCORING:
+   - Score 0.0-1.0 how confident you are in your answer
+   - HIGH (0.8-1.0): Knowledge Base has exact data for client's question
+   - MEDIUM (0.5-0.79): Partial info or question is ambiguous
+   - LOW (0.0-0.49): No relevant data, using general principles
+
+6. CONFIDENCE REASON:
+   - Explain WHY this confidence level in one sentence
+
+CRITICAL RULES:
+- Tesla Knowledge Base is your PRIMARY SOURCE for facts - use it!
+- If Knowledge Base says "No specific product knowledge" → acknowledge you lack that specific info
+- ANSWER FIRST, then optionally ask follow-up
+- Seller will phrase your response naturally - don't worry about perfect wording
+- Be helpful, specific, and strategic
+
+BAD EXAMPLE (old behavior):
+Client: "Jaki zasięg ma Model 3 LR AWD?"
+Bad response: "Czy planuje Pan długie trasy? Jaki zasięg byłby optymalny?"
+(AI only asks questions, doesn't answer!)
+
+GOOD EXAMPLE (new behavior):
+Client: "Jaki zasięg ma Model 3 LR AWD?"
+Good response: "Model 3 Long Range AWD: 614km WLTP. W praktyce przy autostradzie ~130km/h to około 450-500km. Dla Pana codziennych 200km to spokojnie wystarczy z zapasem."
+(Answers with facts, connects to client's situation)
 
 Respond ONLY in this JSON format:
-{{ "suggested_questions": ["string (Strategic Question 1)", "string (Strategic Question 2)", "string (Strategic Question 3)"] }}
+{{
+  "suggested_response": "Complete answer to client's question (2-4 sentences, uses Knowledge Base facts)",
+  "optional_followup": "One strategic question or null",
+  "seller_questions": ["Meta-question 1", "Meta-question 2"] or [],
+  "client_style": "technical|spontaneous|emotional",
+  "confidence_score": 0.85,
+  "confidence_reason": "Knowledge Base contains exact range specifications for Model 3 LR AWD"
+}}
 """
 
 def build_prompt_3(language: str, original_input: str, bad_suggestion: str, feedback_note: str) -> str:
@@ -735,10 +827,13 @@ async def create_new_session():
             cursor.close()
         
         logger.info(f"✓ Created session: {session_id}")
-        
+
         return GlobalAPIResponse(
             status="success",
-            data={"session_id": session_id}
+            data={
+                "session_id": session_id,
+                "journey_stage": "Odkrywanie"  # Default initial stage
+            }
         )
         
     except Exception as e:
@@ -836,7 +931,20 @@ async def send_message(request: SendRequest):
     try:
         session_id = request.session_id
         language = normalize_language(request.language)
-        
+
+        # Get current journey_stage from database
+        current_journey_stage = request.journey_stage  # Default from request
+        if db_conn is not None and not session_id.startswith("TEMP-"):
+            try:
+                cursor = db_conn.cursor()
+                cursor.execute("SELECT journey_stage FROM sessions WHERE session_id = %s", (session_id,))
+                row = cursor.fetchone()
+                if row:
+                    current_journey_stage = row[0]
+                cursor.close()
+            except Exception as e:
+                logger.warning(f"⚠️ Could not fetch journey_stage: {e}")
+
         # Handle TEMP-* ID conversion
         if session_id.startswith("TEMP-"):
             # Create new permanent session
@@ -878,58 +986,56 @@ async def send_message(request: SendRequest):
                 logger.warning(f"⚠️ Could not save seller note to database: {db_err}")
                 # Continue anyway - Fast Path can still work
         
-        # === RETRIEVE SESSION HISTORY FOR FAST PATH CONTEXT ===
-        # This is critical for quality - Fast Path needs full context like Slow Path
+        # === RETRIEVE SMART SESSION HISTORY (Fast Path v2.0) ===
+        # Uses last 20 messages + summary for earlier messages
         session_history = ""
         if db_conn is not None:
-            try:
-                cursor = db_conn.cursor(cursor_factory=RealDictCursor)
-                cursor.execute(
-                    """
-                    SELECT timestamp, role, content
-                    FROM conversation_log
-                    WHERE session_id = %s
-                    ORDER BY timestamp ASC
-                    """,
-                    (session_id,)
-                )
-                history = cursor.fetchall()
-                cursor.close()
-                
-                # Format history for prompts (same format as Slow Path)
-                session_history = "\n".join([
-                    f"[{h['timestamp']}] {h['role']}: {h['content']}"
-                    for h in history
-                ])
-            except Exception as e:
-                logger.warning(f"Could not fetch session history: {e}")
-                # Fallback to just current message if history fetch fails
-                session_history = f"[{datetime.now(timezone.utc)}] Sprzedawca: {request.user_input}"
+            session_history = get_smart_session_history(db_conn, session_id, max_recent=20)
         else:
             # No database - use only current message
             session_history = f"[{datetime.now(timezone.utc)}] Sprzedawca: {request.user_input}"
         
-        # === FAST PATH: Prompts 1 & 2 (Parallel) WITH FULL CONTEXT ===
-        
+        # === FAST PATH v2.0: Single Unified Prompt (JARVIS) ===
+
         # Query RAG for context
         rag_context = query_rag(request.user_input, language)
-        
-        # Build prompts WITH SESSION HISTORY
-        prompt1 = build_prompt_1(language, session_history, request.user_input, rag_context)
-        prompt2 = build_prompt_2(language, session_history, request.user_input)
-        
-        # Call Gemini for both prompts
+        logger.info(f"📚 RAG context retrieved ({len(rag_context)} chars): {rag_context[:200]}...")
+
+        # Build unified prompt
+        prompt = build_prompt_1(language, session_history, request.user_input, rag_context)
+
+        # Call Gemini
         try:
-            result1 = call_gemini_fast_path(prompt1)
-            result2 = call_gemini_fast_path(prompt2)
-            
-            # Combine results (SUPER-BLUEPRINT Section 4.2.1, W14, K1)
+            result = call_gemini_fast_path(prompt)
+
+            # Extract all fields from new JSON structure
+            suggested_response = result.get("suggested_response", "")
+            optional_followup = result.get("optional_followup")  # Can be null
+            seller_questions = result.get("seller_questions", [])
+            client_style = result.get("client_style", "spontaneous")
+            confidence_score = result.get("confidence_score", 0.5)
+            confidence_reason = result.get("confidence_reason", "")
+
+            # Legacy compatibility: put optional_followup in suggested_questions
+            suggested_questions = []
+            if optional_followup:
+                suggested_questions.append(optional_followup)
+
+            logger.info(f"✅ Fast Path complete - confidence: {confidence_score}, style: {client_style}")
+
+            # Prepare response data
             fast_path_data = {
                 "session_id": session_id,  # W30: Return session_id for TEMP-* conversion
-                "suggested_response": result1.get("suggested_response", ""),
-                "suggested_questions": result2.get("suggested_questions", [])
+                "journey_stage": current_journey_stage,  # Current journey stage
+                "suggested_response": suggested_response,
+                "suggested_questions": suggested_questions,  # Legacy field
+                "optional_followup": optional_followup,
+                "seller_questions": seller_questions,
+                "client_style": client_style,
+                "confidence_score": confidence_score,
+                "confidence_reason": confidence_reason,
             }
-            
+
             # Save Fast Path responses to conversation_log (if database available)
             if db_conn is not None:
                 try:
@@ -940,15 +1046,23 @@ async def send_message(request: SendRequest):
                         VALUES (%s, %s, %s, %s, %s)
                         """,
                         (session_id, datetime.now(timezone.utc), "FastPath",
-                         fast_path_data["suggested_response"], language)
+                         suggested_response, language)
                     )
+                    # Save metadata as JSON
+                    metadata_json = json.dumps({
+                        "optional_followup": optional_followup,
+                        "seller_questions": seller_questions,
+                        "client_style": client_style,
+                        "confidence_score": confidence_score,
+                        "confidence_reason": confidence_reason
+                    })
                     cursor.execute(
                         """
                         INSERT INTO conversation_log (session_id, timestamp, role, content, language)
                         VALUES (%s, %s, %s, %s, %s)
                         """,
-                        (session_id, datetime.now(timezone.utc), "FastPath-Questions",
-                         json.dumps(fast_path_data["suggested_questions"]), language)
+                        (session_id, datetime.now(timezone.utc), "FastPath-Metadata",
+                         metadata_json, language)
                     )
                     db_conn.commit()
                     cursor.close()
@@ -974,8 +1088,14 @@ async def send_message(request: SendRequest):
 
             fast_path_data = {
                 "session_id": session_id,
+                "journey_stage": current_journey_stage,
                 "suggested_response": error_message,
-                "suggested_questions": []
+                "suggested_questions": [],
+                "optional_followup": None,
+                "seller_questions": [],
+                "client_style": "spontaneous",
+                "confidence_score": 0.0,
+                "confidence_reason": "Fast Path service unavailable"
             }
         
         # === SLOW PATH: Trigger asynchronously (only if database available) ===
@@ -1006,8 +1126,24 @@ async def run_slow_path(session_id: str, language: str, journey_stage: str):
 
         # CRITICAL FIX: Wait for WebSocket to connect
         # Give frontend time to establish WebSocket connection after receiving HTTP response
-        await asyncio.sleep(1.0)
-        logger.info(f"⏳ Waited for WebSocket connection for {session_id}")
+        # Increased to 5.0s for maximum reliability
+        await asyncio.sleep(5.0)
+        logger.info(f"⏳ Waited 5s for WebSocket connection for {session_id}")
+
+        # Active check if WebSocket actually connected
+        import time
+        max_wait = 10  # seconds
+        wait_start = time.time()
+        while session_id not in websocket_connections:
+            if time.time() - wait_start > max_wait:
+                logger.warning(f"⚠️ WebSocket never connected for {session_id} after {max_wait}s")
+                break
+            await asyncio.sleep(0.5)
+
+        if session_id in websocket_connections:
+            logger.info(f"✅ WebSocket connected for {session_id}")
+        else:
+            logger.warning(f"⚠️ Proceeding without WebSocket for {session_id} - results will be DB-only")
 
         # Check if database is available
         if db_conn is None:
@@ -1083,6 +1219,24 @@ async def run_slow_path(session_id: str, language: str, journey_stage: str):
             db_conn.commit()
             cursor.close()
             logger.info(f"💾 Saved Slow Path results to database for {session_id}")
+
+            # Update journey_stage if AI suggested a change
+            suggested_stage = opus_magnum.get("suggested_stage", "")
+            if suggested_stage and suggested_stage != journey_stage:
+                # Normalize stage to Polish (database standard)
+                normalized_stage = STAGE_TO_PL.get(suggested_stage, suggested_stage)
+                try:
+                    cursor = db_conn.cursor()
+                    cursor.execute(
+                        "UPDATE sessions SET journey_stage = %s WHERE session_id = %s",
+                        (normalized_stage, session_id)
+                    )
+                    db_conn.commit()
+                    cursor.close()
+                    logger.info(f"🔄 Updated journey_stage: {journey_stage} → {normalized_stage} for {session_id}")
+                except Exception as stage_err:
+                    logger.warning(f"⚠ Could not update journey_stage for {session_id}: {stage_err}")
+
         except Exception as db_err:
             logger.warning(f"⚠ Could not save to database for {session_id}: {db_err}")
             # Continue anyway - WebSocket delivery is more important
@@ -1533,6 +1687,78 @@ async def create_golden_standard(request: CreateStandardRequest):
         )
 
 # =============================================================================
+# Endpoint 9.5: [GET] /api/v1/admin/golden-standards/list
+# =============================================================================
+
+@app.get("/api/v1/admin/golden-standards/list", dependencies=[Depends(verify_admin_key)])
+async def list_golden_standards(language: str = Query("pl")):
+    """
+    List all Golden Standards from PostgreSQL
+    Returns paginated list of golden standards with their metadata
+    """
+    conn = None
+    try:
+        language = normalize_language(language)
+
+        # Get fresh connection using helper
+        conn = get_fresh_db_connection()
+        if not conn:
+            raise Exception("Could not establish database connection")
+
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
+        cursor.execute(
+            """
+            SELECT
+                gs_id,
+                trigger_context,
+                golden_response,
+                tags,
+                category,
+                language,
+                created_at
+            FROM golden_standards
+            WHERE language = %s
+            ORDER BY created_at DESC
+            """,
+            (language,)
+        )
+        standards = cursor.fetchall()
+        cursor.close()
+        conn.close()
+
+        # Format response
+        formatted_standards = []
+        for std in standards:
+            formatted_standards.append({
+                "id": std["gs_id"],
+                "trigger_context": std["trigger_context"],
+                "golden_response": std["golden_response"],
+                "tags": std["tags"] if std["tags"] else [],
+                "category": std["category"],
+                "language": std["language"],
+                "created_at": std["created_at"].isoformat() if std["created_at"] else None
+            })
+
+        logger.info(f"✓ Listed {len(formatted_standards)} golden standards for language: {language}")
+
+        return GlobalAPIResponse(
+            status="success",
+            data={
+                "standards": formatted_standards,
+                "total": len(formatted_standards)
+            }
+        )
+
+    except Exception as e:
+        logger.error(f"✗ List golden standards failed: {e}")
+        if conn:
+            conn.close()
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+# =============================================================================
 # Endpoint 10: [GET] /api/v1/admin/rag/list (F-3.2, W12)
 # =============================================================================
 
@@ -1562,8 +1788,13 @@ async def list_rag_nuggets(language: str = Query("pl")):
         
         nuggets = [
             {
-                "id": str(point.id),
-                "payload": point.payload
+                "nugget_id": str(point.id),
+                "title": point.payload.get("title", ""),
+                "content": point.payload.get("content", ""),
+                "keywords": point.payload.get("keywords", ""),
+                "language": point.payload.get("language", "pl"),
+                "type": point.payload.get("type", "unknown"),
+                "tags": point.payload.get("tags", [])
             }
             for point in points
         ]
@@ -1701,13 +1932,11 @@ async def bulk_import_rag_nuggets(request: BulkRagImportRequest):
                     error_count += 1
                     continue
 
-                # Generate embedding for content
+                # Generate embedding for content using SentenceTransformer
                 content_to_embed = f"{nugget['title']} {nugget['content']}"
-                embedding = genai.embed_content(
-                    model="models/text-embedding-004",
-                    content=content_to_embed,
-                    task_type="retrieval_document"
-                )["embedding"]
+                if embedding_model is None:
+                    raise Exception("Embedding model not available")
+                embedding = embedding_model.encode(content_to_embed).tolist()
 
                 # Create point
                 point_id = str(uuid.uuid4())
@@ -1806,13 +2035,11 @@ async def bulk_import_golden_standards(request: BulkGoldenStandardRequest):
                     )
                 )
 
-                # Generate embedding and add to Qdrant
+                # Generate embedding and add to Qdrant using SentenceTransformer
                 embedding_content = f"{standard['trigger_context']} {standard['golden_response']}"
-                embedding = genai.embed_content(
-                    model="models/text-embedding-004",
-                    content=embedding_content,
-                    task_type="retrieval_document"
-                )["embedding"]
+                if embedding_model is None:
+                    raise Exception("Embedding model not available")
+                embedding = embedding_model.encode(embedding_content).tolist()
 
                 point_id = str(uuid.uuid4())
                 qdrant_client.upsert(

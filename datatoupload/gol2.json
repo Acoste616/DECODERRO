@@ -1,0 +1,680 @@
+[
+  {
+    "trigger_context": "Klient pyta o zasięg Model Y Long Range",
+    "golden_response": "Model Y Long Range RWD (2025) osiąga 622 km WLTP z baterią 79 kWh NCM – o 30% więcej niż Standard Range (455 km).",
+    "tags": ["Model Y", "zasięg", "bateria"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Porównanie przyspieszenia Model 3 Performance",
+    "golden_response": "Model 3 Performance robi 0-100 km/h w 3,1 s z 510 KM – szybszy od BMW M3 (3,9 s) i tańszy o 50k PLN.",
+    "tags": ["Model 3", "przyspieszenie", "porównanie"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Osiągi Model S Plaid",
+    "golden_response": "Model S Plaid: 1020 KM, 0-100 w 2,1 s – jeden z najszybszych seryjnych aut wg Car and Driver.",
+    "tags": ["Model S", "Plaid", "osiągi"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Przestronność Model X Plaid",
+    "golden_response": "Model X Plaid: 1020 KM, 2,6 s 0-100, 567 km zasięg – ekstremalne osiągi w 7-osobowym SUV.",
+    "tags": ["Model X", "Plaid", "SUV"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "System termiczny Octovalve",
+    "golden_response": "Octovalve zarządza chłodziwem w 5 konfiguracjach – kompaktowe rozwiązanie wielu zaworów w jednym.",
+    "tags": ["Octovalve", "termiczne"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Efektywność pompy ciepła",
+    "golden_response": "Pompa ciepła Tesli zużywa 4x mniej energii niż rezystancyjne ogrzewanie przy 0-15°C, wykorzystując ciepło odpadowe.",
+    "tags": ["pompa ciepła", "ogrzewanie"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Zasięg zimą Tesla vs inne",
+    "golden_response": "Dzięki pompie ciepła Tesla traci 10-20% zasięgu zimą vs 30-40% w starszych modelach bez niej.",
+    "tags": ["zasięg zima", "pompa ciepła"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Bateria LFP w Model Y",
+    "golden_response": "Model Y LFP 62 kWh: 455 km WLTP; Long Range NMC 79 kWh: 622 km.",
+    "tags": ["Model Y", "LFP", "NMC"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Specyfikacje Model 3 Standard",
+    "golden_response": "Model 3 Standard: 513 km WLTP, ~62 kWh bateria, 5,9 s 0-100, od 184 990 PLN.",
+    "tags": ["Model 3", "Standard", "cena"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Model S Dual Motor",
+    "golden_response": "Model S Dual: 744 km WLTP, 670 KM, Cd 0,208 – niski opór powietrza.",
+    "tags": ["Model S", "Dual Motor", "aerodynamika"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Gwarancja baterii",
+    "golden_response": "8 lat/160k km z min. 70% pojemności; dla S/X do 240k km.",
+    "tags": ["gwarancja", "bateria"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Sieć Supercharger 2025",
+    "golden_response": "Ponad 25 stacji w PL, 1000 w Europie – 250 km w 15 min (V3), V4 350 kW planowane.",
+    "tags": ["Supercharger", "sieć PL"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Funkcje FSD Supervised",
+    "golden_response": "FSD: zmiany pasa, znaki, Navigate on Autopilot, tryby Chill/Hurry; v14 +10x parametry neuronowe.",
+    "tags": ["FSD", "Supervised", "v14"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Autopilot bazowy funkcje",
+    "golden_response": "TACC, Autosteer, AEB, Lane Departure, Blind Spot – standard bez opłat.",
+    "tags": ["Autopilot", "bazowy"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Aktualizacje OTA funkcje",
+    "golden_response": "OTA przez Wi-Fi: Apple Watch, rear cross traffic, ulepszona nawigacja – bez serwisu.",
+    "tags": ["OTA", "aktualizacje"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "One-Pedal Driving korzyści",
+    "golden_response": "Regeneracja odzyskuje 10-15% energii, redukując zużycie hamulców – zasięg +10-15%.",
+    "tags": ["one-pedal", "regeneracja"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Euro NCAP 2025 oceny",
+    "golden_response": "5 gwiazdek: 90% dorosłych, 93% dzieci, 89% piesi, 87% asystujące – najwyższe.",
+    "tags": ["Euro NCAP", "5 gwiazdek"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Degradacja baterii badania",
+    "golden_response": "Średnio 4% po 100k km – 70% po 740k km (13.5k km/rok).",
+    "tags": ["degradacja", "bateria", "2025"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "TCO Model Y vs Jeep",
+    "golden_response": "Model Y TCO 15-20% niższy niż Jeep Grand Cherokee na 7 lat – dzięki paliwu 7 PLN/l i niskiemu serwisowi.",
+    "tags": ["TCO", "Model Y", "Jeep"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Oszczędności energii 50%",
+    "golden_response": "50% oszczędności vs spalinowy: 3k PLN/rok ładowanie vs 7k paliwo przy 15k km/rok.",
+    "tags": ["oszczędności", "energia"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "NaszEauto dotacja",
+    "golden_response": "Do 40k PLN: 18.75k bazowo +10k złomowanie +11.25k niskie dochody (do 225k netto).",
+    "tags": ["NaszEauto", "dotacja"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Wznowienie subsidii",
+    "golden_response": "Wznowione 20.10.2025: + NGO, publiczne, dostawcze do 70k, busy do 600k PLN.",
+    "tags": ["subsidii", "2025"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Ulga BIK amortyzacja",
+    "golden_response": "Amortyzacja do 225k PLN dla EV – 20% oszczędności PIT (spalinowe do 100k od 2026).",
+    "tags": ["BIK", "amortyzacja"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Odliczenie VAT 100%",
+    "content": "100% VAT odliczalny do 225k PLN + ulgi na eksploatację dla firm.",
+    "tags": ["VAT", "odliczenie"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Ubezpieczenie Model 3/Y",
+    "golden_response": "Model 3: 3.5k PLN/rok (+20% vs Corolla); Model Y: 4-5k PLN (+15% r/r 2025).",
+    "tags": ["ubezpieczenie", "Model 3/Y"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Serwis koszty 30-50% taniej",
+    "golden_response": "Model 3: 1-2k PLN/rok; Model Y: 1.2-2.5k – 30-50% taniej niż spalinowe (brak oleju, regeneracja).",
+    "tags": ["serwis", "koszty"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Koszty ładowania PL",
+    "golden_response": "Dom: 0.80-1.20 PLN/kWh; AC publiczne: 1.50-2.50; DC: 2-3 PLN (vs paliwo 7 PLN/l).",
+    "tags": ["ładowanie", "koszty PL"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Resale 60-65% po 3 latach",
+    "golden_response": "Model Y: 60-65%; Model 3: 45-50% – lepiej niż spalinowe.",
+    "tags": ["resale", "deprecjacja"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Leasing 1.9-2.5k PLN/mies.",
+    "golden_response": "Model 3: 1.9-2.5k PLN/mies. (24-48 mies.), RRSO 0.99% – 50% oszczędności z ulgami.",
+    "tags": ["leasing", "RRSO"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "TCO oszczędności 15k PLN 3 lata",
+    "golden_response": "Model Y: ~15k PLN oszczędności na 3 lata/36k km vs Jeep Grand Cherokee.",
+    "tags": ["TCO", "oszczędności 3 lata"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Obiekcja cena wysoka",
+    "golden_response": "Model Y Standard 184 990 PLN – tańszy niż Q4 (213k) o 28k, TCO 15-20% niższe.",
+    "tags": ["obiekcja cena", "Model Y vs Q4"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja zasięg",
+    "golden_response": "80% jeździ <100 km/dzień – Model Y 455+ km, ładowanie co 4-5 dni; Supercharger 250 km/15 min.",
+    "tags": ["obiekcja zasięg", "80% <100 km"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja degradacja baterii",
+    "golden_response": "Średnio 4% po 100k km – 70% po 740k km; gwarancja 8 lat/160k km.",
+    "tags": ["obiekcja degradacja", "4% 100k km"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja rzeczywisty zasięg",
+    "golden_response": "Na autostradzie 120 km/h: 450-500 km realnie vs 533 km WLTP – normalna różnica 10-15% dla EV.",
+    "tags": ["obiekcja zasięg realny", "450-500 km autostradą"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja serwis/części",
+    "golden_response": "0 PLN przez 4 lata – brak oleju, tarcz; Q4 co 2 lata 1.5k PLN.",
+    "tags": ["obiekcja serwis", "0 PLN 4 lata"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja wnętrze minimalistyczne",
+    "golden_response": "Miękkie materiały, wegańska skóra, ambient LED – lepiej niż Q4 wg Auto Świat.",
+    "tags": ["obiekcja wnętrze", "miękkie materiały"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja baterie degradują",
+    "golden_response": "Model 3 2019 po 200k km: 12% degradacji; 2022 po 50k km: 3%.",
+    "tags": ["obiekcja degradacja", "12% 200k km"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja lepsze wnętrza konkurencji",
+    "golden_response": "\"Najwyższej jakości kabiny EV do 250k PLN\" – bez skrzypienia, wg Auto Świat 2025.",
+    "tags": ["obiekcja wnętrza", "Auto Świat 2025"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja zasięg zimą",
+    "golden_response": "Pompa ciepła traci 10-15% vs 30-40% w ID.4 – mniejsze zużycie.",
+    "tags": ["obiekcja zima", "pompa ciepła -10-15%"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja rezydualność niska",
+    "golden_response": "Model Y 60-65% po 3 latach vs 50-60% spalinowe – dzięki OTA.",
+    "tags": ["obiekcja rezydualność", "60-65% 3 lata"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja range anxiety",
+    "golden_response": "65% obaw przy zakupie, 95% znika po 2-3 mies. – Supercharger rozwiązuje 99% tras.",
+    "tags": ["obiekcja range anxiety", "95% znika 2-3 mies."],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja wnętrze nudne",
+    "golden_response": "Ambient z milionem kolorów, podwójne szyby – cieplejsze/cichsze niż EV6.",
+    "tags": ["obiekcja wnętrze nudne", "ambient kolory"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja cena vs konkurencja",
+    "golden_response": "Model Y LR 204k PLN vs ID.4 148k – 259 km więcej zasięgu + 0 PLN serwisu 4 lata.",
+    "tags": ["obiekcja cena konkurencja", "259 km więcej"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja bateria szybko degraduje",
+    "golden_response": "Gwarancja 8 lat/160k km min. 70% – wymiana bezpłatna jeśli poniżej.",
+    "tags": ["obiekcja bateria", "gwarancja 70%"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja ładowanie czas",
+    "golden_response": "Supercharger V3: 250 km/15 min (1 km/min); domowe 90% codziennego użytku.",
+    "tags": ["obiekcja ładowanie", "250 km/15 min"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Obiekcja materiały tanie",
+    "golden_response": "Solidne drzwi z trzaskiem, filcowe uszczelki – poprawa vs starsze, wg Motor.",
+    "tags": ["obiekcja materiały", "solidne drzwi"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Ładowanie domowe korzyści",
+    "golden_response": "Wall Connector: 40-50 km/h – pełna bateria 7-9h nocą, oszczędza 2-3h/tydz.",
+    "tags": ["ładowanie domowe", "Wall Connector"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Planowanie podróży",
+    "golden_response": "Trip Planner uwzględnia pogodę/ruch – minimalizuje postoje do 15-20 min.",
+    "tags": ["Trip Planner", "pogoda ruch"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Dog Mode dla zwierząt",
+    "golden_response": "Utrzymuje temperaturę, komunikat ekran – <5% baterii/godz. na zakupy.",
+    "tags": ["Dog Mode", "zwierzęta"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Camp Mode kamper",
+    "golden_response": "Klimatyzacja, streaming 15\", auto-lock off – biwak 2-3 noce bez generatora.",
+    "tags": ["Camp Mode", "biwak"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Cicha kabina Highland",
+    "golden_response": "-30% hałas vs starsze – najspokojniejszy dojazd z symulowanym dźwiękiem.",
+    "tags": ["cicha kabina", "Highland"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Aplikacja zdalna",
+    "golden_response": "Blokuj/precondition/śledź/Sentry – kontrola z wakacji bez kluczyka.",
+    "tags": ["aplikacja", "zdalna"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "One-Pedal w mieście",
+    "golden_response": "-10-15% zużycie, 60-70% jazdy na gazie – mniej zmęczenia w korkach.",
+    "tags": ["one-pedal", "miasto"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Child Detection Reminder",
+    "golden_response": "Czujniki tętna dziecka, alert app – 99% dokładność, chroni tragedie (co 10 dni PL).",
+    "tags": ["Child Detection", "bezpieczeństwo"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Nocne ładowanie",
+    "golden_response": "90% dojazdów do 100 km rozwiązane – Supercharger co 4-7 dni przy 15k km/rok.",
+    "tags": ["nocne ładowanie", "dojazdy"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Ekosystem Solar Powerwall",
+    "golden_response": "Panele generują, Powerwall przechowuje – 30-40% mniej rachunków z dotacjami do 50%.",
+    "tags": ["Solar Powerwall", "oszczędności"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Supercharger Planner",
+    "golden_response": "Preconditioning minimalizuje postoje – 800 km Warszawa-Kraków: 30-45 min na 1-2 stacje.",
+    "tags": ["Supercharger Planner", "preconditioning"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Komfort jazdy brak wibracji",
+    "golden_response": "Kabina jak salon, fotele wentylowane – 2h dojazd mniej męczący niż Q4.",
+    "tags": ["komfort", "fotele"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Sharing Address Phone",
+    "golden_response": "Share z Google Maps – auto rusza bez pisania na ekranie (iOS/Android).",
+    "tags": ["Sharing Address", "Google Maps"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Keep Climate On zima",
+    "golden_response": "Utrzymuje temperaturę do 20% baterii – wracasz po 2h do ciepłego interioru.",
+    "tags": ["Keep Climate", "zima"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Ciche ładowanie solar",
+    "golden_response": "Level 2 bez hałasu, solar + Powerwall ~0.50 PLN/kWh – pełna bateria za cenę kawy.",
+    "tags": ["ciche ładowanie", "solar"],
+    "category": "lifestyle"
+  },
+  {
+    "trigger_context": "Leasing operacyjny firmy",
+    "golden_response": "Od 1 200 zł/mies. 36 mies. 10k km/rok z VAT – 40% flot EV to Tesla.",
+    "tags": ["leasing operacyjny", "firmy"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Fleet API ERP",
+    "golden_response": "Śledzenie 100+ aut real-time, -25% koszty logistyki dla kurierów.",
+    "tags": ["Fleet API", "ERP"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Model Y car-sharing",
+    "golden_response": "LFP bateria 1 mln km, -20% koszty/km vs ID. Buzz.",
+    "tags": ["car-sharing", "LFP"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Ulga BIK IT",
+    "golden_response": "225k amortyzacja, 15% PIT oszczędności – popularne w IT.",
+    "tags": ["BIK", "IT"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Tesla taksówki Warszawa",
+    "golden_response": "Model 3 FSD -10% czasu w korkach, ROI 18 mies. vs 24 hybrydy.",
+    "tags": ["taksówki", "FSD"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Floty dostawcze Wolt",
+    "golden_response": "Model Y holuje 1 t, zintegrowany z Uber Eats – 500 firm PL 2025.",
+    "tags": ["dostawcze", "Wolt"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Salary sacrifice korpo",
+    "golden_response": "Model 3 800 zł/mies. netto, -40% vs prywatny – +20% w korpo.",
+    "tags": ["salary sacrifice", "korpo"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Telematyka Geotab",
+    "golden_response": "Monitorowanie 95% flot, alerty app dla managerów.",
+    "tags": ["Geotab", "monitorowanie"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Model S exec",
+    "golden_response": "744 km na spotkania PL, 100% odliczenie – 150 firm 2025.",
+    "tags": ["Model S", "exec"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Redukcja CO2 ESG",
+    "golden_response": "Zastępuje diesle, +50 pkt ESG – kluczowe dla grantów UE.",
+    "tags": ["CO2", "ESG"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Serwis flotowy Warszawa",
+    "golden_response": "Dedykowany slot Tesla Center – 24h turnaround vs 48h BMW.",
+    "tags": ["serwis flotowy", "24h"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Model X carpool HR",
+    "golden_response": "2 158 l bagażu, Child Detection – 10% flot HR wybiera.",
+    "tags": ["Model X", "carpool"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Koszt/km EV6 vs Model Y",
+    "golden_response": "0.20 zł/km Model Y trasa vs 0.50 EV6 – -60% logistyka.",
+    "tags": ["koszt/km", "logistyka"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "ChargePoint faktury",
+    "golden_response": "500+ stacji flot, miesięczne faktury – -30% administracja.",
+    "tags": ["ChargePoint", "administracja"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Granty UE startup",
+    "golden_response": "Do 50k zł/auto – Tesla 100% kwalifikuje, ROI 12 mies.",
+    "tags": ["granty UE", "startup"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Autopilot wypadki flot",
+    "golden_response": "-40% wypadków PL 2025 – ubezpieczenia -15%.",
+    "tags": ["Autopilot", "wypadki"],
+    "category": "fleet"
+  },
+  {
+    "trigger_context": "Cena używanego Model 3",
+    "golden_response": "Model 3 2022 50k km: 120k zł – 70% wartości vs 50% ID.4.",
+    "tags": ["używany Model 3", "120k zł"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Ogłoszenia OTOMOTO",
+    "golden_response": "500 ogłoszeń Tesli, Model Y 2024 160k zł – +30% popyt LFP.",
+    "tags": ["OTOMOTO", "Model Y używany"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Deprecjacja 2 lata",
+    "golden_response": "Model Y -25% vs EV6 -40% – dzięki OTA Supercharger.",
+    "tags": ["deprecjacja", "2 lata"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "AC używane gwarancja",
+    "golden_response": "2.5k PLN/rok Model 3 – -20% vs nowy, gwarancja przenoszona.",
+    "tags": ["AC używane", "gwarancja"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Certyfikowane używane",
+    "golden_response": "80-150k zł z 4-letnią gwarancją – 200 szt. PL, inspekcja OTA.",
+    "tags": ["certyfikowane", "4 lata gwarancja"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Model S używany upgrade",
+    "golden_response": "2020 100k km 250k zł – Plaid upgrade vs Taycan -50%.",
+    "tags": ["Model S używany", "Plaid"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Leasing zwroty 90%",
+    "golden_response": "40% Tesli wraca za 90% wartości – popularne 0km leasing.",
+    "tags": ["leasing zwroty", "90% wartości"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Degradacja używane diagnostyka",
+    "golden_response": "5% po 80k km – diagnostyka 200 zł przed zakupem.",
+    "tags": ["degradacja używane", "diagnostyka"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Export UE +10%",
+    "golden_response": "20% używanych do DE/FR za +10% ceny – wysoki standard PL.",
+    "tags": ["export UE", "+10% cena"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Model X używany Falcon Wings",
+    "golden_response": "300k zł 7-miejsc – popyt rodziny, 95% bez usterek.",
+    "tags": ["Model X używany", "Falcon Wings"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Copart naprawy OEM",
+    "golden_response": "Uszkodzone naprawiane -30% taniej – części OEM via app.",
+    "tags": ["Copart", "naprawy OEM"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Wartość Model 3 3 lata",
+    "golden_response": "55% oryginalnej ceny – lider segment C EV.",
+    "tags": ["wartość 3 lata", "segment C"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Finansowanie używane rata",
+    "golden_response": "9.9% PKO BP – 600 zł/mies. Model Y 2023.",
+    "tags": ["finansowanie używane", "PKO BP"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Trend hybrydowe PV",
+    "golden_response": "15% Tesli z PV na wtórnym +10k zł wartości.",
+    "tags": ["trend hybrydowe", "PV"],
+    "category": "resale"
+  },
+  {
+    "trigger_context": "Redukcja CO2 Model Y",
+    "golden_response": "-60 t CO2/10 lat vs spalinowy – zielone obligacje firmowe.",
+    "tags": ["CO2 redukcja", "obligacje"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Zerowa akcyza oszczędność",
+    "golden_response": "3.1% ceny dla Model 3 + zwolnienie LEZ opłat.",
+    "tags": ["akcyza zerowa", "LEZ"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "TCO emisja produkcja",
+    "golden_response": "-20% emisja vs BMW i4 – atut ESG raporty PL.",
+    "tags": ["TCO emisja", "ESG"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Recykling 95% baterii",
+    "golden_response": "95% NCM/LFP – partner Orlen stacje recyklingu PL.",
+    "tags": ["recykling", "Orlen"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Czyste Powietrze PV",
+    "golden_response": "+5k zł na PV + charging – -40% ślad węglowy.",
+    "tags": ["Czyste Powietrze", "PV"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Zima pompa vs Ioniq",
+    "golden_response": "-12% strata vs -35% Ioniq 5 – mniej zużycie sieci PL.",
+    "tags": ["zima pompa", "Ioniq 5"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "ETS opłaty EV",
+    "golden_response": "Zwolnienie 100 zł/t CO2 – 2k zł/rok flot.",
+    "tags": ["ETS", "opłaty CO2"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Hałas 0 dB regulacje",
+    "golden_response": "0 dB miasto – zgodne UE 2025 strefy ciszy PL.",
+    "tags": ["hałas 0 dB", "UE 2025"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Efektywność obciążenie sieci",
+    "golden_response": "14 kWh/100 km Model Y vs 18 Q4 – -30% obciążenie PGE.",
+    "tags": ["efektywność", "PGE"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Zielone tablice Warszawa",
+    "golden_response": "Bez ograniczeń wjazdowych centrów (Warszawa 2025) – plus commuters.",
+    "tags": ["zielone tablice", "Warszawa"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Cykl życia vs diesel",
+    "golden_response": "Bateria 500k km = 1/3 emisji nowego vs diesel co 150k km.",
+    "tags": ["cykl życia", "diesel"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Tauron zielona energia",
+    "golden_response": "Tania zielona energia owners – -25% rachunki.",
+    "tags": ["Tauron", "zielona energia"],
+    "category": "environmental"
+  },
+  {
+    "trigger_context": "Robotaxi testy PL",
+    "golden_response": "FSD v15 unsupervised – testy A1/A2 Q1 2026.",
+    "tags": ["Robotaxi", "FSD v15"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "V4 Superchargery nowe",
+    "golden_response": "10 nowych PL do 2026, 500 kW – 400 km/10 min z NFA.",
+    "tags": ["V4 Supercharger", "500 kW"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "Model 2 debiut",
+    "golden_response": "~120k zł, 400 km – 20% rynku PL 2026.",
+    "tags": ["Model 2", "debiut 2026"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "OTA v15 SLANG",
+    "golden_response": "Ulepszony FSD z polskim SLANG – +20% znaki PL.",
+    "tags": ["OTA v15", "polski SLANG"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "Powerwall 3 VPP",
+    "golden_response": "13.5 kWh 25k zł – stabilizacja Tauron VPP.",
+    "tags": ["Powerwall 3", "VPP"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "Semi dostawy DHL",
+    "golden_response": "Dostawy PL 2026, 800 km – -50% emisji DHL.",
+    "tags": ["Semi", "DHL"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "Lifting Model 2 LFP",
+    "golden_response": "Tańszy ID.3 z LFP – 5k szt./rok PL.",
+    "tags": ["Model 2 lifting", "LFP"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "eRoaming Superchargery",
+    "golden_response": "Dla wszystkich EV PL 2026, 1.50 zł/kWh.",
+    "tags": ["eRoaming", "wszystkie EV"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "Optimus serwis",
+    "golden_response": "Asystent Tesla Center 2026 – -30% koszty.",
+    "tags": ["Optimus", "serwis"],
+    "category": "future"
+  },
+  {
+    "trigger_context": "Cel 10k Tesli 2026",
+    "golden_response": "10k szt. PL, 50% EV dzięki Robotaxi leasingowi.",
+    "tags": ["cel sprzedaż 2026", "50% EV"],
+    "category": "future"
+  }
+]

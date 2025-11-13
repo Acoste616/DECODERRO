@@ -34,6 +34,7 @@ export default function FeedbackTab() {
   const [loading, setLoading] = useState(false);
   const [detailsLoading, setDetailsLoading] = useState(false);
   const [showCreateModal, setShowCreateModal] = useState(false);
+  const [authError, setAuthError] = useState(false);
 
   // Form state for Golden Standard
   const [formData, setFormData] = useState({
@@ -60,13 +61,18 @@ export default function FeedbackTab() {
 
   const loadGroups = async () => {
     setLoading(true);
+    setAuthError(false);
     try {
       const response = await api.getFeedbackGrouped(current_language);
       if (response.status === 'success' && response.data) {
         setGroups(response.data.groups || []);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Failed to load feedback groups:', error);
+      // Check if it's an authentication error
+      if (error.response?.status === 401) {
+        setAuthError(true);
+      }
     } finally {
       setLoading(false);
     }
@@ -228,7 +234,26 @@ export default function FeedbackTab() {
           </div>
 
           <div className="flex-1 overflow-y-auto">
-            {loading ? (
+            {authError ? (
+              <div className="p-6 text-center">
+                <div className="text-4xl mb-3">🔒</div>
+                <div className="text-sm font-semibold text-red-600 dark:text-red-400 mb-2">
+                  Sesja wygasła
+                </div>
+                <div className="text-xs text-text-secondary-light dark:text-text-secondary-dark mb-4">
+                  Wymagane ponowne logowanie do panelu administracyjnego
+                </div>
+                <button
+                  onClick={() => {
+                    localStorage.removeItem('ultra_admin_key');
+                    window.location.reload();
+                  }}
+                  className="px-4 py-2 bg-accent-light dark:bg-accent-dark text-white rounded hover:opacity-90 transition text-sm"
+                >
+                  Zaloguj ponownie
+                </button>
+              </div>
+            ) : loading ? (
               <div className="p-6 text-center text-text-secondary-light dark:text-text-secondary-dark">
                 Ładowanie...
               </div>

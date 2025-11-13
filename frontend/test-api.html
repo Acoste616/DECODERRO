@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test API Auth</title>
+</head>
+<body>
+    <h1>Test Admin API Authentication</h1>
+    <button onclick="testAPI()">Test API Call</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function testAPI() {
+            const resultEl = document.getElementById('result');
+
+            // Set key in localStorage
+            localStorage.setItem('ultra_admin_key', 'ULTRA_DOJO_KEY_8a4f9b2c_qoder_ai_2025');
+
+            resultEl.textContent = 'Testing...\n';
+
+            try {
+                const response = await fetch('http://localhost:8000/api/v1/admin/feedback/grouped?language=pl', {
+                    method: 'GET',
+                    headers: {
+                        'X-Admin-Key': 'ULTRA_DOJO_KEY_8a4f9b2c_qoder_ai_2025',
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                resultEl.textContent += `Status: ${response.status}\n`;
+                resultEl.textContent += `Headers sent:\n`;
+                resultEl.textContent += `X-Admin-Key: ULTRA_DOJO_KEY_8a4f9b2c_qoder_ai_2025\n\n`;
+
+                if (response.ok) {
+                    const data = await response.json();
+                    resultEl.textContent += 'SUCCESS!\n';
+                    resultEl.textContent += JSON.stringify(data, null, 2);
+                } else {
+                    const error = await response.text();
+                    resultEl.textContent += 'FAILED!\n';
+                    resultEl.textContent += error;
+                }
+            } catch (error) {
+                resultEl.textContent += 'ERROR!\n';
+                resultEl.textContent += error.message;
+            }
+        }
+    </script>
+</body>
+</html>

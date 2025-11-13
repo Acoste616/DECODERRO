@@ -1,0 +1,1162 @@
+[
+  {
+    "title": "Model Y Long Range RWD (2025) – Zasięg i Bateria",
+    "content": "Model Y Long Range RWD (2025) osiąga zasięg 622 km (WLTP) dzięki baterii 79 kWh NCM, oferując o 30% większy zasięg niż wersja bazowa Standard Range (455 km WLTP).",
+    "keywords": "Model Y, Long Range, zasięg 622 km, bateria 79 kWh, WLTP",
+    "type": "product_knowledge",
+    "tags": ["Model Y", "zasięg", "bateria", "WLTP"],
+    "archetype_filter": ["practical_buyer"]
+  },
+  {
+    "title": "Model 3 Performance (2025) – Przyspieszenie i Moc",
+    "content": "Model 3 Performance (2025) przyspiesza 0-100 km/h w 3,1 sekundy z mocą 510 KM, będąc szybszym od BMW M3 Competition (3,9 s) w sprincie do 100 km/h, przy koszcie niższym o około 50 000 PLN.",
+    "keywords": "Model 3, Performance, 3.1 s 0-100, 510 KM, BMW M3",
+    "type": "product_knowledge",
+    "tags": ["Model 3", "przyspieszenie", "moc", "porównanie"],
+    "archetype_filter": ["performance_enthusiast"]
+  },
+  {
+    "title": "Model S Plaid – Tri-Motor i Osiągi",
+    "content": "Model S Plaid z tri-motor układem produkuje 1020 KM i osiąga 0-100 km/h w 2,1 sekundy, będąc jednym z najszybszych seryjnych samochodów w historii testów Car and Driver.",
+    "keywords": "Model S, Plaid, 1020 KM, 2.1 s 0-100, Car and Driver",
+    "type": "product_knowledge",
+    "tags": ["Model S", "Plaid", "osiągi", "tri-motor"],
+    "archetype_filter": ["speed_seeker"]
+  },
+  {
+    "title": "Model X Plaid – Moc i Przestronność",
+    "content": "Model X Plaid oferuje 1020 KM, 0-100 km/h w 2,6 sekundy i zasięg 567 km (WLTP), łącząc ekstremalne osiągi z przestronnością 7-osobowego SUV-a.",
+    "keywords": "Model X, Plaid, 1020 KM, 2.6 s 0-100, zasięg 567 km",
+    "type": "product_knowledge",
+    "tags": ["Model X", "Plaid", "SUV", "przestronność"],
+    "archetype_filter": ["family_performance"]
+  },
+  {
+    "title": "System Octovalve – Zarządzanie Termiczne",
+    "content": "System Octovalve w Teslach to ośmioportalowy zawór termiczny zarządzający przepływem chłodziwa w 5 konfiguracjach, konsolidując funkcje wielu oddzielnych zaworów w jedno kompaktowe urządzenie.",
+    "keywords": "Octovalve, termiczne, zawór, chłodziwo, konfiguracje",
+    "type": "product_knowledge",
+    "tags": ["Octovalve", "termiczne", "system"],
+    "archetype_filter": ["tech_enthusiast"]
+  },
+  {
+    "title": "Pompa Ciepła Tesli – Efektywność Ogrzewania",
+    "content": "Pompa ciepła Tesli wykorzystuje ciepło odpadowe z silników, baterii i elektroniki, zużywając nawet 4x mniej energii niż tradycyjne ogrzewanie rezystancyjne przy temperaturach 0-15°C.",
+    "keywords": "Pompa ciepła, efektywność, ciepło odpadowe, ogrzewanie",
+    "type": "product_knowledge",
+    "tags": ["pompa ciepła", "efektywność", "ogrzewanie"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "Zasięg Zimą z Pompą Ciepła",
+    "content": "Tesla osiąga 10-20% lepszy zasięg zimą dzięki pompie ciepła w porównaniu do modeli z ogrzewaniem rezystancyjnym, jak starsze Model 3 i Model S.",
+    "keywords": "zasięg zima, pompa ciepła, 10-20% lepszy, rezystancyjne",
+    "type": "product_knowledge",
+    "tags": ["zasięg zima", "pompa ciepła", "porównanie"],
+    "archetype_filter": ["winter_driver"]
+  },
+  {
+    "title": "Model Y z Baterią LFP",
+    "content": "Model Y (2025) z LFP baterią 62 kWh ma zasięg WLTP 455 km, a wersję Long Range z 79 kWh baterii NMC oferuje 622 km.",
+    "keywords": "Model Y, LFP 62 kWh, zasięg 455 km, NMC 79 kWh, 622 km",
+    "type": "product_knowledge",
+    "tags": ["Model Y", "LFP", "NMC", "zasięg"],
+    "archetype_filter": ["practical_buyer"]
+  },
+  {
+    "title": "Model 3 Standard Range (2025)",
+    "content": "Model 3 Standard Range (2025) posiada zasięg 513 km WLTP i baterię ~62 kWh, przyspieszając 0-100 km/h w 5,9 sekundy przy najniższej cenie w gamie (od 184 990 PLN).",
+    "keywords": "Model 3, Standard Range, 513 km WLTP, 5.9 s 0-100, 184 990 PLN",
+    "type": "product_knowledge",
+    "tags": ["Model 3", "Standard Range", "cena", "osiągi"],
+    "archetype_filter": ["budget_conscious"]
+  },
+  {
+    "title": "Model S Dual Motor (2025)",
+    "content": "Model S Dual Motor (2025) ma zasięg 744 km WLTP, 670 KM i współczynnik oporu powietrza Cd 0,208 – jeden z najniższych wśród seryjnych samochodów.",
+    "keywords": "Model S, Dual Motor, 744 km WLTP, 670 KM, Cd 0.208",
+    "type": "product_knowledge",
+    "tags": ["Model S", "Dual Motor", "aerodynamika", "zasięg"],
+    "archetype_filter": ["luxury_driver"]
+  },
+  {
+    "title": "Gwarancja na Baterię Tesla",
+    "content": "Tesla oferuje 8-letnią/160 000 km gwarancję na baterię z gwarantowaną pojemnością minimum 70%, co chroni przed nadmierną degradacją przez cały okres użytkowania (dla Model 3 i Y; dla S/X do 240 000 km).",
+    "keywords": "gwarancja bateria, 8 lat, 160 000 km, 70% pojemność",
+    "type": "product_knowledge",
+    "tags": ["gwarancja", "bateria", "degradacja"],
+    "archetype_filter": ["reliability_seeker"]
+  },
+  {
+    "title": "Sieć Supercharger (2025)",
+    "content": "Sieć Supercharger Tesla (listopad 2025) obejmuje ponad 25 stacji w Polsce i ponad 1000 w Europie z ładowaniem do 250 kW (V3) i planowanymi 350 kW (V4), dodając do 250 km w 15 minut.",
+    "keywords": "Supercharger, 25 stacji PL, 250 kW, V4 350 kW",
+    "type": "product_knowledge",
+    "tags": ["Supercharger", "ładowanie", "sieć PL"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "FSD (Supervised) 2025",
+    "content": "FSD (Supervised) 2025 oferuje automatyczne zmiany pasa, rozpoznawanie świateł/znaków drogowych, Navigate on Autopilot i tryby jazdy \"Chill/Standard/Hurry\", z aktualizacją v14 zwiększającą parametry sieci neuronowej 10-krotnie.",
+    "keywords": "FSD Supervised, zmiany pasa, Navigate on Autopilot, v14",
+    "type": "product_knowledge",
+    "tags": ["FSD", "autopilot", "aktualizacja"],
+    "archetype_filter": ["tech_enthusiast"]
+  },
+  {
+    "title": "Autopilot Bazowy",
+    "content": "Autopilot bazowy w standardzie zawiera Traffic-Aware Cruise Control, Autosteer, Automatic Emergency Braking, Lane Departure Avoidance i Blind Spot Monitoring bez dodatkowych opłat.",
+    "keywords": "Autopilot bazowy, TACC, Autosteer, AEB, Blind Spot",
+    "type": "product_knowledge",
+    "tags": ["Autopilot", "standard", "bezpieczeństwo"],
+    "archetype_filter": ["safety_focused"]
+  },
+  {
+    "title": "Aktualizacje OTA",
+    "content": "Tesla dostarcza aktualizacje oprogramowania Over-The-Air (OTA) przez Wi-Fi, dodając nowe funkcje jak Apple Watch support, rear cross traffic alert i ulepszone nawigację bez wizyty w serwisie.",
+    "keywords": "OTA updates, Wi-Fi, Apple Watch, rear cross traffic",
+    "type": "product_knowledge",
+    "tags": ["OTA", "aktualizacje", "funkcje"],
+    "archetype_filter": ["tech_enthusiast"]
+  },
+  {
+    "title": "One-Pedal Driving",
+    "content": "System one-pedal driving Tesli wykorzystuje hamowanie regeneracyjne, odzyskując energię kinetyczną do baterii podczas zwalniania, zwiększając zasięg o 10-15% i redukując zużycie klocków hamulcowych.",
+    "keywords": "one-pedal driving, regeneracyjne, 10-15% zasięg, hamulce",
+    "type": "product_knowledge",
+    "tags": ["one-pedal", "regeneracja", "zasięg"],
+    "archetype_filter": ["city_driver"]
+  },
+  {
+    "title": "Ocena Euro NCAP 2025",
+    "content": "Model 3 i Model Y (2025) uzyskały najwyższą ocenę Euro NCAP 5 gwiazdek we wszystkich kategoriach crashtest (90% ochrona dorosłych, 93% dzieci, 89% piesi, 87% systemy asystujące) i zaawansowanymi systemami zapobiegania kolizjom.",
+    "keywords": "Euro NCAP, 5 gwiazdek, 90% dorosłych, AEB",
+    "type": "product_knowledge",
+    "tags": ["Euro NCAP", "bezpieczeństwo", "crashtest"],
+    "archetype_filter": ["family_safety"]
+  },
+  {
+    "title": "Degradacja Baterii 2025",
+    "content": "Badania z 2025 pokazują średnią degradację baterii Tesla na poziomie 4% po 100 000 km, co oznacza, że bateria osiąga 70% pojemności po ~740 000 km przy średnim dojeździe 13 500 km/rok.",
+    "keywords": "degradacja bateria, 4% po 100k km, 740k km do 70%",
+    "type": "product_knowledge",
+    "tags": ["degradacja", "bateria", "badania 2025"],
+    "archetype_filter": ["long_term_owner"]
+  },
+  {
+    "title": "TCO Model Y vs Jeep Grand Cherokee",
+    "content": "Tesla Model Y ma TCO o 15-20% niższy niż Jeep Grand Cherokee (spalinowy) na przestrzeni 7 lat w Polsce, dzięki wyższym cenom paliwa (ok. 7 PLN/l) i niższym kosztom serwisu.",
+    "keywords": "TCO Model Y, Jeep Grand Cherokee, 15-20% niższy, 7 lat",
+    "type": "financial",
+    "tags": ["TCO", "Model Y", "porównanie", "serwis"],
+    "archetype_filter": ["financial"]
+  },
+  {
+    "title": "Oszczędności na Energii vs Spalinowy",
+    "content": "Kierowca Tesla zaoszczędza 50% na kosztach energii w porównaniu do samochodu spalinowego – przy jeździe 15 000 km rocznie to oszczędność 3 000 PLN/rok (ładowanie w domu) vs 7 000 PLN/rok paliwa (przy 7 l/100 km).",
+    "keywords": "oszczędności energia, 50%, 15k km/rok, 3k PLN/rok",
+    "type": "financial",
+    "tags": ["oszczędności", "energia", "paliwo"],
+    "archetype_filter": ["cost_saver"]
+  },
+  {
+    "title": "Program NaszEauto 2025",
+    "content": "Program \"NaszEauto\" w Polsce (2025) oferuje dotację do 40 000 PLN: 18 750 PLN bazowo + 10 000 PLN za złomowanie + do 11 250 PLN dla gospodarstw o niskich dochodach (cena samochodu do 225 000 PLN netto).",
+    "keywords": "NaszEauto, dotacja 40k PLN, złomowanie, niskie dochody",
+    "type": "financial",
+    "tags": ["dotacja", "NaszEauto", "ulgi"],
+    "archetype_filter": ["budget_conscious"]
+  },
+  {
+    "title": "Wznowienie Subsidii 2025",
+    "content": "Polska wznowiła program subsidii 20 października 2025, rozszerzając beneficjentów o NGO, instytucje publiczne i szkoły, oraz dodając pojazdy dostawcze (N1) do 70 000 PLN i busy małe (M2) do 600 000 PLN.",
+    "keywords": "subsidii wznowienie, 20 października 2025, NGO, pojazdy dostawcze",
+    "type": "financial",
+    "tags": ["subsidii", "rozszerzenie", "2025"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Ulga BIK dla EV Firmowych",
+    "content": "Podatek od samochodów firmowych w Polsce pozwala na amortyzację do 225 000 PLN dla EV (od 2026 r. limit dla spalinowych spadnie do 100 000 PLN), co daje oszczędności do 20% na podatku dochodowym.",
+    "keywords": "ulga BIK, amortyzacja 225k PLN, 20% oszczędności PIT",
+    "type": "financial",
+    "tags": ["ulga BIK", "amortyzacja", "firmowe"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Odliczenie VAT dla Firm",
+    "content": "Polskie przedsiębiorstwa mogą odliczyć 100% VAT od zakupu Tesla (do 225 000 PLN), a dla firm zarejestrowanych jako podatnicy VAT jest w pełni odzyskiwalny, plus ulgi w podatku dochodowym na koszty eksploatacji.",
+    "keywords": "odliczenie VAT, 100%, 225k PLN, koszty eksploatacji",
+    "type": "financial",
+    "tags": ["VAT", "odliczenie", "firmy"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Ubezpieczenie Model 3 w PL",
+    "content": "Ubezpieczenie Tesla Model 3 w Polsce wynosi średnio 3 500 PLN/rok (20% drożej niż Toyota Corolla), ale dla Model Y wynosi 4 000-5 000 PLN rocznie (wzrost 15% rok do roku w 2025).",
+    "keywords": "ubezpieczenie Model 3, 3 500 PLN/rok, Model Y 4-5k PLN",
+    "type": "financial",
+    "tags": ["ubezpieczenie", "Model 3", "Model Y"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Koszty Serwisu Tesla",
+    "content": "Serwis Tesla kosztuje 1 000-2 000 PLN/rok (Model 3) i 1 200-2 500 PLN/rok (Model Y) – 30-50% taniej niż pojazdy spalinowe dzięki braku zmian oleju, tarcz hamulcowych i regeneracyjnemu hamowaniu.",
+    "keywords": "serwis Tesla, 1-2k PLN/rok Model 3, 30-50% taniej",
+    "type": "financial",
+    "tags": ["serwis", "koszty", "regeneracyjne"],
+    "archetype_filter": ["cost_saver"]
+  },
+  {
+    "title": "Koszty Ładowania w PL",
+    "content": "Ładowanie w domu w Polsce kosztuje 0,80-1,20 PLN/kWh, natomiast stacje publiczne AC: 1,50-2,50 PLN/kWh, a szybkie DC: 2,00-3,00 PLN/kWh (vs paliwo 7,00 PLN/litr).",
+    "keywords": "ładowanie koszty, 0.80-1.20 PLN/kWh dom, DC 2-3 PLN/kWh",
+    "type": "financial",
+    "tags": ["ładowanie", "koszty", "PL"],
+    "archetype_filter": ["home_charger"]
+  },
+  {
+    "title": "Resale Value Model Y",
+    "content": "Tesla Model Y zatrzymuje 60-65% wartości po 3 latach w Polsce (40-45% w pesymistycznym scenariuszu), a Model 3 45-50% – lepiej niż większość konkurentów spalinowych dzięki stabilności marki Tesla.",
+    "keywords": "resale value, 60-65% po 3 latach, Model 3 45-50%",
+    "type": "financial",
+    "tags": ["resale", "wartość", "deprecjacja"],
+    "archetype_filter": ["long_term_owner"]
+  },
+  {
+    "title": "Leasing Tesla w PL",
+    "content": "Leasing Tesla w Polsce wynosi 1 900-2 500 PLN/miesiąc dla Model 3 (24-48 miesięcy) przy niskim RRSO (nawet 0,99% w promocjach) – oszczędności do 50% całkowitych kosztów dzięki ulgom podatkowym.",
+    "keywords": "leasing Model 3, 1 900-2 500 PLN/mies., RRSO 0.99%",
+    "type": "financial",
+    "tags": ["leasing", "RRSO", "ulgi"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Oszczędności TCO Model Y",
+    "content": "Łączne oszczędności TCO na Tesla Model Y wynoszą około 15 000 PLN na 3 latach (przy 36 000 km) dzięki niższym kosztom energii, serwisu, ubezpieczenia i deprecjacji w porównaniu do Jeep Grand Cherokee (spalinowy).",
+    "keywords": "TCO Model Y, 15k PLN oszczędności 3 lata, 36k km",
+    "type": "financial",
+    "tags": ["TCO", "oszczędności", "3 lata"],
+    "archetype_filter": ["financial"]
+  },
+  {
+    "title": "Model Y vs VW ID.4",
+    "content": "Tesla Model Y Long Range (622 km WLTP) ma 270 km więcej zasięgu niż VW ID.4 (363 km), przy cenie 204 990 PLN vs 148 390 PLN, dzięki wyższej efektywności 14 kWh/100 km vs 16,5 kWh/100 km.",
+    "keywords": "Model Y vs ID.4, 622 km vs 363 km, efektywność 14 kWh",
+    "type": "competitive",
+    "tags": ["Model Y", "VW ID.4", "zasięg", "efektywność"],
+    "archetype_filter": ["competitive_buyer"]
+  },
+  {
+    "title": "Model 3 Performance vs BMW i4 M50",
+    "content": "Tesla Model 3 Performance przyspiesza 0-100 km/h w 3,1 sekundy, podczas gdy BMW i4 M50 potrzebuje 3,9 sekundy – Tesla jest o 0,8 sekundy szybsza przy cenie 229 990 PLN vs 289 000 PLN.",
+    "keywords": "Model 3 vs i4 M50, 3.1 s vs 3.9 s, cena 229k vs 289k",
+    "type": "competitive",
+    "tags": ["Model 3", "BMW i4", "przyspieszenie", "cena"],
+    "archetype_filter": ["performance_enthusiast"]
+  },
+  {
+    "title": "Kia EV6 GT-Line vs Model Y AWD",
+    "content": "Kia EV6 GT-Line AWD (576 KM, 3,5 s 0-100 km/h) ma o 121 KM więcej mocy niż Tesla Model Y Long Range AWD (455 KM, 5,0 s), lecz Model Y ma zasięg 533 km vs 528 km EV6 – wydajność vs osiągi (cena EV6 od 241 900 PLN).",
+    "keywords": "EV6 vs Model Y, 576 KM vs 455 KM, zasięg 533 vs 528 km",
+    "type": "competitive",
+    "tags": ["Kia EV6", "Model Y", "moc", "zasięg"],
+    "archetype_filter": ["balanced_driver"]
+  },
+  {
+    "title": "Model 3 vs BMW i4 Charging",
+    "content": "Tesla Model 3 RWD (250 kW DC charging) ładuje się szybciej niż BMW i4 eDrive35 (130 kW DC), dodając 250 km w 15 min vs ~30 min do 80% – przewaga Tesli przy publicznym ładowaniu (cena i4 od 199 900 PLN).",
+    "keywords": "Model 3 vs i4 charging, 250 kW vs 130 kW, 15 min 250 km",
+    "type": "competitive",
+    "tags": ["ładowanie", "Model 3", "BMW i4", "DC"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "Audi Q4 vs Model Y Serwis",
+    "content": "Audi Q4 e-tron wymaga serwisu co 2 lata (ok. 1 500 PLN u Audi PL), podczas gdy Tesla Model Y ma koszty serwisu 0 PLN przez 4 lata – różnica ponad 3 000 PLN na korzyść Tesli (cena Q4 od 213 000 PLN).",
+    "keywords": "Q4 vs Model Y serwis, 1 500 PLN co 2 lata vs 0 PLN 4 lata",
+    "type": "competitive",
+    "tags": ["serwis", "Audi Q4", "Model Y", "koszty"],
+    "archetype_filter": ["cost_saver"]
+  },
+  {
+    "title": "BMW i4 TCO vs Model 3",
+    "content": "BMW i4 będzie kosztować ~250 000 PLN TCO na 5 lat, podczas gdy Tesla Model 3 Performance (porównywalny segment) ~200 000 PLN – BMW droższe o 50 000 PLN (20%) z powodu serwisu i ubezpieczenia.",
+    "keywords": "i4 TCO 250k PLN 5 lat, Model 3 200k PLN, droższe o 50k",
+    "type": "competitive",
+    "tags": ["TCO", "BMW i4", "Model 3", "serwis"],
+    "archetype_filter": ["financial"]
+  },
+  {
+    "title": "VW ID.4 Pro vs Model 3 LR",
+    "content": "VW ID.4 Pro (286 KM, 5,4 s 0-100 km/h) kosztuje 179 900 PLN – o 25 000 PLN taniej niż Model 3 Long Range (204 990 PLN), ale Model 3 ma 629 km zasięgu (266 km więcej).",
+    "keywords": "ID.4 vs Model 3 LR, 179k vs 204k PLN, 629 km vs ?",
+    "type": "competitive",
+    "tags": ["VW ID.4", "Model 3", "cena", "zasięg"],
+    "archetype_filter": ["budget_conscious"]
+  },
+  {
+    "title": "Kia EV6 Level 2 Charging vs Model Y",
+    "content": "Kia EV6 Level 2 charging zajmuje ~8 godzin, podczas gdy Tesla Model Y ~7-8 godzin – różnica minimalna przy pełnym naładowaniu, obie równe dla codziennego użytku (efektywność Tesli lepsza o 10%).",
+    "keywords": "EV6 vs Model Y Level 2, 8h vs 7-8h, efektywność +10%",
+    "type": "competitive",
+    "tags": ["ładowanie Level 2", "Kia EV6", "Model Y"],
+    "archetype_filter": ["home_charger"]
+  },
+  {
+    "title": "VW ID.4 AWD Pro vs Model Y AWD",
+    "content": "VW ID.4 AWD Pro (335 KM, 6,2 s 0-100 km/h) przyspiesza o 1,2 sekundy wolniej niż Tesla Model Y Long Range AWD (5,0 s), przy zasięgu 520 km ID.4 vs 533 km Model Y (cena ID.4 od 199 900 PLN).",
+    "keywords": "ID.4 AWD vs Model Y AWD, 6.2 s vs 5.0 s, 520 vs 533 km",
+    "type": "competitive",
+    "tags": ["AWD", "VW ID.4", "Model Y", "osiągi"],
+    "archetype_filter": ["all_wheel"]
+  },
+  {
+    "title": "Model Y Standard RWD vs Audi Q4",
+    "content": "Tesla Model Y Standard RWD (2025 Polska) kosztuje 184 990 PLN – o 28 000 PLN taniej niż Audi Q4 e-tron 40 (213 000 PLN), przy zasięgu Model Y 455 km vs Q4 349 km WLTP (106 km więcej).",
+    "keywords": "Model Y vs Q4, 184k vs 213k PLN, 455 vs 349 km",
+    "type": "competitive",
+    "tags": ["Model Y", "Audi Q4", "cena", "zasięg"],
+    "archetype_filter": ["budget_conscious"]
+  },
+  {
+    "title": "Gwarancja Kia EV6 vs Tesla Model 3",
+    "content": "Gwarancja Kia EV6 wynosi 7 lat/150 000 km (akumulator 8 lat/160 000 km), podczas gdy Tesla Model 3 ma 4 lata/80 000 km na pojazd i 8 lat/160 000 km na akumulator – Tesla oferuje lepszą ochronę na baterię bez limitu km w praktyce.",
+    "keywords": "gwarancja EV6 vs Model 3, 7 lat vs 4 lata, bateria 8 lat",
+    "type": "competitive",
+    "tags": ["gwarancja", "Kia EV6", "Model 3"],
+    "archetype_filter": ["reliability_seeker"]
+  },
+  {
+    "title": "Audi Q4 Charging vs Model Y",
+    "content": "Audi Q4 e-tron 45 quattro (150 kW DC, 10-80% w ~30 min) vs Tesla Model Y (250 kW, 250 km w 15 min) – Tesla szybciej ładuje, dodając ~1 000 km/godz. vs Q4 ~600 km/godz. (cena Q4 224 300 PLN).",
+    "keywords": "Q4 vs Model Y charging, 150 kW vs 250 kW, 30 min vs 15 min",
+    "type": "competitive",
+    "tags": ["ładowanie DC", "Audi Q4", "Model Y"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "BMW i4 TCO vs Kia EV6",
+    "content": "BMW i4 (5-letnie TCO ~250 000 PLN) ma o 40 000 PLN wyższe koszty niż Kia EV6 Long Range (~210 000 PLN) – głównie z powodu ubezpieczenia i deprecjacji (i4 ~5 000 PLN/rok vs EV6 ~3 500 PLN/rok).",
+    "keywords": "i4 TCO 250k vs EV6 210k, ubezpieczenie 5k vs 3.5k",
+    "type": "competitive",
+    "tags": ["TCO", "BMW i4", "Kia EV6"],
+    "archetype_filter": ["financial"]
+  },
+  {
+    "title": "Model 3 Efektywność vs Audi Q4",
+    "content": "Tesla Model 3 efektywność 13,2 kWh/100 km vs Audi Q4 e-tron 17,1 kWh/100 km – Tesla zużywa 23% mniej energii, co na 100 000 km daje oszczędności 3 900 PLN przy 1 PLN/kWh.",
+    "keywords": "Model 3 vs Q4 efektywność, 13.2 vs 17.1 kWh, oszczędności 3.9k PLN",
+    "type": "competitive",
+    "tags": ["efektywność", "Model 3", "Audi Q4", "energia"],
+    "archetype_filter": ["cost_saver"]
+  },
+  {
+    "title": "Kia EV6 Excellence vs Model 3 Performance",
+    "content": "Kia EV6 Excellence AWD (430 KM, 4,7 s 0-100 km/h) kosztuje 259 900 PLN – drożej o 30 000 PLN niż Model 3 Performance (229 990 PLN), ale ma o 80 KM mniej mocy i mniej zaawansowaną technologię Autopilot vs FSD.",
+    "keywords": "EV6 Excellence vs Model 3 Perf, 259k vs 229k, 430 vs 510 KM",
+    "type": "competitive",
+    "tags": ["Kia EV6", "Model 3", "moc", "FSD"],
+    "archetype_filter": ["performance_enthusiast"]
+  },
+  {
+    "title": "Ładowanie Domowe Wall Connector",
+    "content": "Ładowanie w domu Tesla Wall Connector dodaje 40-50 km zasięgu na godzinę, co oznacza pełną baterię Model Y (455 km) za 7-9 godzin nocą – właściciel nigdy nie musi jeździć na stację poza trasami, oszczędzając 2-3 godziny tygodniowo.",
+    "keywords": "Wall Connector, 40-50 km/h, 7-9h pełna bateria, oszczędność czasu",
+    "type": "lifestyle",
+    "tags": ["ładowanie domowe", "Wall Connector", "czas"],
+    "archetype_filter": ["home_owner"]
+  },
+  {
+    "title": "Trip Planner Tesla",
+    "content": "Trip Planner Tesli automatycznie planuje podróż przez Superchargery w Polsce/Europie, uwzględniając pogodę, ruch i dostępność – wpisujesz cel, system minimalizuje postoje do 15-20 minut na stację.",
+    "keywords": "Trip Planner, Superchargery PL, pogoda ruch, 15-20 min postoje",
+    "type": "lifestyle",
+    "tags": ["Trip Planner", "nawigacja", "Supercharger"],
+    "archetype_filter": ["road_tripper"]
+  },
+  {
+    "title": "Dog Mode",
+    "content": "Dog Mode utrzymuje komfortową temperaturę dla zwierząt, wyświetlając komunikat na ekranie, że pies jest bezpieczny – idealne na szybkie zakupy w galerii bez obaw o przegrzanie (zużywa <5% baterii/godz.).",
+    "keywords": "Dog Mode, temperatura zwierząt, komunikat ekran, <5% baterii",
+    "type": "lifestyle",
+    "tags": ["Dog Mode", "zwierzęta", "bezpieczeństwo"],
+    "archetype_filter": ["pet_owner"]
+  },
+  {
+    "title": "Camp Mode",
+    "content": "Camp Mode przekształca Teslę w mobilny kamper – klimatyzacja, USB, streaming na ekranie 15\", auto-lock off – biwak bez generatora, z zasięgiem na 2-3 noce.",
+    "keywords": "Camp Mode, kamper, streaming 15\", 2-3 noce zasięg",
+    "type": "lifestyle",
+    "tags": ["Camp Mode", "biwak", "streaming"],
+    "archetype_filter": ["outdoor_enthusiast"]
+  },
+  {
+    "title": "Cicha Kabina Highland 2025",
+    "content": "Cicha kabina Model 3/Y Highland 2025 (podwójne szyby akustyczne) redukuje hałas o 30% vs starsze modele – najspokojniejszy dojazd do pracy w PL, z symulowanym dźwiękiem silnika dla komfortu.",
+    "keywords": "cicha kabina, Highland 2025, -30% hałas, symulowany dźwięk",
+    "type": "lifestyle",
+    "tags": ["kabina", "hałas", "komfort"],
+    "archetype_filter": ["commuter"]
+  },
+  {
+    "title": "Aplikacja Tesla Kontrola",
+    "content": "Aplikacja Tesla pozwala zdalnie blokować/odblokowywać, preconditioning klimy, śledzić lokalizację, aktywować Sentry Mode i planować ładowanie – kontrola z Warszawy na wakacjach bez kluczyka.",
+    "keywords": "aplikacja Tesla, zdalna kontrola, Sentry Mode, preconditioning",
+    "type": "lifestyle",
+    "tags": ["aplikacja", "zdalna", "Sentry Mode"],
+    "archetype_filter": ["remote_user"]
+  },
+  {
+    "title": "One-Pedal Driving Miasto",
+    "content": "One-Pedal Driving zmniejsza zużycie o 10-15% dzięki regeneracji – pedał gazu wystarcza na 60-70% jazdy w mieście, redukując zmęczenie w korkach PL.",
+    "keywords": "one-pedal, -10-15% zużycie, 60-70% jazdy miasto, zmęczenie",
+    "type": "lifestyle",
+    "tags": ["one-pedal", "regeneracja", "miasto"],
+    "archetype_filter": ["city_driver"]
+  },
+  {
+    "title": "Rear Seat Reminder 2025",
+    "content": "Rear Seat Reminder (2025: \"Child Left Alone Detection\") używa czujników ultradźwiękowych do wykrywania tętna dziecka, wysyłając alert na app – 99% dokładność, chroni przed tragediami (stat. PL: co 10 dni).",
+    "keywords": "Rear Seat Reminder, Child Detection, czujniki ultradźwiękowe, 99% dokładność",
+    "type": "lifestyle",
+    "tags": ["dziecko", "bezpieczeństwo", "alert"],
+    "archetype_filter": ["family"]
+  },
+  {
+    "title": "Nocne Ładowanie Level 2",
+    "content": "Nocne ładowanie Level 2 oznacza start dnia z pełną baterią – 90% codziennych dojazdów (do 100 km) rozwiązane, Supercharger raz co 4-7 dni dla 15 000 km/rok.",
+    "keywords": "nocne ładowanie, Level 2, 90% dojazdów, 4-7 dni Supercharger",
+    "type": "lifestyle",
+    "tags": ["ładowanie nocne", "Level 2", "dojazdy"],
+    "archetype_filter": ["daily_commuter"]
+  },
+  {
+    "title": "Ekosystem Tesla Solar + Powerwall",
+    "content": "Ekosystem Tesla Solar + Powerwall + Auto integruje się: panele generują energię, Powerwall przechowuje, ładuje auto tanio nocą – oszczędności 30-40% na rachunkach w PL (dotacje na solar do 50%).",
+    "keywords": "Solar Powerwall, integracja, 30-40% oszczędności, dotacje solar",
+    "type": "lifestyle",
+    "tags": ["solar", "Powerwall", "oszczędności"],
+    "archetype_filter": ["eco_home"]
+  },
+  {
+    "title": "Supercharger Trip Planner",
+    "content": "Supercharger Trip Planner minimalizuje postoje preconditioningiem baterii – 800 km trasa Warszawa-Kraków to 30-45 min ładowania rozłożone na 1-2 stacje.",
+    "keywords": "Trip Planner Supercharger, preconditioning, 800 km trasa, 30-45 min",
+    "type": "lifestyle",
+    "tags": ["Trip Planner", "preconditioning", "trasa"],
+    "archetype_filter": ["road_tripper"]
+  },
+  {
+    "title": "Komfort Jazdy Tesla",
+    "content": "Komfort jazdy Tesla: brak wibracji, biegów, hałasu – kabina jak salon, ergonomiczne fotele (ogrzewane/wentylowane) czynią 2h dojazd mniej męczącym niż w Audi Q4.",
+    "keywords": "komfort jazdy, brak wibracji, fotele wentylowane, 2h dojazd",
+    "type": "lifestyle",
+    "tags": ["komfort", "fotele", "dojazd"],
+    "archetype_filter": ["commuter"]
+  },
+  {
+    "title": "Sharing Address z Phone",
+    "content": "Sharing Address z Phone do Tesli (iOS/Android) wysyła nawigację bezpośrednio – share z Google Maps, auto rusza bez pisania na ekranie.",
+    "keywords": "Sharing Address, iOS Android, Google Maps, nawigacja",
+    "type": "lifestyle",
+    "tags": ["sharing", "nawigacja", "phone"],
+    "archetype_filter": ["smartphone_user"]
+  },
+  {
+    "title": "Keep Climate On",
+    "content": "Keep Climate On utrzymuje temperaturę w aucie do 20% baterii – wysiadasz zimą, wracasz po 2h do ciepłego interioru bez marnowania paliwa jak w spalinowym.",
+    "keywords": "Keep Climate On, 20% baterii, zima 2h, ciepły interior",
+    "type": "lifestyle",
+    "tags": ["Keep Climate", "temperatura", "zima"],
+    "archetype_filter": ["winter_driver"]
+  },
+  {
+    "title": "Ciche Ładowanie Domowe",
+    "content": "Ciche ładowanie domowe nie budzi sąsiadów (Level 2 bez hałasu), energia z solaru + Powerwall kosztuje ~0,50 PLN/kWh – pełna bateria za cenę kawy, czysto i bez serwisu przez lata.",
+    "keywords": "ciche ładowanie, Level 2, solar Powerwall, 0.50 PLN/kWh",
+    "type": "lifestyle",
+    "tags": ["ładowanie ciche", "solar", "koszt"],
+    "archetype_filter": ["home_charger"]
+  },
+  {
+    "title": "Sprzedaż Model Y I Półrocze 2025",
+    "content": "W pierwszej połowie 2025 r. Tesla Model Y była najlepiej sprzedającym się EV w Polsce z 1190 zarejestrowanymi egzemplarzami, stanowiąc 8,3% całkowitej sprzedaży BEV i wyprzedzając Model 3 o 325 szt.",
+    "keywords": "Model Y sprzedaż 2025, 1190 szt., 8.3% BEV, wyprzedza Model 3",
+    "type": "market",
+    "tags": ["sprzedaż", "Model Y", "2025", "BEV"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Wzrost Rynku EV PL 2025",
+    "content": "Rynek EV w Polsce wzrósł o 60% r/r w I półroczu 2025, osiągając 14 256 rejestracji BEV, z Teslą utrzymującą 30% udziału mimo spadku własnej sprzedaży o 20,9%.",
+    "keywords": "rynek EV PL, +60% r/r, 14 256 BEV, Tesla 30% udziału",
+    "type": "market",
+    "tags": ["rynek EV", "wzrost", "2025", "udział"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Prognoza EV PL 2025",
+    "content": "Prognoza na koniec 2025: liczba EV w Polsce przekroczy 150 tys. szt., z Teslą jako liderem dzięki sieci Supercharger (20+ lokalizacji), co napędza adopcję o 25% szybciej niż średnia UE.",
+    "keywords": "prognoza EV, 150k szt. 2025, Tesla lider, Supercharger 20+",
+    "type": "market",
+    "tags": ["prognoza", "150k EV", "lider Tesla"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Udział BEV Kwiecień 2025",
+    "content": "W kwietniu 2025 udział BEV w rynku nowych aut osobowych osiągnął rekordowe 5,4%, z Teslą na podium obok Kia i BMW – Model Y sprzedał się w 250 szt., o 15% więcej niż VW ID.4.",
+    "keywords": "udział BEV 5.4%, kwiecień 2025, Model Y 250 szt., +15% vs ID.4",
+    "type": "market",
+    "tags": ["udział BEV", "kwiecień 2025", "Model Y"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Spadek Sprzedaży Europa 2025",
+    "content": "Tesla odnotowała spadek sprzedaży w Europie o 20% w lutym 2025 r/r, ale w Polsce utrzymała pozycję #1 dzięki lokalnym dotacjom \"NaszEauto\", które zwiększyły popyt na Model 3 o 18%.",
+    "keywords": "spadek Europa -20%, luty 2025, PL #1 NaszEauto, Model 3 +18%",
+    "type": "market",
+    "tags": ["spadek", "Europa", "NaszEauto", "Model 3"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Najpopularniejsze EV I Półrocze 2025",
+    "content": "Najpopularniejsze EV w Polsce (I półrocze 2025): po Modelu Y i 3, Citroen e-C3 (538 szt.), ale Tesla dominuje w segmencie premium z 40% udziału w sprzedaży powyżej 200 tys. zł.",
+    "keywords": "najpopularniejsze EV, Citroen e-C3 538 szt., Tesla premium 40%",
+    "type": "market",
+    "tags": ["popularne EV", "Citroen e-C3", "premium"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Sprzedaż Q2 2025",
+    "content": "W Q2 2025 Tesla sprzedała w Polsce 850 aut (spadek 10% r/r), ale odrobiła straty dzięki nowemu Modelowi Y Standard, który zdobył 15% rynku kompaktowych SUV-ów EV.",
+    "keywords": "Q2 2025, 850 aut, -10% r/r, Model Y Standard 15% SUV EV",
+    "type": "market",
+    "tags": ["Q2 2025", "850 aut", "Model Y Standard"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Konkurencja Chińska",
+    "content": "Tesla traci na rzecz chińskich marek (BYD, MG), ale zachowuje przewagę w sprzedaży online – 70% zamówień Modelu 3 w PL to konfiguracje zdalne, vs 40% u konkurencji.",
+    "keywords": "konkurencja chińska, BYD MG, sprzedaż online 70% Model 3",
+    "type": "market",
+    "tags": ["chińska konkurencja", "online sprzedaż", "Model 3"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Nowe Superchargery PL 2025",
+    "content": "W 2025 r. Tesla otworzyła 8 nowych Superchargerów w PL (łącznie 28), co zwiększyło sprzedaż Modelu Y o 12% w regionach wschodnich, gdzie sieć CCS jest o 30% słabsza.",
+    "keywords": "Superchargery 8 nowych, łącznie 28, +12% Model Y wschód",
+    "type": "market",
+    "tags": ["Superchargery", "2025", "wschód PL"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dane PSNM Kwiecień 2025",
+    "content": "Dane PSNM (kwiecień 2025): Tesla #2 w sprzedaży BEV (po Kii), ale #1 w PHEV z modelem... wait, skupiając się na BEV, Model S/X sprzedały 120 szt., o 25% więcej niż Audi e-tron.",
+    "keywords": "PSNM kwiecień 2025, Tesla #2 BEV, Model S/X 120 szt. +25%",
+    "type": "market",
+    "tags": ["PSNM", "kwiecień 2025", "BEV"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dotacje Wpływ na Sprzedaż",
+    "content": "Wzrost rynku EV w PL napędzany dotacjami: 40% sprzedaży Tesli w 2025 kwalifikuje się do \"NaszEauto\", co podniosło wolumen Modelu 3 o 500 szt. vs 2024.",
+    "keywords": "dotacje wpływ, 40% NaszEauto, Model 3 +500 szt.",
+    "type": "market",
+    "tags": ["dotacje", "NaszEauto", "sprzedaż"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Model Y Udział SUV EV",
+    "content": "Tesla Model Y w 2025: 20% udziału w segmencie SUV EV do 250 tys. zł, wyprzedzając Kia EV6 (15%) dzięki lepszemu resale value i OTA updates.",
+    "keywords": "Model Y 20% SUV EV, vs Kia EV6 15%, resale OTA",
+    "type": "market",
+    "tags": ["udział SUV", "Model Y", "Kia EV6"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Spadek Tesli Europa 2025",
+    "content": "Spadek Tesli w Europie (2025): -15% r/r, ale w PL tylko -5% dzięki ekspansji floty firmowej – 30% sprzedaży to leasing dla biznesu.",
+    "keywords": "spadek Europa -15%, PL -5%, flota firmowa 30%",
+    "type": "market",
+    "tags": ["spadek", "Europa", "flota"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Najlepsze Miesiące Sprzedaży 2025",
+    "content": "Najlepsze miesiące sprzedaży Tesli w PL (2025): marzec i październik, z peakiem 400 szt. Modelu Y dzięki promocjom leasingu 0,99% RRSO.",
+    "keywords": "najlepsze miesiące, marzec październik, 400 szt. Model Y, leasing 0.99%",
+    "type": "market",
+    "tags": ["miesiące sprzedaż", "Model Y", "leasing"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Konkurencja z Chin MG4",
+    "content": "Konkurencja z Chin: MG4 sprzedał 800 szt. w I półroczu, ale Tesla zachowuje 50% premium EV dzięki FSD i sieci ładowania.",
+    "keywords": "MG4 800 szt., Tesla 50% premium, FSD sieć",
+    "type": "market",
+    "tags": ["chińska MG4", "premium Tesla"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Prognoza Dataforce 2026",
+    "content": "Prognoza Dataforce (2025): Tesla Model Y #1 w Europie z 200 tys. szt., w PL 5 tys. – wzrost 10% dzięki liftingowi Highland.",
+    "keywords": "Dataforce prognoza, Model Y #1 Europa 200k, PL 5k +10%",
+    "type": "market",
+    "tags": ["prognoza", "Dataforce", "Highland"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Wpływ Cen Paliw 2025",
+    "content": "Wpływ cen paliw: wzrost o 10% w 2025 zwiększył sprzedaż EV o 25%, z Teslą zyskującą 35% w segmencie miejskim (Model 3).",
+    "keywords": "+10% paliwa, sprzedaż EV +25%, Tesla +35% miejski",
+    "type": "market",
+    "tags": ["ceny paliw", "sprzedaż EV", "Model 3"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Tesla vs Legacy Udział",
+    "content": "Tesla vs legacy: 60% nowych EV w PL to chińskie/Tesla, ale Tesla prowadzi w lojalności klientów – 70% powrotów vs 40% u VW.",
+    "keywords": "60% chińskie/Tesla, lojalność 70% vs 40% VW",
+    "type": "market",
+    "tags": ["udział EV", "lojalność", "VW"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Pakiet Premium Connectivity",
+    "content": "Pakiet Premium Connectivity Tesli (99 zł/mies.) dodaje streaming Spotify/Netflix i live traffic – w PL zintegrowany z Apple CarPlay dla 80% użytkowników.",
+    "keywords": "Premium Connectivity, 99 zł/mies., Spotify Netflix, Apple CarPlay",
+    "type": "accessories",
+    "tags": ["Connectivity", "streaming", "CarPlay"],
+    "archetype_filter": ["entertainment_seeker"]
+  },
+  {
+    "title": "Felgi 20\" Induction Model Y",
+    "content": "Felgi 20\" Induction w Modelu Y (dodatek 5 000 zł) poprawiają dynamikę o 5%, ale redukują zasięg o 10 km – popularne w 40% konfiguracji PL.",
+    "keywords": "felgi 20 Induction, +5% dynamika, -10 km zasięg, 5k zł",
+    "type": "accessories",
+    "tags": ["felgi", "Induction", "dynamika"],
+    "archetype_filter": ["style_driver"]
+  },
+  {
+    "title": "Dach Panoramiczny Model X",
+    "content": "Dach panoramiczny w Modelu X (standard) z electrochromatycznym przyciemnianiem – blokuje 99% UV, idealny na polskie słońce, dodatek 10 000 zł w Modelu Y.",
+    "keywords": "dach panoramiczny, electrochromatyczny, 99% UV, 10k zł Model Y",
+    "type": "accessories",
+    "tags": ["dach", "panoramiczny", "UV"],
+    "archetype_filter": ["family"]
+  },
+  {
+    "title": "Tow Hitch Model Y",
+    "content": "Tow Hitch (haki holownicze) dla Modelu Y (3 500 zł) pozwala na holowanie do 1 600 kg – kluczowe dla caravaningu w PL, zintegrowane z nawigacją.",
+    "keywords": "Tow Hitch, 3 500 zł, holowanie 1 600 kg, caravaning",
+    "type": "accessories",
+    "tags": ["haki", "holowanie", "nawigacja"],
+    "archetype_filter": ["outdoor_enthusiast"]
+  },
+  {
+    "title": "Ambient Lighting 256 Kolorów",
+    "content": "Ambient Lighting z 256 kolorami (standard w 2025) personalizuje kabinę – w PL 60% klientów wybiera \"cool blue\" dla nocnych dojazdów.",
+    "keywords": "Ambient Lighting, 256 kolorów, cool blue, nocne dojazdy",
+    "type": "accessories",
+    "tags": ["ambient", "kolory", "personalizacja"],
+    "archetype_filter": ["style_driver"]
+  },
+  {
+    "title": "Wall Connector Gen 3",
+    "content": "Wall Connector Gen 3 (2 500 zł + instalacja) ładuje 11 kW – z appą Tesla zarządza harmonogramem taryf nocnych w PL, oszczędzając 20% na energii.",
+    "keywords": "Wall Connector Gen 3, 11 kW, taryfy nocne, 20% oszczędności",
+    "type": "accessories",
+    "tags": ["Wall Connector", "ładowanie", "harmonogram"],
+    "archetype_filter": ["home_charger"]
+  },
+  {
+    "title": "Opony Michelin Pilot Sport EV",
+    "content": "Opony Michelin Pilot Sport EV (dodatek 2 000 zł/komplet) zoptymalizowane pod regenerację – trwają 50 000 km w warunkach PL, z gwarancją akumulatora.",
+    "keywords": "Michelin Pilot Sport EV, 2k zł/komplet, 50k km, regeneracja",
+    "type": "accessories",
+    "tags": ["opony", "Michelin", "regeneracja"],
+    "archetype_filter": ["performance_driver"]
+  },
+  {
+    "title": "Folia Ochronna PPF",
+    "content": "Folia ochronna PPF (10 000 zł) na Model 3 chroni przed solą drogową w zimie – popularna w 30% nowych aut w Mazowszu.",
+    "keywords": "PPF folia, 10k zł, sól drogowa, Mazowsze 30%",
+    "type": "accessories",
+    "tags": ["PPF", "ochrona", "zima"],
+    "archetype_filter": ["winter_driver"]
+  },
+  {
+    "title": "Subwoofer Premium Audio",
+    "content": "Subwoofer premium audio (1 500 zł) w Modelu 3 – 17 głośników daje 96% jakości Bowers & Wilkins w BMW i4 za połowę ceny.",
+    "keywords": "subwoofer premium, 1 500 zł, 17 głośników, Bowers & Wilkins",
+    "type": "accessories",
+    "tags": ["audio", "subwoofer", "premium"],
+    "archetype_filter": ["entertainment_seeker"]
+  },
+  {
+    "title": "Pokrowce Siedzenia Wegańska Skóra",
+    "content": "Pokrowce na siedzenia z wegańskiej skóry (800 zł) – wodoodporne, zintegrowane z ogrzewaniem, idealne dla rodzin w PL.",
+    "keywords": "pokrowce wegańska skóra, 800 zł, wodoodporne, ogrzewanie",
+    "type": "accessories",
+    "tags": ["pokrowce", "wegańska skóra", "rodziny"],
+    "archetype_filter": ["family"]
+  },
+  {
+    "title": "Kamera Dashcam z SSD",
+    "content": "Kamera Dashcam (standard via app) z 1 TB SSD (dodatek 1 000 zł) – nagrywa 10 godz. HD, z chmurą dla policji w PL.",
+    "keywords": "Dashcam, 1 TB SSD, 1k zł, 10 godz. HD, chmura policja",
+    "type": "accessories",
+    "tags": ["Dashcam", "nagrywanie", "SSD"],
+    "archetype_filter": ["safety_focused"]
+  },
+  {
+    "title": "Rims 19\" Aero vs 21\" Überturbine",
+    "content": "Rims 19\" Aero (standard) vs 21\" Überturbine (8 000 zł) – Aero dodają 30 km zasięgu, wybierane w 70% Modelu Y w PL.",
+    "keywords": "Rims Aero vs Überturbine, 8k zł, +30 km zasięg, 70% PL",
+    "type": "accessories",
+    "tags": ["rims", "Aero", "zasięg"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "Solar Roof i Panels",
+    "content": "Solar Roof (nie dla PL, ale panels: 20 000 zł) integruje z Powerwall – redukcja rachunków o 50% w domach z PV w 2025.",
+    "keywords": "Solar Roof panels, 20k zł, Powerwall, 50% redukcja",
+    "type": "accessories",
+    "tags": ["solar", "panels", "Powerwall"],
+    "archetype_filter": ["eco_home"]
+  },
+  {
+    "title": "Kierownica Haptic Feedback",
+    "content": "Kierownica z haptic feedback (standard 2025) – wibracje zamiast przycisków, redukujące rozproszenie o 15% wg testów PL.",
+    "keywords": "kierownica haptic, standard 2025, -15% rozproszenie",
+    "type": "accessories",
+    "tags": ["kierownica", "haptic", "bezpieczeństwo"],
+    "archetype_filter": ["safety_focused"]
+  },
+  {
+    "title": "Custom Wraps Folie",
+    "content": "Custom wraps (folie: 5 000-15 000 zł) – matowe szarości popularne w 25% nowych Tesli, z ochroną antygraffiti.",
+    "keywords": "custom wraps, 5-15k zł, matowe szarości, 25% nowych",
+    "type": "accessories",
+    "tags": ["wraps", "folie", "personalizacja"],
+    "archetype_filter": ["style_driver"]
+  },
+  {
+    "title": "Leasing Operacyjny Model 3 Firmy",
+    "content": "Leasing operacyjny Modelu 3 dla firm: od 1 200 zł/mies. (36 mies., 10k km/rok) z pełnym odliczeniem VAT – 40% flot EV w PL to Tesla.",
+    "keywords": "leasing operacyjny, 1 200 zł/mies., 36 mies., 40% flot EV",
+    "type": "fleet",
+    "tags": ["leasing", "firmy", "VAT"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Tesla Fleet API",
+    "content": "Tesla Fleet API integruje z systemami ERP – śledzenie 100+ aut w czasie rzeczywistym, redukcja kosztów logistyki o 25% dla kurierów w PL.",
+    "keywords": "Fleet API, ERP integracja, 100+ aut, -25% logistyka",
+    "type": "fleet",
+    "tags": ["Fleet API", "ERP", "logistyka"],
+    "archetype_filter": ["fleet_manager"]
+  },
+  {
+    "title": "Model Y Car-Sharing Bateria LFP",
+    "content": "Model Y dla car-sharingu: bateria LFP wytrzymuje 1 mln km, z 20% niższymi kosztami/km niż VW ID. Buzz w testach flotowych.",
+    "keywords": "car-sharing Model Y, LFP 1 mln km, -20% koszty/km vs ID. Buzz",
+    "type": "fleet",
+    "tags": ["car-sharing", "LFP", "koszty/km"],
+    "archetype_filter": ["sharing_economy"]
+  },
+  {
+    "title": "Ulga BIK Firmowe EV",
+    "content": "Ulga BIK dla EV firmowych: 225k zł amortyzacji, co daje 15% oszczędności PIT dla Tesla vs 150k dla spalinowych – popularne w IT.",
+    "keywords": "ulga BIK firmowe, 225k amortyzacja, 15% PIT oszczędności",
+    "type": "fleet",
+    "tags": ["ulga BIK", "amortyzacja", "IT"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Tesla Taksówki PL",
+    "content": "Tesla dla taksówek w PL: Model 3 z FSD redukuje czas jazdy o 10% w korkach Warszawy, z ROI w 18 mies. vs 24 dla hybryd.",
+    "keywords": "taksówki Tesla, Model 3 FSD, -10% czas Warszawa, ROI 18 mies.",
+    "type": "fleet",
+    "tags": ["taksówki", "FSD", "ROI"],
+    "archetype_filter": ["taxi_operator"]
+  },
+  {
+    "title": "Floty Dostawcze Model Y",
+    "content": "Floty dostawcze: Model Y z tow hitch holuje 1 t, zintegrowany z Wolt/Uber Eats – 500 firm w PL używa Tesli w 2025.",
+    "keywords": "floty dostawcze, tow hitch 1 t, Wolt Uber Eats, 500 firm",
+    "type": "fleet",
+    "tags": ["dostawcze", "tow hitch", "Wolt"],
+    "archetype_filter": ["delivery_fleet"]
+  },
+  {
+    "title": "Salary Sacrifice Pracownicy",
+    "content": "Salary sacrifice dla pracowników: Model 3 za 800 zł/mies. netto – oszczędność 40% vs zakup prywatny, z 20% wzrostem w korpo PL.",
+    "keywords": "salary sacrifice, 800 zł/mies. netto, -40% oszczędność, korpo +20%",
+    "type": "fleet",
+    "tags": ["salary sacrifice", "pracownicy", "korpo"],
+    "archetype_filter": ["corporate"]
+  },
+  {
+    "title": "Integracja Telematyka Geotab",
+    "content": "Integracja z telematyką: Tesla Connect z Geotab – monitorowanie zużycia w 95% flot, z alertami na app dla managerów.",
+    "keywords": "telematyka Geotab, monitorowanie 95% flot, alerty app",
+    "type": "fleet",
+    "tags": ["telematyka", "Geotab", "monitorowanie"],
+    "archetype_filter": ["fleet_manager"]
+  },
+  {
+    "title": "Model S Exec Spotkania",
+    "content": "Model S dla exec: zasięg 744 km idealny na spotkania w PL, z 100% odliczeniem kosztów – 150 firm wybrało w 2025.",
+    "keywords": "Model S exec, 744 km zasięg, 100% odliczenie, 150 firm",
+    "type": "fleet",
+    "tags": ["Model S", "exec", "odliczenie"],
+    "archetype_filter": ["executive"]
+  },
+  {
+    "title": "Redukcja Emisji Flot CO2",
+    "content": "Redukcja emisji CO2 w flotach: Tesla zastępuje diesle, dając 50 pkt w ESG raportach – kluczowe dla unijnych grantów.",
+    "keywords": "redukcja CO2, 50 pkt ESG, unijne granty",
+    "type": "fleet",
+    "tags": ["emisje CO2", "ESG", "granty"],
+    "archetype_filter": ["eco_business"]
+  },
+  {
+    "title": "Serwis Flotowy Tesla",
+    "content": "Serwis flotowy: dedykowany slot w Tesla Center Warszawa – 24h turnaround, vs 48h u BMW.",
+    "keywords": "serwis flotowy, 24h turnaround, Tesla Center Warszawa",
+    "type": "fleet",
+    "tags": ["serwis", "flotowy", "24h"],
+    "archetype_filter": ["fleet_manager"]
+  },
+  {
+    "title": "Model X 7-Miejscowy Carpool",
+    "content": "Model X 7-miejscowy dla korpo carpool: 2 158 l bagażu, z Child Detection – 10% flot HR wybiera.",
+    "keywords": "Model X 7-miejsc, 2 158 l bagaż, Child Detection, 10% HR flot",
+    "type": "fleet",
+    "tags": ["Model X", "carpool", "HR"],
+    "archetype_filter": ["corporate"]
+  },
+  {
+    "title": "Koszt/km Model Y Trasa",
+    "content": "Koszt/km: 0,20 zł dla Modelu Y w trasie vs 0,50 zł dla EV6 – oszczędność 60% w logistyce.",
+    "keywords": "koszt/km 0.20 zł Model Y, vs 0.50 EV6, -60% logistyka",
+    "type": "fleet",
+    "tags": ["koszt/km", "Model Y", "logistyka"],
+    "archetype_filter": ["fleet_manager"]
+  },
+  {
+    "title": "Integracja ChargePoint Floty",
+    "content": "Integracja z ChargePoint: 500+ stacji dla flot, z fakturami miesięcznymi – 30% redukcja administracji.",
+    "keywords": "ChargePoint integracja, 500+ stacji, -30% administracja",
+    "type": "fleet",
+    "tags": ["ChargePoint", "floty", "administracja"],
+    "archetype_filter": ["fleet_manager"]
+  },
+  {
+    "title": "Granty UE Startup Floty",
+    "content": "Dla startupów: granty UE na EV floty do 50k zł/auto – Tesla kwalifikuje 100%, z ROI w 12 mies.",
+    "keywords": "granty UE startup, 50k zł/auto, ROI 12 mies.",
+    "type": "fleet",
+    "tags": ["granty UE", "startup", "ROI"],
+    "archetype_filter": ["startup"]
+  },
+  {
+    "title": "Bezpieczeństwo Flot Autopilot",
+    "content": "Bezpieczeństwo flot: Autopilot redukuje wypadki o 40% w danych PL 2025 – ubezpieczenia 15% tańsze.",
+    "keywords": "bezpieczeństwo flot, Autopilot -40% wypadki, ubezpieczenia -15%",
+    "type": "fleet",
+    "tags": ["bezpieczeństwo", "Autopilot", "ubezpieczenia"],
+    "archetype_filter": ["safety_fleet"]
+  },
+  {
+    "title": "Średnia Cena Używanego Model 3",
+    "content": "Średnia cena używanego Modelu 3 (2022, 50k km): 120 000 zł – zachowuje 70% wartości vs 50% dla ID.4.",
+    "keywords": "używany Model 3, 120k zł 2022 50k km, 70% wartości",
+    "type": "resale",
+    "tags": ["używany", "Model 3", "wartość"],
+    "archetype_filter": ["used_buyer"]
+  },
+  {
+    "title": "Ogłoszenia OTOMOTO Tesla",
+    "content": "Na OTOMOTO: 500 ogłoszeń Tesli (2025), z Model Y 2024 za 160 000 zł – popyt +30% r/r dzięki bateriom LFP.",
+    "keywords": "OTOMOTO 500 ogłoszeń, Model Y 2024 160k zł, +30% popyt LFP",
+    "type": "resale",
+    "tags": ["OTOMOTO", "ogłoszenia", "popyt"],
+    "archetype_filter": ["used_market"]
+  },
+  {
+    "title": "Deprecjacja po 2 Latach",
+    "content": "Deprecjacja po 2 latach: Model Y traci 25% vs 40% dla EV6 – dzięki OTA i sieci Supercharger.",
+    "keywords": "deprecjacja 2 lata, Model Y -25% vs EV6 -40%, OTA Supercharger",
+    "type": "resale",
+    "tags": ["deprecjacja", "2 lata", "OTA"],
+    "archetype_filter": ["long_term"]
+  },
+  {
+    "title": "Ubezpieczenie AC Używane",
+    "content": "Ubezpieczenie AC dla używanego: 2 500 zł/rok dla Model 3 – 20% taniej niż nowy, z gwarancją baterii przenoszoną.",
+    "keywords": "AC używane 2 500 zł/rok Model 3, -20% vs nowy, gwarancja przenoszona",
+    "type": "resale",
+    "tags": ["ubezpieczenie AC", "używane", "gwarancja"],
+    "archetype_filter": ["used_buyer"]
+  },
+  {
+    "title": "Certyfikowane Używane Tesla",
+    "content": "Certyfikowane używane Tesla: 80 000-150 000 zł z 4-letnią gwarancją – 200 szt. w PL, z inspekcją OTA.",
+    "keywords": "certyfikowane używane, 80-150k zł, 4-letnia gwarancja, 200 szt. PL",
+    "type": "resale",
+    "tags": ["certyfikowane", "gwarancja", "OTA"],
+    "archetype_filter": ["certified_used"]
+  },
+  {
+    "title": "Model S 2020 Używany",
+    "content": "Model S 2020 (100k km): 250 000 zł – wyższa wartość dzięki Plaid upgrade, vs spadek 50% u Porsche Taycan.",
+    "keywords": "Model S 2020 100k km 250k zł, Plaid upgrade vs Taycan -50%",
+    "type": "resale",
+    "tags": ["Model S", "używany", "upgrade"],
+    "archetype_filter": ["luxury_used"]
+  },
+  {
+    "title": "Rynek Leasing Zwrotów",
+    "content": "Rynek leasing zwrotów: 40% Tesli wraca na wtórny za 90% wartości – popularne w leasingu 0km.",
+    "keywords": "leasing zwroty, 40% Tesli, 90% wartości, 0km",
+    "type": "resale",
+    "tags": ["leasing zwroty", "90% wartości"],
+    "archetype_filter": ["lease_return"]
+  },
+  {
+    "title": "Degradacja Baterii Używane",
+    "content": "Degradacja baterii w używanych: średnio 5% po 80k km – Tesla oferuje diagnostykę za 200 zł przed zakupem.",
+    "keywords": "degradacja używane 5% 80k km, diagnostyka 200 zł",
+    "type": "resale",
+    "tags": ["degradacja", "diagnostyka", "używane"],
+    "archetype_filter": ["used_buyer"]
+  },
+  {
+    "title": "Export Używanych do UE",
+    "content": "Export do UE: 20% używanych Tesli z PL jedzie do DE/FR za +10% ceny – dzięki wysokiemu standardowi.",
+    "keywords": "export UE 20%, +10% cena DE/FR, wysoki standard",
+    "type": "resale",
+    "tags": ["export", "UE", "DE/FR"],
+    "archetype_filter": ["export_buyer"]
+  },
+  {
+    "title": "Model X Używany 7-Miejsc",
+    "content": "Model X używany (7-miejsc): 300 000 zł – popyt w rodzinach, z Falcon Wings bez usterek w 95%.",
+    "keywords": "Model X używany 300k zł, 7-miejsc, Falcon Wings 95% bez usterek",
+    "type": "resale",
+    "tags": ["Model X", "7-miejsc", "Falcon Wings"],
+    "archetype_filter": ["family_used"]
+  },
+  {
+    "title": "Aukcje Copart Naprawy",
+    "content": "Aukcje Copart: uszkodzone Tesla naprawiane taniej o 30% – rynek części OEM via Tesla app.",
+    "keywords": "Copart aukcje, naprawy -30%, części OEM app",
+    "type": "resale",
+    "tags": ["Copart", "naprawy", "OEM"],
+    "archetype_filter": ["repair_buyer"]
+  },
+  {
+    "title": "Wartość po 3 Latach Model 3",
+    "content": "Wartość po 3 latach: Model 3 55% oryginalnej ceny – lider w segmencie C EV.",
+    "keywords": "wartość 3 lata Model 3 55%, lider C EV",
+    "type": "resale",
+    "tags": ["wartość 3 lata", "Model 3", "segment C"],
+    "archetype_filter": ["used_buyer"]
+  },
+  {
+    "title": "Finansowanie Używanych PKO BP",
+    "content": "Finansowanie używanych: 9,9% oprocentowanie w PKO BP – rata 600 zł/mies. dla Model Y 2023.",
+    "keywords": "finansowanie używane 9.9%, PKO BP, rata 600 zł Model Y 2023",
+    "type": "resale",
+    "tags": ["finansowanie", "PKO BP", "rata"],
+    "archetype_filter": ["used_financing"]
+  },
+  {
+    "title": "Trend Hybrydowych Ofert",
+    "content": "Trend: wzrost ofert hybrydowych – 15% Tesli z PV na wtórnym, dodające 10k zł wartości.",
+    "keywords": "trend hybrydowe, 15% z PV, +10k wartość",
+    "type": "resale",
+    "tags": ["trend", "hybrydowe", "PV"],
+    "archetype_filter": ["eco_used"]
+  },
+  {
+    "title": "Redukcja Emisji Model Y CO2",
+    "content": "Tesla Model Y redukuje emisje CO2 o 60 t/10 lat vs spalinowy SUV – kwalifikuje do zielonych obligacji firmowych.",
+    "keywords": "redukcja CO2 60 t/10 lat, zielone obligacje",
+    "type": "environmental",
+    "tags": ["CO2", "redukcja", "obligacje"],
+    "archetype_filter": ["eco_conscious"]
+  },
+  {
+    "title": "Zerowa Akcyza EV",
+    "content": "Zerowa akcyza na EV: oszczędność 3,1% ceny dla Modelu 3 – plus zwolnienie z opłat drogowych w strefach LEZ.",
+    "keywords": "zerowa akcyza, 3.1% oszczędność, LEZ zwolnienie",
+    "type": "environmental",
+    "tags": ["akcyza", "oszczędność", "LEZ"],
+    "archetype_filter": ["urban_driver"]
+  },
+  {
+    "title": "Certyfikat TCO Tesla",
+    "content": "Certyfikat TCO dla Tesli: niska emisja w produkcji (20% mniej niż BMW i4) – atut w raportach ESG PL.",
+    "keywords": "TCO certyfikat, -20% emisja vs i4, ESG raporty",
+    "type": "environmental",
+    "tags": ["TCO", "emisja produkcja", "ESG"],
+    "archetype_filter": ["corporate_eco"]
+  },
+  {
+    "title": "Recykling Baterii Tesla",
+    "content": "Recykling baterii: 95% materiałów z NCM/LFP – Tesla partnerem z Orlenem w PL na stacje recyklingu.",
+    "keywords": "recykling 95% NCM/LFP, partner Orlen PL",
+    "type": "environmental",
+    "tags": ["recykling", "baterie", "Orlen"],
+    "archetype_filter": ["eco_conscious"]
+  },
+  {
+    "title": "Dotacje Czyste Powietrze",
+    "content": "Dotacje \"Czyste Powietrze\": +5 000 zł na PV + Tesla charging – redukcja śladu węglowego o 40%.",
+    "keywords": "Czyste Powietrze, +5k zł PV, -40% ślad węglowy",
+    "type": "environmental",
+    "tags": ["dotacje", "Czyste Powietrze", "PV"],
+    "archetype_filter": ["home_solar"]
+  },
+  {
+    "title": "Zasięg Zimą Pompa Ciepła",
+    "content": "Zasięg w zimie: pompa ciepła Tesli traci 12% vs 35% w Ioniq 5 – mniejsze zużycie energii z sieci PL.",
+    "keywords": "zasięg zima pompa, -12% vs -35% Ioniq 5, sieć PL",
+    "type": "environmental",
+    "tags": ["zima", "pompa ciepła", "Ioniq 5"],
+    "archetype_filter": ["winter_eco"]
+  },
+  {
+    "title": "Unijny ETS EV",
+    "content": "Unijny ETS: EV Tesla zwalnia z opłat o 100 zł/t CO2 – oszczędność 2 000 zł/rok dla flot.",
+    "keywords": "ETS unijny, 100 zł/t CO2, 2k zł/rok flot",
+    "type": "environmental",
+    "tags": ["ETS", "opłaty CO2", "floty"],
+    "archetype_filter": ["fleet_eco"]
+  },
+  {
+    "title": "Hałas Tesla 0 dB",
+    "content": "Hałas: Tesla 0 dB w mieście – zgodna z nowymi regulacjami UE 2025 dla stref ciszy w PL.",
+    "keywords": "hałas 0 dB miasto, regulacje UE 2025, strefy ciszy PL",
+    "type": "environmental",
+    "tags": ["hałas", "0 dB", "UE 2025"],
+    "archetype_filter": ["urban_eco"]
+  },
+  {
+    "title": "Efektywność Model Y vs Q4",
+    "content": "Efektywność: 14 kWh/100 km Modelu Y vs 18 kWh Q4 – 30% mniej obciążenia sieci PGE.",
+    "keywords": "efektywność 14 vs 18 kWh, -30% obciążenie PGE",
+    "type": "environmental",
+    "tags": ["efektywność", "Model Y", "Q4"],
+    "archetype_filter": ["grid_friendly"]
+  },
+  {
+    "title": "Zielone Tablice EV",
+    "content": "Zielone tablice: EV Tesla bez ograniczeń wjazdowych do centrów (Warszawa 2025) – plus dla commuters.",
+    "keywords": "zielone tablice, bez ograniczeń Warszawa 2025, commuters",
+    "type": "environmental",
+    "tags": ["tablice", "wjazdowe", "Warszawa"],
+    "archetype_filter": ["urban_driver"]
+  },
+  {
+    "title": "Cykl Życia Bateria Tesla",
+    "content": "Cykl życia: Tesla bateria 500k km = 1/3 emisji nowego vs wymiana diesla co 150k km.",
+    "keywords": "cykl życia bateria 500k km, 1/3 emisji vs diesel",
+    "type": "environmental",
+    "tags": ["cykl życia", "bateria", "emisje"],
+    "archetype_filter": ["long_term_eco"]
+  },
+  {
+    "title": "Partnerstwa Tauron Tesla",
+    "content": "Partnerstwa: Tesla z Tauron – tania energia zielona dla owners, redukcja o 25% rachunków.",
+    "keywords": "partnerstwa Tauron, zielona energia, -25% rachunki",
+    "type": "environmental",
+    "tags": ["Tauron", "zielona energia", "rachunki"],
+    "archetype_filter": ["eco_home"]
+  },
+  {
+    "title": "Robotaxi Unveil Q1 2026",
+    "content": "Robotaxi unveil Q1 2026: FSD v15 z unsupervised driving – testy w PL na autostradach A1/A2.",
+    "keywords": "Robotaxi Q1 2026, FSD v15 unsupervised, testy A1/A2 PL",
+    "type": "future",
+    "tags": ["Robotaxi", "FSD v15", "2026"],
+    "archetype_filter": ["future_visionary"]
+  },
+  {
+    "title": "V4 Superchargery 2026",
+    "content": "V4 Superchargery (500 kW): 10 nowych w PL do 2026, dodające 400 km w 10 min – integracja z NFA.",
+    "keywords": "V4 Superchargery 500 kW, 10 nowych PL 2026, 400 km 10 min",
+    "type": "future",
+    "tags": ["V4 Supercharger", "500 kW", "NFA"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "Model 2 Compact EV",
+    "content": "Model 2 (compact EV): cena ~120k zł, zasięg 400 km – debiut 2026, cel 20% rynku PL.",
+    "keywords": "Model 2 compact, ~120k zł, 400 km, debiut 2026 20% PL",
+    "type": "future",
+    "tags": ["Model 2", "compact", "2026"],
+    "archetype_filter": ["budget_future"]
+  },
+  {
+    "title": "OTA v15 Polski SLANG",
+    "content": "OTA v15: ulepszony FSD z polskim SLANG – rozpoznawanie znaków PL o 20% lepiej.",
+    "keywords": "OTA v15, polski SLANG FSD, +20% znaki PL",
+    "type": "future",
+    "tags": ["OTA v15", "FSD", "polski"],
+    "archetype_filter": ["local_tech"]
+  },
+  {
+    "title": "Powerwall 3 2026",
+    "content": "Powerwall 3: 13,5 kWh za 25 000 zł – z VPP dla Tauron, stabilizacja sieci w PL.",
+    "keywords": "Powerwall 3 13.5 kWh, 25k zł, VPP Tauron",
+    "type": "future",
+    "tags": ["Powerwall 3", "VPP", "Tauron"],
+    "archetype_filter": ["home_energy"]
+  },
+  {
+    "title": "Tesla Semi Truck PL",
+    "content": "Semi truck: dostawy do PL 2026, zasięg 800 km – dla DHL, redukcja emisji o 50%.",
+    "keywords": "Semi truck 2026 PL, 800 km, DHL -50% emisji",
+    "type": "future",
+    "tags": ["Semi", "truck", "DHL"],
+    "archetype_filter": ["fleet_future"]
+  },
+  {
+    "title": "Lifting Model 2",
+    "content": "Lifting Modelu 2: tańszy niż ID.3, z LFP – cel: 5k szt./rok w PL.",
+    "keywords": "lifting Model 2, tańszy ID.3 LFP, 5k szt./rok PL",
+    "type": "future",
+    "tags": ["Model 2", "lifting", "LFP"],
+    "archetype_filter": ["budget_future"]
+  },
+  {
+    "title": "Integracja eRoaming 2026",
+    "content": "Integracja z eRoaming: Superchargery dla wszystkich EV w PL od 2026, 1,50 zł/kWh.",
+    "keywords": "eRoaming integracja, Superchargery wszystkie EV, 1.50 zł/kWh 2026",
+    "type": "future",
+    "tags": ["eRoaming", "Superchargery", "2026"],
+    "archetype_filter": ["all_ev"]
+  },
+  {
+    "title": "Optimus Robot Serwis",
+    "content": "Optimus robot: asystent serwisowy w Tesla Center – debiut 2026, redukcja kosztów o 30%.",
+    "keywords": "Optimus robot, serwis asystent, debiut 2026 -30% koszty",
+    "type": "future",
+    "tags": ["Optimus", "serwis", "2026"],
+    "archetype_filter": ["tech_future"]
+  },
+  {
+    "title": "Cel Sprzedażowy 2026",
+    "content": "Cel sprzedażowy 2026: 10k Tesli w PL, z 50% udziałem w EV dzięki Robotaxi i tanim leasingiem.",
+    "keywords": "cel 10k Tesli 2026 PL, 50% EV, Robotaxi leasing",
+    "type": "future",
+    "tags": ["cel sprzedaż", "2026", "Robotaxi"],
+    "archetype_filter": ["all"]
+  }
+]

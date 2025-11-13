@@ -1,0 +1,322 @@
+[
+{
+"id": "nugget_001",
+"type": "fact",
+"category": "product",
+"market": "Polska",
+"content": "Tesla Model 3 RWD (LFP): masa 1884 kg, bateria 62.5 kWh netto, zasięg WLTP 430-490 km, przyspieszenie 0-100 km/h 5.6 s. Model Y Standard (LFP): masa 1884 kg, bateria ~60 kWh, przyspieszenie ~5.6 s. Model Y Performance (NCA): masa 2066 kg, większa bateria NCA.",
+"source": "evdlaciebie.pl (2025-05-06), hondagrudzinski.pl (2025-01-10)"
+},
+{
+"id": "nugget_002",
+"type": "fact",
+"category": "product",
+"market": "Globalny",
+"content": "Gęstość energetyczna LFP: 130-160 Wh/kg (do 190 Wh/kg najnowsze), 4000-5000 cykli. NCA: ~322 Wh/kg (Panasonic). Degradacja LFP po 100k km: <5%. NMC: 230-250 Wh/kg.",
+"source": "poworks.com (2020), mdpi.com (2012)"
+},
+{
+"id": "nugget_003",
+"type": "fact",
+"category": "product",
+"market": "Polska",
+"content": "Wall Connector Gen 3: moc 1.4-22 kW (71 km/h przy 22 kW), cena 2350 zł brutto, Wi-Fi, IP55, temperatura -30°C do +50°C. Instalacja TN-C-S: PEN 10 mm² miedź, RCD ≤32A, koszt 700-7000 zł.",
+"source": "shop.tesla.com (2025), sklep.narzedziamagmar.pl (2025-08-31)"
+},
+{
+"id": "nugget_004",
+"type": "fact",
+"category": "product",
+"market": "Polska",
+"content": "FSD Supervised: nieaktywne w UE (brak DCAS Faza 3); Summon/Smart Summon niedostępne (Art. 65k PrRD: kierowca musi przejąć kontrolę). W Niemczech StVZO §1: pilotaż 2025. Wymaga kat. B.",
+"source": "botland.com.pl (2024-09-22), karne24.com (2025-04-06)"
+},
+{
+"id": "nugget_005",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "Program NaszEauto (dawniej Mój Elektryk 2.0): budżet 1.6 mld zł, max dotacja osoby fizyczne 40k zł (baza 18.75k +11.25k niskodochodowi +10k złomowanie), limit cena 225k netto; firmy dostawcze N1 50-70k zł.",
+"source": "gov.pl (2025-02-03), elektromobilni.pl (2025-04-27)"
+},
+{
+"id": "nugget_006",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "Wartość rezydualna Model S: 60% po 3 latach, 60% po 5; Model 3: 65-70%; Model Y: 70%+. Brak prognoz do 2030 z ADAC/Eurotax.",
+"source": "colina.pl (2024-11-30), autoskuplegionowo.pl (2025-08-22)"
+},
+{
+"id": "nugget_007",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "Finansowanie 0% RRSO Model 3: rata 2117-4337 zł (24-60 mies.), wkład min. 29k zł. Model Y: 0% od 01.2025, bez min. wkładu. Cybertruck: 0% z FSD (import).",
+"source": "tesla-polska.pl (2025-08-28), tesla.com (2025-01-01)"
+},
+{
+"id": "nugget_008",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "Ubezpieczenie Model S (40-lat bezszkodowy): OC 698 zł, AC+OC 9547-10303 zł/rok (+10-15% vs ICE); Niemcy +30% wyższe AC ze względu na baterie.",
+"source": "rankomat.pl (2025-04-02), dojczland.info (2024-11-27)"
+},
+{
+"id": "nugget_009",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "TCO Model 3 RWD 3 lata (60k km): zakup 184990 zł + ubezpieczenie 13788 zł + energia 5850 zł + serwis 1500 zł = 205628-210628 zł; RV 65% (120k zł) = efektywny 85628 zł; koszt/1000 km 34-35 zł.",
+"source": "rankomat.pl (2025-04-02), electricmobility.store (2025-03-12)"
+},
+{
+"id": "nugget_010",
+"type": "fact",
+"category": "competition",
+"market": "Polska",
+"content": "Model Y Perf vs Mercedes EQS SUV: Y 269990 zł, 0-100 3.7s, zasięg 514 km, TCO 5 lat ~150k zł; EQS ~450k zł, 4.7s, 660 km, TCO ~250k zł. Ekosystem: Tesla App OTA vs me Charge Ionity.",
+"source": "motoryzacja.interia.pl (2025-10-09)"
+},
+{
+"id": "nugget_011",
+"type": "fact",
+"category": "competition",
+"market": "Polska",
+"content": "Model X vs VW ID.Buzz (7-miejsc): X 400k+ zł, 3.8s, bagażnik 2595L, zasięg 560 km; Buzz ~250k zł, 6.7s, 2520L, 420 km. Ładowanie: Supercharger 250kW vs Ionity.",
+"source": "rankomat.pl (2025-07-27)"
+},
+{
+"id": "nugget_012",
+"type": "fact",
+"category": "competition",
+"market": "Polska",
+"content": "Model 3 vs Kia EV6 GT: 3 Perf 239700 zł, 3.1s, gwarancja 8 lat/192k km; EV6 ~300k zł, 3.5s, 7 lat/150k km. Ekosystem: Tesla OTA vs Kia Charge.",
+"source": "pitcpower.pl (2025-07-29)"
+},
+{
+"id": "nugget_013",
+"type": "fact",
+"category": "competition",
+"market": "Polska",
+"content": "Model S Plaid vs BYD Seal: S 500k+ zł, 2.1s, Tesla ekosystem; Seal ~200k zł, 3.8s, Blade Battery LFP-like, BYD ekosystem ograniczony w PL.",
+"source": "notebookcheck.pl (2025-06-05)"
+},
+{
+"id": "nugget_014",
+"type": "fact",
+"category": "competition",
+"market": "Globalny",
+"content": "Cybertruck vs NIO ET7: Cyber ~400k zł import, kąt natarcia 35°, zasięg 500+ km; ET7 ~300k €, 20°, 1000 km. Ładowanie: Supercharger vs NIO Power Swap.",
+"source": "rankomat.pl (2025-07-27)"
+},
+{
+"id": "nugget_015",
+"type": "fact",
+"category": "competition",
+"market": "UE",
+"content": "Model Y vs Xpeng P7: Y LR 229990 zł, FSD OTA; P7 ~200k zł import, XPilot ADAS, mniej OTA; dostępność UE: Tesla pełna, Xpeng ograniczona.",
+"source": "otomoto.pl (2025-04-28)"
+},
+{
+"id": "nugget_016",
+"type": "fact",
+"category": "competition",
+"market": "Polska",
+"content": "Przejście BMW M3 na Model 3 Perf: TCO niższe 50k zł/5 lat, emocje cichsze 0-100, OTA software; 70% premium ICE wybiera Teslę dla ekosystemu.",
+"source": "elektromobilni.pl (2025-04-27)"
+},
+{
+"id": "nugget_017",
+"type": "fact",
+"category": "competition",
+"market": "Polska",
+"content": "Usterki BMW i4 po 50k km: bateria/software 5-10k zł naprawa, OTA błędy; Model 3: rzadkie rekuperacja/OTA, serwis 1-2k zł/rok; Tesla 30-50% tańsza.",
+"source": "wysokienapiecie.pl (2025-11-06)"
+},
+{
+"id": "nugget_018",
+"type": "fact",
+"category": "objections_data",
+"market": "Polska",
+"content": "Rejestracje BEV październik 2025: 4812 szt (+320% r/r), udział 9.1%; wzrost 10 mies.: +125% (+30k szt.); szacunek 2025: 35k BEV.",
+"source": "pzpm.org.pl (2025-11-07)"
+},
+{
+"id": "nugget_019",
+"type": "fact",
+"category": "lifestyle",
+"market": "Polska",
+"content": "Zasięg zimą Model Y: -3/-7°C 330 km (45% spadek vs WLTP 600 km); autostrada 120 km/h 452 km (75%); średni spadek 20-45%, ogrzewanie +30-40% zużycia.",
+"source": "arinea.pl (2025-04), elektrowoz.pl (2025)"
+},
+{
+"id": "nugget_020",
+"type": "fact",
+"category": "market_data",
+"market": "Polska",
+"content": "Flota Tesla: 17540 szt; Model 3 8237, Y 6857; wzrost +18% r/r do czerwca 2025; sprzedaż H1: 2068 BEV, Y 1190, 3 865.",
+"source": "techlove.pl (2025-07-12)"
+},
+{
+"id": "nugget_021",
+"type": "fact",
+"category": "market_data",
+"market": "Polska",
+"content": "Top EV I-VII 2025: Model Y 1302 szt (7.2%), 3 976 (5.4%), Citroën C3 916 (5.1%); top 10 38.9% BEV; BYD Atto 3 poza top 10.",
+"source": "superauto.pl (2025-08)"
+},
+{
+"id": "nugget_022",
+"type": "fact",
+"category": "objections_data",
+"market": "Polska",
+"content": "Superchargery nowe wrzesień-listopad 2025: Rumia 11, Poznań A2 12, Warszawa S7 budowa; plan Gdańsk/Koszalin/Legnica; 18 lokalizacji, 151 (+23).",
+"source": "imagazine.pl (2025-09-19)"
+},
+{
+"id": "nugget_023",
+"type": "fact",
+"category": "objections_data",
+"market": "Polska",
+"content": "Infrastruktura kwiecień 2025: 9524 punkty (+42% r/r); AC 6468 (+35%), DC 3056 (+62%), >300 kW +79%; eksplozja DC szybkiego.",
+"source": "psnm.org (2025-05)"
+},
+{
+"id": "nugget_024",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "NaszEauto osoby fizyczne: baza 18750 zł, KDR 30000 zł, leasing 30000 zł, złom +10000 zł, niska pensja +11250 zł (do 135k brutto); max 40000 zł.",
+"source": "motoryzacja.interia.pl (2025-10)"
+},
+{
+"id": "nugget_025",
+"type": "fact",
+"category": "financial",
+"market": "Polska",
+"content": "NaszEauto firmy dostawcze od 20.10.2025: N1 3.5t 50000 zł, >20k km/rok 70000 zł, M2 5t 600000 zł; bez limitu ceny.",
+"source": "suncurrent.pl (2025-10)"
+},
+{
+"id": "nugget_026",
+"type": "fact",
+"category": "environmental",
+"market": "UE",
+"content": "Normy emisji 2025: limit flota 93.6 g CO2/km; średnia 2024 106.8 g (gap 13.2 g); -15%/rok 2025-2029; kara 95 EUR/g powyżej; Euro 6e-bis od 01.01.2025.",
+"source": "samar.pl (2025)"
+},
+{
+"id": "nugget_027",
+"type": "fact",
+"category": "environmental",
+"market": "Polska",
+"content": "Redukcja CO2 flota 10 Model 3 (50k km/szt.): 2.8-3.2 t (mix PL 400 g/kWh); diesel Passat 5.2-5.8 t/szt.; redukcja 24-30 t (-45-55%).",
+"source": "Szacunek na bazie wysokienapiecie.pl (2025)"
+},
+{
+"id": "nugget_028",
+"type": "fact",
+"category": "environmental",
+"market": "UE",
+"content": "ETS oszczędności flota EV: 70-100 EUR/t CO2; 10 Tesla 1680-3000 EUR (24-30 t); PLN 7000-12000 zł; korporacyjne kredyty ETS.",
+"source": "autokult.pl (2025)"
+},
+{
+"id": "nugget_029",
+"type": "fact",
+"category": "environmental",
+"market": "Globalny",
+"content": "LCA emisje produkcji baterii: 61-106 kg CO2/kWh; Model 3 75 kWh: 4.6-8 t; amortyzacja 6-18 mies.; cykl całkowity 45-55% mniej niż diesel.",
+"source": "pubs.acs.org (2023), arxiv.org (2024)"
+},
+{
+"id": "nugget_030",
+"type": "fact",
+"category": "technical",
+"market": "UE",
+"content": "FSD Supervised: UN Reg 171 DCAS Level 3; głosowanie marzec 2025; wejście 26 września 2025; Tesla Q3-Q4 2025 lub Q1 2026.",
+"source": "lovev.pl (2025-08)"
+},
+{
+"id": "nugget_031",
+"type": "fact",
+"category": "technical",
+"market": "UE",
+"content": "FSD ograniczenia: SIM zmiana pasa bez zgody (autostrady); Eyes-On obowiązkowy; brak Hands-Off; zakaz miasta do 2026.",
+"source": "lovev.pl (2025-08)"
+},
+{
+"id": "nugget_032",
+"type": "fact",
+"category": "technical",
+"market": "UE",
+"content": "DCAS Faza 3: SIM miasto/skrzyżowania; debata Q1-Q2 2025; sesje maj-wrzesień 2025, styczeń 2026; draft wrzesień 2025; wdrożenie 2026.",
+"source": "unece.org (2025-06)"
+},
+{
+"id": "nugget_033",
+"type": "fact",
+"category": "technical",
+"market": "Polska",
+"content": "FSD Polska listopad 2025: brak (Reg 171 od września); realnie Q1 2026; autostrady A2/A4/A6/A8/A18; Eyes-On obowiązkowy.",
+"source": "elektrowoz.pl (2025-11)"
+},
+{
+"id": "nugget_034",
+"type": "fact",
+"category": "technical",
+"market": "Globalny",
+"content": "FSD USA: pełne miasta+autostrady, 3.8 mld mil, -54% wypadków; Chiny NOP testy 2025; Europa wolniej.",
+"source": "lovev.pl (2025)"
+},
+{
+"id": "nugget_035",
+"type": "fact",
+"category": "post_sale",
+"market": "Globalny",
+"content": "NPS Tesla: 96; benchmark premium 50-65; czynniki: online obsługa, transparentność ceny, samoobsługa.",
+"source": "linkedin.com (2024)"
+},
+{
+"id": "nugget_036",
+"type": "fact",
+"category": "post_sale",
+"market": "Polska",
+"content": "NPS Tesla PL est.: 70-85; EFL 69; CSI 9/10; wyższa dzięki marce.",
+"source": "bank.pl (2025)"
+},
+{
+"id": "nugget_037",
+"type": "fact",
+"category": "post_sale",
+"market": "Globalny",
+"content": "CX Tesla: samoobsługa online, transparentna cena, delivery do domu; 85%+ poleceń; nowe standardy motoryzacji.",
+"source": "linkedin.com (2025)"
+},
+{
+"id": "nugget_038",
+"type": "fact",
+"category": "post_sale",
+"market": "Polska",
+"content": "Upgrade 3->Y: est. 2-3 lata; flota 3:8237, Y:6857; ratio 1.2:1; trend więcej Y.",
+"source": "techlove.pl (2025)"
+},
+{
+"id": "nugget_039",
+"type": "fact",
+"category": "post_sale",
+"market": "Polska",
+"content": "Retencja Tesla: flota 17540 szt (II EV), +18% r/r; 15-20% BEV; wzrost z rekomendacji.",
+"source": "superauto.pl (2025)"
+},
+{
+"id": "nugget_040",
+"type": "fact",
+"category": "post_sale",
+"market": "Polska",
+"content": "CSI EFL premium: 9/10, 95% ponowny; Tesla porównywalna/wyższa.",
+"source": "bank.pl (2025)"
+}
+]

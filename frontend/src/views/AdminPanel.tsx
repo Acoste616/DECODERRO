@@ -14,9 +14,10 @@ import { useStore } from '../store/useStore';
 import { useTranslation } from '../utils/i18n';
 import FeedbackTab from '../components/admin/FeedbackTab';
 import RagTab from '../components/admin/RagTab';
+import GoldenStandardsTab from '../components/admin/GoldenStandardsTab';
 import AnalyticsTab from '../components/admin/AnalyticsTab';
 
-type AdminTab = 'feedback' | 'rag' | 'analytics';
+type AdminTab = 'feedback' | 'rag' | 'golden' | 'analytics';
 
 export default function AdminPanel() {
   const navigate = useNavigate();
@@ -31,9 +32,10 @@ export default function AdminPanel() {
   useEffect(() => {
     const storedKey = localStorage.getItem('ultra_admin_key');
     if (storedKey && !admin_key) {
+      console.log('🔑 Restoring admin key from localStorage:', storedKey);
       setAdminKey(storedKey);
     }
-  }, []);
+  }, [admin_key, setAdminKey]);
 
   // F-3.1: Handle admin login
   const handleLogin = () => {
@@ -44,8 +46,20 @@ export default function AdminPanel() {
 
     // Save to localStorage and store
     localStorage.setItem('ultra_admin_key', keyInput);
+
+    // Verify key was saved successfully
+    const savedKey = localStorage.getItem('ultra_admin_key');
+    if (savedKey !== keyInput) {
+      setLoginError('Failed to save authentication key. Please try again.');
+      console.error('❌ localStorage.setItem failed - key not saved');
+      return;
+    }
+
+    // Update state to trigger re-render
     setAdminKey(keyInput);
     setLoginError('');
+
+    console.log('✅ Admin key saved successfully to localStorage');
   };
 
   // Handle logout
@@ -172,6 +186,16 @@ export default function AdminPanel() {
               {t('view3_admin.tab_rag')}
             </button>
             <button
+              onClick={() => setActiveTab('golden')}
+              className={`px-6 py-3 font-semibold transition border-b-2 ${
+                activeTab === 'golden'
+                  ? 'border-accent-light dark:border-accent-dark text-accent-light dark:text-accent-dark'
+                  : 'border-transparent text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark'
+              }`}
+            >
+              Złote Standardy
+            </button>
+            <button
               onClick={() => setActiveTab('analytics')}
               className={`px-6 py-3 font-semibold transition border-b-2 ${
                 activeTab === 'analytics'
@@ -189,6 +213,7 @@ export default function AdminPanel() {
       <div className="max-w-7xl mx-auto px-6 py-6">
         {activeTab === 'feedback' && <FeedbackTab />}
         {activeTab === 'rag' && <RagTab />}
+        {activeTab === 'golden' && <GoldenStandardsTab />}
         {activeTab === 'analytics' && <AnalyticsTab />}
       </div>
     </div>

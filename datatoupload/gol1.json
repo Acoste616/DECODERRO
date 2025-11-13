@@ -1,0 +1,920 @@
+[
+  {
+    "trigger_context": "Klient pyta o zasięg Model 3 w zimie",
+    "golden_response": "Świetne pytanie! Model 3 Long Range ma zasięg WLTP 629 km. W zimie (poniżej 0°C) realistycznie spodziewaj się 480-520 km...",
+    "tags": ["zasięg", "zima", "model_3"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Klient obawia się długiego czasu ładowania",
+    "golden_response": "Rozumiem tę obawę - to najczęstsza obiekcja. Ale zmieńmy perspektywę...",
+    "tags": ["ładowanie", "czas", "obiekcja"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Icebreaker dla personalizacji",
+    "golden_response": "Widzę, że interesuje Cię [model]. Co Cię bardziej intryguje – wydajność, czy praktyczność dnia codziennego?",
+    "tags": ["Icebreaker", "personalizacja", "Main Drive"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Budowanie rapport ze sceptykiem",
+    "golden_response": "Wielu naszych klientów zaczynało tak jak Ty – sceptyczni wobec elektryków. Potem odkrywali, że zmienia to całą ich perspektywę na jazdę. Czy chciałbyś zobaczyć, dlaczego?",
+    "tags": ["Icebreaker", "rapport", "skeptycyzm"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Rola autorytetu z empatią",
+    "golden_response": "Zajmuję się tym od [X lat]. Przywykłem, że ludzie mają sporo pytań – i to świetnie. Które obszary są dla Ciebie najważniejsze: technologia, kosztochłonność, czy wpływ na rodzinę?",
+    "tags": ["Icebreaker", "autorytet", "empatia"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Trigger ciekawości dla Typu C",
+    "golden_response": "Tesla nie ma chłodnicy, na to dachcie 40+ czujników, a Software aktualizuje się co miesiąc. Czy wiesz dlaczego to ma znaczenie dla Ciebie?",
+    "tags": ["Icebreaker", "ciekawość", "Typ C"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Odkrywanie kontekstu decyzji",
+    "golden_response": "Oprócz Ciebie – kto jeszcze będzie jeździć tym pojazdem? I jakie są ich najważniejsze obawy?",
+    "tags": ["Deep Dive", "kontekst", "decision committee"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Przeszłość jako wskaźnik przyszłości",
+    "golden_response": "Twoja poprzednia marka samochodowa – co Ci się w niej podobało, a co cię frustrowało? Bo to pokazuje, co naprawdę Cię motywuje.",
+    "tags": ["Deep Dive", "przeszłość", "motywacja"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Główna motywacja vs. pseudo-motywacja",
+    "golden_response": "Wiem, że cenisz [benefit #1]. Ale gdyby był wybór tylko między [benefit #1] a [benefit #2] – co by wygrało i dlaczego?",
+    "tags": ["Deep Dive", "motywacja", "hierarchia"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Wskaźnik gotowości decyzji",
+    "golden_response": "Na skali 1-10, gdzie 1 to 'nie myślę o tym poważnie', a 10 to 'gotów podpisać dzisiaj' – gdzie jesteś teraz? I co byś potrzebował, aby przesunąć się o jeden punkt wyżej?",
+    "tags": ["Deep Dive", "commitment", "skala"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Redefinicja luksusu",
+    "golden_response": "Rozumiem, luksus to komfort i prestiż. Tesla definiuje luksus przez bezstresową jazdę – Zero stacji benzynowych, Zero oleju, Zero myśli o awaryjności. To najwyższy komfort psychiczny, jaki możesz mieć.",
+    "tags": ["Framing", "luksus", "redefinicja"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Inwestycja vs. wydatek",
+    "golden_response": "Cena pojazdu to wydatek jednokrotny. Ale oszczędności na paliwie, serwisie i podatku – to inwestycja zwracająca się w [X lat]. Ile wydajesz rocznie na paliwo? Bo to kwota, którą możesz realnie zaoszczędzić.",
+    "tags": ["Framing", "inwestycja", "ROI"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Ryzyko technologiczne",
+    "golden_response": "Elektryki są nowością? Tak. Ale Tesla – to już 1.5M pojazdów na drodze, średnia żywotność baterii 300k+ mil. To nie startup – to kompania z udowodnioną historią.",
+    "tags": ["Framing", "ryzyko", "track record"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Ekologia z self-interest",
+    "golden_response": "Dbanie o planetę to ładne hasło. Ale mówiąc szczerze – to inwestycja w przyszłość Twoich dzieci. Mniej smogu, mniej alergii, czystsze powietrze. To o nich, nie o planecie abstrakcyjnej.",
+    "tags": ["Framing", "ekologia", "self-interest"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Impasse w stagnacji",
+    "golden_response": "Czuję, że czujesz się w stagnacji. To normalne – to duża decyzja. Zamiast debatować, co powiesz na to: zobaczmy razem, co byś zyskał w pierwsze 3 miesiące. A potem postanowimy?",
+    "tags": ["Impasse", "potwierdzenie", "reframing"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Niechęć do decyzji",
+    "golden_response": "Widzę, że analizujesz różne warianty. To znak, że podejmujesz to serio. Ale czasem analiza paraliżuje. Co powiesz – zróbmy to tak: wybierzemy jeden wariant, spróbujesz go przez tydzień, a potem zdecydujemy?",
+    "tags": ["Impasse", "paralysis", "test"],
+    "category": "komunikacja"
+  },
+  {
+    "trigger_context": "Obiekcja ceny",
+    "golden_response": "Rozumiem, że budżet jest ograniczony. Ale pytanie nie jest 'czy mnie stać' – pytanie brzmi 'co jest dla mnie warte tej ceny?' Bo jeśli odpowiedź brzmi 'zdecydowanie warte' – to problem staje się finansowy, nie logiczny. A my mamy rozwiązania finansowe.",
+    "tags": ["Objection", "cena", "priorytet"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Konkurent tańszy",
+    "golden_response": "Wiem, że [konkurent] jest tańszy. Ale porównajmy: bateria gwarancja, oprogramowanie, ekosystem ładowania. Bo 'tańszy' to nie produkt – to punkt widzenia. 'Lepszy' to zbiór decyzji.",
+    "tags": ["Objection", "konkurent", "porównanie"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Poczekam na nowy model",
+    "golden_response": "To rozsądne. Ale pytanie brzmi – poczekasz 2 lata na spekulacje? Czy wolisz mieć teraz pojazd, który wielu facetów kupi, a potem – jak pojawi się nowy model – znowu się zastanawiać? Czasem 'idealny' to wróg 'doskonałego teraz'.",
+    "tags": ["Objection", "nowy model", "scarcity"],
+    "category": "objection_handling"
+  },
+  {
+    "trigger_context": "Assumptive close",
+    "golden_response": "Ok, widzę, że to ma sens dla Ciebie. Przejdźmy do konfiguracji – jaki kolor Ci bardziej odpowiada: metaliczny czy matowy? Bo to ostatnia rzecz przed tym, jak zarezerwujemy Ci pojazd.",
+    "tags": ["Closing", "assumptive", "konfiguracja"],
+    "category": "closing"
+  },
+  {
+    "trigger_context": "Trial close",
+    "golden_response": "Zanim idziemy dalej – wyobraź sobie, że to pojazd stoi w Twojej garażu za miesiąc. Jak się czujesz? Bo ta intuicja jest ważniejsza niż jakakolwiek liczba, którą Ci teraz dam.",
+    "tags": ["Closing", "trial", "wizualizacja"],
+    "category": "closing"
+  },
+  {
+    "trigger_context": "Objection prevention",
+    "golden_response": "Zanim podpiszesz – chciałbym poruszyć jedno. Wiem, że będzie moment, w którym pomyślisz 'czy to była dobra decyzja?'. To normalne. Chcę Ci dać numer do 3 właścicieli, którzy przeszli przez to dokładnie – i mogą Ci powiedzieć, co się zmienia po 3 miesiącach.",
+    "tags": ["Closing", "prevention", "social proof"],
+    "category": "closing"
+  },
+  {
+    "trigger_context": "Trójwarstwowa diagnoza",
+    "golden_response": "Jaki jest problem dzisiaj? Dlaczego to problem? Co by się zmieniło, gdyby ten problem znikł?",
+    "tags": ["Discovery", "diagnoza", "Main Drive"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Timing pytania o budżet",
+    "golden_response": "Ile wydajesz rocznie na paliwo, serwis, ubezpieczenie? Bo ta suma + rata kredytu = twój realny budżet.",
+    "tags": ["Discovery", "budżet", "timing"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Active listening z ciszą",
+    "golden_response": "[Milcz 3-5 sekund po pytaniu, pozwól klientowi wypełnić ciszę].",
+    "tags": ["Discovery", "active listening", "cisza"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Mapowanie decyzji",
+    "golden_response": "Kto ma ostateczne słowo? Czy ten ktoś zna Tesle? Co byś mu musiał powiedzieć, aby zgodził się na tę inwestycję?",
+    "tags": ["Discovery", "decyzja", "committee"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "BANT budżet real",
+    "golden_response": "Ile wydajesz rocznie na paliwo, serwis, ubezpieczenie? Bo ta suma + rata kredytu = twój realny budżet.",
+    "tags": ["BANT", "budżet", "real"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "BANT autorytet",
+    "golden_response": "Co dla Ciebie osobiście byłoby game-changerem w tym pojeździe?",
+    "tags": ["BANT", "autorytet", "alignment"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "BANT potrzeba emocjonalna",
+    "golden_response": "Chcę czuć się innowatorem lub wspierać ekologię – co jest Twoją emocjonalną potrzebą?",
+    "tags": ["BANT", "potrzeba", "emocjonalna"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "BANT czas trigger",
+    "golden_response": "Co się zmieniło, że przychodzisz dzisiaj, a nie 3 miesiące temu?",
+    "tags": ["BANT", "czas", "trigger"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Temperatura klienta",
+    "golden_response": "Na podstawie Discovery: Hot (closing), Warm (education), Cold (awareness).",
+    "tags": ["Qualification", "temperatura", "lead scoring"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Pre-drive briefing",
+    "golden_response": "To nie test funkcji, to doświadczenie. Będę obserwować Twoją reakcję na 3 rzeczy: przyspieszenie, kręty, ciszę. Po jeździe – nie mówię nic. Ty mówisz, co się zmieniło w Twojej głowie.",
+    "tags": ["Test Drive", "briefing", "framing"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Trasa test drive 3 akty",
+    "golden_response": "Akt 1: Spokojne jeżdżenie. Akt 2: Full acceleration. Akt 3: Highway z autopilot.",
+    "tags": ["Test Drive", "trasa", "akty"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Seat belt speech",
+    "golden_response": "Tesla ma najtwardszą strukturę na rynku. Ale nie chcę Cię straszyć bezpieczeństwem. Chcę, żebyś czuł się chroniony, żeby w następnych 30 minut mogłeś po prostu cieszyć się jazdą.",
+    "tags": ["Test Drive", "safety", "emocja"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Post-drive silence",
+    "golden_response": "[Milcz 30 sekund, potem: Co się zmieniło w Twojej głowie?]",
+    "tags": ["Test Drive", "silence", "reakcja"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Struktura SPIN",
+    "golden_response": "1. Situation: Opowiedz o swoim obecnym aucie. 2. Problem: Co Cię frustruje? 3. Implication: Jak to wpływa na codzienność? 4. Need-Payoff: Gdyby to zniknęło, co by się zmieniło?",
+    "tags": ["Conversation", "SPIN", "Challenger"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Closing conversation rezumacja",
+    "golden_response": "Ok, słuchałem, że X, Y, Z są ważne. Głównie zależy Ci na [Main Drive]. Zaproponuję: najpierw test drive, potem kalkulacja finansowa, potem – jeśli się zgadza – rezerwacja. Zgoda?",
+    "tags": ["Conversation", "rezumacja", "next step"],
+    "category": "discovery"
+  },
+  {
+    "trigger_context": "Feature-to-benefit mapping",
+    "golden_response": "Cecha: 400 V architektura. Korzyść: Szybsze ładowanie. Dostosowana: Dla Typu D – więcej czasu na biznes.",
+    "tags": ["Feature-Benefit", "mapping", "DISC"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Emocjonalizacja specyfikacji",
+    "golden_response": "Bateria 100 kWh to znaczy, że możesz obudzić się z pełnym bakiem energii każdego ranka, nigdy nie myśleć o stacji paliw, a za rok zaoszczędzić tyle, ile kosztuje nowy laptop.",
+    "tags": ["Feature-Benefit", "emocja", "transformacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Inverse framing loss aversion",
+    "golden_response": "Większość aut ma chłodnicę. Każdego lata mogą Ci pęknąć. Tesla nie ma chłodnicy, czyli nie ma tego ryzyka. To oznacza mniej wizyt serwisowych i spokojniejsze lato z rodziną.",
+    "tags": ["Feature-Benefit", "loss aversion", "ryzyko"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "TCO reframing",
+    "golden_response": "Cena pojazdu to jedna liczba. Koszt = cena + paliwo + serwis + ubezpieczenie - ulgi. Tesla kosztuje mniej, mimo wyższej ceny.",
+    "tags": ["TCO", "reframing", "psychologia"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Kalkulator amortyzacji",
+    "golden_response": "Wydajesz 15k rocznie na stare auto. Tesla = 4k rocznie. Różnica = 11k/rok. W pięć lat to 55k oszczędności.",
+    "tags": ["TCO", "kalkulator", "amortyzacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Ulgi podatkowe",
+    "golden_response": "Po wszystkich ulgach – Twoja rzeczywista cena może być o 10-20% niższa.",
+    "tags": ["TCO", "ulgi", "PL"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Zmiana stylu życia",
+    "golden_response": "To zmienia Twoją rutynę każdego dnia. Budzisz się z pełnym bakiem, jedziesz bezpiecznie, przychodzisz rozrelaksowany.",
+    "tags": ["Experience", "lifestyle", "reframe"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Przynależność do community",
+    "golden_response": "Dołączasz do 1.5M właścicieli na świecie, którzy dzielą się sztuczkami. To jak Apple, ale na cztery kółka.",
+    "tags": ["Experience", "community", "social proof"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Autonomia przez software",
+    "golden_response": "Każdy miesiąc – nowe features przez update. Ty decydujesz, co zainstalować. To poczucie kontroli.",
+    "tags": ["Experience", "software", "autonomia"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Safety mózg miłości",
+    "golden_response": "Tesla ma 8 airbagów, aby chronić rodzinę. To miłość do bliskich, nie strach.",
+    "tags": ["Safety", "miłość", "neuroscience"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Bezpieczeństwo psychiczne",
+    "golden_response": "Autopilot = mniej zmęczenia. Zawsze naładowany = spokój o planach. Spokój w głowie – to najdroższa rzecz.",
+    "tags": ["Safety", "spokój", "psychika"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Premium inwestycja",
+    "golden_response": "Tesla to premium – bo oszczędzisz na paliwie, serwisie, podatku, a zyskasz bezpieczeństwo i prestiż. To kalkulacja.",
+    "tags": ["Premium", "inwestycja", "smart"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Smart choice przyszłość",
+    "golden_response": "W 10 lat większość aut będzie elektrycznych. Czy chcesz być częścią zmiany teraz?",
+    "tags": ["Smart Choice", "przyszłość", "agency"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Elevator pitch",
+    "golden_response": "Tesla to najchętniej kupowany samochód premium. Mniej kosztu, więcej czasu, spokoju, kontroli.",
+    "tags": ["Value Prop", "elevator", "pitch"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Competitive positioning",
+    "golden_response": "Tak, Audi jest tańsze – ale porównajmy baterię, sieć, updates. To porównanie wartości.",
+    "tags": ["Competitive", "redefiniuj", "wartość"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "TCO paliwo",
+    "golden_response": "Przeciętny właściciel benzynówki wydaje 12k rocznie na paliwo. Tesla: 2k. Różnica = 10k/rok.",
+    "tags": ["TCO", "paliwo", "kalkulacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "TCO serwis",
+    "golden_response": "Tradycyjne auto: 3-5k rocznie. Tesla: ~500 zł. Oszczędność = 2.5-4.5k rocznie.",
+    "tags": ["TCO", "serwis", "utrzymanie"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "TCO ubezpieczenie",
+    "golden_response": "OC dla Tesli: 2-4k PLN/rok. Tesla jest bezpieczna – ubezpieczyciele to wiedzą.",
+    "tags": ["TCO", "ubezpieczenie", "EU"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "TCO podatek",
+    "golden_response": "Pojazd elektryczny ma zerowy podatek rejestracyjny (~6k PLN oszczędności dla Model 3).",
+    "tags": ["TCO", "podatek", "ulga"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "TCO depresjacja",
+    "content": "Elektryki tracą na wartości szybciej, ale Tesla – mniej niż konkurenci. Po 5 latach: ~40% wartości pozostaje.",
+    "tags": ["TCO", "deprezjacja", "wartość"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Experience value czas",
+    "golden_response": "Dziennie spędzasz 45 minut w samochodzie. Tesla zmienia to na relaks – kupujesz 273 godziny spokoju rocznie.",
+    "tags": ["Experience Value", "czas", "spokój"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Experience value bezpieczeństwo",
+    "golden_response": "Autopilot redukuje stres – to inwestycja zdrowotna. Spokój = zdrowsze serce.",
+    "tags": ["Experience Value", "bezpieczeństwo", "zdrowie"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Experience value status",
+    "golden_response": "Właściciel Tesli to 'forward-thinking'. Kupujesz wersję siebie.",
+    "tags": ["Experience Value", "status", "tożsamość"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Experience value reputacja",
+    "golden_response": "Ludzie zwracają uwagę. To soft power – masz opowieść.",
+    "tags": ["Experience Value", "reputacja", "soft power"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Preemptive cena",
+    "golden_response": "Cena jest wyższa. Ale czy to droga inwestycja czy tania pułapka?",
+    "tags": ["Preemptive", "cena", "inwestycja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Preemptive bateria",
+    "golden_response": "Bateria traci 1-2% rocznie. Gwarantujemy 70% na 8 lat.",
+    "tags": ["Preemptive", "bateria", "degradacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Preemptive sieć",
+    "golden_response": "Europa ma ~400k+ stacji. Tesla – 2,500 Supercharger'ów. Ładowanie bliżej niż tankowanie.",
+    "tags": ["Preemptive", "sieć", "ładowanie"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Pricing anchor premium",
+    "golden_response": "Tesla Model 3 kosztuje jak Audi A4. Ale Audi nie ma Autopilot ani Supercharger'ów.",
+    "tags": ["Pricing", "anchor", "premium"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Pricing decoy effect",
+    "golden_response": "Model 3 Standard (185k), LR (210k), Performance (230k). Który wariant?",
+    "tags": ["Pricing", "decoy", "efekt"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Pricing payment framing",
+    "golden_response": "Rata 4,500 PLN miesięcznie przez 60 miesięcy. To mniej niż apartament w centrum.",
+    "tags": ["Pricing", "rata", "framing"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Pricing trade-in",
+    "golden_response": "Twoje Audi ma wartość 60k. Różnica to nie 250k, ale 190k.",
+    "tags": ["Pricing", "trade-in", "wartość"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Benefit stacking warstwy",
+    "golden_response": "Tesla dobra dla Ciebie (oszczędności), rodziny (bezpieczeństwo), planety (zero CO2).",
+    "tags": ["Benefit Stacking", "warstwy", "appeal"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Benefit stacking temporal",
+    "golden_response": "Dzisiaj kupisz, za miesiąc zaoszczędzisz na paliwie, za 5 lat bateria minimalnie zdeprecjonuje.",
+    "tags": ["Benefit Stacking", "temporal", "trajektoria"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Emotional wybudzenie",
+    "golden_response": "Test Tesli to przebudzenie. Nagle rozumiesz, dlaczego świat idzie w elektryki.",
+    "tags": ["Emotional Value", "wybudzenie", "transformacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Emotional wyzwolenie",
+    "golden_response": "Tesla eliminuje stres o baku. Co byś robił z tą mentalną przestrzenią?",
+    "tags": ["Emotional Value", "wyzwolenie", "emancypacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Emotional kontrola",
+    "golden_response": "Software aktualizuje się w nocy. Ty kontrolujesz zmiany – to powrót agencji.",
+    "tags": ["Emotional Value", "kontrola", "agencja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Emotional przynależność",
+    "golden_response": "Właściciele Tesli to tech-savvy wspólnota. Ile warte poczucie przynależności?",
+    "tags": ["Emotional Value", "przynależność", "społeczna"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Comparative model vs future",
+    "golden_response": "Wybierasz między przeszłością (BMW tradycja) a przyszłością (Tesla innowacja). Która warta 10 lat jazdy?",
+    "tags": ["Comparative", "model", "przyszłość"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Comparative luksus",
+    "golden_response": "Luksus dziś = bezpieczeństwo, software. Tesla ma Autopilot, nie drewniany panel.",
+    "tags": ["Comparative", "luksus", "nowoczesny"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Comparative inwestycja",
+    "golden_response": "Stare auto tracisz 15% rocznie – konsumpcja. Tesla + oszczędności – inwestycja.",
+    "tags": ["Comparative", "inwestycja", "konsumpcja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Benefit Typ D",
+    "golden_response": "Tesla to upgrade dla biznesu. Zero czasu na paliwo = więcej na transakcje.",
+    "tags": ["Segmentacja", "Typ D", "efektywność"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Benefit Typ I",
+    "golden_response": "Jeżdżąc Teslą, ludzie zwracają uwagę. Dołączasz do społeczności innowatorów.",
+    "tags": ["Segmentacja", "Typ I", "status"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Benefit Typ S",
+    "golden_response": "Tesla gwarantuje baterię 8 lat, sieć nigdy nie zawiedzie. Zero awaryjności.",
+    "tags": ["Segmentacja", "Typ S", "spokój"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Benefit Typ C",
+    "golden_response": "Dostęp do każdej metryki: zasięg, zużycie, stats. Najlepsza telemetria w branży.",
+    "tags": ["Segmentacja", "Typ C", "dane"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Reframing wysoka cena",
+    "golden_response": "Wysoka cena = sygnał jakości. Jak Rolex – gwarantuje prestiż i testy.",
+    "tags": ["Reframing", "cena", "halo"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Reframing zapłać więcej",
+    "golden_response": "Zapłacisz więcej dziś, zaoszczędzisz 50k w pięć lat. Pojazd sam się spłaci.",
+    "tags": ["Reframing", "zapłać", "zaoszczędź"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Reframing luksus rzeczywistość",
+    "golden_response": "Tesla to rzeczywistość przyszłości. Za 10 lat każdy będzie jeździć elektrykiem.",
+    "tags": ["Reframing", "luksus", "rzeczywistość"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Anchor informuję",
+    "golden_response": "Ja nie sprzedaję. Ja informuję. Jeśli to nie dla Ciebie – pomogę znaleźć coś innego.",
+    "tags": ["Anchor", "informuję", "relacja"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Anchor decydujesz",
+    "golden_response": "Pokażę opcje – Standard, Long Range. Decyzja zawsze Twoja.",
+    "tags": ["Anchor", "decydujesz", "opcje"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Anchor pytania",
+    "golden_response": "Słyszałem każde pytanie. Pytaj śmiało – odpowiadam szczerze.",
+    "tags": ["Anchor", "pytania", "safety"],
+    "category": "wartosc"
+  },
+  {
+    "trigger_context": "Soft close assumptive",
+    "golden_response": "Ok, przygotujmy rezerwację. Jaki kolor – perłowy czy metaliczny?",
+    "tags": ["Soft Close", "assumptive", "progres"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Soft close trial",
+    "golden_response": "Gdyby wszystko było ok – czy zawarłbyś w tym miesiącu?",
+    "tags": ["Soft Close", "trial", "temperatura"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Soft close alternative",
+    "golden_response": "Wolisz leasing (niskie raty) czy kredyt (auto Twoje)?",
+    "tags": ["Soft Close", "alternative", "wybór"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Soft close compliance",
+    "golden_response": "Zgodzisz się, że wstępna kalkulacja TCO byłaby pomocna?",
+    "tags": ["Soft Close", "compliance", "zgody"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Soft close takeaway",
+    "golden_response": "Ok, wrócimy za 3 miesiące. Zarejestruję Cię w systemie na nowości.",
+    "tags": ["Soft Close", "takeaway", "reactance"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Next step SMART",
+    "golden_response": "Plan: Jutro kalkulacja leasingu do 14. Ty dzwonisz w czwartek. Zgoda?",
+    "tags": ["Next Step", "SMART", "commitment"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Next step owned action",
+    "golden_response": "Ja wyślę info, Ty zadzwonisz po przejrzeniu. Zgoda?",
+    "tags": ["Next Step", "owned", "action"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Next step appointment",
+    "golden_response": "Slots: wtorek 14:00, środa 11:00. Który pasuje?",
+    "tags": ["Next Step", "appointment", "kalendarz"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Next step protocol",
+    "golden_response": "Wyślę mail do poniedziałku. Wolisz SMS czy WhatsApp do potwierdzenia?",
+    "tags": ["Next Step", "protocol", "kanał"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Final objection pomyślę",
+    "golden_response": "Jasne. Co dokładnie chcesz przemyśleć? Cena, funkcje czy logistyka?",
+    "tags": ["Objection", "pomyślę", "unpacking"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Final objection drogo",
+    "golden_response": "Czy stać Cię za 3-6 miesięcy? Zarezerwuj teraz, płacisz później.",
+    "tags": ["Objection", "drogo", "timeline"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Final objection partner",
+    "golden_response": "Ile czasu na rozmowę? Zadzwonimy razem w czwartek o 19:00?",
+    "tags": ["Objection", "partner", "joint"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Final objection nowy model",
+    "golden_response": "Nowy model co 18-24 miesiące. Kup dziś, sprzedaj za rok – to strategia testowania.",
+    "tags": ["Objection", "nowy model", "cykl"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Follow-up timing",
+    "golden_response": "Dzięki za dziś! Jakie pierwsze wrażenia? [W 2h po wizycie].",
+    "tags": ["Follow-Up", "timing", "24h"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Follow-up emocjonalna recenzja",
+    "golden_response": "Wiem, że test drive budzi emocje. Co było najjaśniejszym momentem?",
+    "tags": ["Follow-Up", "emocja", "recenzja"],
+    "category": "zamykanie"
+  },
+  {
+    "trigger_context": "Otwórz z NaszEauto",
+    "golden_response": "Polska inwestuje w elektromobilność – ty jesteś częścią tej transformacji, a my cię wspieramy finansowo.",
+    "tags": ["Autorytet", "Dowód społeczny", "Bezpieczny wybór", "Program rządowy"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Diagnostyka finansowa",
+    "golden_response": "Czy rozważacie sfinansowanie przez tradycyjny kredyt, leasing czy gotówkę?",
+    "tags": ["Diagn. finansowa", "Kwalifikacja", "Leasing", "Model 3", "Efekt TCO"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "TCO builder",
+    "golden_response": "Wiem, że cena wydaje się wysoka. Pozwól, że pokażę realny koszt w przeliczeniu na 5 lat.",
+    "tags": ["TCO", "Kalkulator", "Oszczędności", "Paliwo", "Serwis"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Ulga podatkowa",
+    "golden_response": "Nie tylko kupujesz pojazd – inwestujesz w oszczędności i status ekologiczny.",
+    "tags": ["Ulga podatkowa", "Emisja zero", "Opłaty drogowe", "Status ekologiczny"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Leasing PLN",
+    "golden_response": "Czy dla ciebie ważna jest całkowita przewidywalność miesięcznych kosztów?",
+    "tags": ["Leasing", "Przewidywalność", "Rata", "Brak kosztów ukrytych"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Złomowanie premia",
+    "golden_response": "Zastąp spalinowy czyszczką – i zaoszczędź szybciej.",
+    "tags": ["Złomowanie", "Dodatkowa premia", "Sunk cost", "Motywacja"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Dochód segmentacja",
+    "golden_response": "Jaki jest orientacyjny roczny dochód w waszym gospodarstwie?",
+    "tags": ["Segmentacja dochodu", "Niska cena wejścia", "SPIN diagnostic"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Karta dużej rodziny",
+    "golden_response": "Tesla Model Y to bezpieczne, rodzinne auto – i rząd to premiuje. Bo EV = bezpieczeństwo dla rodziny.",
+    "tags": ["Duża rodzina", "Rodzinne bezpieczeństwo", "Autopilot", "Premium segment"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Model 3 vs Y",
+    "golden_response": "Model 3 to opcja dla świadomych kosztów; Model Y dla rodzin. Oba kwalifikują się do wsparcia.",
+    "tags": ["Model 3", "Model Y", "Cena", "Kwalifikacja", "Segment"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Przed rejestracją compliance",
+    "golden_response": "To oznacza: najpierw kupujesz, potem dostajesz wsparcie. Średni czas 30-60 dni.",
+    "tags": ["Compliance", "Rejestracja", "Dokumentation", "Timing"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Porównanie Model 3 vs Audi",
+    "golden_response": "Cena podobna; całkowity koszt życia zdecydowanie na korzyść Tesli. To logika matematyczna.",
+    "tags": ["Porównanie", "Audi A4", "TCO", "Logika", "Kalkulator"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "JDG biznes",
+    "golden_response": "Jeśli prowadzisz firmę, Tesla może być aktywem biznesowym z ulgami podatkowymi.",
+    "tags": ["JDG", "Koszt działalności", "Amortyzacja", "Biznes"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Cena maksymalna",
+    "golden_response": "Jeśli chcesz pełną dotację – limitujemy się do 225k PLN netto.",
+    "tags": ["Cena maksymalna", "Limit", "Kwalifikacja", "Model Performance"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Ubezpieczenie OC",
+    "golden_response": "Tesla jest bezpieczna – ubezpieczyciele to wiedzą, dlatego składka kompetytywna.",
+    "tags": ["Ubezpieczenie", "OC", "AC", "Bezpieczeństwo"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Rejestracja procedura",
+    "golden_response": "Cały proces zajmuje ~7-14 dni. Na koniec – dotacja wpada na konto.",
+    "tags": ["Rejestracja", "Procedura", "CEP", "Post-sale"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Dotacja rabat",
+    "golden_response": "Jeśli mamy promocję cashback 5k PLN, dodatkowo dostajesz dotację. To się łączy.",
+    "tags": ["Dotacja", "Rabat", "Promocja", "Niezależność", "Stacking"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Wnioski limity",
+    "golden_response": "Warto pospieszyć – zwłaszcza w Q4. Budżet ograniczony.",
+    "tags": ["Limity", "Budżet", "Kolejka", "Urgencja"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Generator wniosków",
+    "golden_response": "Pokażę ci platform, gdzie w 15 minut podpiszesz wniosek – załączniki gotowe.",
+    "tags": ["Generator wniosków", "Online", "Platform", "Cyfrowy"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Leasing vs kupno",
+    "golden_response": "Co lepiej pasuje – kupno czy leasing na 3-5 lat?",
+    "tags": ["Leasing", "Kupno", "Segmentacja", "Strategia finansowa"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Podsumowanie kat 6",
+    "golden_response": "Polska już zainwestowała w twoją przyszłość – zostało ci tylko ją zaakceptować.",
+    "tags": ["Tri-pronged", "Autorytet", "TCO", "Akcja"],
+    "category": "lokalne"
+  },
+  {
+    "trigger_context": "Obiekcja zima zasięg",
+    "golden_response": "Dokładnie – i to jest zaprojektowane. Model 3 LR zimą ~350-400 km. Ile km dziennie jeździsz?",
+    "tags": ["Obiekcja zima", "Zasięg", "WLTP", "Reframe", "Rzeczywistość"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Pompa ciepła",
+    "golden_response": "System inteligentnie zarządza ciepłem – nie marnuje energii. Jak radiator domowy.",
+    "tags": ["Pompa ciepła", "Technologia", "Efektywność", "System inteligentny"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Zimowy test NAF",
+    "golden_response": "Tesla traci 24%, ale jechała 531 km – najdalej absolutnie.",
+    "tags": ["Test zimowy", "NAF", "Konkurencja", "Zasięg bezwzględny"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Mróz normalizacja",
+    "golden_response": "W Polsce -2 do 0°C. W Norwegii -15°C to bestseller. Tu to standard.",
+    "tags": ["Psychologia zima", "Normalizacja", "Norwegia", "Porównanie globalne"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Zmiana nawyków ładowanie",
+    "golden_response": "Dla 99% podróży: ładuj w domu/pracy. Aplikacja zaplanuje resztę.",
+    "tags": ["Nawyki użytkownika", "Planowanie", "Autopilot", "Logistyka"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Sieć ładowarek",
+    "golden_response": "10k punktów w PL. 80% Polaków w gęstym pasie – infrastruktura tam gęsta.",
+    "tags": ["Infrastruktura", "ORLEN Charge", "Huby", "Dystrybucja", "Trasy główne"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Supercharger ekskluzywna",
+    "golden_response": "Doładujesz do 80% w 15-20 min – inne stoją 30-45 min.",
+    "tags": ["Supercharger", "Eksklusywna sieć", "Moc", "Prędkość ładowania"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Greenvolt GreenWay",
+    "golden_response": "Masz wybór sieci – ekosystem się buduje.",
+    "tags": ["Greenvolt", "GreenWay", "Sieci alternatywne", "Konkurencja"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Ładowanie domowe",
+    "golden_response": "80% w domu przez noc. ~7 PLN za 100 km – jak gaz domowy.",
+    "tags": ["Ładowanie domowe", "80%", "Koszt", "Wygoda", "Analogia gaz"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Biedronka ładowarka",
+    "golden_response": "Gdy robisz zakupy – ładujesz. To bypassowanie czasu.",
+    "tags": ["Ubikwitarność", "Hipermarkety", "AC", "Banalizacja"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Ładowanie trasy",
+    "golden_response": "Warszawa-Kraków = 1 przerwa 20 min. Jedz kawę jak VIP.",
+    "tags": ["Trasa", "Relaks", "Ładowanie", "Reframe psychologiczny"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Infrastruktura rośnie",
+    "golden_response": "2027: ~15 000+. Inwestujesz w pojazd podłączony wszędzie.",
+    "tags": ["Trend wzrostu", "2027", "Przyszłość", "Inwestycja perspektywiczna"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Mit bateria zima",
+    "golden_response": "Bateria żyje 500 000+ km. Zima to normalny cykl – system się broni.",
+    "tags": ["Mit baterii", "Termoregulacja", "500k km", "Autorytet techniczny"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Drogi serwis EV",
+    "golden_response": "Serwis Tesli 800-1200 PLN/rok vs. spalinowy 2500-3500. Hamulce trwają 400 000 km.",
+    "tags": ["Serwis", "Koszty", "Rekuperacja", "Porównanie spalinowy"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Dacia Spring tańsza",
+    "golden_response": "Spring = 305 km, 9,8 s. Model 3 = 438 km, 5,8 s, Autopilot. Za +135k dostajesz wartość.",
+    "tags": ["Dacia Spring", "Konkurencja", "Wartość vs. cena", "Edukacja"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "BYD tańszy",
+    "golden_response": "Cena podobna. Różnica: ekosystem Tesla vs. tylko pojazd BYD.",
+    "tags": ["BYD", "Chiński", "Ekosystem", "Inwestycja", "Perspektywa"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Snowboard na dachu",
+    "golden_response": "Dach 75 kg. Kajaki obniżą zasięg 10-15%, ale planuj Supercharger.",
+    "tags": ["Akcesoria", "Luggage", "Opór", "Planowanie", "Adaptacja"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Prąd droższy",
+    "golden_response": "Nawet +30% w 5 lat – wciąż 2x tańszy niż paliwo. Matematyka.",
+    "tags": ["Koszt prądu", "Prognoza", "Matematyka", "Locus kontroli"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Bezduszna technologia",
+    "golden_response": "Autopilot asystuje – 10x mniej wypadków. Twoje oczy + AI = bezpieczeństwo.",
+    "tags": ["Autopilot", "Bezpieczeństwo", "Emocja", "Technofobia", "Reframe"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Podsumowanie obiekcje",
+    "golden_response": "Polskie warunki przetestowane – nie pionier, pragmatyk.",
+    "tags": ["Zimowy zasięg", "Infrastruktura", "Koszt", "Pragmatyzm", "Finalizacja"],
+    "category": "obiekcje"
+  },
+  {
+    "trigger_context": "Case study rodzina",
+    "golden_response": "Rodzina z Warszawy: Model Y po dotacji ~195k, koszty 7300 PLN/6 miesięcy vs. 14k spalinowy.",
+    "tags": ["Case study", "Warszawa", "Model Y", "TCO", "Rekomendacja"],
+    "category": "case_studies"
+  },
+  {
+    "trigger_context": "Case study JDG",
+    "golden_response": "JDG: Model 3 kosztuje realnie 50k w 3 lata + tax shield.",
+    "tags": ["JDG", "Biznes", "Amortyzacja", "CIT", "Efekt finansowy"],
+    "category": "case_studies"
+  },
+  {
+    "trigger_context": "KPI conversion dotacja",
+    "golden_response": "Po NaszEauto conversion +28 pp – permission to buy.",
+    "tags": ["KPI conversion", "Dotacja", "Permission to buy", "Psychology"],
+    "category": "case_studies"
+  },
+  {
+    "trigger_context": "AI trigger zima",
+    "golden_response": "Dane zimowe Model 3: realne 350-400 km. Pytaj o przebieg dziennie.",
+    "tags": ["AI trigger", "Zima", "Range", "Diagnostic", "Reframe"],
+    "category": "integration"
+  },
+  {
+    "trigger_context": "AI trigger budżet",
+    "golden_response": "Rata Model 3 z NaszEauto: 450-550 PLN/mies. Ile zmieści się w budżecie?",
+    "tags": ["AI trigger", "Budżet", "Rate reframe", "Leasing diagnostyka"],
+    "category": "integration"
+  },
+  {
+    "trigger_context": "AI trigger infrastruktura",
+    "golden_response": "10k+ punktów w PL. Tesla app pokazuje real-time. Trasa główna = gęsta sieć.",
+    "tags": ["AI trigger", "Infrastruktura", "Mapa real-time", "Query location-based"],
+    "category": "integration"
+  },
+  {
+    "trigger_context": "Welcome ritual",
+    "golden_response": "Gratulujemy! Upewnijmy się, że masz info o transporcie i app.",
+    "tags": ["Welcome ritual", "24h", "Remorse reduction", "Commitment"],
+    "category": "post_sale"
+  },
+  {
+    "trigger_context": "Onboarding session",
+    "golden_response": "Free 2h session: interior walk, Autopilot demo, app tutorial.",
+    "tags": ["Onboarding session", "Tesla University", "2h", "Confidence boost"],
+    "category": "post_sale"
+  },
+  {
+    "trigger_context": "Post-delivery regret",
+    "golden_response": "Jak pierwsze kilometry? Coś zaniepokoiło?",
+    "tags": ["Regret preemption", "3-day window", "SPIN question", "Vulnerability"],
+    "category": "post_sale"
+  },
+  {
+    "trigger_context": "Winter kit",
+    "golden_response": "Nie chcemy, żebyś poczuł się bezbronny – dajemy narzędzia.",
+    "tags": ["Winter preparation", "Emergency kit", "Proactive", "Confidence"],
+    "category": "post_sale"
+  },
+  {
+    "trigger_context": "30-day NPS",
+    "golden_response": "NPS 9-10: Czy polecisz 3 osobom?",
+    "tags": ["30-day check-in", "NPS", "Referral trigger", "Escalation"],
+    "category": "post_sale"
+  }
+]

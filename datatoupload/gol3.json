@@ -1,0 +1,536 @@
+[
+  {
+    "trigger_context": "Klient pyta o gigacasting masę",
+    "golden_response": "Gigacasting zastępuje 400 części jednym odlewem – Model 3 RWD 1884 kg z 62.5 kWh, 5.6 s 0-100.",
+    "tags": ["gigacasting", "masa", "Model 3"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Wyjaśnij 48V Cybertruck",
+    "golden_response": "48V cieńsze przewody, mniej miedzi, steer-by-wire – otwarty standard dla Forda od 2023.",
+    "tags": ["48V", "Cybertruck", "steer-by-wire"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Porównaj LFP NCA gęstość",
+    "golden_response": "LFP 130-160 Wh/kg, 4000 cykli bezpieczna; NCA 322 Wh/kg wysoka gęstość termiczne.",
+    "tags": ["LFP NCA", "gęstość Wh/kg"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Spec CATL LFP Model 3",
+    "golden_response": "62.5 kWh netto, 170 kW DC, 430-490 km WLTP; real lato 350-400 km, zima 270-320 km; <5% degradacja 100k km.",
+    "tags": ["CATL LFP", "Model 3", "degradacja"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Ładowanie LFP temperatura PL",
+    "golden_response": "Poniżej 10°C wolniejsze; BMS podgrzewa; średnia 8°C: strata 20-30% zima jak spalinowe +30% paliwa.",
+    "tags": ["temperatura PL", "ładowanie LFP"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Wall Connector spec",
+    "golden_response": "2350 zł, 22 kW trójfazowa, 71 km/h, Wi-Fi IP55, -30 do +50°C.",
+    "tags": ["Wall Connector", "spec"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Koszt instalacji Wall",
+    "golden_response": "700-7000 zł: wallbox 2350 + okablowanie 300-1000 + robocizna 700-2500 + modernizacja do 1000.",
+    "tags": ["instalacja koszt", "Wall Connector"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "TN-C-S Wall zgodność",
+    "golden_response": "PEN 10 mm² miedź, uziemienie <10 Ω, RCD 32A, obwód 16.5 kW dla 11 kW.",
+    "tags": ["TN-C-S", "zgodność"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Status Summon PL",
+    "golden_response": "FSD/Summon niedostępne UE (DCAS Faza 3); plan 2025 Holandia/DE/FR pierwsze; płacisz za obietnicę.",
+    "tags": ["Summon status", "FSD UE"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Art. 65k autonomia",
+    "golden_response": "Wymaga prawa jazdy B, kierowca przejmie kontrolę; Level 5 zabronione; Autopilot wspomaganie.",
+    "tags": ["Art. 65k", "prawo jazdy"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "StVZO vs PL porównanie",
+    "golden_response": "DE: bezpieczny z kierowcą, FSD pilotaż 2025; UE R157 zatwierdzenie; PL Art. 65k – kierowca kontrola.",
+    "tags": ["StVZO PL", "FSD DE"],
+    "category": "technical"
+  },
+  {
+    "trigger_context": "Sprzedaż BEV PL prognoza",
+    "golden_response": "2024 14.8k (-3.5%); 2025 17-19k (+4-5%); udział 3.1% do 4-5%; Tesla #1.",
+    "tags": ["BEV sprzedaż", "prognoza 2025"],
+    "category": "market"
+  },
+  {
+    "trigger_context": "Ceny Tesla listopad 2025",
+    "golden_response": "Model 3 RWD 184990 LFP; Performance 239700 NCA; Model Y Standard 184990 LFP; Performance 269990 NCA.",
+    "tags": ["ceny listopad 2025", "Model 3 Y"],
+    "category": "market"
+  },
+  {
+    "trigger_context": "Mój Elektryk 2.0 warunki",
+    "golden_response": "1.6 mld PLN; max 40k (18.75k +10k złom +11.25k niskodochodowi); limit 225k netto; do 30.06.2026.",
+    "tags": ["Mój Elektryk 2.0", "warunki dotacji"],
+    "category": "market"
+  },
+  {
+    "trigger_context": "Wyniki Mój Elektryk edycja I",
+    "golden_response": "27k wniosków; BEV +155% 2021-2023; dostawcze +500%.",
+    "tags": ["wyniki edycja I", "BEV +155%"],
+    "category": "market"
+  },
+  {
+    "trigger_context": "RV Model S po latach",
+    "golden_response": "Model 3 65% 3 lata 70% 5; Model S 60% 3/5; Model X 55-58% 3, 58% 5; Model Y 70% 3, 70%+ 5.",
+    "tags": ["RV po latach", "Model S 60%"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "RV porównanie konkurencja",
+    "golden_response": "BMW i3 57% 3 lata; Taycan 61.4%; Model S średnio.",
+    "tags": ["RV BMW Taycan", "porównanie"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Kredyt 0% Model 3 warunki",
+    "golden_response": "0% RRSO, wkład 29.1k, 24-60 mies.; rata 4337/36 mies., 2117/60 mies.",
+    "tags": ["kredyt 0% warunki", "rata Model 3"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Finansowanie Model Y 0% 2025",
+    "golden_response": "0% od 1.01.2025, wkład 0%, do 60 mies.; odbiór 7 dni.",
+    "tags": ["finansowanie Model Y 0%", "2025"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Cybertruck 0% FSD",
+    "golden_response": "0% z FSD do 30.06.2025; 5.54% bez; wkład 4% + podatki; import USA PL.",
+    "tags": ["Cybertruck 0% FSD", "import"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Leasing Drivalia warunki",
+    "golden_response": "0-45% wkład, 24-60 mies.; 0% Model 3 2025; rata 2117-5323 zł netto.",
+    "tags": ["Drivalia leasing", "0% Model 3"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "PKO Leasing warunki",
+    "golden_response": "Wkład 0%, 2-7 lat; zmienne oprocentowanie; PLN/EUR; ubezpieczenie w ratach.",
+    "tags": ["PKO leasing", "zmienne"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Cybertruck import ceny",
+    "golden_response": "RWD 240-360k; AWD 360-500k; Cyberbeast 436-584k; brak leasingu fabrycznego.",
+    "tags": ["Cybertruck ceny import", "brak leasing"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Mój Elektryk prywatne",
+    "golden_response": "18.75k bazowo; KDR +30k; niskodochodowi +11.25k; złom +10k; max 40k; 225k limit; do 30.06.2026.",
+    "tags": ["dotacje prywatne", "KDR +30k"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "NaszEauto firmy",
+    "golden_response": "Min 30k; KDR 35k.",
+    "tags": ["NaszEauto firmy", "35k KDR"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Niemcy dotacje 2026 warunki",
+    "golden_response": "4k EUR max, limit 45k EUR netto, niskodochodowi 3.8k EUR/mies.; BEV tylko, używane; 3 mld EUR 2026-2029; S/X poza limitem.",
+    "tags": ["Niemcy 2026", "4k EUR"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Francja Bonus warunki",
+    "golden_response": "3.1-4.2k EUR +1k baterie UE; max 5.2k EUR; leasing socjalny 100-150 EUR/mies.; FSD jeśli CO2 limit.",
+    "tags": ["Bonus Écologique", "baterie UE"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Holandia ulgi BPM",
+    "golden_response": "BPM -75% do 2025 (wygasz 2030); podatek drogowy -75%; SEBA dostawcze 5k EUR; S/X do 2025.",
+    "tags": ["Holandia BPM -75%", "SEBA 5k"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Ubezpieczenie Model S OC AC",
+    "golden_response": "OC 698 zł/rok; OC+AC+NNW+Assistance 9547-10303 zł; OC+AC+NNW 8500-9500 zł.",
+    "tags": ["ubezpieczenie Model S", "9547-10303 zł"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "OC Tesla modele porównanie",
+    "golden_response": "Spring 462 zł; Y 573 zł; 3 596 zł; S 698 zł – premium wyższe.",
+    "tags": ["OC porównanie modele", "S 698 zł"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Ubezpieczenie DE PL różnica",
+    "golden_response": "DE AC +30% vs 2023 (baterie); PL AC +10-15% vs spalinowe; OC EU bez różnicy.",
+    "tags": ["DE PL AC +30%", "baterie naprawy"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Ubezpieczmojatesle oferty",
+    "golden_response": "Model 3 4212 zł/rok; Y 4428 zł; S 9547 zł; X 10303 zł; -25% VAT firmy.",
+    "tags": ["ubezpieczmojatesle", "-25% VAT"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "TCO Model 3 3 lata szczegóły",
+    "golden_response": "Zakup 184990; OC 1788/3 lata; AC 12-15k; energia 5850; serwis 1-2k; podatek 0; razem 205-210k; RV 120k; efektywny 85k; 34-35 PLN/1k km.",
+    "tags": ["TCO szczegóły", "efektywny 85k"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "TCO Model S szczegóły",
+    "golden_response": "Zakup 240-270k; AC 25-30k; energia 8500; serwis 2-5k; razem 275-312k; RV 144-162k; efektywny 113-168k; 60-75 PLN/1k km.",
+    "tags": ["TCO Model S", "efektywny 113-168k"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "RV prognozy luki",
+    "golden_response": "Brak ADAC/Eurotax do 2030; zależne baterii, dotacji, czasu pracy.",
+    "tags": ["RV luki", "ADAC Eurotax"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Ubezpieczenie Plaid DE luki",
+    "golden_response": "Brak stawek 40-latka bezszkodowego; AC +30% vs spalinowe naprawy baterii.",
+    "tags": ["Plaid DE luki", "+30% AC"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Cybertruck finans luki",
+    "golden_response": "Brak oficjalnego PL; import prywatny z ograniczeniami rejestracyjnymi.",
+    "tags": ["Cybertruck luki", "import ograniczenia"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "EOG Norwegia Model X luki",
+    "golden_response": "Ulgi ogólne VAT opłaty; Model X poza limitami cenowymi.",
+    "tags": ["Norwegia luki", "poza limitem"],
+    "category": "financial"
+  },
+  {
+    "trigger_context": "Schwartz 10 typów tabela",
+    "golden_response": "Hedonizm przyjemność 'frajda jazdy'; Bezpieczeństwo ochrona 'gwarancje'; Status prestiż 'prestiż osób'; Oszczędność racjonalność 'TCO'.",
+    "tags": ["Schwartz tabela", "Hedonizm Bezpieczeństwo"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "DISC tabela wskaźniki",
+    "golden_response": "D 'wynik końcowy' szybkie tempo; I 'buzz' energia; S 'gwarancje' spokojny; C 'dane NCAP' notatki.",
+    "tags": ["DISC tabela", "wskaźniki werbalne"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Ekman emocje tabela",
+    "golden_response": "Radość uśmiech – intensyfikuj; Smutek brwi – zapytaj; Strach oczy – uspokój NCAP; Złość brwi – zmień temat.",
+    "tags": ["Ekman tabela", "radość uśmiech"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Mowa ciała tabela",
+    "golden_response": "Wzrok 60-70% zaufanie; postawa otwarta zainteresowanie; pocieranie ucha nieszczerość; otwarte dłonie szczerość.",
+    "tags": ["mowa ciała tabela", "wzrok 60-70%"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Identyfikacja motywacji scenariusz",
+    "golden_response": "Status: pyta prestiż wzrok Model S; Oszczędność: cena notatki; Hedonizm: osiągi błysk; Bezpieczeństwo: gwarancje ostrożny.",
+    "tags": ["identyfikacja scenariusz", "Status prestiż"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Matryca 5 min",
+    "golden_response": "'Co powstrzymuje?'; nonwerbalne tempo wzrok energia; reaguj dostosuj.",
+    "tags": ["matryca 5 min", "powstrzymuje"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Dostosowanie DISC tempo",
+    "golden_response": "D szybkie 'wynik'; I emocjonalne 'buzz'; S wolne 'gwarancja'; C precyzyjne 'NCAP'; 80-140 słów/min.",
+    "tags": ["dostosowanie DISC", "tempo 80-140"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Pytania otwarte DISC",
+    "golden_response": "D 'wynik chcesz?'; I 'zmieni życie?'; S 'bezpieczeństwo najważniejsze?'; C 'dane analizy?'.",
+    "tags": ["pytania otwarte", "DISC"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Scenariusz D Hedonizm",
+    "golden_response": "Wchodzi szybko pyta Performance; '3.3s szybszy M3'; test natychmiast.",
+    "tags": ["scenariusz D Hedonizm", "3.3s M3"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Luki psychologia",
+    "golden_response": "Brak progów DISC EV PL; brak % typ D; brak NLP konwersji; brak psychometrii DISC Schwartz.",
+    "tags": ["luki psychologia", "% typ D"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "Rekomendacje profilowanie",
+    "golden_response": "Matryca 5 min obserwuj; test 'powstrzymuje?'; unikaj detali D, emocji C.",
+    "tags": ["rekomendacje", "matryca 5 min"],
+    "category": "psychology"
+  },
+  {
+    "trigger_context": "LAER metoda",
+    "golden_response": "Listen wysłuchaj; Acknowledge potwierdź; Explore eksploruj; Respond reframing.",
+    "tags": ["LAER", "zbijanie"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "FEEL-FELT-FOUND przykład",
+    "golden_response": "'Czujesz zimna maszyna'; 'Inni czuli podobnie'; 'Odkryli czysty adrenaline'.",
+    "tags": ["FEEL-FELT-FOUND", "przykład"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Obiekcja dusza frazy",
+    "golden_response": "'660 Nm natychmiast dreszcz'; 'Czystsze V8 precyzja'; '200k klientów test zmieni'.",
+    "tags": ["dusza frazy", "660 Nm"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Obiekcja wnętrze frazy",
+    "golden_response": "'Minimalizm świadomy Apple'; 'Czystość poznawcza'; 'Trwałość dekada'.",
+    "tags": ["wnętrze frazy", "Apple minimalizm"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Obiekcja Musk frazy",
+    "golden_response": "'1.5M aut 10k inżynierów'; 'Dane NCAP TCO'; 'Wszystkie marki sekrety'.",
+    "tags": ["Musk frazy", "1.5M aut"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Obiekcja wszyscy frazy",
+    "golden_response": "'Twój FSD unikat'; 'Pionier Model S zero'; 'Luksus możliwość'.",
+    "tags": ["wszyscy frazy", "FSD unikat"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Obiekcja tech frazy",
+    "golden_response": "'OTA +100 funkcji'; 'LFP 600k km'; 'Czekanie strata TCO'.",
+    "tags": ["tech frazy", "OTA +100"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "APK pytania",
+    "golden_response": "A 'Auto teraz?'; P 'Problemy?'; I 'Wpływ codzienność?'; K 'Idealna sytuacja?'.",
+    "tags": ["APK", "pytania"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Pytania 10 min",
+    "golden_response": "1-2 'Powstrzymuje?'; 3-4 'Obawy [temat]?'; 5-6 'Konsekwencje?'; 7-8 'Głos kto?'; 9-10 'Rozwiązali co zmieni?'.",
+    "tags": ["pytania 10 min", "powstrzymuje"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "NLP reframing 5 technik",
+    "golden_response": "Boomerang odbicie korzyść; Perspektywizacja punkt widzenia; Zwrotka pozytywna; Dowód inni; Przesunięcie czasowe.",
+    "tags": ["NLP 5 technik", "Boomerang"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Scenariusz zbicia dusza",
+    "golden_response": "Listen; Acknowledge emocjonalne; Explore 'Co w BMW?'; Respond '660 Nm czysty – test zmieni'.",
+    "tags": ["zbicia dusza", "LAER 660 Nm"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Luki zbijanie",
+    "golden_response": "Brak % obiekcji PL; brak A/B reframingu; brak wagi rodziny racjonalność Tesla.",
+    "tags": ["luki zbijanie", "A/B reframing"],
+    "category": "objection"
+  },
+  {
+    "trigger_context": "Minimalizm frazy 1",
+    "golden_response": "'Minimalizm świadomy design Apple/LV – luksus inteligentny'.",
+    "tags": ["minimalizm fraza 1", "Apple LV"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Minimalizm frazy 2",
+    "golden_response": "'Czystość poznawcza – mniej rozproszenia, produktywność rośnie'.",
+    "tags": ["minimalizm fraza 2", "poznawcza"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Minimalizm frazy 3",
+    "golden_response": "'Trwałość luksus – dekada bez psucia vs Mercedes 5 lat'.",
+    "tags": ["minimalizm fraza 3", "trwałość"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "OTA frazy 1",
+    "golden_response": "'OTA inwestycja – +50% lepszy za rok, zwrot w roku'.",
+    "tags": ["OTA fraza 1", "inwestycja +50%"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "OTA frazy 2",
+    "golden_response": "'Wikipedia na kołach – OTA co miesiąc, konkurencja rok po roku'.",
+    "tags": ["OTA fraza 2", "Wikipedia"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "OTA frazy 3",
+    "golden_response": "'Personalizacja OTA – Twój Model unikat za rok'.",
+    "tags": ["OTA fraza 3", "personalizacja unikat"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "SPIN przykłady",
+    "golden_response": "S 'Ile km dziennie?'; P 'Problemy tankowanie?'; I 'Wpływ czas?'; N 'Pełna bateria rano wartość?'.",
+    "tags": ["SPIN przykłady", "tankowanie"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "5 Whys cena przykład",
+    "golden_response": "Why 1 'Dlaczego drogo?'; ... Why 5 'Rata 3k Performance?'; efekt: problem finansowania, nie cena.",
+    "tags": ["5 Whys cena", "Performance rata"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Value framework przykład",
+    "golden_response": "Autopilot cecha tempomat; korzyść precyzja; motywacja Status 'przyszłość', Oszczędność 'mniej zmęczenia'.",
+    "tags": ["value framework", "Autopilot przykład"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Value Hedonizm Autopilot",
+    "golden_response": "'Autopilot dron precyzja – czucie przyszłości'.",
+    "tags": ["Hedonizm Autopilot", "dron"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Value Status Autopilot",
+    "golden_response": "'Autopilot lider – bez rąk ludzie myślą przyszłość'.",
+    "tags": ["Status Autopilot", "lider bez rąk"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Value Bezpieczeństwo Autopilot",
+    "golden_response": "'Autopilot 10x szybciej – ochrona rodziny trasach'.",
+    "tags": ["Bezpieczeństwo Autopilot", "10x szybciej"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Value Oszczędność LFP",
+    "golden_response": "'LFP 8 lat darmo – oszczędza 115k vs BMW'.",
+    "tags": ["Oszczędność LFP", "115k BMW"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Value Status LFP",
+    "golden_response": "'Najdłuższa gwarancja – symbol pewności Musk'.",
+    "tags": ["Status LFP", "gwarancja Musk"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Matryca funkcje motywacja szczegół",
+    "golden_response": "660 Nm Ekologia zero, Status szybciej M3, Hedonizm dreszcz, Oszczędność brak strat; OTA Ekologia odpadów, Status trendsetter.",
+    "tags": ["matryca szczegół", "660 Nm OTA"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Personalizacja Ekologia",
+    "golden_response": "CO2 kalkulator 3.5t/rok oszczędności; Supercharger zielona; '3.5t = 100 drzew'.",
+    "tags": ["personalizacja Ekologia", "CO2 3.5t"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Personalizacja Status",
+    "golden_response": "Logo Supercharger FSD OTA; 'Parkujesz S – symbol Valley'.",
+    "tags": ["personalizacja Status", "symbol Valley"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Personalizacja Oszczędność",
+    "golden_response": "TCO kalkulator 150k 5 lat; 'Zwrot rok – inwestycja'.",
+    "tags": ["personalizacja Oszczędność", "150k TCO"],
+    "category": "framing"
+  },
+  {
+    "trigger_context": "Demo przyspieszenia best practice",
+    "golden_response": "Tor klient pasażer; 'Poczuj 660 Nm dreszcz'; po 'Obawiałeś nudna? Frajda codzienna'.",
+    "tags": ["demo przyspieszenia", "660 Nm dreszcz"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Autopilot demo best practice",
+    "golden_response": "Autostrada; 'Auto prowadzi Ty kontrola'; po 'Pilot samolot – obserwuj'.",
+    "tags": ["Autopilot demo", "pilot kontrola"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Personalizacja muzyki best practice",
+    "golden_response": "'Jaka muzyka?'; Spotify Dolby; 'Pamięta playlistę – Twoje auto'.",
+    "tags": ["muzyka personalizacja", "Spotify pamięta"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Follow-up brak kontaktu",
+    "golden_response": "Email Wow Recap + Extended 7 dni; SMS '7-dniowy test darmo do domu'.",
+    "tags": ["follow-up brak", "extended 7 dni"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Follow-up TCO 5 dni",
+    "golden_response": "Email z TCO_[Imię].xlsx; 'Oszczędności 9.5k/rok'.",
+    "tags": ["follow-up TCO", "9.5k oszczędności"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Follow-up pozytywna jazda",
+    "golden_response": "SMS '0% rata 2.8k do 15.11'; Email 'Oferta + kalendarz'.",
+    "tags": ["follow-up pozytywna", "0% 2.8k"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "CRM automatyzacja",
+    "golden_response": "Test Drive: email 48h SMS 72h; No Response 48h: TCO; 5 dni: ostatnia szansa.",
+    "tags": ["CRM triggery", "48h 72h"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Cykl sprzedaży etapy",
+    "golden_response": "1 Profilowanie 10 min; 2 Przedprezentacja; 3 Test Drive 20 min; 4 Follow-Up 0-24h; 5 Nurture 24-72h; 6 Push 5-14 dni; 7 Post-Sale.",
+    "tags": ["cykl etapy", "profilowanie test"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Konwersja statystyki",
+    "golden_response": "Wizyta 100%; Test 65%; Odbył 50 (77%); Odpowiedź 15 (30%); Extended 8 (53%); Kup 5 (62%); Final 5%.",
+    "tags": ["konwersja 5%", "extended 62%"],
+    "category": "sales"
+  },
+  {
+    "trigger_context": "Podsumowanie RAG 7 raportów",
+    "golden_response": "Produkt baterie Wall FSD; Finanse 0% dotacje TCO 85k; Konkurencja 3 vs EV6 usterki i4; Psychologia Schwartz DISC mowa; Obiekcje LAER 5 obiekcji; Frazy reframing OTA SPIN 5 Whys; Proces test WOW follow-up CRM.",
+    "tags": ["RAG podsumowanie", "7 raportów"],
+    "category": "summary"
+  }
+]

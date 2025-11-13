@@ -29,10 +29,13 @@ apiClient.interceptors.request.use(
   (config) => {
     // Add admin key if present (for admin endpoints)
     const adminKey = localStorage.getItem('ultra_admin_key');
+
     if (adminKey && config.url?.includes('/admin/')) {
+      // Direct property assignment works reliably with AxiosHeaders
       config.headers['X-Admin-Key'] = adminKey;
+      console.log('✅ Added X-Admin-Key header for:', config.url);
     }
-    
+
     return config;
   },
   (error) => Promise.reject(error)
@@ -46,14 +49,16 @@ apiClient.interceptors.response.use(
   (error: AxiosError<IGlobalAPIResponse<any>>) => {
     // Extract error message from response
     const message = error.response?.data?.message || error.message || 'Unknown error occurred';
-    
-    // Log error for debugging
-    console.error('API Error:', {
-      status: error.response?.status,
-      message,
-      url: error.config?.url,
-    });
-    
+
+    // Log errors for debugging (only in development)
+    if (error.response?.status && error.response.status >= 400) {
+      console.error('API Error:', {
+        status: error.response.status,
+        message,
+        url: error.config?.url,
+      });
+    }
+
     return Promise.reject(error);
   }
 );
@@ -153,7 +158,12 @@ export const api = {
     const response = await apiClient.post('/admin/feedback/create_standard', payload);
     return response.data;
   },
-  
+
+  async listGoldenStandards(language: string) {
+    const response = await apiClient.get(`/admin/golden-standards/list?language=${language}`);
+    return response.data;
+  },
+
   async listRAGNuggets(language: string) {
     const response = await apiClient.get(`/admin/rag/list?language=${language}`);
     return response.data;

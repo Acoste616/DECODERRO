@@ -27,7 +27,7 @@ import { WebSocketManager } from '../utils/websocket';
 import OpusMagnumPanel from '../components/OpusMagnumPanel';
 import JourneyStageSelector from '../components/JourneyStageSelector';
 import QuestionAnswerModal from '../components/QuestionAnswerModal';
-import type { IConversationLogEntry } from '../types';
+import type { IConversationLogEntry, IFastPathResponse } from '../types';
 
 export default function Conversation() {
   const { id } = useParams<{ id: string }>();
@@ -45,6 +45,7 @@ export default function Conversation() {
     app_status,
     setAppStatus,
     setSlowPathData,
+    slow_path_error,
     setSlowPathError,
     current_language,
     addConversationEntry,
@@ -56,6 +57,15 @@ export default function Conversation() {
   const [showQuestionModal, setShowQuestionModal] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState('');
   const [feedbackState, setFeedbackState] = useState<{ [key: number]: 'positive' | 'negative' | null }>({});
+
+  // Fast Path v2.0: Metadata state
+  const [fastPathMetadata, setFastPathMetadata] = useState<{
+    optional_followup: string | null;
+    seller_questions: string[];
+    client_style: string;
+    confidence_score: number;
+    confidence_reason: string;
+  } | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const wsManagerRef = useRef<WebSocketManager | null>(null);
@@ -142,6 +152,38 @@ export default function Conversation() {
     }
   };
 
+  // Fallback polling if WebSocket doesn't deliver Slow Path results
+  useEffect(() => {
+    if (app_status !== 'slow_path_loading') return;
+
+    // Start polling after 60s if WebSocket hasn't delivered
+    const pollTimer = setTimeout(() => {
+      console.log('⏰ WebSocket timeout - starting fallback polling');
+
+      const pollInterval = setInterval(async () => {
+        try {
+          const response = await api.getSession(session_id || id);
+          if (response.data?.slow_path_log?.json_output) {
+            console.log('✅ Fallback polling retrieved Slow Path data from DB');
+            setSlowPathData(response.data.slow_path_log.json_output);
+            setAppStatus('idle');
+            clearInterval(pollInterval);
+          }
+        } catch (error) {
+          console.error('❌ Polling failed:', error);
+        }
+      }, 5000); // Poll every 5s
+
+      // Stop polling after 2 minutes
+      setTimeout(() => {
+        console.log('⏹️ Stopping fallback polling after 2 minutes');
+        clearInterval(pollInterval);
+      }, 120000);
+    }, 60000); // Start polling after 60s
+
+    return () => clearTimeout(pollTimer);
+  }, [app_status, session_id, id]);
+
   // F-2.2: Send message (Optimistic UI)
   const handleSendMessage = async () => {
     if (!userInput.trim() || !id) return;
@@ -173,7 +215,7 @@ export default function Conversation() {
       });
 
       if (response.status === 'success') {
-        const data = response.data;
+        const data = response.data as IFastPathResponse;
 
         // If session was converted from TEMP-*, update session ID and URL (W30, K8)
         if (id.startsWith('TEMP-') && data.session_id && data.session_id !== id) {
@@ -204,14 +246,20 @@ export default function Conversation() {
           addConversationEntry(aiEntry);
         }
 
-        // Update suggested questions
-        if (data.suggested_questions && data.suggested_questions.length > 0) {
-          setSuggestedQuestions(data.suggested_questions);
-        }
+        // Fast Path v2.0: Save metadata
+        setFastPathMetadata({
+          optional_followup: data.optional_followup,
+          seller_questions: data.seller_questions || [],
+          client_style: data.client_style || 'spontaneous',
+          confidence_score: data.confidence_score || 0.5,
+          confidence_reason: data.confidence_reason || '',
+        });
 
-        // Update stage if provided
-        if (data.suggested_stage) {
-          setCurrentStage(data.suggested_stage);
+        // Update suggested questions (legacy - only optional_followup)
+        if (data.optional_followup) {
+          setSuggestedQuestions([data.optional_followup]);
+        } else {
+          setSuggestedQuestions([]);
         }
 
         setAppStatus('slow_path_loading'); // Slow Path starts automatically
@@ -276,17 +324,22 @@ export default function Conversation() {
     addConversationEntry(sellerEntry);
 
     try {
-      const { data, status } = await api.sendMessage(id, formattedMessage, current_stage);
+      const response = await api.sendMessage({
+        session_id: id,
+        user_input: formattedMessage,
+        journey_stage: current_stage,
+        language: current_language,
+      });
 
-      if (status === 'success' && data) {
+      if (response.status === 'success' && response.data) {
         // Add AI response if available
-        if (data.suggested_response) {
+        if (response.data.suggested_response) {
           const aiEntry: IConversationLogEntry = {
             log_id: Date.now() + 1,
             session_id: id,
             timestamp: new Date().toISOString(),
             role: 'FastPath',
-            content: data.suggested_response,
+            content: response.data.suggested_response,
             language: current_language,
             journey_stage: current_stage,
           };
@@ -294,8 +347,8 @@ export default function Conversation() {
         }
 
         // Update suggested questions
-        if (data.suggested_questions && data.suggested_questions.length > 0) {
-          setSuggestedQuestions(data.suggested_questions);
+        if (response.data.suggested_questions && response.data.suggested_questions.length > 0) {
+          setSuggestedQuestions(response.data.suggested_questions);
         }
 
         setAppStatus('slow_path_loading');
@@ -416,6 +469,70 @@ export default function Conversation() {
             ))}
             <div ref={messagesEndRef} />
           </div>
+
+          {/* Slow Path Error Display */}
+          {app_status === 'error' && slow_path_error && (
+            <div className="mx-4 mb-4 p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
+              <div className="flex items-start gap-3">
+                <div className="text-red-600 dark:text-red-400 text-sm">
+                  <strong>❌ Błąd analizy Slow Path:</strong>
+                  <p className="mt-1">{slow_path_error}</p>
+                  <p className="mt-2 text-xs opacity-75">
+                    Możliwe przyczyny: Wygasły klucz API Ollama, timeout połączenia, lub problem z bazą danych.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Fast Path v2.0: Metadata Panel */}
+          {fastPathMetadata && (
+            <div className="mx-4 mb-4 p-3 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-lg">
+              <div className="text-xs font-bold text-blue-900 dark:text-blue-100 mb-2">🤖 JARVIS Metadata</div>
+
+              {/* Confidence + Client Style */}
+              <div className="grid grid-cols-2 gap-2 mb-2">
+                <div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">Pewność AI:</div>
+                  <div className="flex items-center gap-2">
+                    <div className={`text-sm font-bold ${
+                      fastPathMetadata.confidence_score >= 0.8 ? 'text-green-600' :
+                      fastPathMetadata.confidence_score >= 0.5 ? 'text-yellow-600' : 'text-red-600'
+                    }`}>
+                      {(fastPathMetadata.confidence_score * 100).toFixed(0)}%
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      ({fastPathMetadata.confidence_reason})
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">Styl klienta:</div>
+                  <span className={`text-xs px-2 py-1 rounded font-semibold ${
+                    fastPathMetadata.client_style === 'technical' ? 'bg-purple-100 text-purple-800' :
+                    fastPathMetadata.client_style === 'emotional' ? 'bg-pink-100 text-pink-800' :
+                    'bg-blue-100 text-blue-800'
+                  }`}>
+                    {fastPathMetadata.client_style === 'technical' ? '🔧 Techniczny' :
+                     fastPathMetadata.client_style === 'emotional' ? '❤️ Emocjonalny' : '💬 Spontaniczny'}
+                  </span>
+                </div>
+              </div>
+
+              {/* Seller Questions */}
+              {fastPathMetadata.seller_questions.length > 0 && (
+                <div className="mt-2 p-2 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 rounded text-xs">
+                  <div className="font-semibold text-yellow-800 dark:text-yellow-300 mb-1">
+                    🤔 AI potrzebuje kontekstu:
+                  </div>
+                  {fastPathMetadata.seller_questions.map((q, i) => (
+                    <div key={i} className="text-gray-700 dark:text-gray-300">• {q}</div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Strategic Questions */}
           {suggestedQuestions.length > 0 && (

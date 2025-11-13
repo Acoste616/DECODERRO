@@ -1,0 +1,689 @@
+[
+  {
+    "title": "Architektura Gigacasting Tesla – Wpływ na Wagą",
+    "content": "Tesla Model 3 i Model Y korzystają z gigacastingu – zastąpienie 400 części jednym odlewem zmniejsza masę pojazdu i upraszcza łańcuch dostaw. Model 3 RWD (LFP): 1884 kg, 62.5 kWh, 5.6 s 0-100; Model Y Standard (LFP): 1884 kg, ~60 kWh, ~5.6 s; Model Y Performance (NCA): 2066 kg, większa bateria, <4.3 s.",
+    "keywords": "gigacasting, masa pojazdu, Model 3 RWD 1884 kg, Model Y Performance 2066 kg",
+    "type": "product_knowledge",
+    "tags": ["gigacasting", "masa", "bateria LFP NCA"],
+    "archetype_filter": ["practical_buyer"]
+  },
+  {
+    "title": "48V Architektura Elektryczna Cybertruck",
+    "content": "Cybertruck wdrożył 48V zamiast 12V – cieńsze przewody, mniej miedzi, funkcje jak steer-by-wire. Tesla udostępniła dokumentację (2023) jako otwarty standard (Ford).",
+    "keywords": "48V architektura, Cybertruck, steer-by-wire, otwarty standard",
+    "type": "product_knowledge",
+    "tags": ["48V", "elektryczna", "Cybertruck"],
+    "archetype_filter": ["tech_enthusiast"]
+  },
+  {
+    "title": "Gęstość Energetyczna Baterii LFP vs NCA",
+    "content": "LFP (Model 3/Y RWD Standard): 130–160 Wh/kg (do 190 najnowsze), bezpieczna, 4000–5000 cykli; NCA (Long Range): ~322 Wh/kg (Panasonic), wysoka gęstość, termiczne zarządzanie; NMC porównanie: 230–250 Wh/kg.",
+    "keywords": "gęstość Wh/kg LFP 130-160, NCA 322, NMC 230-250, cykle 4000-5000",
+    "type": "product_knowledge",
+    "tags": ["bateria", "LFP NCA", "gęstość energetyczna"],
+    "archetype_filter": ["range_conscious"]
+  },
+  {
+    "title": "Specyfikacja Baterii CATL LFP Model 3 RWD 2025",
+    "content": "Pojemność netto: 62.5 kWh, brutto ~66 kWh; DC max 170 kW; WLTP ~430–490 km; realny lato 350–400 km, zima 270–320 km. Degradacja <5% po 100k km.",
+    "keywords": "CATL LFP 62.5 kWh, DC 170 kW, WLTP 430-490 km, degradacja <5%",
+    "type": "product_knowledge",
+    "tags": ["CATL LFP", "Model 3 RWD", "degradacja"],
+    "archetype_filter": ["budget_conscious"]
+  },
+  {
+    "title": "Wpływ Temperatury Polski na Ładowanie LFP",
+    "content": "LFP wolniejsze poniżej 10°C; BMS podgrzewa baterię. Średnia 8°C PL: zima strata 20–30% zasięgu (jak spalinowe +30% paliwa).",
+    "keywords": "temperatura PL 8°C, ładowanie LFP <10°C, strata 20-30% zima",
+    "type": "product_knowledge",
+    "tags": ["temperatura", "ładowanie LFP", "zima PL"],
+    "archetype_filter": ["winter_driver"]
+  },
+  {
+    "title": "Specyfikacja Wall Connector Gen 3",
+    "content": "Cena 2350 zł; 1.4–7.4 kW jednofazowa, 4–22 kW trójfazowa; 71 km/h przy 22 kW; Wi-Fi, IP55, -30 do +50°C; kabel 7.3 m.",
+    "keywords": "Wall Connector Gen 3 2350 zł, 22 kW, 71 km/h, Wi-Fi IP55",
+    "type": "product_knowledge",
+    "tags": ["Wall Connector", "ładowanie domowe", "specyfikacja"],
+    "archetype_filter": ["home_charger"]
+  },
+  {
+    "title": "Koszt Instalacji Wall Connector PL",
+    "content": "Wallbox 2350 zł + okablowanie 300–1000 zł + robocizna 700–2500 zł + modernizacja do 1000 zł; razem 700–7000 zł (podstawowy).",
+    "keywords": "instalacja Wall Connector, koszt 700-7000 zł, modernizacja przyłącza",
+    "type": "product_knowledge",
+    "tags": ["instalacja", "koszt PL", "robocizna"],
+    "archetype_filter": ["home_install"]
+  },
+  {
+    "title": "Zgodność Wall Connector z TN-C-S",
+    "content": "PEN min. 10 mm² miedź; uziemienie <10 Ω; RCD dla ≤32A; dedykowany obwód 16.5 kW dla 11 kW; zgodne z TN-C-S (standard PL).",
+    "keywords": "TN-C-S zgodność, PEN 10 mm², RCD 32A, obwód 16.5 kW",
+    "type": "product_knowledge",
+    "tags": ["TN-C-S", "uziemienie", "RCD"],
+    "archetype_filter": ["electric_install"]
+  },
+  {
+    "title": "Status Smart Summon UE/PL",
+    "content": "FSD/Summon/Smart Summon niedostępne w UE (brak regulacji DCAS Faza 3); klienci płacą za 'obietnicę'; plan UE 2025 (Holandia/DE/FR pierwsze).",
+    "keywords": "Smart Summon status PL, FSD niedostępne UE, DCAS Faza 3",
+    "type": "product_knowledge",
+    "tags": ["Smart Summon", "FSD", "regulacje UE"],
+    "archetype_filter": ["autonomous_seeker"]
+  },
+  {
+    "title": "Prawo Jazdy Art. 65k PL",
+    "content": "Pojazd autonomiczny wymaga kierowcy z prawem jazdy B; pełna autonomia Level 5 zabroniona; Autopilot = wspomaganie, odpowiedzialność kierowcy.",
+    "keywords": "Art. 65k, prawo jazdy B, Level 5 zabronione, odpowiedzialność",
+    "type": "product_knowledge",
+    "tags": ["prawo jazdy", "Art. 65k", "autonomia"],
+    "archetype_filter": ["legal_compliant"]
+  },
+  {
+    "title": "Porównanie StVZO §1 DE vs PL",
+    "content": "DE: Pojazd bezpieczny z kierowcą; FSD pilotaż 2025; UE R157: zatwierdzenie techniczne. PL: Art. 65k – kierowca musi przejąć kontrolę.",
+    "keywords": "StVZO §1 vs Art. 65k, FSD DE 2025, UE R157",
+    "type": "product_knowledge",
+    "tags": ["porównanie DE PL", "FSD regulacje"],
+    "archetype_filter": ["cross_border"]
+  },
+  {
+    "title": "Sprzedaż BEV PL 2024-2025",
+    "content": "2024: 14.8k BEV (-3.5% r/r); 2025 prognoza 17-19k (+4-5%); udział BEV 3.1% (2024), prognoza 4-5%; Tesla #1 BEV.",
+    "keywords": "BEV sprzedaż PL 14.8k 2024, prognoza 17-19k 2025, udział 3.1%",
+    "type": "market_pl",
+    "tags": ["sprzedaż BEV", "2024-2025", "Tesla #1"],
+    "archetype_filter": ["market_watcher"]
+  },
+  {
+    "title": "Ceny Tesli PL Listopad 2025",
+    "content": "Model 3 RWD: 184990 PLN LFP; Long Range RWD: 232900 NCA; Performance AWD: 239700 NCA; Model Y Standard RWD: 184990 LFP; Premium LR RWD: 219990 LFP/NCM; Premium LR AWD: 229990 NCA; Performance AWD: 269990 NCA.",
+    "keywords": "ceny Tesla PL 2025, Model 3 184990-239700, Model Y 184990-269990",
+    "type": "market_pl",
+    "tags": ["ceny", "Model 3 Y", "2025"],
+    "archetype_filter": ["budget_conscious"]
+  },
+  {
+    "title": "Program Mój Elektryk 2.0 2025-2026",
+    "content": "Budżet 1.6 mld PLN; dotacja do 40k PLN (18.75k bazowo +10k złomowanie +11.25k niskodochodowi); limit 225k netto; wnioski do 30.06.2026.",
+    "keywords": "Mój Elektryk 2.0, dotacja 40k, złomowanie +10k, limit 225k",
+    "type": "market_pl",
+    "tags": ["dotacje", "Mój Elektryk", "2025-2026"],
+    "archetype_filter": ["subsidy_seeker"]
+  },
+  {
+    "title": "Wyniki Mój Elektryk I Edycja",
+    "content": "27k+ wniosków; BEV z 7.658 (2021) do 19.528 (2023) +155%; dostawcze +500%.",
+    "keywords": "Mój Elektryk wnioski 27k, BEV +155% 2021-2023",
+    "type": "market_pl",
+    "tags": ["wyniki", "Mój Elektryk", "wzrost"],
+    "archetype_filter": ["subsidy_seeker"]
+  },
+  {
+    "title": "Wartości Rezydualne Tesla PL",
+    "content": "Model 3: 65% po 3 latach, 70% po 5; Model S: 60% po 3/5; Model X: 55-58% po 3, 58% po 5; Model Y: 70% po 3, 70%+ po 5.",
+    "keywords": "RV Model 3 65% 3 lata, Model Y 70%, Model S 60%",
+    "type": "financial",
+    "tags": ["rezydualna", "Model S X", "3-5 lat"],
+    "archetype_filter": ["long_term_owner"]
+  },
+  {
+    "title": "Porównanie RV Tesla vs Konkurencja",
+    "content": "BMW i3 2021: 57% RV po 3 latach; Porsche Taycan 2021: 61.4%; Tesla Model S średnio.",
+    "keywords": "RV BMW i3 57%, Taycan 61.4%, Model S średnio",
+    "type": "financial",
+    "tags": ["porównanie RV", "BMW Porsche"],
+    "archetype_filter": ["competitive_buyer"]
+  },
+  {
+    "title": "Kredyt 0% RRSO Model 3",
+    "content": "0% RRSO, wkład ~29.1k zł, 24-60 mies.; rata 4337 zł/36 mies., 2117 zł/60 mies.",
+    "keywords": "kredyt 0% Model 3, rata 2117-4337 zł, 24-60 mies.",
+    "type": "financial",
+    "tags": ["kredyt 0%", "Model 3", "RRSO"],
+    "archetype_filter": ["financing_seeker"]
+  },
+  {
+    "title": "Finansowanie Model Y 0% 2025",
+    "content": "0% RRSO od 1.01.2025, wkład 0%, do 60 mies.; odbiór w 7 dni.",
+    "keywords": "finansowanie Model Y 0%, wkład 0%, 60 mies. 2025",
+    "type": "financial",
+    "tags": ["finansowanie", "Model Y", "0% 2025"],
+    "archetype_filter": ["financing_seeker"]
+  },
+  {
+    "title": "Cybertruck Finansowanie 0% FSD",
+    "content": "0% APR z FSD do 30.06.2025; bez FSD 5.54%; wkład 4% + podatki, 36-60 mies.; nieoficjalnie w PL (import USA).",
+    "keywords": "Cybertruck 0% FSD, 5.54% bez, import USA PL",
+    "type": "financial",
+    "tags": ["Cybertruck", "finansowanie FSD"],
+    "archetype_filter": ["truck_buyer"]
+  },
+  {
+    "title": "Leasing Drivalia Tesla",
+    "content": "Wkład 0-45%, 24-60 mies.; 0% RRSO Model 3 2025; rata 2117-5323 zł netto.",
+    "keywords": "Drivalia leasing, 0-45% wkład, rata 2117-5323 zł",
+    "type": "financial",
+    "tags": ["leasing Drivalia", "Model 3"],
+    "archetype_filter": ["lease_seeker"]
+  },
+  {
+    "title": "PKO Leasing Tesla",
+    "content": "Wkład od 0%, 2-7 lat; zmienne oprocentowanie; PLN/EUR; ubezpieczenie w ratach.",
+    "keywords": "PKO leasing, wkład 0%, 2-7 lat, PLN EUR",
+    "type": "financial",
+    "tags": ["PKO leasing", "zmienne oprocentowanie"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Cybertruck Import PL Ceny",
+    "content": "RWD ~240-360k zł; AWD ~360-500k; Cyberbeast ~436-584k; brak fabrycznego leasingu.",
+    "keywords": "Cybertruck import ceny 240-584k zł, brak leasing PL",
+    "type": "financial",
+    "tags": ["Cybertruck import", "ceny PL"],
+    "archetype_filter": ["import_buyer"]
+  },
+  {
+    "title": "Mój Elektryk 2.0 Dotacje Prywatne",
+    "content": "18.75k bazowo; KDR +30k; niskodochodowi +11.25k; złomowanie +10k; max 40k; limit 225k netto; do 30.06.2026.",
+    "keywords": "Mój Elektryk 2.0 40k max, KDR +30k, złomowanie +10k",
+    "type": "financial",
+    "tags": ["dotacje prywatne", "Mój Elektryk"],
+    "archetype_filter": ["subsidy_seeker"]
+  },
+  {
+    "title": "NaszEauto Firmy",
+    "content": "Min. 30k wsparcia; KDR 35k.",
+    "type": "financial",
+    "tags": ["NaszEauto", "firmy"],
+    "archetype_filter": ["business"]
+  },
+  {
+    "title": "Niemcy Dotacje 2026",
+    "content": "4k EUR max (~19.2k zł); limit 45k EUR netto (~215k); niskodochodowi ~3.8k EUR/mies.; BEV tylko; używane pierwsze; budżet 3 mld EUR 2026-2029; Model S/X >80k EUR poza limitem.",
+    "keywords": "Niemcy dotacje 4k EUR 2026, limit 45k EUR, używane",
+    "type": "financial",
+    "tags": ["dotacje Niemcy", "2026"],
+    "archetype_filter": ["eu_subsidy"]
+  },
+  {
+    "title": "Francja Bonus Écologique",
+    "content": "3.1-4.2k EUR bazowo +1k EUR baterie UE; max 5.2k EUR (~25k zł); leasing socjalny 100-150 EUR/mies.; FSD kwalifikuje jeśli CO2 limit.",
+    "keywords": "Bonus Écologique 5.2k EUR, baterie UE +1k, leasing socjalny",
+    "type": "financial",
+    "tags": ["Francja dotacje", "baterie UE"],
+    "archetype_filter": ["eu_subsidy"]
+  },
+  {
+    "title": "Holandia Ulgi Podatkowe",
+    "content": "BPM zwolnienie 75% do 2025 (wygaszane 2030); podatek drogowy -75%; SEBA dostawcze 5k EUR; leasing preferowany; Model S/X kwalifikują do 2025.",
+    "keywords": "Holandia BPM -75% 2025, SEBA 5k EUR, leasing",
+    "type": "financial",
+    "tags": ["Holandia ulgi", "BPM"],
+    "archetype_filter": ["eu_subsidy"]
+  },
+  {
+    "title": "Ubezpieczenie Model S PL 2025",
+    "content": "OC 698 zł/rok (najwyższe Tesla); OC+AC+NNW+Assistance 9547-10303 zł; OC+AC+NNW ~8500-9500 zł.",
+    "keywords": "ubezpieczenie Model S 698 zł OC, 9.5-10.3k pełny pakiet",
+    "type": "financial",
+    "tags": ["ubezpieczenie Model S", "OC AC"],
+    "archetype_filter": ["premium_insurance"]
+  },
+  {
+    "title": "Porównanie OC Tesla Modele",
+    "content": "Dacia Spring 462 zł; Model Y 573 zł; Model 3 596 zł; Model S 698 zł – wyższe dla premium.",
+    "keywords": "OC Dacia 462, Model Y 573, Model S 698",
+    "type": "financial",
+    "tags": ["OC porównanie", "Tesla modele"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Ubezpieczenie DE vs PL EV",
+    "content": "DE AC +30% vs 2023 (naprawy baterii); PL AC +10-15% vs spalinowe; OC bez różnicy EU.",
+    "keywords": "ubezpieczenie DE +30% AC, PL +10-15% AC",
+    "type": "financial",
+    "tags": ["porównanie DE PL", "AC EV"],
+    "archetype_filter": ["cross_border"]
+  },
+  {
+    "title": "Ubezpieczmojatesle.pl Oferty",
+    "content": "Model 3 od 4212 zł/rok; Model Y 4428 zł; Model S 9547 zł; Model X 10303 zł; -25% VAT dla firm.",
+    "keywords": "ubezpieczmojatesle Model 3 4212 zł, -25% VAT firmy",
+    "type": "financial",
+    "tags": ["ubezpieczmojatesle", "oferty"],
+    "archetype_filter": ["tesla_insurance"]
+  },
+  {
+    "title": "TCO Model 3 RWD 3 Lata 60k km",
+    "content": "Zakup 184990 zł; OC 1788 zł/3 lata; AC 12-15k zł; energia 5850 zł; serwis 1-2k zł; podatek 0; razem 205-210k zł; RV 65% ~120k zł; efektywny ~85k zł; koszt/1k km 34-35 zł.",
+    "keywords": "TCO Model 3 85k efektywny 3 lata, 34-35 PLN/1k km",
+    "type": "financial",
+    "tags": ["TCO Model 3", "3 lata", "60k km"],
+    "archetype_filter": ["cost_calculator"]
+  },
+  {
+    "title": "TCO Model S 3 Lata",
+    "content": "Zakup 240-270k zł; AC 25-30k zł; energia 8500 zł; serwis 2-5k zł; razem 275-312k zł; RV 60% 144-162k zł; efektywny 113-168k zł; koszt/1k km 60-75 zł.",
+    "keywords": "TCO Model S 113-168k efektywny, 60-75 PLN/1k km",
+    "type": "financial",
+    "tags": ["TCO Model S", "premium"],
+    "archetype_filter": ["luxury_tco"]
+  },
+  {
+    "title": "Wartości Rezydualne Prognozy 2030",
+    "content": "Brak publicznych danych ADAC/Eurotax; zależne od technologii baterii, dotacji, czasu pracy baterii.",
+    "keywords": "RV prognozy 2030 brak danych, ADAC Eurotax",
+    "type": "financial",
+    "tags": ["RV prognozy", "brak danych"],
+    "archetype_filter": ["future_planned"]
+  },
+  {
+    "title": "Ubezpieczenie Model S Plaid DE",
+    "content": "Brak precyzyjnych stawek dla 40-latka bezszkodowego; AC +30% vs spalinowe z powodu napraw baterii.",
+    "keywords": "ubezpieczenie Plaid DE +30% AC, brak stawek",
+    "type": "financial",
+    "tags": ["Plaid DE", "AC +30%"],
+    "archetype_filter": ["german_insurance"]
+  },
+  {
+    "title": "Cybertruck Finansowanie PL",
+    "content": "Brak oficjalnego; import prywatny, leasing trzeci z ograniczeniami rejestracyjnymi.",
+    "keywords": "Cybertruck finansowanie PL brak, import prywatny",
+    "type": "financial",
+    "tags": ["Cybertruck PL", "import"],
+    "archetype_filter": ["truck_import"]
+  },
+  {
+    "title": "Program EOG Norwegia Model X",
+    "content": "Ulgi ogólne (VAT, opłaty); Model X poza limitami cenowymi dotacji.",
+    "keywords": "EOG Norwegia Model X poza limitem, ulgi VAT",
+    "type": "financial",
+    "tags": ["Norwegia EOG", "Model X"],
+    "archetype_filter": ["norway_subsidy"]
+  },
+  {
+    "title": "Teoria Wartości Schwartza – 10 Typów",
+    "content": "Hedonizm (przyjemność), Bezpieczeństwo (ochrona), Status (prestiż), Oszczędność (racjonalność); mapa 2D: Otwartość na Zmiany vs Zachowawczość, Umacnianie Siebie vs Przekraczanie Siebie.",
+    "keywords": "Schwartz wartości, Hedonizm Bezpieczeństwo Status Oszczędność, mapa 2D",
+    "type": "psychology",
+    "tags": ["Schwartz", "wartości", "motywacje"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Typy DISC i Wskaźniki",
+    "content": "D (Dominujący): szybkie tempo, bezpośredni wzrok, 'wynik końcowy'; I (Wpływowy): energia, uśmiech, 'buzz'; S (Stały): spokojny, słaby wzrok, 'gwarancje'; C (Sumienny): powolny, notatki, 'dane NCAP'.",
+    "keywords": "DISC typy, D szybkie I energia S spokojny C dane",
+    "type": "psychology",
+    "tags": ["DISC", "wskaźniki", "osobowość"],
+    "archetype_filter": ["dominance", "influence", "steadiness", "conscientiousness"]
+  },
+  {
+    "title": "Emocje Ekman w Sprzedaży",
+    "content": "Radość (uśmiech, oczy): zainteresowanie – intensyfikuj; Smutek (opadnięte brwi): zwątpienie – zapytaj; Strach (szerokie oczy): obawy – uspokój NCAP; Złość (zmarszczone brwi): frustracja – zmień temat; Zaskoczenie (podniesione brwi): pozytywne – kapitalizuj.",
+    "keywords": "Ekman emocje, radość uśmiech, strach oczy, złość brwi",
+    "type": "psychology",
+    "tags": ["Ekman", "emocje", "mowa ciała"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Mowa Ciała Dystans Gestykulacja",
+    "content": "Wzrok 60-70%: zaufanie; postawa otwarta: zainteresowanie; dystans 45cm-1.2m: osobista strefa; pocieranie ucha: nieszczerość; pocieranie nosa: zażenowanie; pocieranie karku: frustracja; otwarte dłonie: szczerość; zaciśnięte pięści: obrona.",
+    "keywords": "mowa ciała dystans 45cm-1.2m, pocieranie ucha nos kark, otwarte dłonie",
+    "type": "psychology",
+    "tags": ["mowa ciała", "dystans", "gesty"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Identyfikacja Motywacji 5 Min",
+    "content": "Scenariusz Status: pyta o prestiż, wzrok na Model S; Oszczędność: pyta cenę, notatki; Hedonizm: pyta o osiągi, błysk oka; Bezpieczeństwo: pyta gwarancje, ostrożny.",
+    "keywords": "identyfikacja motywacji 5 min, Status prestiż, Hedonizm osiągi",
+    "type": "psychology",
+    "tags": ["motywacje", "5 min", "scenariusze"],
+    "archetype_filter": ["status", "hedonism", "saving", "safety"]
+  },
+  {
+    "title": "Matryca Decyzyjna 5 Min",
+    "content": "Pytanie 'Co powstrzymuje?'; nonwerbalne tempo wzrok energia; reaguj dostosuj słownictwo tempo.",
+    "keywords": "matryca 5 min, pytanie powstrzymuje, nonwerbalne tempo",
+    "type": "psychology",
+    "tags": ["matryca", "decyzyjna", "5 min"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Dostosowanie Tempa Słownictwa DISC",
+    "content": "D: szybkie 'wynik'; I: emocjonalne 'buzz'; S: wolne 'gwarancja'; C: precyzyjne 'dane NCAP'; tempo 80-140 słów/min.",
+    "keywords": "dostosowanie tempo DISC, D szybkie I emocjonalne",
+    "type": "psychology",
+    "tags": ["dostosowanie", "tempo", "DISC"],
+    "archetype_filter": ["dominance", "influence", "steadiness", "conscientiousness"]
+  },
+  {
+    "title": "Pytania Otwarte NLP",
+    "content": "D: 'Jaki wynik chcesz?'; I: 'Jak zmieni życie?'; S: 'Jakie bezpieczeństwo?'; C: 'Jakie dane?'.",
+    "keywords": "pytania otwarte NLP, D wynik I życie S bezpieczeństwo C dane",
+    "type": "psychology",
+    "tags": ["NLP", "pytania otwarte"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Scenariusz Klient D Hedonizm",
+    "content": "Wchodzi szybko, pyta Performance; diagnoza D+Hedonizm; 'Model 3 3.3s szybszy M3'; test jazdy natychmiast.",
+    "keywords": "scenariusz D Hedonizm, 3.3s Performance, test jazdy",
+    "type": "psychology",
+    "tags": ["scenariusz", "D Hedonizm"],
+    "archetype_filter": ["dominance_hedonism"]
+  },
+  {
+    "title": "Luki Psychologia Dane",
+    "content": "Brak progów DISC dla EV PL; brak % klientów typ D; brak efektywności NLP konwersji; brak psychometrii DISC x Schwartz.",
+    "keywords": "luki dane DISC EV PL, brak % typ D, NLP konwersja",
+    "type": "psychology",
+    "tags": ["luki", "dane"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Rekomendacje Profilowanie",
+    "content": "Matryca 5 min: obserwuj tempo wzrok; test 'Co powstrzymuje?'; unikaj detali dla D, emocji dla C.",
+    "keywords": "rekomendacje matryca 5 min, test powstrzymuje",
+    "type": "psychology",
+    "tags": ["rekomendacje", "profilowanie"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Metoda LAER Zbijanie",
+    "content": "Listen: wysłuchaj; Acknowledge: potwierdź; Explore: eksploruj; Respond: odpowiadaj reframingiem.",
+    "keywords": "LAER Listen Acknowledge Explore Respond",
+    "type": "objection_handling",
+    "tags": ["LAER", "zbijanie obiekcji"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "FEEL-FELT-FOUND Empatia",
+    "content": "Feel: 'Słyszę jak czujesz'; Felt: 'Inni czuli podobnie'; Found: 'Odkryli że...'; przykład 'Tesla maszyna' -> 'Odkryli czysty adrenaline'.",
+    "keywords": "FEEL-FELT-FOUND, empatia dowód społeczny",
+    "type": "objection_handling",
+    "tags": ["FEEL-FELT-FOUND", "empatia"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Obiekcja Brak Duszy Frazy",
+    "content": "Fraza 1: 'Dusza to emocje – 660 Nm natychmiast, czysty adrenaline'; Fraza 2: 'Czystsze niż V8 – precyzja'; Fraza 3: '200k klientów odkryli dreszcz – test jazdy zmieni perspektywę'.",
+    "keywords": "obiekcja dusza, 660 Nm adrenaline, test jazdy",
+    "type": "objection_handling",
+    "tags": ["brak duszy", "reframe emocjonalny"],
+    "archetype_filter": ["emotional_buyer"]
+  },
+  {
+    "title": "Obiekcja Wnętrze Tanie Frazy",
+    "content": "Fraza 1: 'Minimalizm = świadomy design Apple/LV'; Fraza 2: 'Czystość poznawcza – mniej rozproszenia'; Fraza 3: 'Trwałość > wizualny – luksus na dekadę'.",
+    "keywords": "obiekcja wnętrze, minimalizm Apple, trwałość luksus",
+    "type": "objection_handling",
+    "tags": ["wnętrze tanie", "reframe minimalizm"],
+    "archetype_filter": ["luxury_seeker"]
+  },
+  {
+    "title": "Obiekcja Nie Ufam Muskowi Frazy",
+    "content": "Fraza 1: 'Tesla = 1.5M aut, 10k inżynierów – nie Musk'; Fraza 2: 'Dane > opinia – 5* NCAP, niskie TCO'; Fraza 3: 'Wszystkie marki mają sekrety – Tesla przełamała granice'.",
+    "keywords": "obiekcja Musk, 1.5M aut, dane NCAP",
+    "type": "objection_handling",
+    "tags": ["nie ufam Musk", "reframe CEO"],
+    "archetype_filter": ["skeptical"]
+  },
+  {
+    "title": "Obiekcja Wszyscy Mają Frazy",
+    "content": "Fraza 1: 'Twój Model 3 z FSD = unikat personalizacji'; Fraza 2: 'Ekskluzywność = pionier, nie masa – Model S zero na drogach'; Fraza 3: 'Luksus = możliwość, nie rzadkość'.",
+    "keywords": "obiekcja wszyscy mają, unikat FSD, pionier",
+    "type": "objection_handling",
+    "tags": ["wszyscy mają", "reframe ekskluzywność"],
+    "archetype_filter": ["status_seeker"]
+  },
+  {
+    "title": "Obiekcja Czekam Tech Frazy",
+    "content": "Fraza 1: 'OTA = auto ewoluuje co miesiąc – Model 3 2020 dziś +100 funkcji'; Fraza 2: 'LFP trwa 600k km – nowa tech za 10 lat'; Fraza 3: 'Czekanie = strata TCO 3 lata – kup dziś, oszczędzasz jutro'.",
+    "keywords": "obiekcja nowa tech, OTA +100 funkcji, strata TCO",
+    "type": "objection_handling",
+    "tags": ["czekam tech", "reframe OTA"],
+    "archetype_filter": ["future_waiter"]
+  },
+  {
+    "title": "Model APK Pytania",
+    "content": "A (Awareness): 'Jaki auto teraz?'; P (Problem): 'Jakie problemy?'; I (Implication): 'Wpływ na codzienność?'; K (Key-need): 'Idealna sytuacja?'.",
+    "keywords": "APK pytania, Awareness Problem Implication Need",
+    "type": "objection_handling",
+    "tags": ["APK", "diagnostyczne"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Pytania Odkrywające 10 Min",
+    "content": "1-2 min 'Co powstrzymuje?'; 3-4 'Obawy o [temat]?'; 5-6 'Konsekwencje czekania?'; 7-8 'Kto ma głos?'; 9-10 'Gdyby rozwiązali, co zmieniłoby?'.",
+    "keywords": "pytania 10 min, powstrzymuje obawy konsekwencje głos",
+    "type": "objection_handling",
+    "tags": ["pytania diagnostyczne", "10 min"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Techniki Reframingu NLP 5",
+    "content": "Boomerang: odbicie na korzyść; Perspektywizacja: zmiana punktu widzenia; Zwrotka pozytywna: negatywne w pozytywne; Dowód społeczny: inni klienci; Przesunięcie czasowe: perspektywa czasu.",
+    "keywords": "NLP reframing 5 technik, Boomerang Perspektywizacja",
+    "type": "objection_handling",
+    "tags": ["NLP reframing", "techniki"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Scenariusz Zbicia Brak Duszy",
+    "content": "Listen: wysłuchaj; Acknowledge: 'Emocjonalne doświadczenie ważne'; Explore: 'Co czujesz w BMW?'; Respond: '660 Nm natychmiast – czysty adrenaline, test jazdy zmieni'.",
+    "keywords": "scenariusz zbicia dusza, LAER 660 Nm adrenaline",
+    "type": "objection_handling",
+    "tags": ["scenariusz", "brak duszy"],
+    "archetype_filter": ["emotional"]
+  },
+  {
+    "title": "Luki Zbijanie Dane",
+    "content": "Brak % obiekcji baterii PL; brak A/B reframingu konwersji; brak wagi rodziny vs racjonalność dla Tesla.",
+    "keywords": "luki % obiekcji, A/B reframing, rodzina racjonalność",
+    "type": "objection_handling",
+    "tags": ["luki dane"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Reframing Minimalizm Frazy",
+    "content": "Fraza 1: 'Minimalizm świadomy design Apple/LV'; Fraza 2: 'Czystość poznawcza – mniej rozproszenia'; Fraza 3: 'Trwałość luksus – dekada bez psucia'.",
+    "keywords": "reframing minimalizm Apple LV, czystość trwałość",
+    "type": "framing",
+    "tags": ["minimalizm", "reframing"],
+    "archetype_filter": ["luxury_minimal"]
+  },
+  {
+    "title": "Reframing OTA Frazy",
+    "content": "Fraza 1: 'OTA inwestycja ewoluuje – +50% lepszy za rok'; Fraza 2: 'Wikipedia na kołach – OTA co miesiąc'; Fraza 3: 'Personalizacja OTA – Twój Model 3 unikat'.",
+    "keywords": "reframing OTA inwestycja, Wikipedia personalizacja",
+    "type": "framing",
+    "tags": ["OTA", "reframing"],
+    "archetype_filter": ["tech_updater"]
+  },
+  {
+    "title": "SPIN Etapy",
+    "content": "S: obecny stan 'Auto teraz?'; P: problemy 'Co frustruje?'; I: konsekwencje 'Wpływ codzienność?'; N: korzyść 'Idealna sytuacja?'.",
+    "keywords": "SPIN S P I N, obecny stan problemy konsekwencje korzyść",
+    "type": "framing",
+    "tags": ["SPIN", "etapy"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "5 Whys Obiekcja Cena",
+    "content": "Why 1: 'Dlaczego 185k drogo?'; Why 2: 'Budżet 150k?'; Why 3: 'Bankier kredyt 30 rat?'; Why 4: '60 rat rata 2.5k?'; Why 5: 'Rata do 3k – Performance?'; efekt: chce Performance, problem finansowania.",
+    "keywords": "5 Whys cena, budżet bankier rata Performance",
+    "type": "framing",
+    "tags": ["5 Whys", "obiekcja cena"],
+    "archetype_filter": ["financial_objection"]
+  },
+  {
+    "title": "Value-Building Framework",
+    "content": "Cecha → Korzyść → Motywacja; przykład Autopilot: cecha tempomat pas; korzyść precyzja; motywacja Status 'jedziesz przyszłość', Oszczędność 'mniej zmęczenia'.",
+    "keywords": "value-building cecha korzyść motywacja, Autopilot precyzja",
+    "type": "framing",
+    "tags": ["value-building", "framework"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Fraza Value Hedonizm Autopilot",
+    "content": "'Autopilot precyzja drona – pośredni kontakt, maksymalna kontrola'.",
+    "keywords": "value hedonizm Autopilot dron kontrola",
+    "type": "framing",
+    "tags": ["Autopilot", "hedonizm"],
+    "archetype_filter": ["hedonism"]
+  },
+  {
+    "title": "Fraza Value Status Autopilot",
+    "content": "'Autopilot symbol lidera – jedziesz bez rąk, ludzie myślą przyszłość'.",
+    "keywords": "value status Autopilot lider przyszłość",
+    "type": "framing",
+    "tags": ["Autopilot", "status"],
+    "archetype_filter": ["status"]
+  },
+  {
+    "title": "Fraza Value Bezpieczeństwo Autopilot",
+    "content": "'Autopilot reaguje 10x szybciej – ochrona rodziny w trasach'.",
+    "keywords": "value bezpieczeństwo Autopilot 10x szybciej rodzina",
+    "type": "framing",
+    "tags": ["Autopilot", "bezpieczeństwo"],
+    "archetype_filter": ["safety"]
+  },
+  {
+    "title": "Fraza Value Oszczędność LFP",
+    "content": "'LFP 8 lat darmo – BMW 15k serwis; oszczędza 115k zł vs BMW'.",
+    "keywords": "value oszczędność LFP 8 lat, 115k oszczędności BMW",
+    "type": "framing",
+    "tags": ["LFP", "oszczędność"],
+    "archetype_filter": ["saving"]
+  },
+  {
+    "title": "Fraza Value Status LFP",
+    "content": "'Najdłuższa gwarancja branża – symbol pewności Musk'.",
+    "keywords": "value status LFP gwarancja Musk pewność",
+    "type": "framing",
+    "tags": ["LFP", "status"],
+    "archetype_filter": ["status"]
+  },
+  {
+    "title": "Matryca Funkcji Motywacja",
+    "content": "660 Nm: Ekologia zero emisji, Status szybciej M3, Hedonizm dreszcz, Oszczędność brak strat; OTA: Ekologia mniej odpadów, Status trendsetter, Hedonizm nowe doświadczenia, Oszczędność w cenie.",
+    "keywords": "matryca funkcje motywacja, 660 Nm OTA Ekologia Status",
+    "type": "framing",
+    "tags": ["matryca", "funkcje motywacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Scenariusz Ekologia Personalizacja",
+    "content": "Słowa CO2 emisja; pokaż kalkulator CO2 3.5t oszczędności/rok; mapa Supercharger zielona energia; fraza '3.5t CO2 = 100 drzew'.",
+    "keywords": "personalizacja Ekologia CO2, Supercharger zielona",
+    "type": "framing",
+    "tags": ["personalizacja", "Ekologia"],
+    "archetype_filter": ["eco"]
+  },
+  {
+    "title": "Scenariusz Status Personalizacja",
+    "content": "Słowa ikona trendsetter; pokaż logo Supercharger FSD OTA; fraza 'Parkujesz Model S – symbol Silicon Valley'.",
+    "keywords": "personalizacja Status ikona, FSD OTA",
+    "type": "framing",
+    "tags": ["personalizacja", "Status"],
+    "archetype_filter": ["status"]
+  },
+  {
+    "title": "Scenariusz Oszczędność Personalizacja",
+    "content": "Słowa koszty TCO; pokaż kalkulator 150k oszczędności 5 lat; fraza 'Model 3 zwraca rok – inwestycja'.",
+    "keywords": "personalizacja Oszczędność TCO 150k, inwestycja",
+    "type": "framing",
+    "tags": ["personalizacja", "Oszczędność"],
+    "archetype_filter": ["saving"]
+  },
+  {
+    "title": "Best Practice Demo Przyspieszenia",
+    "content": "Tor/parking; klient pasażer; 'Poczuj 660 Nm – dreszcz'; po: 'Czego obawiałeś nudna? To frajda codzienna'.",
+    "keywords": "demo przyspieszenia tor, 660 Nm dreszcz, pasażer",
+    "type": "sales_process",
+    "tags": ["test drive", "przyspieszenie"],
+    "archetype_filter": ["performance"]
+  },
+  {
+    "title": "Best Practice Autopilot Trasa",
+    "content": "Autostrada 30-50 km; 'Auto prowadzi, Ty kontrola'; po: 'Jak pilot samolot – obserwuj'.",
+    "keywords": "Autopilot demo autostrada, kontrola pilot",
+    "type": "sales_process",
+    "tags": ["test drive", "Autopilot"],
+    "archetype_filter": ["tech"]
+  },
+  {
+    "title": "Best Practice Personalizacja Muzyki",
+    "content": "'Jaka muzyka?'; w aucie Spotify Dolby; 'Auto pamięta Twoją playlistę – to Twoje'.",
+    "keywords": "personalizacja muzyki Spotify, pamięta playlistę",
+    "type": "sales_process",
+    "tags": ["personalizacja", "muzyka"],
+    "archetype_filter": ["entertainment"]
+  },
+  {
+    "title": "Matryca Funkcji Motywacja Szczegółowa",
+    "content": "600 km: Ekologia mniej ładowań, Status bez stresu, Hedonizm spontaniczne, Oszczędność kWh; OTA: Ekologia brak odpadów, Status najnowsza tech, Hedonizm nowe frajdy, Oszczędność w cenie.",
+    "keywords": "matryca 600 km OTA, Ekologia Status Hedonizm Oszczędność",
+    "type": "sales_process",
+    "tags": ["matryca funkcje"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Follow-Up Brak Kontaktu 48h",
+    "content": "Email: 'Wow Recap + Extended Test 7 dni'; SMS: '7-dniowy test darmo – weź do domu'.",
+    "keywords": "follow-up 48h email SMS, extended test 7 dni",
+    "type": "sales_process",
+    "tags": ["follow-up", "extended test"],
+    "archetype_filter": ["delayed_lead"]
+  },
+  {
+    "title": "Follow-Up TCO Kalkulator 5 Dni",
+    "content": "Email z załącznikiem TCO_[Imię].xlsx; 'Personalizowana kalkulacja oszczędności 9.5k/rok'.",
+    "keywords": "follow-up 5 dni TCO kalkulator, 9.5k oszczędności",
+    "type": "sales_process",
+    "tags": ["TCO", "kalkulator"],
+    "archetype_filter": ["financial_lead"]
+  },
+  {
+    "title": "Follow-Up Pozytywna Jazda 24h",
+    "content": "SMS: 'Finansowanie 0% rata 2.8k – oferta do 15.11'; Email: 'Oferta ograniczona + kalendarz'.",
+    "keywords": "follow-up pozytywna 24h, 0% 2.8k rata",
+    "type": "sales_process",
+    "tags": ["follow-up pozytywna", "oferta ograniczona"],
+    "archetype_filter": ["hot_lead"]
+  },
+  {
+    "title": "Automatyzacja CRM Follow-Up",
+    "content": "Event Test Drive: email 48h + SMS 72h; No Response 48h: TCO; No Response 5 dni: ostatnia szansa; Positive: dokumenty; High Intent: spotkanie.",
+    "keywords": "CRM automatyzacja, Berg HubSpot Pipedrive, triggery follow-up",
+    "type": "sales_process",
+    "tags": ["CRM", "automatyzacja"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Cykl Sprzedaży Matryca",
+    "content": "Etap 1 Profilowanie 10 min; Etap 2 Przedprezentacja; Etap 3 Test Drive 20 min; Etap 4 Follow-Up 0-24h; Etap 5 Nurture 24-72h; Etap 6 Push 5-14 dni; Etap 7 Post-Sale.",
+    "keywords": "cykl sprzedaży matryca, profilowanie test drive follow-up",
+    "type": "sales_process",
+    "tags": ["cykl sprzedaży", "matryca"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Konwersja Przez Cykl",
+    "content": "Wizyta 100%; Test umówiony 65%; Odbył 50 (77%); Odpowiedź email 15 (30%); Extended 8 (53%); Kupujący 5 (62%); Final 5%.",
+    "keywords": "konwersja 5% final, extended 62%, test 77%",
+    "type": "sales_process",
+    "tags": ["konwersja", "statystyki"],
+    "archetype_filter": ["all"]
+  },
+  {
+    "title": "Podsumowanie Baza Wiedzy RAG",
+    "content": "7 raportów: Produkt (baterie, Wall, FSD); Finanse (0% RRSO, dotacje UE, TCO 85k 3 lata); Konkurencja (Model 3 vs EV6, usterki i4); Psychologia (Schwartz DISC, mowa ciała); Obiekcje (LAER 5 obiekcji); Frazy (reframing OTA, SPIN 5 Whys); Proces (test drive WOW, follow-up CRM).",
+    "keywords": "podsumowanie RAG 7 raportów, TCO 85k, SPIN reframing",
+    "type": "summary",
+    "tags": ["RAG baza", "podsumowanie"],
+    "archetype_filter": ["all"]
+  }
+]

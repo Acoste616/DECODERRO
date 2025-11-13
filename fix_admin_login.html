@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fix Admin Login - ULTRA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .success {
+            background: #4CAF50;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+        .info {
+            background: #2196F3;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        code {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🔧 Fix Admin Login - ULTRA v3.0</h1>
+
+        <div class="info">
+            <strong>Problem:</strong> Panel admina zwraca błąd 401 (Unauthorized)<br>
+            <strong>Przyczyna:</strong> Brak klucza API w localStorage<br>
+            <strong>Rozwiązanie:</strong> Kliknij poniższy przycisk aby automatycznie ustawić klucz
+        </div>
+
+        <p>Ta strona automatycznie ustawi klucz API w localStorage twojej przeglądarki.</p>
+
+        <p><strong>Klucz API:</strong><br>
+        <code>ULTRA_DOJO_KEY_8a4f9b2c_qoder_ai_2025</code></p>
+
+        <button onclick="fixLogin()">Napraw logowanie do panelu admina</button>
+
+        <div id="success" class="success">
+            ✅ <strong>Gotowe!</strong><br>
+            Klucz API został zapisany w localStorage.<br>
+            Teraz odśwież stronę panelu admina (F5) i będzie działać!
+        </div>
+    </div>
+
+    <script>
+        function fixLogin() {
+            const apiKey = 'ULTRA_DOJO_KEY_8a4f9b2c_qoder_ai_2025';
+
+            // Ustaw klucz w localStorage
+            localStorage.setItem('ultra_admin_key', apiKey);
+
+            // Pokaż komunikat sukcesu
+            document.getElementById('success').style.display = 'block';
+
+            // Po 2 sekundach otwórz panel admina
+            setTimeout(() => {
+                window.location.href = 'http://localhost:5173/admin';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
