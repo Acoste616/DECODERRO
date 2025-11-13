@@ -44,7 +44,13 @@
       "Bash(timeout 10 python:*)",
       "Bash(docker run:*)",
       "Bash(echo:*)",
-      "Bash(cmd /c \"netstat -ano | findstr :8000\")"
+      "Bash(cmd /c \"netstat -ano | findstr :8000\")",
+      "Bash(cmd /c \"taskkill /F /PID 28972\")",
+      "Bash(powershell.exe:*)",
+      "Bash(cmd /c \"taskkill /F /PID 28972 2>nul || echo Process already killed\")",
+      "Bash(timeout 3 curl:*)",
+      "Bash(cmd /c \"netstat -ano | findstr :5173\")",
+      "Bash(timeout:*)"
     ],
     "deny": [],
     "ask": []

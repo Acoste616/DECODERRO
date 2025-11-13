@@ -41,11 +41,11 @@ export default function JourneyStageSelector({ currentStage, suggestedStage, onS
   const getStageDescription = (stage: JourneyStage): string => {
     switch (stage) {
       case 'Odkrywanie':
-        return 'Klient eksploruje opcje, zbiera informacje, nie jest jeszcze gotowy do decyzji';
+        return t('view2_conversation.stage_odkrywanie_desc');
       case 'Analiza':
-        return 'Klient aktywnie porównuje modele, analizuje szczegóły, rozważa konkretne opcje';
+        return t('view2_conversation.stage_analiza_desc');
       case 'Decyzja':
-        return 'Klient jest gotowy do podjęcia decyzji, negocjuje warunki, finalizuje szczegóły';
+        return t('view2_conversation.stage_decyzja_desc');
     }
   };
 
@@ -53,24 +53,24 @@ export default function JourneyStageSelector({ currentStage, suggestedStage, onS
     switch (stage) {
       case 'Odkrywanie':
         return [
-          'Nie naciskaj - buduj relację i zaufanie',
-          'Zadawaj pytania odkrywcze, słuchaj aktywnie',
-          'Prezentuj ogólne korzyści, nie szczegóły techniczne',
-          'Zbieraj informacje o potrzebach i preferencjach',
+          t('view2_conversation.strategy_odkrywanie_1'),
+          t('view2_conversation.strategy_odkrywanie_2'),
+          t('view2_conversation.strategy_odkrywanie_3'),
+          t('view2_conversation.strategy_odkrywanie_4'),
         ];
       case 'Analiza':
         return [
-          'Dostarczaj konkretne dane i porównania',
-          'Pokazuj materiały dowodowe (testy, recenzje)',
-          'Odpowiadaj na szczegółowe pytania techniczne',
-          'Pomagaj w analizie kosztów i korzyści',
+          t('view2_conversation.strategy_analiza_1'),
+          t('view2_conversation.strategy_analiza_2'),
+          t('view2_conversation.strategy_analiza_3'),
+          t('view2_conversation.strategy_analiza_4'),
         ];
       case 'Decyzja':
         return [
-          'Domykaj obiekcje i wątpliwości',
-          'Twórz poczucie pilności (limited editions, promocje)',
-          'Ułatwiaj proces zakupu (finansowanie, dostawa)',
-          'Buduj pewność wyboru i redukuj ryzyko',
+          t('view2_conversation.strategy_decyzja_1'),
+          t('view2_conversation.strategy_decyzja_2'),
+          t('view2_conversation.strategy_decyzja_3'),
+          t('view2_conversation.strategy_decyzja_4'),
         ];
     }
   };
@@ -86,7 +86,7 @@ export default function JourneyStageSelector({ currentStage, suggestedStage, onS
           <div className="flex items-center gap-2 text-xs">
             <SparklesIcon className="w-4 h-4 text-purple-500" />
             <span className="text-text-secondary-light dark:text-text-secondary-dark">
-              AI sugeruje: <span className="font-semibold text-purple-500">{suggestedStage}</span>
+              {t('view2_conversation.ai_suggests')} <span className="font-semibold text-purple-500">{suggestedStage}</span>
             </span>
           </div>
         )}
@@ -131,7 +131,7 @@ export default function JourneyStageSelector({ currentStage, suggestedStage, onS
                 </div>
               )}
 
-              <div className="text-sm">{stage}</div>
+              <div className="text-sm">{stage === 'Odkrywanie' ? t('view2_conversation.stage_discovery') : stage === 'Analiza' ? t('view2_conversation.stage_analysis') : t('view2_conversation.stage_decision')}</div>
             </button>
           );
         })}
@@ -142,7 +142,7 @@ export default function JourneyStageSelector({ currentStage, suggestedStage, onS
         <div className="mt-4 space-y-3">
           {/* Description */}
           <div className="text-xs text-text-secondary-light dark:text-text-secondary-dark bg-bg-light dark:bg-bg-dark p-3 rounded">
-            <div className="font-semibold mb-1">📍 Charakterystyka etapu:</div>
+            <div className="font-semibold mb-1">📍 {t('view2_conversation.stage_characteristics')}</div>
             {getStageDescription(currentStage)}
           </div>
 
@@ -150,7 +150,7 @@ export default function JourneyStageSelector({ currentStage, suggestedStage, onS
           <div className="text-xs bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-3 rounded border border-purple-200 dark:border-purple-800">
             <div className="font-semibold mb-2 flex items-center gap-2">
               <SparklesIcon className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-              <span className="text-purple-900 dark:text-purple-100">Strategia dla tego etapu:</span>
+              <span className="text-purple-900 dark:text-purple-100">{t('view2_conversation.stage_strategy')}</span>
             </div>
             <ul className="space-y-1.5">
               {getStageStrategy(currentStage).map((strategy, idx) => (

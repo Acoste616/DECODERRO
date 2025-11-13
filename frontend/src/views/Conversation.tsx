@@ -475,10 +475,10 @@ export default function Conversation() {
             <div className="mx-4 mb-4 p-4 bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 rounded">
               <div className="flex items-start gap-3">
                 <div className="text-red-600 dark:text-red-400 text-sm">
-                  <strong>❌ Błąd analizy Slow Path:</strong>
+                  <strong>❌ {t('view2_conversation.slow_path_error_title')}</strong>
                   <p className="mt-1">{slow_path_error}</p>
                   <p className="mt-2 text-xs opacity-75">
-                    Możliwe przyczyny: Wygasły klucz API Ollama, timeout połączenia, lub problem z bazą danych.
+                    {t('view2_conversation.slow_path_error_causes')}
                   </p>
                 </div>
               </div>
@@ -488,12 +488,12 @@ export default function Conversation() {
           {/* Fast Path v2.0: Metadata Panel */}
           {fastPathMetadata && (
             <div className="mx-4 mb-4 p-3 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-lg">
-              <div className="text-xs font-bold text-blue-900 dark:text-blue-100 mb-2">🤖 JARVIS Metadata</div>
+              <div className="text-xs font-bold text-blue-900 dark:text-blue-100 mb-2">🤖 {t('view2_conversation.jarvis_metadata_title')}</div>
 
               {/* Confidence + Client Style */}
               <div className="grid grid-cols-2 gap-2 mb-2">
                 <div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">Pewność AI:</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">{t('view2_conversation.ai_confidence')}</div>
                   <div className="flex items-center gap-2">
                     <div className={`text-sm font-bold ${
                       fastPathMetadata.confidence_score >= 0.8 ? 'text-green-600' :
@@ -508,14 +508,14 @@ export default function Conversation() {
                 </div>
 
                 <div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">Styl klienta:</div>
+                  <div className="text-xs text-gray-600 dark:text-gray-400 mb-1">{t('view2_conversation.client_style')}</div>
                   <span className={`text-xs px-2 py-1 rounded font-semibold ${
                     fastPathMetadata.client_style === 'technical' ? 'bg-purple-100 text-purple-800' :
                     fastPathMetadata.client_style === 'emotional' ? 'bg-pink-100 text-pink-800' :
                     'bg-blue-100 text-blue-800'
                   }`}>
-                    {fastPathMetadata.client_style === 'technical' ? '🔧 Techniczny' :
-                     fastPathMetadata.client_style === 'emotional' ? '❤️ Emocjonalny' : '💬 Spontaniczny'}
+                    {fastPathMetadata.client_style === 'technical' ? `🔧 ${t('view2_conversation.client_style_technical')}` :
+                     fastPathMetadata.client_style === 'emotional' ? `❤️ ${t('view2_conversation.client_style_emotional')}` : `💬 ${t('view2_conversation.client_style_spontaneous')}`}
                   </span>
                 </div>
               </div>
@@ -524,7 +524,7 @@ export default function Conversation() {
               {fastPathMetadata.seller_questions.length > 0 && (
                 <div className="mt-2 p-2 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 rounded text-xs">
                   <div className="font-semibold text-yellow-800 dark:text-yellow-300 mb-1">
-                    🤔 AI potrzebuje kontekstu:
+                    🤔 {t('view2_conversation.ai_needs_context')}
                   </div>
                   {fastPathMetadata.seller_questions.map((q, i) => (
                     <div key={i} className="text-gray-700 dark:text-gray-300">• {q}</div>
@@ -541,7 +541,7 @@ export default function Conversation() {
                 💡 {t('view2_conversation.suggested_questions')}
               </div>
               <div className="text-xs text-purple-600 dark:text-purple-400 mb-3">
-                Kliknij pytanie, aby otworzyć okno do wpisania odpowiedzi klienta
+                {t('view2_conversation.question_modal_instruction')}
               </div>
               <div className="space-y-2">
                 {suggestedQuestions.map((question, idx) => (
