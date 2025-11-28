@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nul)",
+      "Bash(python:*)",
+      "Bash(findstr:*)",
+      "Bash(netstat:*)",
+      "Bash(curl:*)",
+      "Bash(npm run build:*)",
+      "Bash(start /B npm run dev)",
+      "Bash(frontend.log)",
+      "Bash(npm run dev:*)",
+      "Bash(ping:*)",
+      "Bash(taskkill:*)",
+      "Bash(timeout /t 8 /nobreak)",
+      "Bash(powershell:*)",
+      "Bash(set:*)",
+      "Bash(timeout /t 3 /nobreak)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

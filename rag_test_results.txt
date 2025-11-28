@@ -1,0 +1,106 @@
+﻿[RAG] Loading embedding model: sentence-transformers/all-MiniLM-L6-v2...
+python : Traceback (mo
+st recent call last):
+At line:1 char:1
++ python verify_rag_di
+rect.py 2>&1 | Out-Fil
+e -FilePath rag_test_r
+esult ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Traceback    
+ (most recent call    
+ last)::String) [    ]
+, RemoteExceptio    n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  File "C:\Users\barto
+\Downloads\copy-of-cop
+y-of-copy-of-copy-of-c
+opy-of-copy-of-copy-of
+-ultra-v3.0---cognitiv
+e-sales-engine\backend
+\rag_engine.py", line 
+25, in <module>
+    print(f"\u2705 [RA
+G] Embedding model loa
+ded successfully")
+    ~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "C:\Program Fil
+es\WindowsApps\PythonS
+oftwareFoundation.Pyth
+on.3.13_3.13.2544.0_x6
+4__qbz5n2kfra8p0\Lib\e
+ncodings\cp1250.py", l
+ine 19, in encode
+    return codecs.char
+map_encode(input,self.
+errors,encoding_table)
+[0]
+           ~~~~~~~~~~~
+~~~~~~~~~~^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'c
+harmap' codec can't en
+code character '\u2705
+' in position 0: chara
+cter maps to <undefine
+d>
+
+During handling of the
+ above exception, anot
+her exception occurred
+:
+
+Traceback (most recent
+ call last):
+  File "C:\Users\barto
+\Downloads\copy-of-cop
+y-of-copy-of-copy-of-c
+opy-of-copy-of-copy-of
+-ultra-v3.0---cognitiv
+e-sales-engine\verify_
+rag_direct.py", line 9
+, in <module>
+    from rag_engine im
+port rag_engine
+  File "C:\Users\barto
+\Downloads\copy-of-cop
+y-of-copy-of-copy-of-c
+opy-of-copy-of-copy-of
+-ultra-v3.0---cognitiv
+e-sales-engine\backend
+\rag_engine.py", line 
+27, in <module>
+    print(f"\u274c [RA
+G] Failed to load embe
+dding model: {e}")
+    ~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "C:\Program Fil
+es\WindowsApps\PythonS
+oftwareFoundation.Pyth
+on.3.13_3.13.2544.0_x6
+4__qbz5n2kfra8p0\Lib\e
+ncodings\cp1250.py", l
+ine 19, in encode
+    return codecs.char
+map_encode(input,self.
+errors,encoding_table)
+[0]
+           ~~~~~~~~~~~
+~~~~~~~~~~^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'c
+harmap' codec can't en
+code character '\u274c
+' in position 0: chara
+cter maps to <undefine
+d>

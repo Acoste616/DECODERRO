@@ -1,0 +1,37 @@
+======================================================================
+ULTRA v3.1 - DIAGNOSTIC REPORT
+======================================================================
+
+📉 Vector Count: 886 (Expected: ~11,000)
+⚠️  WARNING: Only 886 vectors found!
+   Expected 7,710 + 3,840 = 11,550 items
+   Possible ingestion failure!
+
+🔍 Query: Klient martwi się o zasięg zimą i pompę ciepła.
+
+💡 Top 3 Results:
+======================================================================
+
+[Result 1] Score: 0.6611
+  Title: Zasięg Zimą z Pompą Ciepła
+  Source: rag_nuggets
+  ID: No ID
+  Content Preview: Tesla osiąga 10-20% lepszy zasięg zimą dzięki pompie ciepła w porównaniu do modeli z ogrzewaniem rezystancyjnym, jak starsze Model 3 i Model S....
+
+
+[Result 2] Score: 0.6560
+  Title: No Title
+  Source: golden_standards
+  ID: No ID
+  Content Preview: S 'Ile km dziennie?'; P 'Problemy tankowanie?'; I 'Wpływ czas?'; N 'Pełna bateria rano wartość?'....
+
+
+[Result 3] Score: 0.6515
+  Title: No Title
+  Source: golden_standards
+  ID: No ID
+  Content Preview: Twoja poprzednia marka samochodowa – co Ci się w niej podobało, a co cię frustrowało? Bo to pokazuje, co naprawdę Cię motywuje....
+
+======================================================================
+END DIAGNOSTIC REPORT
+======================================================================

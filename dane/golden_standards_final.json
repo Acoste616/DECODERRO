@@ -1,0 +1,3840 @@
+[
+  {
+    "trigger_context": "Klient pyta o zasięg Model 3 w zimie",
+    "golden_response": "Świetne pytanie! Model 3 Long Range ma zasięg WLTP 629 km. W zimie (poniżej 0°C) realistycznie spodziewaj się 480-520 km...",
+    "tags": [
+      "zasięg",
+      "zima",
+      "model_3"
+    ],
+    "category": "technical",
+    "id": "dc492558-6eca-40ee-9cc5-1f3b0e0e87a2"
+  },
+  {
+    "trigger_context": "Klient obawia się długiego czasu ładowania",
+    "golden_response": "Rozumiem tę obawę - to najczęstsza obiekcja. Ale zmieńmy perspektywę...",
+    "tags": [
+      "ładowanie",
+      "czas",
+      "obiekcja"
+    ],
+    "category": "objection_handling",
+    "id": "a6542fdd-7d4e-4d34-a4bc-e115a4ccb82e"
+  },
+  {
+    "trigger_context": "Icebreaker dla personalizacji",
+    "golden_response": "Widzę, że interesuje Cię [model]. Co Cię bardziej intryguje – wydajność, czy praktyczność dnia codziennego?",
+    "tags": [
+      "Icebreaker",
+      "personalizacja",
+      "Main Drive"
+    ],
+    "category": "komunikacja",
+    "id": "2c91e475-9cff-4306-a7e9-535cd4831f69"
+  },
+  {
+    "trigger_context": "Budowanie rapport ze sceptykiem",
+    "golden_response": "Wielu naszych klientów zaczynało tak jak Ty – sceptyczni wobec elektryków. Potem odkrywali, że zmienia to całą ich perspektywę na jazdę. Czy chciałbyś zobaczyć, dlaczego?",
+    "tags": [
+      "Icebreaker",
+      "rapport",
+      "skeptycyzm"
+    ],
+    "category": "komunikacja",
+    "id": "be0154d2-8508-44ae-9bfb-e1b652cf84ec"
+  },
+  {
+    "trigger_context": "Rola autorytetu z empatią",
+    "golden_response": "Zajmuję się tym od [X lat]. Przywykłem, że ludzie mają sporo pytań – i to świetnie. Które obszary są dla Ciebie najważniejsze: technologia, kosztochłonność, czy wpływ na rodzinę?",
+    "tags": [
+      "Icebreaker",
+      "autorytet",
+      "empatia"
+    ],
+    "category": "komunikacja",
+    "id": "9abba068-055c-43f1-99ab-35ba2bf72ade"
+  },
+  {
+    "trigger_context": "Trigger ciekawości dla Typu C",
+    "golden_response": "Tesla nie ma chłodnicy, na to dachcie 40+ czujników, a Software aktualizuje się co miesiąc. Czy wiesz dlaczego to ma znaczenie dla Ciebie?",
+    "tags": [
+      "Icebreaker",
+      "ciekawość",
+      "Typ C"
+    ],
+    "category": "komunikacja",
+    "id": "d24a62b6-8b43-45e8-8d7a-629264238bbb"
+  },
+  {
+    "trigger_context": "Odkrywanie kontekstu decyzji",
+    "golden_response": "Oprócz Ciebie – kto jeszcze będzie jeździć tym pojazdem? I jakie są ich najważniejsze obawy?",
+    "tags": [
+      "Deep Dive",
+      "kontekst",
+      "decision committee"
+    ],
+    "category": "komunikacja",
+    "id": "1cec3f8d-4935-4b70-b619-b0182dd650a7"
+  },
+  {
+    "trigger_context": "Przeszłość jako wskaźnik przyszłości",
+    "golden_response": "Twoja poprzednia marka samochodowa – co Ci się w niej podobało, a co cię frustrowało? Bo to pokazuje, co naprawdę Cię motywuje.",
+    "tags": [
+      "Deep Dive",
+      "przeszłość",
+      "motywacja"
+    ],
+    "category": "komunikacja",
+    "id": "ceba95b7-ab61-4594-a179-bb6ed3ce5575"
+  },
+  {
+    "trigger_context": "Główna motywacja vs. pseudo-motywacja",
+    "golden_response": "Wiem, że cenisz [benefit #1]. Ale gdyby był wybór tylko między [benefit #1] a [benefit #2] – co by wygrało i dlaczego?",
+    "tags": [
+      "Deep Dive",
+      "motywacja",
+      "hierarchia"
+    ],
+    "category": "komunikacja",
+    "id": "fe73b3a1-c559-4e76-a371-f4106dd117fd"
+  },
+  {
+    "trigger_context": "Wskaźnik gotowości decyzji",
+    "golden_response": "Na skali 1-10, gdzie 1 to 'nie myślę o tym poważnie', a 10 to 'gotów podpisać dzisiaj' – gdzie jesteś teraz? I co byś potrzebował, aby przesunąć się o jeden punkt wyżej?",
+    "tags": [
+      "Deep Dive",
+      "commitment",
+      "skala"
+    ],
+    "category": "komunikacja",
+    "id": "367bbe5b-c0b8-476a-829e-cc9948de2c18"
+  },
+  {
+    "trigger_context": "Redefinicja luksusu",
+    "golden_response": "Rozumiem, luksus to komfort i prestiż. Tesla definiuje luksus przez bezstresową jazdę – Zero stacji benzynowych, Zero oleju, Zero myśli o awaryjności. To najwyższy komfort psychiczny, jaki możesz mieć.",
+    "tags": [
+      "Framing",
+      "luksus",
+      "redefinicja"
+    ],
+    "category": "komunikacja",
+    "id": "272bb2ed-9152-4646-ad5b-6684ad093694"
+  },
+  {
+    "trigger_context": "Inwestycja vs. wydatek",
+    "golden_response": "Cena pojazdu to wydatek jednokrotny. Ale oszczędności na paliwie, serwisie i podatku – to inwestycja zwracająca się w [X lat]. Ile wydajesz rocznie na paliwo? Bo to kwota, którą możesz realnie zaoszczędzić.",
+    "tags": [
+      "Framing",
+      "inwestycja",
+      "ROI"
+    ],
+    "category": "komunikacja",
+    "id": "58b8dcc8-ff77-46e4-b1f6-b655ed754898"
+  },
+  {
+    "trigger_context": "Ryzyko technologiczne",
+    "golden_response": "Elektryki są nowością? Tak. Ale Tesla – to już 1.5M pojazdów na drodze, średnia żywotność baterii 300k+ mil. To nie startup – to kompania z udowodnioną historią.",
+    "tags": [
+      "Framing",
+      "ryzyko",
+      "track record"
+    ],
+    "category": "komunikacja",
+    "id": "ed19919b-3e85-4c3f-b739-f29e16778f6b"
+  },
+  {
+    "trigger_context": "Ekologia z self-interest",
+    "golden_response": "Dbanie o planetę to ładne hasło. Ale mówiąc szczerze – to inwestycja w przyszłość Twoich dzieci. Mniej smogu, mniej alergii, czystsze powietrze. To o nich, nie o planecie abstrakcyjnej.",
+    "tags": [
+      "Framing",
+      "ekologia",
+      "self-interest"
+    ],
+    "category": "komunikacja",
+    "id": "c3326dd1-b429-4f78-b181-264dd5a60775"
+  },
+  {
+    "trigger_context": "Impasse w stagnacji",
+    "golden_response": "Czuję, że czujesz się w stagnacji. To normalne – to duża decyzja. Zamiast debatować, co powiesz na to: zobaczmy razem, co byś zyskał w pierwsze 3 miesiące. A potem postanowimy?",
+    "tags": [
+      "Impasse",
+      "potwierdzenie",
+      "reframing"
+    ],
+    "category": "komunikacja",
+    "id": "e6ab522f-d5ce-426e-b2c4-4465a8e1ea71"
+  },
+  {
+    "trigger_context": "Niechęć do decyzji",
+    "golden_response": "Widzę, że analizujesz różne warianty. To znak, że podejmujesz to serio. Ale czasem analiza paraliżuje. Co powiesz – zróbmy to tak: wybierzemy jeden wariant, spróbujesz go przez tydzień, a potem zdecydujemy?",
+    "tags": [
+      "Impasse",
+      "paralysis",
+      "test"
+    ],
+    "category": "komunikacja",
+    "id": "2aa8eefc-1f6f-405a-a347-16949e3bbd54"
+  },
+  {
+    "trigger_context": "Obiekcja ceny",
+    "golden_response": "Rozumiem, że budżet jest ograniczony. Ale pytanie nie jest 'czy mnie stać' – pytanie brzmi 'co jest dla mnie warte tej ceny?' Bo jeśli odpowiedź brzmi 'zdecydowanie warte' – to problem staje się finansowy, nie logiczny. A my mamy rozwiązania finansowe.",
+    "tags": [
+      "Objection",
+      "cena",
+      "priorytet"
+    ],
+    "category": "objection_handling",
+    "id": "4a4098c2-ee04-452d-8423-8be9c40ba270"
+  },
+  {
+    "trigger_context": "Konkurent tańszy",
+    "golden_response": "Wiem, że [konkurent] jest tańszy. Ale porównajmy: bateria gwarancja, oprogramowanie, ekosystem ładowania. Bo 'tańszy' to nie produkt – to punkt widzenia. 'Lepszy' to zbiór decyzji.",
+    "tags": [
+      "Objection",
+      "konkurent",
+      "porównanie"
+    ],
+    "category": "objection_handling",
+    "id": "ca13bd63-ada9-41e6-8d7d-fccf1a7c3c08"
+  },
+  {
+    "trigger_context": "Poczekam na nowy model",
+    "golden_response": "To rozsądne. Ale pytanie brzmi – poczekasz 2 lata na spekulacje? Czy wolisz mieć teraz pojazd, który wielu facetów kupi, a potem – jak pojawi się nowy model – znowu się zastanawiać? Czasem 'idealny' to wróg 'doskonałego teraz'.",
+    "tags": [
+      "Objection",
+      "nowy model",
+      "scarcity"
+    ],
+    "category": "objection_handling",
+    "id": "6e4929ea-84a6-417b-a0d6-0e9c6c0d2d26"
+  },
+  {
+    "trigger_context": "Assumptive close",
+    "golden_response": "Ok, widzę, że to ma sens dla Ciebie. Przejdźmy do konfiguracji – jaki kolor Ci bardziej odpowiada: metaliczny czy matowy? Bo to ostatnia rzecz przed tym, jak zarezerwujemy Ci pojazd.",
+    "tags": [
+      "Closing",
+      "assumptive",
+      "konfiguracja"
+    ],
+    "category": "closing",
+    "id": "f3722aab-5552-4a74-a9db-0cff36982e1a"
+  },
+  {
+    "trigger_context": "Trial close",
+    "golden_response": "Zanim idziemy dalej – wyobraź sobie, że to pojazd stoi w Twojej garażu za miesiąc. Jak się czujesz? Bo ta intuicja jest ważniejsza niż jakakolwiek liczba, którą Ci teraz dam.",
+    "tags": [
+      "Closing",
+      "trial",
+      "wizualizacja"
+    ],
+    "category": "closing",
+    "id": "7c417079-2bc1-4d87-a5cc-bdb8d7abfb2f"
+  },
+  {
+    "trigger_context": "Objection prevention",
+    "golden_response": "Zanim podpiszesz – chciałbym poruszyć jedno. Wiem, że będzie moment, w którym pomyślisz 'czy to była dobra decyzja?'. To normalne. Chcę Ci dać numer do 3 właścicieli, którzy przeszli przez to dokładnie – i mogą Ci powiedzieć, co się zmienia po 3 miesiącach.",
+    "tags": [
+      "Closing",
+      "prevention",
+      "social proof"
+    ],
+    "category": "closing",
+    "id": "5d9db087-1f86-4fdb-a409-09b02648e2f2"
+  },
+  {
+    "trigger_context": "Trójwarstwowa diagnoza",
+    "golden_response": "Jaki jest problem dzisiaj? Dlaczego to problem? Co by się zmieniło, gdyby ten problem znikł?",
+    "tags": [
+      "Discovery",
+      "diagnoza",
+      "Main Drive"
+    ],
+    "category": "discovery",
+    "id": "013a5e28-e0a5-4311-85f2-d7b08e3d5b52"
+  },
+  {
+    "trigger_context": "Timing pytania o budżet",
+    "golden_response": "Ile wydajesz rocznie na paliwo, serwis, ubezpieczenie? Bo ta suma + rata kredytu = twój realny budżet.",
+    "tags": [
+      "Discovery",
+      "budżet",
+      "timing"
+    ],
+    "category": "discovery",
+    "id": "d5dee35d-5885-4023-8b37-4f0a14745762"
+  },
+  {
+    "trigger_context": "Active listening z ciszą",
+    "golden_response": "[Milcz 3-5 sekund po pytaniu, pozwól klientowi wypełnić ciszę].",
+    "tags": [
+      "Discovery",
+      "active listening",
+      "cisza"
+    ],
+    "category": "discovery",
+    "id": "352d8c97-91e1-4d4f-b964-76d8b71993c6"
+  },
+  {
+    "trigger_context": "Mapowanie decyzji",
+    "golden_response": "Kto ma ostateczne słowo? Czy ten ktoś zna Tesle? Co byś mu musiał powiedzieć, aby zgodził się na tę inwestycję?",
+    "tags": [
+      "Discovery",
+      "decyzja",
+      "committee"
+    ],
+    "category": "discovery",
+    "id": "81d32a01-d988-4038-9576-9cacc631b912"
+  },
+  {
+    "trigger_context": "BANT budżet real",
+    "golden_response": "Ile wydajesz rocznie na paliwo, serwis, ubezpieczenie? Bo ta suma + rata kredytu = twój realny budżet.",
+    "tags": [
+      "BANT",
+      "budżet",
+      "real"
+    ],
+    "category": "discovery",
+    "id": "55d68f10-8860-47d4-bd06-b470ddeb553d"
+  },
+  {
+    "trigger_context": "BANT autorytet",
+    "golden_response": "Co dla Ciebie osobiście byłoby game-changerem w tym pojeździe?",
+    "tags": [
+      "BANT",
+      "autorytet",
+      "alignment"
+    ],
+    "category": "discovery",
+    "id": "9bc38542-276a-49ed-8b94-356d8ac9c0d9"
+  },
+  {
+    "trigger_context": "BANT potrzeba emocjonalna",
+    "golden_response": "Chcę czuć się innowatorem lub wspierać ekologię – co jest Twoją emocjonalną potrzebą?",
+    "tags": [
+      "BANT",
+      "potrzeba",
+      "emocjonalna"
+    ],
+    "category": "discovery",
+    "id": "3fc4b5c4-5194-4ef7-b210-8ac8e697bfcd"
+  },
+  {
+    "trigger_context": "BANT czas trigger",
+    "golden_response": "Co się zmieniło, że przychodzisz dzisiaj, a nie 3 miesiące temu?",
+    "tags": [
+      "BANT",
+      "czas",
+      "trigger"
+    ],
+    "category": "discovery",
+    "id": "8f798111-617b-4b97-a8fe-a771b6e4715b"
+  },
+  {
+    "trigger_context": "Temperatura klienta",
+    "golden_response": "Na podstawie Discovery: Hot (closing), Warm (education), Cold (awareness).",
+    "tags": [
+      "Qualification",
+      "temperatura",
+      "lead scoring"
+    ],
+    "category": "discovery",
+    "id": "e2197295-47ed-46d1-841a-6a5128d14ef0"
+  },
+  {
+    "trigger_context": "Pre-drive briefing",
+    "golden_response": "To nie test funkcji, to doświadczenie. Będę obserwować Twoją reakcję na 3 rzeczy: przyspieszenie, kręty, ciszę. Po jeździe – nie mówię nic. Ty mówisz, co się zmieniło w Twojej głowie.",
+    "tags": [
+      "Test Drive",
+      "briefing",
+      "framing"
+    ],
+    "category": "discovery",
+    "id": "0f6083b5-b90d-44ed-b275-e2f6f7645aae"
+  },
+  {
+    "trigger_context": "Trasa test drive 3 akty",
+    "golden_response": "Akt 1: Spokojne jeżdżenie. Akt 2: Full acceleration. Akt 3: Highway z autopilot.",
+    "tags": [
+      "Test Drive",
+      "trasa",
+      "akty"
+    ],
+    "category": "discovery",
+    "id": "7ca26f43-b0b0-41b2-ad3e-70ba5986f613"
+  },
+  {
+    "trigger_context": "Seat belt speech",
+    "golden_response": "Tesla ma najtwardszą strukturę na rynku. Ale nie chcę Cię straszyć bezpieczeństwem. Chcę, żebyś czuł się chroniony, żeby w następnych 30 minut mogłeś po prostu cieszyć się jazdą.",
+    "tags": [
+      "Test Drive",
+      "safety",
+      "emocja"
+    ],
+    "category": "discovery",
+    "id": "d834a0e1-a749-4cd2-8802-660d573af6c1"
+  },
+  {
+    "trigger_context": "Post-drive silence",
+    "golden_response": "[Milcz 30 sekund, potem: Co się zmieniło w Twojej głowie?]",
+    "tags": [
+      "Test Drive",
+      "silence",
+      "reakcja"
+    ],
+    "category": "discovery",
+    "id": "8055e8cd-773e-4dbb-a6c4-c4cb91acb71b"
+  },
+  {
+    "trigger_context": "Struktura SPIN",
+    "golden_response": "1. Situation: Opowiedz o swoim obecnym aucie. 2. Problem: Co Cię frustruje? 3. Implication: Jak to wpływa na codzienność? 4. Need-Payoff: Gdyby to zniknęło, co by się zmieniło?",
+    "tags": [
+      "Conversation",
+      "SPIN",
+      "Challenger"
+    ],
+    "category": "discovery",
+    "id": "021fdc6c-b101-4bc8-9d9b-c749f342cb64"
+  },
+  {
+    "trigger_context": "Closing conversation rezumacja",
+    "golden_response": "Ok, słuchałem, że X, Y, Z są ważne. Głównie zależy Ci na [Main Drive]. Zaproponuję: najpierw test drive, potem kalkulacja finansowa, potem – jeśli się zgadza – rezerwacja. Zgoda?",
+    "tags": [
+      "Conversation",
+      "rezumacja",
+      "next step"
+    ],
+    "category": "discovery",
+    "id": "19db390d-2e08-43d9-a611-0b60ec5fb472"
+  },
+  {
+    "trigger_context": "Feature-to-benefit mapping",
+    "golden_response": "Cecha: 400 V architektura. Korzyść: Szybsze ładowanie. Dostosowana: Dla Typu D – więcej czasu na biznes.",
+    "tags": [
+      "Feature-Benefit",
+      "mapping",
+      "DISC"
+    ],
+    "category": "wartosc",
+    "id": "5c8846b3-fa1a-4b35-8472-3313bf98d6ba"
+  },
+  {
+    "trigger_context": "Emocjonalizacja specyfikacji",
+    "golden_response": "Bateria 100 kWh to znaczy, że możesz obudzić się z pełnym bakiem energii każdego ranka, nigdy nie myśleć o stacji paliw, a za rok zaoszczędzić tyle, ile kosztuje nowy laptop.",
+    "tags": [
+      "Feature-Benefit",
+      "emocja",
+      "transformacja"
+    ],
+    "category": "wartosc",
+    "id": "2e4316c9-f475-4047-974d-d794eb203a81"
+  },
+  {
+    "trigger_context": "Inverse framing loss aversion",
+    "golden_response": "Większość aut ma chłodnicę. Każdego lata mogą Ci pęknąć. Tesla nie ma chłodnicy, czyli nie ma tego ryzyka. To oznacza mniej wizyt serwisowych i spokojniejsze lato z rodziną.",
+    "tags": [
+      "Feature-Benefit",
+      "loss aversion",
+      "ryzyko"
+    ],
+    "category": "wartosc",
+    "id": "20291da9-849a-47fd-baab-d804f718e330"
+  },
+  {
+    "trigger_context": "TCO reframing",
+    "golden_response": "Cena pojazdu to jedna liczba. Koszt = cena + paliwo + serwis + ubezpieczenie - ulgi. Tesla kosztuje mniej, mimo wyższej ceny.",
+    "tags": [
+      "TCO",
+      "reframing",
+      "psychologia"
+    ],
+    "category": "wartosc",
+    "id": "7eef83b9-ab8a-4b15-8347-2e4e938e9c38"
+  },
+  {
+    "trigger_context": "Kalkulator amortyzacji",
+    "golden_response": "Wydajesz 15k rocznie na stare auto. Tesla = 4k rocznie. Różnica = 11k/rok. W pięć lat to 55k oszczędności.",
+    "tags": [
+      "TCO",
+      "kalkulator",
+      "amortyzacja"
+    ],
+    "category": "wartosc",
+    "id": "db8d5d39-76e4-424d-a781-1baa1defa8ee"
+  },
+  {
+    "trigger_context": "Ulgi podatkowe",
+    "golden_response": "Po wszystkich ulgach – Twoja rzeczywista cena może być o 10-20% niższa.",
+    "tags": [
+      "TCO",
+      "ulgi",
+      "PL"
+    ],
+    "category": "wartosc",
+    "id": "99493edf-4409-49fc-ac70-d253ab4cb3ee"
+  },
+  {
+    "trigger_context": "Zmiana stylu życia",
+    "golden_response": "To zmienia Twoją rutynę każdego dnia. Budzisz się z pełnym bakiem, jedziesz bezpiecznie, przychodzisz rozrelaksowany.",
+    "tags": [
+      "Experience",
+      "lifestyle",
+      "reframe"
+    ],
+    "category": "wartosc",
+    "id": "ce3a0223-0958-4b7c-ad22-6ce188cbebcb"
+  },
+  {
+    "trigger_context": "Przynależność do community",
+    "golden_response": "Dołączasz do 1.5M właścicieli na świecie, którzy dzielą się sztuczkami. To jak Apple, ale na cztery kółka.",
+    "tags": [
+      "Experience",
+      "community",
+      "social proof"
+    ],
+    "category": "wartosc",
+    "id": "4b7becf8-d935-44d9-adf7-f7cfa634bb1f"
+  },
+  {
+    "trigger_context": "Autonomia przez software",
+    "golden_response": "Każdy miesiąc – nowe features przez update. Ty decydujesz, co zainstalować. To poczucie kontroli.",
+    "tags": [
+      "Experience",
+      "software",
+      "autonomia"
+    ],
+    "category": "wartosc",
+    "id": "fe103a72-c6d3-4a2d-bd3b-96501e4132fd"
+  },
+  {
+    "trigger_context": "Safety mózg miłości",
+    "golden_response": "Tesla ma 8 airbagów, aby chronić rodzinę. To miłość do bliskich, nie strach.",
+    "tags": [
+      "Safety",
+      "miłość",
+      "neuroscience"
+    ],
+    "category": "wartosc",
+    "id": "77c3eccf-091e-42da-bea2-f0da38b4fd68"
+  },
+  {
+    "trigger_context": "Bezpieczeństwo psychiczne",
+    "golden_response": "Autopilot = mniej zmęczenia. Zawsze naładowany = spokój o planach. Spokój w głowie – to najdroższa rzecz.",
+    "tags": [
+      "Safety",
+      "spokój",
+      "psychika"
+    ],
+    "category": "wartosc",
+    "id": "1f2b77b4-478c-4920-af24-99e13a9f65df"
+  },
+  {
+    "trigger_context": "Premium inwestycja",
+    "golden_response": "Tesla to premium – bo oszczędzisz na paliwie, serwisie, podatku, a zyskasz bezpieczeństwo i prestiż. To kalkulacja.",
+    "tags": [
+      "Premium",
+      "inwestycja",
+      "smart"
+    ],
+    "category": "wartosc",
+    "id": "b57044f2-a9e5-431d-b441-c4044d3702c5"
+  },
+  {
+    "trigger_context": "Smart choice przyszłość",
+    "golden_response": "W 10 lat większość aut będzie elektrycznych. Czy chcesz być częścią zmiany teraz?",
+    "tags": [
+      "Smart Choice",
+      "przyszłość",
+      "agency"
+    ],
+    "category": "wartosc",
+    "id": "fd38e233-f5e7-4323-864d-2e0710dc10bd"
+  },
+  {
+    "trigger_context": "Elevator pitch",
+    "golden_response": "Tesla to najchętniej kupowany samochód premium. Mniej kosztu, więcej czasu, spokoju, kontroli.",
+    "tags": [
+      "Value Prop",
+      "elevator",
+      "pitch"
+    ],
+    "category": "wartosc",
+    "id": "1b9cef64-977b-4630-94f3-9d400542c96b"
+  },
+  {
+    "trigger_context": "Competitive positioning",
+    "golden_response": "Tak, Audi jest tańsze – ale porównajmy baterię, sieć, updates. To porównanie wartości.",
+    "tags": [
+      "Competitive",
+      "redefiniuj",
+      "wartość"
+    ],
+    "category": "wartosc",
+    "id": "67cb3672-32c5-4a98-bb0a-233762a368d8"
+  },
+  {
+    "trigger_context": "TCO paliwo",
+    "golden_response": "Przeciętny właściciel benzynówki wydaje 12k rocznie na paliwo. Tesla: 2k. Różnica = 10k/rok.",
+    "tags": [
+      "TCO",
+      "paliwo",
+      "kalkulacja"
+    ],
+    "category": "wartosc",
+    "id": "ffc44934-8c9e-47c9-ba2b-34ed2d60297a"
+  },
+  {
+    "trigger_context": "TCO serwis",
+    "golden_response": "Tradycyjne auto: 3-5k rocznie. Tesla: ~500 zł. Oszczędność = 2.5-4.5k rocznie.",
+    "tags": [
+      "TCO",
+      "serwis",
+      "utrzymanie"
+    ],
+    "category": "wartosc",
+    "id": "7181d7e3-d824-401b-a98f-7c69abfd23dd"
+  },
+  {
+    "trigger_context": "TCO ubezpieczenie",
+    "golden_response": "OC dla Tesli: 2-4k PLN/rok. Tesla jest bezpieczna – ubezpieczyciele to wiedzą.",
+    "tags": [
+      "TCO",
+      "ubezpieczenie",
+      "EU"
+    ],
+    "category": "wartosc",
+    "id": "a4b7b6a7-4537-4fb6-a4f7-0331a03f0cc6"
+  },
+  {
+    "trigger_context": "TCO podatek",
+    "golden_response": "Pojazd elektryczny ma zerowy podatek rejestracyjny (~6k PLN oszczędności dla Model 3).",
+    "tags": [
+      "TCO",
+      "podatek",
+      "ulga"
+    ],
+    "category": "wartosc",
+    "id": "407385a1-d39c-4a20-a61c-9cbcccab4948"
+  },
+  {
+    "trigger_context": "TCO depresjacja",
+    "content": "Elektryki tracą na wartości szybciej, ale Tesla – mniej niż konkurenci. Po 5 latach: ~40% wartości pozostaje.",
+    "tags": [
+      "TCO",
+      "deprezjacja",
+      "wartość"
+    ],
+    "category": "wartosc",
+    "id": "7ad8fdaa-141e-4ee5-b023-cdb5f77d8017"
+  },
+  {
+    "trigger_context": "Experience value czas",
+    "golden_response": "Dziennie spędzasz 45 minut w samochodzie. Tesla zmienia to na relaks – kupujesz 273 godziny spokoju rocznie.",
+    "tags": [
+      "Experience Value",
+      "czas",
+      "spokój"
+    ],
+    "category": "wartosc",
+    "id": "681bc9f8-9d03-4f34-b4a5-58e2be70b3e3"
+  },
+  {
+    "trigger_context": "Experience value bezpieczeństwo",
+    "golden_response": "Autopilot redukuje stres – to inwestycja zdrowotna. Spokój = zdrowsze serce.",
+    "tags": [
+      "Experience Value",
+      "bezpieczeństwo",
+      "zdrowie"
+    ],
+    "category": "wartosc",
+    "id": "33cc041c-0316-48d1-a286-3ff523f9c8f1"
+  },
+  {
+    "trigger_context": "Experience value status",
+    "golden_response": "Właściciel Tesli to 'forward-thinking'. Kupujesz wersję siebie.",
+    "tags": [
+      "Experience Value",
+      "status",
+      "tożsamość"
+    ],
+    "category": "wartosc",
+    "id": "e806fb7f-84e5-4b45-aaab-2c9674f42b42"
+  },
+  {
+    "trigger_context": "Experience value reputacja",
+    "golden_response": "Ludzie zwracają uwagę. To soft power – masz opowieść.",
+    "tags": [
+      "Experience Value",
+      "reputacja",
+      "soft power"
+    ],
+    "category": "wartosc",
+    "id": "585fdcc5-4168-43a5-a4c2-5e80d1f496ed"
+  },
+  {
+    "trigger_context": "Preemptive cena",
+    "golden_response": "Cena jest wyższa. Ale czy to droga inwestycja czy tania pułapka?",
+    "tags": [
+      "Preemptive",
+      "cena",
+      "inwestycja"
+    ],
+    "category": "wartosc",
+    "id": "9ccca44d-120b-40eb-b787-23d525634eda"
+  },
+  {
+    "trigger_context": "Preemptive bateria",
+    "golden_response": "Bateria traci 1-2% rocznie. Gwarantujemy 70% na 8 lat.",
+    "tags": [
+      "Preemptive",
+      "bateria",
+      "degradacja"
+    ],
+    "category": "wartosc",
+    "id": "5a33ea79-a34a-4b71-968d-942394d3adf5"
+  },
+  {
+    "trigger_context": "Preemptive sieć",
+    "golden_response": "Europa ma ~400k+ stacji. Tesla – 2,500 Supercharger'ów. Ładowanie bliżej niż tankowanie.",
+    "tags": [
+      "Preemptive",
+      "sieć",
+      "ładowanie"
+    ],
+    "category": "wartosc",
+    "id": "9b8f3660-1b87-41e5-b9d7-f7c3f06527ac"
+  },
+  {
+    "trigger_context": "Pricing anchor premium",
+    "golden_response": "Tesla Model 3 kosztuje jak Audi A4. Ale Audi nie ma Autopilot ani Supercharger'ów.",
+    "tags": [
+      "Pricing",
+      "anchor",
+      "premium"
+    ],
+    "category": "wartosc",
+    "id": "5d1ebefe-0cc6-4245-a3a8-6a57faee79f9"
+  },
+  {
+    "trigger_context": "Pricing decoy effect",
+    "golden_response": "Model 3 Standard (185k), LR (210k), Performance (230k). Który wariant?",
+    "tags": [
+      "Pricing",
+      "decoy",
+      "efekt"
+    ],
+    "category": "wartosc",
+    "id": "8f4b075c-de4a-4feb-bf7e-ccdbd292e062"
+  },
+  {
+    "trigger_context": "Pricing payment framing",
+    "golden_response": "Rata 4,500 PLN miesięcznie przez 60 miesięcy. To mniej niż apartament w centrum.",
+    "tags": [
+      "Pricing",
+      "rata",
+      "framing"
+    ],
+    "category": "wartosc",
+    "id": "e57df8c5-c7c8-4fc2-93d6-4399d5d986b4"
+  },
+  {
+    "trigger_context": "Pricing trade-in",
+    "golden_response": "Twoje Audi ma wartość 60k. Różnica to nie 250k, ale 190k.",
+    "tags": [
+      "Pricing",
+      "trade-in",
+      "wartość"
+    ],
+    "category": "wartosc",
+    "id": "5ce5c600-8d7c-4ebb-8a88-b5b1b6fc7a4d"
+  },
+  {
+    "trigger_context": "Benefit stacking warstwy",
+    "golden_response": "Tesla dobra dla Ciebie (oszczędności), rodziny (bezpieczeństwo), planety (zero CO2).",
+    "tags": [
+      "Benefit Stacking",
+      "warstwy",
+      "appeal"
+    ],
+    "category": "wartosc",
+    "id": "32061d91-08c6-4141-83bf-e5f9940c0d74"
+  },
+  {
+    "trigger_context": "Benefit stacking temporal",
+    "golden_response": "Dzisiaj kupisz, za miesiąc zaoszczędzisz na paliwie, za 5 lat bateria minimalnie zdeprecjonuje.",
+    "tags": [
+      "Benefit Stacking",
+      "temporal",
+      "trajektoria"
+    ],
+    "category": "wartosc",
+    "id": "9ecef7c3-a2a0-44af-9a8e-bd08c9796e04"
+  },
+  {
+    "trigger_context": "Emotional wybudzenie",
+    "golden_response": "Test Tesli to przebudzenie. Nagle rozumiesz, dlaczego świat idzie w elektryki.",
+    "tags": [
+      "Emotional Value",
+      "wybudzenie",
+      "transformacja"
+    ],
+    "category": "wartosc",
+    "id": "15e89cb3-58e1-42fb-bc2b-5c9c9c34eae3"
+  },
+  {
+    "trigger_context": "Emotional wyzwolenie",
+    "golden_response": "Tesla eliminuje stres o baku. Co byś robił z tą mentalną przestrzenią?",
+    "tags": [
+      "Emotional Value",
+      "wyzwolenie",
+      "emancypacja"
+    ],
+    "category": "wartosc",
+    "id": "865b4d87-aaf5-4924-8e78-ef1a5641cba1"
+  },
+  {
+    "trigger_context": "Emotional kontrola",
+    "golden_response": "Software aktualizuje się w nocy. Ty kontrolujesz zmiany – to powrót agencji.",
+    "tags": [
+      "Emotional Value",
+      "kontrola",
+      "agencja"
+    ],
+    "category": "wartosc",
+    "id": "1be425c7-9daa-4e2f-aa21-31addf6b85ab"
+  },
+  {
+    "trigger_context": "Emotional przynależność",
+    "golden_response": "Właściciele Tesli to tech-savvy wspólnota. Ile warte poczucie przynależności?",
+    "tags": [
+      "Emotional Value",
+      "przynależność",
+      "społeczna"
+    ],
+    "category": "wartosc",
+    "id": "24eea9bb-a927-4261-babb-5a4ff527cae1"
+  },
+  {
+    "trigger_context": "Comparative model vs future",
+    "golden_response": "Wybierasz między przeszłością (BMW tradycja) a przyszłością (Tesla innowacja). Która warta 10 lat jazdy?",
+    "tags": [
+      "Comparative",
+      "model",
+      "przyszłość"
+    ],
+    "category": "wartosc",
+    "id": "9aec7bb3-1aee-478c-86c2-0c6e909df7cf"
+  },
+  {
+    "trigger_context": "Comparative luksus",
+    "golden_response": "Luksus dziś = bezpieczeństwo, software. Tesla ma Autopilot, nie drewniany panel.",
+    "tags": [
+      "Comparative",
+      "luksus",
+      "nowoczesny"
+    ],
+    "category": "wartosc",
+    "id": "db744dfc-4174-445f-8d42-859f5d534927"
+  },
+  {
+    "trigger_context": "Comparative inwestycja",
+    "golden_response": "Stare auto tracisz 15% rocznie – konsumpcja. Tesla + oszczędności – inwestycja.",
+    "tags": [
+      "Comparative",
+      "inwestycja",
+      "konsumpcja"
+    ],
+    "category": "wartosc",
+    "id": "0714e136-3f13-4355-a2ca-c6ef6ebae78a"
+  },
+  {
+    "trigger_context": "Benefit Typ D",
+    "golden_response": "Tesla to upgrade dla biznesu. Zero czasu na paliwo = więcej na transakcje.",
+    "tags": [
+      "Segmentacja",
+      "Typ D",
+      "efektywność"
+    ],
+    "category": "wartosc",
+    "id": "68f4fe3a-20f5-4bf7-91b5-5f0ce8ccc695"
+  },
+  {
+    "trigger_context": "Benefit Typ I",
+    "golden_response": "Jeżdżąc Teslą, ludzie zwracają uwagę. Dołączasz do społeczności innowatorów.",
+    "tags": [
+      "Segmentacja",
+      "Typ I",
+      "status"
+    ],
+    "category": "wartosc",
+    "id": "b7716f1a-6467-49a3-aa87-738f4e7ab9ff"
+  },
+  {
+    "trigger_context": "Benefit Typ S",
+    "golden_response": "Tesla gwarantuje baterię 8 lat, sieć nigdy nie zawiedzie. Zero awaryjności.",
+    "tags": [
+      "Segmentacja",
+      "Typ S",
+      "spokój"
+    ],
+    "category": "wartosc",
+    "id": "1904e469-aefc-4331-85da-d1c617228cce"
+  },
+  {
+    "trigger_context": "Benefit Typ C",
+    "golden_response": "Dostęp do każdej metryki: zasięg, zużycie, stats. Najlepsza telemetria w branży.",
+    "tags": [
+      "Segmentacja",
+      "Typ C",
+      "dane"
+    ],
+    "category": "wartosc",
+    "id": "b162630d-dddf-4a13-a918-485dfb68117d"
+  },
+  {
+    "trigger_context": "Reframing wysoka cena",
+    "golden_response": "Wysoka cena = sygnał jakości. Jak Rolex – gwarantuje prestiż i testy.",
+    "tags": [
+      "Reframing",
+      "cena",
+      "halo"
+    ],
+    "category": "wartosc",
+    "id": "d035e4f4-0f6a-43df-9c0c-cf4e45392719"
+  },
+  {
+    "trigger_context": "Reframing zapłać więcej",
+    "golden_response": "Zapłacisz więcej dziś, zaoszczędzisz 50k w pięć lat. Pojazd sam się spłaci.",
+    "tags": [
+      "Reframing",
+      "zapłać",
+      "zaoszczędź"
+    ],
+    "category": "wartosc",
+    "id": "66be9217-7685-4546-b6ab-4b0cca96f87a"
+  },
+  {
+    "trigger_context": "Reframing luksus rzeczywistość",
+    "golden_response": "Tesla to rzeczywistość przyszłości. Za 10 lat każdy będzie jeździć elektrykiem.",
+    "tags": [
+      "Reframing",
+      "luksus",
+      "rzeczywistość"
+    ],
+    "category": "wartosc",
+    "id": "1862368b-c28e-40d0-b90e-a3b395d1b5c9"
+  },
+  {
+    "trigger_context": "Anchor informuję",
+    "golden_response": "Ja nie sprzedaję. Ja informuję. Jeśli to nie dla Ciebie – pomogę znaleźć coś innego.",
+    "tags": [
+      "Anchor",
+      "informuję",
+      "relacja"
+    ],
+    "category": "wartosc",
+    "id": "343cb908-412d-4fd6-b059-09bdd5f84000"
+  },
+  {
+    "trigger_context": "Anchor decydujesz",
+    "golden_response": "Pokażę opcje – Standard, Long Range. Decyzja zawsze Twoja.",
+    "tags": [
+      "Anchor",
+      "decydujesz",
+      "opcje"
+    ],
+    "category": "wartosc",
+    "id": "526ffc20-1423-44bf-8ec5-3adfcc5e237e"
+  },
+  {
+    "trigger_context": "Anchor pytania",
+    "golden_response": "Słyszałem każde pytanie. Pytaj śmiało – odpowiadam szczerze.",
+    "tags": [
+      "Anchor",
+      "pytania",
+      "safety"
+    ],
+    "category": "wartosc",
+    "id": "445c7773-53fd-4e7c-a8ee-6a1dd068eca0"
+  },
+  {
+    "trigger_context": "Soft close assumptive",
+    "golden_response": "Ok, przygotujmy rezerwację. Jaki kolor – perłowy czy metaliczny?",
+    "tags": [
+      "Soft Close",
+      "assumptive",
+      "progres"
+    ],
+    "category": "zamykanie",
+    "id": "56e832e1-54e8-4027-a49b-bd1fe4cfd5df"
+  },
+  {
+    "trigger_context": "Soft close trial",
+    "golden_response": "Gdyby wszystko było ok – czy zawarłbyś w tym miesiącu?",
+    "tags": [
+      "Soft Close",
+      "trial",
+      "temperatura"
+    ],
+    "category": "zamykanie",
+    "id": "afd597b2-e10c-43d9-86ea-90bbabf2a569"
+  },
+  {
+    "trigger_context": "Soft close alternative",
+    "golden_response": "Wolisz leasing (niskie raty) czy kredyt (auto Twoje)?",
+    "tags": [
+      "Soft Close",
+      "alternative",
+      "wybór"
+    ],
+    "category": "zamykanie",
+    "id": "3b4bcb4c-528a-464c-adcf-e6b92d6a3d9a"
+  },
+  {
+    "trigger_context": "Soft close compliance",
+    "golden_response": "Zgodzisz się, że wstępna kalkulacja TCO byłaby pomocna?",
+    "tags": [
+      "Soft Close",
+      "compliance",
+      "zgody"
+    ],
+    "category": "zamykanie",
+    "id": "46fa9246-2828-44cb-bc4b-cbab7c26c42c"
+  },
+  {
+    "trigger_context": "Soft close takeaway",
+    "golden_response": "Ok, wrócimy za 3 miesiące. Zarejestruję Cię w systemie na nowości.",
+    "tags": [
+      "Soft Close",
+      "takeaway",
+      "reactance"
+    ],
+    "category": "zamykanie",
+    "id": "7fc3a7c1-1e89-4e16-83ec-2761da7833ef"
+  },
+  {
+    "trigger_context": "Next step SMART",
+    "golden_response": "Plan: Jutro kalkulacja leasingu do 14. Ty dzwonisz w czwartek. Zgoda?",
+    "tags": [
+      "Next Step",
+      "SMART",
+      "commitment"
+    ],
+    "category": "zamykanie",
+    "id": "3657e1f5-fb0c-48b1-8402-476be735e4a4"
+  },
+  {
+    "trigger_context": "Next step owned action",
+    "golden_response": "Ja wyślę info, Ty zadzwonisz po przejrzeniu. Zgoda?",
+    "tags": [
+      "Next Step",
+      "owned",
+      "action"
+    ],
+    "category": "zamykanie",
+    "id": "6cc46531-5f65-46d1-927c-18f6e162940b"
+  },
+  {
+    "trigger_context": "Next step appointment",
+    "golden_response": "Slots: wtorek 14:00, środa 11:00. Który pasuje?",
+    "tags": [
+      "Next Step",
+      "appointment",
+      "kalendarz"
+    ],
+    "category": "zamykanie",
+    "id": "422ed623-0f18-492b-8a7b-4b5718615e2f"
+  },
+  {
+    "trigger_context": "Next step protocol",
+    "golden_response": "Wyślę mail do poniedziałku. Wolisz SMS czy WhatsApp do potwierdzenia?",
+    "tags": [
+      "Next Step",
+      "protocol",
+      "kanał"
+    ],
+    "category": "zamykanie",
+    "id": "c879357c-b9f2-4197-953d-9ac3f625e4ef"
+  },
+  {
+    "trigger_context": "Final objection pomyślę",
+    "golden_response": "Jasne. Co dokładnie chcesz przemyśleć? Cena, funkcje czy logistyka?",
+    "tags": [
+      "Objection",
+      "pomyślę",
+      "unpacking"
+    ],
+    "category": "zamykanie",
+    "id": "f159725b-95dd-405b-b3c5-5aeb7188fcd7"
+  },
+  {
+    "trigger_context": "Final objection drogo",
+    "golden_response": "Czy stać Cię za 3-6 miesięcy? Zarezerwuj teraz, płacisz później.",
+    "tags": [
+      "Objection",
+      "drogo",
+      "timeline"
+    ],
+    "category": "zamykanie",
+    "id": "091e00d0-fbca-4269-87c1-5524f9d55d83"
+  },
+  {
+    "trigger_context": "Final objection partner",
+    "golden_response": "Ile czasu na rozmowę? Zadzwonimy razem w czwartek o 19:00?",
+    "tags": [
+      "Objection",
+      "partner",
+      "joint"
+    ],
+    "category": "zamykanie",
+    "id": "1864d7e2-c742-493e-8fd0-2c38e54b1df1"
+  },
+  {
+    "trigger_context": "Final objection nowy model",
+    "golden_response": "Nowy model co 18-24 miesiące. Kup dziś, sprzedaj za rok – to strategia testowania.",
+    "tags": [
+      "Objection",
+      "nowy model",
+      "cykl"
+    ],
+    "category": "zamykanie",
+    "id": "33634e75-8951-43a8-93db-f40aa56bff17"
+  },
+  {
+    "trigger_context": "Follow-up timing",
+    "golden_response": "Dzięki za dziś! Jakie pierwsze wrażenia? [W 2h po wizycie].",
+    "tags": [
+      "Follow-Up",
+      "timing",
+      "24h"
+    ],
+    "category": "zamykanie",
+    "id": "78abd77b-c5f0-4455-b6be-9f9dd8d57b50"
+  },
+  {
+    "trigger_context": "Follow-up emocjonalna recenzja",
+    "golden_response": "Wiem, że test drive budzi emocje. Co było najjaśniejszym momentem?",
+    "tags": [
+      "Follow-Up",
+      "emocja",
+      "recenzja"
+    ],
+    "category": "zamykanie",
+    "id": "46767d98-276f-4c9a-9a2f-fc2b62d130e3"
+  },
+  {
+    "trigger_context": "Otwórz z NaszEauto",
+    "golden_response": "Polska inwestuje w elektromobilność – ty jesteś częścią tej transformacji, a my cię wspieramy finansowo.",
+    "tags": [
+      "Autorytet",
+      "Dowód społeczny",
+      "Bezpieczny wybór",
+      "Program rządowy"
+    ],
+    "category": "lokalne",
+    "id": "4a26ffd9-b946-47d9-b571-e6487215cbf5"
+  },
+  {
+    "trigger_context": "Diagnostyka finansowa",
+    "golden_response": "Czy rozważacie sfinansowanie przez tradycyjny kredyt, leasing czy gotówkę?",
+    "tags": [
+      "Diagn. finansowa",
+      "Kwalifikacja",
+      "Leasing",
+      "Model 3",
+      "Efekt TCO"
+    ],
+    "category": "lokalne",
+    "id": "756475fe-b5fb-478d-b97e-ded5d8cf9b33"
+  },
+  {
+    "trigger_context": "TCO builder",
+    "golden_response": "Wiem, że cena wydaje się wysoka. Pozwól, że pokażę realny koszt w przeliczeniu na 5 lat.",
+    "tags": [
+      "TCO",
+      "Kalkulator",
+      "Oszczędności",
+      "Paliwo",
+      "Serwis"
+    ],
+    "category": "lokalne",
+    "id": "ce643749-8c87-4c14-8a64-48ade9aa421b"
+  },
+  {
+    "trigger_context": "Ulga podatkowa",
+    "golden_response": "Nie tylko kupujesz pojazd – inwestujesz w oszczędności i status ekologiczny.",
+    "tags": [
+      "Ulga podatkowa",
+      "Emisja zero",
+      "Opłaty drogowe",
+      "Status ekologiczny"
+    ],
+    "category": "lokalne",
+    "id": "50c81c1d-f7b8-4bd6-93ad-e96e05dedece"
+  },
+  {
+    "trigger_context": "Leasing PLN",
+    "golden_response": "Czy dla ciebie ważna jest całkowita przewidywalność miesięcznych kosztów?",
+    "tags": [
+      "Leasing",
+      "Przewidywalność",
+      "Rata",
+      "Brak kosztów ukrytych"
+    ],
+    "category": "lokalne",
+    "id": "15328556-684e-44cb-9d8a-b3e33b2324bc"
+  },
+  {
+    "trigger_context": "Złomowanie premia",
+    "golden_response": "Zastąp spalinowy czyszczką – i zaoszczędź szybciej.",
+    "tags": [
+      "Złomowanie",
+      "Dodatkowa premia",
+      "Sunk cost",
+      "Motywacja"
+    ],
+    "category": "lokalne",
+    "id": "c5f19b1b-2947-48c6-8f0b-c0e1ac42281a"
+  },
+  {
+    "trigger_context": "Dochód segmentacja",
+    "golden_response": "Jaki jest orientacyjny roczny dochód w waszym gospodarstwie?",
+    "tags": [
+      "Segmentacja dochodu",
+      "Niska cena wejścia",
+      "SPIN diagnostic"
+    ],
+    "category": "lokalne",
+    "id": "c764050c-11b1-4f24-8f2a-582317b5be8c"
+  },
+  {
+    "trigger_context": "Karta dużej rodziny",
+    "golden_response": "Tesla Model Y to bezpieczne, rodzinne auto – i rząd to premiuje. Bo EV = bezpieczeństwo dla rodziny.",
+    "tags": [
+      "Duża rodzina",
+      "Rodzinne bezpieczeństwo",
+      "Autopilot",
+      "Premium segment"
+    ],
+    "category": "lokalne",
+    "id": "755b8670-835a-4571-a0a9-d2ac605dc2e9"
+  },
+  {
+    "trigger_context": "Model 3 vs Y",
+    "golden_response": "Model 3 to opcja dla świadomych kosztów; Model Y dla rodzin. Oba kwalifikują się do wsparcia.",
+    "tags": [
+      "Model 3",
+      "Model Y",
+      "Cena",
+      "Kwalifikacja",
+      "Segment"
+    ],
+    "category": "lokalne",
+    "id": "bc011d7b-5662-4a9c-9605-c20a26c7d0c8"
+  },
+  {
+    "trigger_context": "Przed rejestracją compliance",
+    "golden_response": "To oznacza: najpierw kupujesz, potem dostajesz wsparcie. Średni czas 30-60 dni.",
+    "tags": [
+      "Compliance",
+      "Rejestracja",
+      "Dokumentation",
+      "Timing"
+    ],
+    "category": "lokalne",
+    "id": "c679db41-756a-47fc-ace2-2f83cc0f3adc"
+  },
+  {
+    "trigger_context": "Porównanie Model 3 vs Audi",
+    "golden_response": "Cena podobna; całkowity koszt życia zdecydowanie na korzyść Tesli. To logika matematyczna.",
+    "tags": [
+      "Porównanie",
+      "Audi A4",
+      "TCO",
+      "Logika",
+      "Kalkulator"
+    ],
+    "category": "lokalne",
+    "id": "c42ac6de-4772-4de5-bbaa-208c65e8f28f"
+  },
+  {
+    "trigger_context": "JDG biznes",
+    "golden_response": "Jeśli prowadzisz firmę, Tesla może być aktywem biznesowym z ulgami podatkowymi.",
+    "tags": [
+      "JDG",
+      "Koszt działalności",
+      "Amortyzacja",
+      "Biznes"
+    ],
+    "category": "lokalne",
+    "id": "bf33784e-7e73-42e9-a12d-b75454daddc7"
+  },
+  {
+    "trigger_context": "Cena maksymalna",
+    "golden_response": "Jeśli chcesz pełną dotację – limitujemy się do 225k PLN netto.",
+    "tags": [
+      "Cena maksymalna",
+      "Limit",
+      "Kwalifikacja",
+      "Model Performance"
+    ],
+    "category": "lokalne",
+    "id": "2f20a2e4-a7bd-435c-a6a4-960730cbdd61"
+  },
+  {
+    "trigger_context": "Ubezpieczenie OC",
+    "golden_response": "Tesla jest bezpieczna – ubezpieczyciele to wiedzą, dlatego składka kompetytywna.",
+    "tags": [
+      "Ubezpieczenie",
+      "OC",
+      "AC",
+      "Bezpieczeństwo"
+    ],
+    "category": "lokalne",
+    "id": "e3f48e66-451e-4ac6-aba6-5dc79aa5c4f0"
+  },
+  {
+    "trigger_context": "Rejestracja procedura",
+    "golden_response": "Cały proces zajmuje ~7-14 dni. Na koniec – dotacja wpada na konto.",
+    "tags": [
+      "Rejestracja",
+      "Procedura",
+      "CEP",
+      "Post-sale"
+    ],
+    "category": "lokalne",
+    "id": "a0b5e75f-001f-4dbc-af65-57ccbdc4f149"
+  },
+  {
+    "trigger_context": "Dotacja rabat",
+    "golden_response": "Jeśli mamy promocję cashback 5k PLN, dodatkowo dostajesz dotację. To się łączy.",
+    "tags": [
+      "Dotacja",
+      "Rabat",
+      "Promocja",
+      "Niezależność",
+      "Stacking"
+    ],
+    "category": "lokalne",
+    "id": "2c313613-23e1-452c-92cd-e22b9d21b725"
+  },
+  {
+    "trigger_context": "Wnioski limity",
+    "golden_response": "Warto pospieszyć – zwłaszcza w Q4. Budżet ograniczony.",
+    "tags": [
+      "Limity",
+      "Budżet",
+      "Kolejka",
+      "Urgencja"
+    ],
+    "category": "lokalne",
+    "id": "da28aeba-1e82-4e90-b220-51b981eafd6f"
+  },
+  {
+    "trigger_context": "Generator wniosków",
+    "golden_response": "Pokażę ci platform, gdzie w 15 minut podpiszesz wniosek – załączniki gotowe.",
+    "tags": [
+      "Generator wniosków",
+      "Online",
+      "Platform",
+      "Cyfrowy"
+    ],
+    "category": "lokalne",
+    "id": "29605ecd-b828-4d62-876b-308fa5f2d483"
+  },
+  {
+    "trigger_context": "Leasing vs kupno",
+    "golden_response": "Co lepiej pasuje – kupno czy leasing na 3-5 lat?",
+    "tags": [
+      "Leasing",
+      "Kupno",
+      "Segmentacja",
+      "Strategia finansowa"
+    ],
+    "category": "lokalne",
+    "id": "3c9553fc-7bec-467e-9ceb-df6ea329d98d"
+  },
+  {
+    "trigger_context": "Podsumowanie kat 6",
+    "golden_response": "Polska już zainwestowała w twoją przyszłość – zostało ci tylko ją zaakceptować.",
+    "tags": [
+      "Tri-pronged",
+      "Autorytet",
+      "TCO",
+      "Akcja"
+    ],
+    "category": "lokalne",
+    "id": "d033418d-9a4e-41ad-8e81-b57728565c5e"
+  },
+  {
+    "trigger_context": "Obiekcja zima zasięg",
+    "golden_response": "Dokładnie – i to jest zaprojektowane. Model 3 LR zimą ~350-400 km. Ile km dziennie jeździsz?",
+    "tags": [
+      "Obiekcja zima",
+      "Zasięg",
+      "WLTP",
+      "Reframe",
+      "Rzeczywistość"
+    ],
+    "category": "obiekcje",
+    "id": "78d0e164-7646-48b9-995a-4a0c6b4d9d06"
+  },
+  {
+    "trigger_context": "Pompa ciepła",
+    "golden_response": "System inteligentnie zarządza ciepłem – nie marnuje energii. Jak radiator domowy.",
+    "tags": [
+      "Pompa ciepła",
+      "Technologia",
+      "Efektywność",
+      "System inteligentny"
+    ],
+    "category": "obiekcje",
+    "id": "496bded8-95f3-4e4b-be73-d1f75e8b8b8b"
+  },
+  {
+    "trigger_context": "Zimowy test NAF",
+    "golden_response": "Tesla traci 24%, ale jechała 531 km – najdalej absolutnie.",
+    "tags": [
+      "Test zimowy",
+      "NAF",
+      "Konkurencja",
+      "Zasięg bezwzględny"
+    ],
+    "category": "obiekcje",
+    "id": "ee8c5ae3-4bd4-4b19-9666-045e8bd52eee"
+  },
+  {
+    "trigger_context": "Mróz normalizacja",
+    "golden_response": "W Polsce -2 do 0°C. W Norwegii -15°C to bestseller. Tu to standard.",
+    "tags": [
+      "Psychologia zima",
+      "Normalizacja",
+      "Norwegia",
+      "Porównanie globalne"
+    ],
+    "category": "obiekcje",
+    "id": "3d32ee13-4b07-4a97-8cac-6e5c6f3c762d"
+  },
+  {
+    "trigger_context": "Zmiana nawyków ładowanie",
+    "golden_response": "Dla 99% podróży: ładuj w domu/pracy. Aplikacja zaplanuje resztę.",
+    "tags": [
+      "Nawyki użytkownika",
+      "Planowanie",
+      "Autopilot",
+      "Logistyka"
+    ],
+    "category": "obiekcje",
+    "id": "ddc68e5d-88f7-4739-8e64-6720c0707839"
+  },
+  {
+    "trigger_context": "Sieć ładowarek",
+    "golden_response": "10k punktów w PL. 80% Polaków w gęstym pasie – infrastruktura tam gęsta.",
+    "tags": [
+      "Infrastruktura",
+      "ORLEN Charge",
+      "Huby",
+      "Dystrybucja",
+      "Trasy główne"
+    ],
+    "category": "obiekcje",
+    "id": "6b86142b-311e-4277-b06d-f43760d00684"
+  },
+  {
+    "trigger_context": "Supercharger ekskluzywna",
+    "golden_response": "Doładujesz do 80% w 15-20 min – inne stoją 30-45 min.",
+    "tags": [
+      "Supercharger",
+      "Eksklusywna sieć",
+      "Moc",
+      "Prędkość ładowania"
+    ],
+    "category": "obiekcje",
+    "id": "b0ba4009-7982-49ed-b3a5-7edfedaf560a"
+  },
+  {
+    "trigger_context": "Greenvolt GreenWay",
+    "golden_response": "Masz wybór sieci – ekosystem się buduje.",
+    "tags": [
+      "Greenvolt",
+      "GreenWay",
+      "Sieci alternatywne",
+      "Konkurencja"
+    ],
+    "category": "obiekcje",
+    "id": "99ded83a-d935-48ea-b329-5d0c6de48939"
+  },
+  {
+    "trigger_context": "Ładowanie domowe",
+    "golden_response": "80% w domu przez noc. ~7 PLN za 100 km – jak gaz domowy.",
+    "tags": [
+      "Ładowanie domowe",
+      "80%",
+      "Koszt",
+      "Wygoda",
+      "Analogia gaz"
+    ],
+    "category": "obiekcje",
+    "id": "36d4775c-9dab-4e2a-ae4f-6c10d099f219"
+  },
+  {
+    "trigger_context": "Biedronka ładowarka",
+    "golden_response": "Gdy robisz zakupy – ładujesz. To bypassowanie czasu.",
+    "tags": [
+      "Ubikwitarność",
+      "Hipermarkety",
+      "AC",
+      "Banalizacja"
+    ],
+    "category": "obiekcje",
+    "id": "d56aa487-edfc-454d-8df3-5a99e721a28c"
+  },
+  {
+    "trigger_context": "Ładowanie trasy",
+    "golden_response": "Warszawa-Kraków = 1 przerwa 20 min. Jedz kawę jak VIP.",
+    "tags": [
+      "Trasa",
+      "Relaks",
+      "Ładowanie",
+      "Reframe psychologiczny"
+    ],
+    "category": "obiekcje",
+    "id": "be4edb0d-ee1a-4af9-993e-fbe4843bcc17"
+  },
+  {
+    "trigger_context": "Infrastruktura rośnie",
+    "golden_response": "2027: ~15 000+. Inwestujesz w pojazd podłączony wszędzie.",
+    "tags": [
+      "Trend wzrostu",
+      "2027",
+      "Przyszłość",
+      "Inwestycja perspektywiczna"
+    ],
+    "category": "obiekcje",
+    "id": "dbf34a82-e9ee-408a-9864-89d6dd0c7e53"
+  },
+  {
+    "trigger_context": "Mit bateria zima",
+    "golden_response": "Bateria żyje 500 000+ km. Zima to normalny cykl – system się broni.",
+    "tags": [
+      "Mit baterii",
+      "Termoregulacja",
+      "500k km",
+      "Autorytet techniczny"
+    ],
+    "category": "obiekcje",
+    "id": "d64a3a00-efca-4cc5-886b-4b1a17206a85"
+  },
+  {
+    "trigger_context": "Drogi serwis EV",
+    "golden_response": "Serwis Tesli 800-1200 PLN/rok vs. spalinowy 2500-3500. Hamulce trwają 400 000 km.",
+    "tags": [
+      "Serwis",
+      "Koszty",
+      "Rekuperacja",
+      "Porównanie spalinowy"
+    ],
+    "category": "obiekcje",
+    "id": "779a77c6-5eae-420e-bf51-2fec98cb6935"
+  },
+  {
+    "trigger_context": "Dacia Spring tańsza",
+    "golden_response": "Spring = 305 km, 9,8 s. Model 3 = 438 km, 5,8 s, Autopilot. Za +135k dostajesz wartość.",
+    "tags": [
+      "Dacia Spring",
+      "Konkurencja",
+      "Wartość vs. cena",
+      "Edukacja"
+    ],
+    "category": "obiekcje",
+    "id": "fca44e41-354e-47ff-a69e-42d0773ed45e"
+  },
+  {
+    "trigger_context": "BYD tańszy",
+    "golden_response": "Cena podobna. Różnica: ekosystem Tesla vs. tylko pojazd BYD.",
+    "tags": [
+      "BYD",
+      "Chiński",
+      "Ekosystem",
+      "Inwestycja",
+      "Perspektywa"
+    ],
+    "category": "obiekcje",
+    "id": "df6706b2-c933-45c6-8c97-774b3209e118"
+  },
+  {
+    "trigger_context": "Snowboard na dachu",
+    "golden_response": "Dach 75 kg. Kajaki obniżą zasięg 10-15%, ale planuj Supercharger.",
+    "tags": [
+      "Akcesoria",
+      "Luggage",
+      "Opór",
+      "Planowanie",
+      "Adaptacja"
+    ],
+    "category": "obiekcje",
+    "id": "775696d2-878c-4eef-bb5b-2cbe91865452"
+  },
+  {
+    "trigger_context": "Prąd droższy",
+    "golden_response": "Nawet +30% w 5 lat – wciąż 2x tańszy niż paliwo. Matematyka.",
+    "tags": [
+      "Koszt prądu",
+      "Prognoza",
+      "Matematyka",
+      "Locus kontroli"
+    ],
+    "category": "obiekcje",
+    "id": "a117a704-372c-426a-894a-1730013c17eb"
+  },
+  {
+    "trigger_context": "Bezduszna technologia",
+    "golden_response": "Autopilot asystuje – 10x mniej wypadków. Twoje oczy + AI = bezpieczeństwo.",
+    "tags": [
+      "Autopilot",
+      "Bezpieczeństwo",
+      "Emocja",
+      "Technofobia",
+      "Reframe"
+    ],
+    "category": "obiekcje",
+    "id": "c2bc0b34-0d50-4b2f-9d97-928be650671e"
+  },
+  {
+    "trigger_context": "Podsumowanie obiekcje",
+    "golden_response": "Polskie warunki przetestowane – nie pionier, pragmatyk.",
+    "tags": [
+      "Zimowy zasięg",
+      "Infrastruktura",
+      "Koszt",
+      "Pragmatyzm",
+      "Finalizacja"
+    ],
+    "category": "obiekcje",
+    "id": "77a00f9e-a37a-4622-9759-115fd2cc57c2"
+  },
+  {
+    "trigger_context": "Case study rodzina",
+    "golden_response": "Rodzina z Warszawy: Model Y po dotacji ~195k, koszty 7300 PLN/6 miesięcy vs. 14k spalinowy.",
+    "tags": [
+      "Case study",
+      "Warszawa",
+      "Model Y",
+      "TCO",
+      "Rekomendacja"
+    ],
+    "category": "case_studies",
+    "id": "a9343cfc-8898-4ca8-bc82-fb7ce2f5ad52"
+  },
+  {
+    "trigger_context": "Case study JDG",
+    "golden_response": "JDG: Model 3 kosztuje realnie 50k w 3 lata + tax shield.",
+    "tags": [
+      "JDG",
+      "Biznes",
+      "Amortyzacja",
+      "CIT",
+      "Efekt finansowy"
+    ],
+    "category": "case_studies",
+    "id": "8b38c28a-5724-4344-bdfd-de84780f3371"
+  },
+  {
+    "trigger_context": "KPI conversion dotacja",
+    "golden_response": "Po NaszEauto conversion +28 pp – permission to buy.",
+    "tags": [
+      "KPI conversion",
+      "Dotacja",
+      "Permission to buy",
+      "Psychology"
+    ],
+    "category": "case_studies",
+    "id": "7f728f52-7af6-40bb-9b78-e81a9c91ca9a"
+  },
+  {
+    "trigger_context": "AI trigger zima",
+    "golden_response": "Dane zimowe Model 3: realne 350-400 km. Pytaj o przebieg dziennie.",
+    "tags": [
+      "AI trigger",
+      "Zima",
+      "Range",
+      "Diagnostic",
+      "Reframe"
+    ],
+    "category": "integration",
+    "id": "1cae62f6-57fe-4e2f-a9ac-df8dfae55b3c"
+  },
+  {
+    "trigger_context": "AI trigger budżet",
+    "golden_response": "Rata Model 3 z NaszEauto: 450-550 PLN/mies. Ile zmieści się w budżecie?",
+    "tags": [
+      "AI trigger",
+      "Budżet",
+      "Rate reframe",
+      "Leasing diagnostyka"
+    ],
+    "category": "integration",
+    "id": "6e7e0566-fc29-433a-8355-8eb1381ceca8"
+  },
+  {
+    "trigger_context": "AI trigger infrastruktura",
+    "golden_response": "10k+ punktów w PL. Tesla app pokazuje real-time. Trasa główna = gęsta sieć.",
+    "tags": [
+      "AI trigger",
+      "Infrastruktura",
+      "Mapa real-time",
+      "Query location-based"
+    ],
+    "category": "integration",
+    "id": "f86025e2-4847-4745-b669-1925f28a7479"
+  },
+  {
+    "trigger_context": "Welcome ritual",
+    "golden_response": "Gratulujemy! Upewnijmy się, że masz info o transporcie i app.",
+    "tags": [
+      "Welcome ritual",
+      "24h",
+      "Remorse reduction",
+      "Commitment"
+    ],
+    "category": "post_sale",
+    "id": "4f559827-0bd1-4d59-8eef-a2b87375dc63"
+  },
+  {
+    "trigger_context": "Onboarding session",
+    "golden_response": "Free 2h session: interior walk, Autopilot demo, app tutorial.",
+    "tags": [
+      "Onboarding session",
+      "Tesla University",
+      "2h",
+      "Confidence boost"
+    ],
+    "category": "post_sale",
+    "id": "710078f1-00aa-4bac-8066-3121d29d61e1"
+  },
+  {
+    "trigger_context": "Post-delivery regret",
+    "golden_response": "Jak pierwsze kilometry? Coś zaniepokoiło?",
+    "tags": [
+      "Regret preemption",
+      "3-day window",
+      "SPIN question",
+      "Vulnerability"
+    ],
+    "category": "post_sale",
+    "id": "39a4a65f-7beb-4c64-aaf4-e1e901c49a81"
+  },
+  {
+    "trigger_context": "Winter kit",
+    "golden_response": "Nie chcemy, żebyś poczuł się bezbronny – dajemy narzędzia.",
+    "tags": [
+      "Winter preparation",
+      "Emergency kit",
+      "Proactive",
+      "Confidence"
+    ],
+    "category": "post_sale",
+    "id": "b719b0e4-6606-414c-9fd7-6fca6b1807d1"
+  },
+  {
+    "trigger_context": "30-day NPS",
+    "golden_response": "NPS 9-10: Czy polecisz 3 osobom?",
+    "tags": [
+      "30-day check-in",
+      "NPS",
+      "Referral trigger",
+      "Escalation"
+    ],
+    "category": "post_sale",
+    "id": "4de54e37-cf8a-4f22-80af-5e98c50c0179"
+  },
+  {
+    "trigger_context": "Klient pyta o zasięg Model Y Long Range",
+    "golden_response": "Model Y Long Range RWD (2025) osiąga 622 km WLTP z baterią 79 kWh NCM – o 30% więcej niż Standard Range (455 km).",
+    "tags": [
+      "Model Y",
+      "zasięg",
+      "bateria"
+    ],
+    "category": "technical",
+    "id": "cc35088c-06f1-463f-8448-09930b297d7a"
+  },
+  {
+    "trigger_context": "Porównanie przyspieszenia Model 3 Performance",
+    "golden_response": "Model 3 Performance robi 0-100 km/h w 3,1 s z 510 KM – szybszy od BMW M3 (3,9 s) i tańszy o 50k PLN.",
+    "tags": [
+      "Model 3",
+      "przyspieszenie",
+      "porównanie"
+    ],
+    "category": "technical",
+    "id": "60477767-ba54-4dfa-b280-90592df9e84c"
+  },
+  {
+    "trigger_context": "Osiągi Model S Plaid",
+    "golden_response": "Model S Plaid: 1020 KM, 0-100 w 2,1 s – jeden z najszybszych seryjnych aut wg Car and Driver.",
+    "tags": [
+      "Model S",
+      "Plaid",
+      "osiągi"
+    ],
+    "category": "technical",
+    "id": "4492a11b-3a19-4b51-9609-5cbe813dc31d"
+  },
+  {
+    "trigger_context": "Przestronność Model X Plaid",
+    "golden_response": "Model X Plaid: 1020 KM, 2,6 s 0-100, 567 km zasięg – ekstremalne osiągi w 7-osobowym SUV.",
+    "tags": [
+      "Model X",
+      "Plaid",
+      "SUV"
+    ],
+    "category": "technical",
+    "id": "ca6753a5-e347-40a1-baad-dce7025b5e84"
+  },
+  {
+    "trigger_context": "System termiczny Octovalve",
+    "golden_response": "Octovalve zarządza chłodziwem w 5 konfiguracjach – kompaktowe rozwiązanie wielu zaworów w jednym.",
+    "tags": [
+      "Octovalve",
+      "termiczne"
+    ],
+    "category": "technical",
+    "id": "40bda478-8158-4970-9815-acc312acb431"
+  },
+  {
+    "trigger_context": "Efektywność pompy ciepła",
+    "golden_response": "Pompa ciepła Tesli zużywa 4x mniej energii niż rezystancyjne ogrzewanie przy 0-15°C, wykorzystując ciepło odpadowe.",
+    "tags": [
+      "pompa ciepła",
+      "ogrzewanie"
+    ],
+    "category": "technical",
+    "id": "3e0809ed-31dc-419d-85f0-f3e1b06c50fe"
+  },
+  {
+    "trigger_context": "Zasięg zimą Tesla vs inne",
+    "golden_response": "Dzięki pompie ciepła Tesla traci 10-20% zasięgu zimą vs 30-40% w starszych modelach bez niej.",
+    "tags": [
+      "zasięg zima",
+      "pompa ciepła"
+    ],
+    "category": "technical",
+    "id": "74be98c2-6d3a-44f5-abf0-dbeefae360a5"
+  },
+  {
+    "trigger_context": "Bateria LFP w Model Y",
+    "golden_response": "Model Y LFP 62 kWh: 455 km WLTP; Long Range NMC 79 kWh: 622 km.",
+    "tags": [
+      "Model Y",
+      "LFP",
+      "NMC"
+    ],
+    "category": "technical",
+    "id": "e3d66ec7-5bed-4a5f-8bf5-d269cf9d015c"
+  },
+  {
+    "trigger_context": "Specyfikacje Model 3 Standard",
+    "golden_response": "Model 3 Standard: 513 km WLTP, ~62 kWh bateria, 5,9 s 0-100, od 184 990 PLN.",
+    "tags": [
+      "Model 3",
+      "Standard",
+      "cena"
+    ],
+    "category": "technical",
+    "id": "6d0d676b-f631-4982-81d1-ff8904653d4d"
+  },
+  {
+    "trigger_context": "Model S Dual Motor",
+    "golden_response": "Model S Dual: 744 km WLTP, 670 KM, Cd 0,208 – niski opór powietrza.",
+    "tags": [
+      "Model S",
+      "Dual Motor",
+      "aerodynamika"
+    ],
+    "category": "technical",
+    "id": "a4ebddfe-9eb8-4976-bfd3-8baf4405e55f"
+  },
+  {
+    "trigger_context": "Gwarancja baterii",
+    "golden_response": "8 lat/160k km z min. 70% pojemności; dla S/X do 240k km.",
+    "tags": [
+      "gwarancja",
+      "bateria"
+    ],
+    "category": "technical",
+    "id": "7c41d3c1-06b0-4d8f-90d5-d13b5f80b5a6"
+  },
+  {
+    "trigger_context": "Sieć Supercharger 2025",
+    "golden_response": "Ponad 25 stacji w PL, 1000 w Europie – 250 km w 15 min (V3), V4 350 kW planowane.",
+    "tags": [
+      "Supercharger",
+      "sieć PL"
+    ],
+    "category": "technical",
+    "id": "1a824296-857c-4c7a-8aa2-e13ad9204399"
+  },
+  {
+    "trigger_context": "Funkcje FSD Supervised",
+    "golden_response": "FSD: zmiany pasa, znaki, Navigate on Autopilot, tryby Chill/Hurry; v14 +10x parametry neuronowe.",
+    "tags": [
+      "FSD",
+      "Supervised",
+      "v14"
+    ],
+    "category": "technical",
+    "id": "a9ae96a6-167e-49e7-af06-bea508df9cbb"
+  },
+  {
+    "trigger_context": "Autopilot bazowy funkcje",
+    "golden_response": "TACC, Autosteer, AEB, Lane Departure, Blind Spot – standard bez opłat.",
+    "tags": [
+      "Autopilot",
+      "bazowy"
+    ],
+    "category": "technical",
+    "id": "4c0dcbe9-1422-4693-991d-8c85b8ea17f9"
+  },
+  {
+    "trigger_context": "Aktualizacje OTA funkcje",
+    "golden_response": "OTA przez Wi-Fi: Apple Watch, rear cross traffic, ulepszona nawigacja – bez serwisu.",
+    "tags": [
+      "OTA",
+      "aktualizacje"
+    ],
+    "category": "technical",
+    "id": "99f26f53-934c-43a7-9e67-4589045849c0"
+  },
+  {
+    "trigger_context": "One-Pedal Driving korzyści",
+    "golden_response": "Regeneracja odzyskuje 10-15% energii, redukując zużycie hamulców – zasięg +10-15%.",
+    "tags": [
+      "one-pedal",
+      "regeneracja"
+    ],
+    "category": "technical",
+    "id": "08199b33-76d2-4eda-b9da-09ec9991bcd1"
+  },
+  {
+    "trigger_context": "Euro NCAP 2025 oceny",
+    "golden_response": "5 gwiazdek: 90% dorosłych, 93% dzieci, 89% piesi, 87% asystujące – najwyższe.",
+    "tags": [
+      "Euro NCAP",
+      "5 gwiazdek"
+    ],
+    "category": "technical",
+    "id": "815d5aff-4480-450b-bf73-119142752a79"
+  },
+  {
+    "trigger_context": "Degradacja baterii badania",
+    "golden_response": "Średnio 4% po 100k km – 70% po 740k km (13.5k km/rok).",
+    "tags": [
+      "degradacja",
+      "bateria",
+      "2025"
+    ],
+    "category": "technical",
+    "id": "42fb4a13-ec4d-49f4-9d9d-d124defc9d0c"
+  },
+  {
+    "trigger_context": "TCO Model Y vs Jeep",
+    "golden_response": "Model Y TCO 15-20% niższy niż Jeep Grand Cherokee na 7 lat – dzięki paliwu 7 PLN/l i niskiemu serwisowi.",
+    "tags": [
+      "TCO",
+      "Model Y",
+      "Jeep"
+    ],
+    "category": "financial",
+    "id": "0a708988-8e29-48d2-8ae1-a9040ed5bfcd"
+  },
+  {
+    "trigger_context": "Oszczędności energii 50%",
+    "golden_response": "50% oszczędności vs spalinowy: 3k PLN/rok ładowanie vs 7k paliwo przy 15k km/rok.",
+    "tags": [
+      "oszczędności",
+      "energia"
+    ],
+    "category": "financial",
+    "id": "da81995b-2fef-4acd-8650-fb39a4dd64c4"
+  },
+  {
+    "trigger_context": "NaszEauto dotacja",
+    "golden_response": "Do 40k PLN: 18.75k bazowo +10k złomowanie +11.25k niskie dochody (do 225k netto).",
+    "tags": [
+      "NaszEauto",
+      "dotacja"
+    ],
+    "category": "financial",
+    "id": "ede4439e-a16d-43b7-860b-96071cc543c8"
+  },
+  {
+    "trigger_context": "Wznowienie subsidii",
+    "golden_response": "Wznowione 20.10.2025: + NGO, publiczne, dostawcze do 70k, busy do 600k PLN.",
+    "tags": [
+      "subsidii",
+      "2025"
+    ],
+    "category": "financial",
+    "id": "8dfe5c1f-05d2-4c4c-b691-a353148e5945"
+  },
+  {
+    "trigger_context": "Ulga BIK amortyzacja",
+    "golden_response": "Amortyzacja do 225k PLN dla EV – 20% oszczędności PIT (spalinowe do 100k od 2026).",
+    "tags": [
+      "BIK",
+      "amortyzacja"
+    ],
+    "category": "financial",
+    "id": "585b06ab-a240-40d7-8b0c-ede17b574ab7"
+  },
+  {
+    "trigger_context": "Odliczenie VAT 100%",
+    "content": "100% VAT odliczalny do 225k PLN + ulgi na eksploatację dla firm.",
+    "tags": [
+      "VAT",
+      "odliczenie"
+    ],
+    "category": "financial",
+    "id": "7569987a-ea9b-4187-8e59-9f57fae09060"
+  },
+  {
+    "trigger_context": "Ubezpieczenie Model 3/Y",
+    "golden_response": "Model 3: 3.5k PLN/rok (+20% vs Corolla); Model Y: 4-5k PLN (+15% r/r 2025).",
+    "tags": [
+      "ubezpieczenie",
+      "Model 3/Y"
+    ],
+    "category": "financial",
+    "id": "fd4e5963-2caf-4ab6-a395-49d7bd8f4f26"
+  },
+  {
+    "trigger_context": "Serwis koszty 30-50% taniej",
+    "golden_response": "Model 3: 1-2k PLN/rok; Model Y: 1.2-2.5k – 30-50% taniej niż spalinowe (brak oleju, regeneracja).",
+    "tags": [
+      "serwis",
+      "koszty"
+    ],
+    "category": "financial",
+    "id": "313ac3f1-2e80-4277-9719-f8e6dbd22e9c"
+  },
+  {
+    "trigger_context": "Koszty ładowania PL",
+    "golden_response": "Dom: 0.80-1.20 PLN/kWh; AC publiczne: 1.50-2.50; DC: 2-3 PLN (vs paliwo 7 PLN/l).",
+    "tags": [
+      "ładowanie",
+      "koszty PL"
+    ],
+    "category": "financial",
+    "id": "8148e247-ce6c-4f27-947c-8c0775bdb5b3"
+  },
+  {
+    "trigger_context": "Resale 60-65% po 3 latach",
+    "golden_response": "Model Y: 60-65%; Model 3: 45-50% – lepiej niż spalinowe.",
+    "tags": [
+      "resale",
+      "deprecjacja"
+    ],
+    "category": "financial",
+    "id": "59e680e1-8386-47ee-baf3-cd982045efd7"
+  },
+  {
+    "trigger_context": "Leasing 1.9-2.5k PLN/mies.",
+    "golden_response": "Model 3: 1.9-2.5k PLN/mies. (24-48 mies.), RRSO 0.99% – 50% oszczędności z ulgami.",
+    "tags": [
+      "leasing",
+      "RRSO"
+    ],
+    "category": "financial",
+    "id": "d78c7879-7168-4c56-b7a7-8014cd81fe50"
+  },
+  {
+    "trigger_context": "TCO oszczędności 15k PLN 3 lata",
+    "golden_response": "Model Y: ~15k PLN oszczędności na 3 lata/36k km vs Jeep Grand Cherokee.",
+    "tags": [
+      "TCO",
+      "oszczędności 3 lata"
+    ],
+    "category": "financial",
+    "id": "91f72722-6967-4b44-a8f6-68322e07261d"
+  },
+  {
+    "trigger_context": "Obiekcja cena wysoka",
+    "golden_response": "Model Y Standard 184 990 PLN – tańszy niż Q4 (213k) o 28k, TCO 15-20% niższe.",
+    "tags": [
+      "obiekcja cena",
+      "Model Y vs Q4"
+    ],
+    "category": "objection_handling",
+    "id": "f6f736ba-7989-48d4-931c-ef0ac72ec5b6"
+  },
+  {
+    "trigger_context": "Obiekcja zasięg",
+    "golden_response": "80% jeździ <100 km/dzień – Model Y 455+ km, ładowanie co 4-5 dni; Supercharger 250 km/15 min.",
+    "tags": [
+      "obiekcja zasięg",
+      "80% <100 km"
+    ],
+    "category": "objection_handling",
+    "id": "4be55524-5bbb-4dc7-b636-34bd9bb57640"
+  },
+  {
+    "trigger_context": "Obiekcja degradacja baterii",
+    "golden_response": "Średnio 4% po 100k km – 70% po 740k km; gwarancja 8 lat/160k km.",
+    "tags": [
+      "obiekcja degradacja",
+      "4% 100k km"
+    ],
+    "category": "objection_handling",
+    "id": "b296b3c0-7fff-4aa0-8154-77457fd86c6a"
+  },
+  {
+    "trigger_context": "Obiekcja rzeczywisty zasięg",
+    "golden_response": "Na autostradzie 120 km/h: 450-500 km realnie vs 533 km WLTP – normalna różnica 10-15% dla EV.",
+    "tags": [
+      "obiekcja zasięg realny",
+      "450-500 km autostradą"
+    ],
+    "category": "objection_handling",
+    "id": "216564c1-a378-4da2-992e-48b77f0dd88a"
+  },
+  {
+    "trigger_context": "Obiekcja serwis/części",
+    "golden_response": "0 PLN przez 4 lata – brak oleju, tarcz; Q4 co 2 lata 1.5k PLN.",
+    "tags": [
+      "obiekcja serwis",
+      "0 PLN 4 lata"
+    ],
+    "category": "objection_handling",
+    "id": "64dd30b5-06aa-48dc-b8ca-d5cfe87c8eac"
+  },
+  {
+    "trigger_context": "Obiekcja wnętrze minimalistyczne",
+    "golden_response": "Miękkie materiały, wegańska skóra, ambient LED – lepiej niż Q4 wg Auto Świat.",
+    "tags": [
+      "obiekcja wnętrze",
+      "miękkie materiały"
+    ],
+    "category": "objection_handling",
+    "id": "46ae31eb-43ef-4d74-a1ea-4f8fe5b24276"
+  },
+  {
+    "trigger_context": "Obiekcja baterie degradują",
+    "golden_response": "Model 3 2019 po 200k km: 12% degradacji; 2022 po 50k km: 3%.",
+    "tags": [
+      "obiekcja degradacja",
+      "12% 200k km"
+    ],
+    "category": "objection_handling",
+    "id": "ad7ab4bb-3550-438d-a2c1-577127f0349a"
+  },
+  {
+    "trigger_context": "Obiekcja lepsze wnętrza konkurencji",
+    "golden_response": "\"Najwyższej jakości kabiny EV do 250k PLN\" – bez skrzypienia, wg Auto Świat 2025.",
+    "tags": [
+      "obiekcja wnętrza",
+      "Auto Świat 2025"
+    ],
+    "category": "objection_handling",
+    "id": "87aa7c05-abaa-43e0-8b8a-8fd721722a3e"
+  },
+  {
+    "trigger_context": "Obiekcja zasięg zimą",
+    "golden_response": "Pompa ciepła traci 10-15% vs 30-40% w ID.4 – mniejsze zużycie.",
+    "tags": [
+      "obiekcja zima",
+      "pompa ciepła -10-15%"
+    ],
+    "category": "objection_handling",
+    "id": "11b50d86-8e82-499f-a578-cf3f50be2d11"
+  },
+  {
+    "trigger_context": "Obiekcja rezydualność niska",
+    "golden_response": "Model Y 60-65% po 3 latach vs 50-60% spalinowe – dzięki OTA.",
+    "tags": [
+      "obiekcja rezydualność",
+      "60-65% 3 lata"
+    ],
+    "category": "objection_handling",
+    "id": "7f74ba68-5900-442b-8c54-cc8d16563ccb"
+  },
+  {
+    "trigger_context": "Obiekcja range anxiety",
+    "golden_response": "65% obaw przy zakupie, 95% znika po 2-3 mies. – Supercharger rozwiązuje 99% tras.",
+    "tags": [
+      "obiekcja range anxiety",
+      "95% znika 2-3 mies."
+    ],
+    "category": "objection_handling",
+    "id": "83a59d4f-f569-4854-b1c9-9bcd41a4b032"
+  },
+  {
+    "trigger_context": "Obiekcja wnętrze nudne",
+    "golden_response": "Ambient z milionem kolorów, podwójne szyby – cieplejsze/cichsze niż EV6.",
+    "tags": [
+      "obiekcja wnętrze nudne",
+      "ambient kolory"
+    ],
+    "category": "objection_handling",
+    "id": "953848c2-3400-487d-aaf3-39e4063d29bd"
+  },
+  {
+    "trigger_context": "Obiekcja cena vs konkurencja",
+    "golden_response": "Model Y LR 204k PLN vs ID.4 148k – 259 km więcej zasięgu + 0 PLN serwisu 4 lata.",
+    "tags": [
+      "obiekcja cena konkurencja",
+      "259 km więcej"
+    ],
+    "category": "objection_handling",
+    "id": "99f5f2af-ccc6-42de-bdf6-9a61b9b291af"
+  },
+  {
+    "trigger_context": "Obiekcja bateria szybko degraduje",
+    "golden_response": "Gwarancja 8 lat/160k km min. 70% – wymiana bezpłatna jeśli poniżej.",
+    "tags": [
+      "obiekcja bateria",
+      "gwarancja 70%"
+    ],
+    "category": "objection_handling",
+    "id": "ee9d3f98-602e-4408-9856-5a19aebd5a33"
+  },
+  {
+    "trigger_context": "Obiekcja ładowanie czas",
+    "golden_response": "Supercharger V3: 250 km/15 min (1 km/min); domowe 90% codziennego użytku.",
+    "tags": [
+      "obiekcja ładowanie",
+      "250 km/15 min"
+    ],
+    "category": "objection_handling",
+    "id": "1bd90534-9562-4c3e-bb90-4807e8fe052b"
+  },
+  {
+    "trigger_context": "Obiekcja materiały tanie",
+    "golden_response": "Solidne drzwi z trzaskiem, filcowe uszczelki – poprawa vs starsze, wg Motor.",
+    "tags": [
+      "obiekcja materiały",
+      "solidne drzwi"
+    ],
+    "category": "objection_handling",
+    "id": "d331186c-c231-41b8-b2be-590ea62c9b7a"
+  },
+  {
+    "trigger_context": "Ładowanie domowe korzyści",
+    "golden_response": "Wall Connector: 40-50 km/h – pełna bateria 7-9h nocą, oszczędza 2-3h/tydz.",
+    "tags": [
+      "ładowanie domowe",
+      "Wall Connector"
+    ],
+    "category": "lifestyle",
+    "id": "3228b893-0638-4174-a1c3-f16bb8ec8e6e"
+  },
+  {
+    "trigger_context": "Planowanie podróży",
+    "golden_response": "Trip Planner uwzględnia pogodę/ruch – minimalizuje postoje do 15-20 min.",
+    "tags": [
+      "Trip Planner",
+      "pogoda ruch"
+    ],
+    "category": "lifestyle",
+    "id": "abc8dce9-1480-48f6-b973-1dd4e6568f6d"
+  },
+  {
+    "trigger_context": "Dog Mode dla zwierząt",
+    "golden_response": "Utrzymuje temperaturę, komunikat ekran – <5% baterii/godz. na zakupy.",
+    "tags": [
+      "Dog Mode",
+      "zwierzęta"
+    ],
+    "category": "lifestyle",
+    "id": "dc1320af-efc0-44f8-becd-815e5bbc8889"
+  },
+  {
+    "trigger_context": "Camp Mode kamper",
+    "golden_response": "Klimatyzacja, streaming 15\", auto-lock off – biwak 2-3 noce bez generatora.",
+    "tags": [
+      "Camp Mode",
+      "biwak"
+    ],
+    "category": "lifestyle",
+    "id": "f6d2c406-560c-4556-8b0f-d6ad8d690ce8"
+  },
+  {
+    "trigger_context": "Cicha kabina Highland",
+    "golden_response": "-30% hałas vs starsze – najspokojniejszy dojazd z symulowanym dźwiękiem.",
+    "tags": [
+      "cicha kabina",
+      "Highland"
+    ],
+    "category": "lifestyle",
+    "id": "578517f6-85ef-4d28-a9de-8f63883b68d6"
+  },
+  {
+    "trigger_context": "Aplikacja zdalna",
+    "golden_response": "Blokuj/precondition/śledź/Sentry – kontrola z wakacji bez kluczyka.",
+    "tags": [
+      "aplikacja",
+      "zdalna"
+    ],
+    "category": "lifestyle",
+    "id": "d319870c-4632-47e4-b714-bcf31b1bd857"
+  },
+  {
+    "trigger_context": "One-Pedal w mieście",
+    "golden_response": "-10-15% zużycie, 60-70% jazdy na gazie – mniej zmęczenia w korkach.",
+    "tags": [
+      "one-pedal",
+      "miasto"
+    ],
+    "category": "lifestyle",
+    "id": "b8943ba6-571d-466a-a548-7f3bdb7c9fca"
+  },
+  {
+    "trigger_context": "Child Detection Reminder",
+    "golden_response": "Czujniki tętna dziecka, alert app – 99% dokładność, chroni tragedie (co 10 dni PL).",
+    "tags": [
+      "Child Detection",
+      "bezpieczeństwo"
+    ],
+    "category": "lifestyle",
+    "id": "ac7211db-9b6a-4cd0-9e45-020cd653c971"
+  },
+  {
+    "trigger_context": "Nocne ładowanie",
+    "golden_response": "90% dojazdów do 100 km rozwiązane – Supercharger co 4-7 dni przy 15k km/rok.",
+    "tags": [
+      "nocne ładowanie",
+      "dojazdy"
+    ],
+    "category": "lifestyle",
+    "id": "c9bb65f8-aec3-4c1e-b245-3724da7ff27d"
+  },
+  {
+    "trigger_context": "Ekosystem Solar Powerwall",
+    "golden_response": "Panele generują, Powerwall przechowuje – 30-40% mniej rachunków z dotacjami do 50%.",
+    "tags": [
+      "Solar Powerwall",
+      "oszczędności"
+    ],
+    "category": "lifestyle",
+    "id": "2e7203c0-ab67-48b6-a75c-6d95e34aa95c"
+  },
+  {
+    "trigger_context": "Supercharger Planner",
+    "golden_response": "Preconditioning minimalizuje postoje – 800 km Warszawa-Kraków: 30-45 min na 1-2 stacje.",
+    "tags": [
+      "Supercharger Planner",
+      "preconditioning"
+    ],
+    "category": "lifestyle",
+    "id": "09c6e278-8db9-45ac-8c03-6e77e7bf4ac9"
+  },
+  {
+    "trigger_context": "Komfort jazdy brak wibracji",
+    "golden_response": "Kabina jak salon, fotele wentylowane – 2h dojazd mniej męczący niż Q4.",
+    "tags": [
+      "komfort",
+      "fotele"
+    ],
+    "category": "lifestyle",
+    "id": "3d058509-cc12-4d90-84e3-4a5457f97042"
+  },
+  {
+    "trigger_context": "Sharing Address Phone",
+    "golden_response": "Share z Google Maps – auto rusza bez pisania na ekranie (iOS/Android).",
+    "tags": [
+      "Sharing Address",
+      "Google Maps"
+    ],
+    "category": "lifestyle",
+    "id": "add02860-659e-4c75-865f-a96a55a43f86"
+  },
+  {
+    "trigger_context": "Keep Climate On zima",
+    "golden_response": "Utrzymuje temperaturę do 20% baterii – wracasz po 2h do ciepłego interioru.",
+    "tags": [
+      "Keep Climate",
+      "zima"
+    ],
+    "category": "lifestyle",
+    "id": "80a949f3-bb70-4b03-a012-6dd108a5c746"
+  },
+  {
+    "trigger_context": "Ciche ładowanie solar",
+    "golden_response": "Level 2 bez hałasu, solar + Powerwall ~0.50 PLN/kWh – pełna bateria za cenę kawy.",
+    "tags": [
+      "ciche ładowanie",
+      "solar"
+    ],
+    "category": "lifestyle",
+    "id": "8b13b6e1-55fb-4f5c-8a59-c9daed7f9728"
+  },
+  {
+    "trigger_context": "Leasing operacyjny firmy",
+    "golden_response": "Od 1 200 zł/mies. 36 mies. 10k km/rok z VAT – 40% flot EV to Tesla.",
+    "tags": [
+      "leasing operacyjny",
+      "firmy"
+    ],
+    "category": "fleet",
+    "id": "9e2a9b6d-9544-46c3-95df-98bff658d0cc"
+  },
+  {
+    "trigger_context": "Fleet API ERP",
+    "golden_response": "Śledzenie 100+ aut real-time, -25% koszty logistyki dla kurierów.",
+    "tags": [
+      "Fleet API",
+      "ERP"
+    ],
+    "category": "fleet",
+    "id": "0a649ecd-fb4b-48ca-87e8-072bf6abedcd"
+  },
+  {
+    "trigger_context": "Model Y car-sharing",
+    "golden_response": "LFP bateria 1 mln km, -20% koszty/km vs ID. Buzz.",
+    "tags": [
+      "car-sharing",
+      "LFP"
+    ],
+    "category": "fleet",
+    "id": "3230c2c6-0363-4242-be0d-29c748fe6fb0"
+  },
+  {
+    "trigger_context": "Ulga BIK IT",
+    "golden_response": "225k amortyzacja, 15% PIT oszczędności – popularne w IT.",
+    "tags": [
+      "BIK",
+      "IT"
+    ],
+    "category": "fleet",
+    "id": "e6ba34eb-326c-45e6-8792-f7a88bf6e067"
+  },
+  {
+    "trigger_context": "Tesla taksówki Warszawa",
+    "golden_response": "Model 3 FSD -10% czasu w korkach, ROI 18 mies. vs 24 hybrydy.",
+    "tags": [
+      "taksówki",
+      "FSD"
+    ],
+    "category": "fleet",
+    "id": "70a52cd1-d679-4bb4-82a8-d6670a7e3517"
+  },
+  {
+    "trigger_context": "Floty dostawcze Wolt",
+    "golden_response": "Model Y holuje 1 t, zintegrowany z Uber Eats – 500 firm PL 2025.",
+    "tags": [
+      "dostawcze",
+      "Wolt"
+    ],
+    "category": "fleet",
+    "id": "20f7fbf2-d3c8-43b3-a45b-87017e4a879d"
+  },
+  {
+    "trigger_context": "Salary sacrifice korpo",
+    "golden_response": "Model 3 800 zł/mies. netto, -40% vs prywatny – +20% w korpo.",
+    "tags": [
+      "salary sacrifice",
+      "korpo"
+    ],
+    "category": "fleet",
+    "id": "65de887c-9a89-4fa1-b09f-688a79ef5fa0"
+  },
+  {
+    "trigger_context": "Telematyka Geotab",
+    "golden_response": "Monitorowanie 95% flot, alerty app dla managerów.",
+    "tags": [
+      "Geotab",
+      "monitorowanie"
+    ],
+    "category": "fleet",
+    "id": "90c6b4e9-1792-4e83-a997-dda569791099"
+  },
+  {
+    "trigger_context": "Model S exec",
+    "golden_response": "744 km na spotkania PL, 100% odliczenie – 150 firm 2025.",
+    "tags": [
+      "Model S",
+      "exec"
+    ],
+    "category": "fleet",
+    "id": "d30d5f98-9e7e-483f-bc70-05ca661f28e2"
+  },
+  {
+    "trigger_context": "Redukcja CO2 ESG",
+    "golden_response": "Zastępuje diesle, +50 pkt ESG – kluczowe dla grantów UE.",
+    "tags": [
+      "CO2",
+      "ESG"
+    ],
+    "category": "fleet",
+    "id": "d4c59ad1-3e72-48b7-a216-4ceb943c0afe"
+  },
+  {
+    "trigger_context": "Serwis flotowy Warszawa",
+    "golden_response": "Dedykowany slot Tesla Center – 24h turnaround vs 48h BMW.",
+    "tags": [
+      "serwis flotowy",
+      "24h"
+    ],
+    "category": "fleet",
+    "id": "14559b35-389b-4559-b6d4-8421ed87d000"
+  },
+  {
+    "trigger_context": "Model X carpool HR",
+    "golden_response": "2 158 l bagażu, Child Detection – 10% flot HR wybiera.",
+    "tags": [
+      "Model X",
+      "carpool"
+    ],
+    "category": "fleet",
+    "id": "f09f359b-485a-4587-ac75-1af5f06e4405"
+  },
+  {
+    "trigger_context": "Koszt/km EV6 vs Model Y",
+    "golden_response": "0.20 zł/km Model Y trasa vs 0.50 EV6 – -60% logistyka.",
+    "tags": [
+      "koszt/km",
+      "logistyka"
+    ],
+    "category": "fleet",
+    "id": "2a1b4143-0222-4d7c-8da8-34339993f9fb"
+  },
+  {
+    "trigger_context": "ChargePoint faktury",
+    "golden_response": "500+ stacji flot, miesięczne faktury – -30% administracja.",
+    "tags": [
+      "ChargePoint",
+      "administracja"
+    ],
+    "category": "fleet",
+    "id": "955fe7cf-190c-42f1-a26f-68678ebd160f"
+  },
+  {
+    "trigger_context": "Granty UE startup",
+    "golden_response": "Do 50k zł/auto – Tesla 100% kwalifikuje, ROI 12 mies.",
+    "tags": [
+      "granty UE",
+      "startup"
+    ],
+    "category": "fleet",
+    "id": "ae9af81f-a346-4c3e-ba01-93aebbe76da9"
+  },
+  {
+    "trigger_context": "Autopilot wypadki flot",
+    "golden_response": "-40% wypadków PL 2025 – ubezpieczenia -15%.",
+    "tags": [
+      "Autopilot",
+      "wypadki"
+    ],
+    "category": "fleet",
+    "id": "9c417ddc-a028-4db2-adae-b51caabdbbf1"
+  },
+  {
+    "trigger_context": "Cena używanego Model 3",
+    "golden_response": "Model 3 2022 50k km: 120k zł – 70% wartości vs 50% ID.4.",
+    "tags": [
+      "używany Model 3",
+      "120k zł"
+    ],
+    "category": "resale",
+    "id": "40688538-51bf-4d19-9e51-e4c8657e43cb"
+  },
+  {
+    "trigger_context": "Ogłoszenia OTOMOTO",
+    "golden_response": "500 ogłoszeń Tesli, Model Y 2024 160k zł – +30% popyt LFP.",
+    "tags": [
+      "OTOMOTO",
+      "Model Y używany"
+    ],
+    "category": "resale",
+    "id": "26d67761-8bd2-4261-969d-293edae664dd"
+  },
+  {
+    "trigger_context": "Deprecjacja 2 lata",
+    "golden_response": "Model Y -25% vs EV6 -40% – dzięki OTA Supercharger.",
+    "tags": [
+      "deprecjacja",
+      "2 lata"
+    ],
+    "category": "resale",
+    "id": "32bff085-eede-48d9-b347-2c83ccd4a96d"
+  },
+  {
+    "trigger_context": "AC używane gwarancja",
+    "golden_response": "2.5k PLN/rok Model 3 – -20% vs nowy, gwarancja przenoszona.",
+    "tags": [
+      "AC używane",
+      "gwarancja"
+    ],
+    "category": "resale",
+    "id": "77a0047a-a8a4-4fa5-8a57-b4cb85a6a473"
+  },
+  {
+    "trigger_context": "Certyfikowane używane",
+    "golden_response": "80-150k zł z 4-letnią gwarancją – 200 szt. PL, inspekcja OTA.",
+    "tags": [
+      "certyfikowane",
+      "4 lata gwarancja"
+    ],
+    "category": "resale",
+    "id": "0c2dd948-699e-4e7f-9b9c-8dc61a43272d"
+  },
+  {
+    "trigger_context": "Model S używany upgrade",
+    "golden_response": "2020 100k km 250k zł – Plaid upgrade vs Taycan -50%.",
+    "tags": [
+      "Model S używany",
+      "Plaid"
+    ],
+    "category": "resale",
+    "id": "a5cf1016-0d2e-4c5e-aac3-4b8de83058aa"
+  },
+  {
+    "trigger_context": "Leasing zwroty 90%",
+    "golden_response": "40% Tesli wraca za 90% wartości – popularne 0km leasing.",
+    "tags": [
+      "leasing zwroty",
+      "90% wartości"
+    ],
+    "category": "resale",
+    "id": "21a20ed4-8da5-478e-b9ed-1bcbeac9ec04"
+  },
+  {
+    "trigger_context": "Degradacja używane diagnostyka",
+    "golden_response": "5% po 80k km – diagnostyka 200 zł przed zakupem.",
+    "tags": [
+      "degradacja używane",
+      "diagnostyka"
+    ],
+    "category": "resale",
+    "id": "0214fcee-5ced-48b3-b422-bf4278bf9eb9"
+  },
+  {
+    "trigger_context": "Export UE +10%",
+    "golden_response": "20% używanych do DE/FR za +10% ceny – wysoki standard PL.",
+    "tags": [
+      "export UE",
+      "+10% cena"
+    ],
+    "category": "resale",
+    "id": "8a2b7ab9-5d32-4773-b50c-4e2cd8c23e39"
+  },
+  {
+    "trigger_context": "Model X używany Falcon Wings",
+    "golden_response": "300k zł 7-miejsc – popyt rodziny, 95% bez usterek.",
+    "tags": [
+      "Model X używany",
+      "Falcon Wings"
+    ],
+    "category": "resale",
+    "id": "f3060763-53b1-482d-94b1-de7a83e246e5"
+  },
+  {
+    "trigger_context": "Copart naprawy OEM",
+    "golden_response": "Uszkodzone naprawiane -30% taniej – części OEM via app.",
+    "tags": [
+      "Copart",
+      "naprawy OEM"
+    ],
+    "category": "resale",
+    "id": "0edc3790-4757-4996-86ab-38fb55781636"
+  },
+  {
+    "trigger_context": "Wartość Model 3 3 lata",
+    "golden_response": "55% oryginalnej ceny – lider segment C EV.",
+    "tags": [
+      "wartość 3 lata",
+      "segment C"
+    ],
+    "category": "resale",
+    "id": "c5a9fd1e-0d50-4a7f-8f02-aa051846b3d1"
+  },
+  {
+    "trigger_context": "Finansowanie używane rata",
+    "golden_response": "9.9% PKO BP – 600 zł/mies. Model Y 2023.",
+    "tags": [
+      "finansowanie używane",
+      "PKO BP"
+    ],
+    "category": "resale",
+    "id": "090dcd0e-72f9-40fc-adfe-b7273aa613ca"
+  },
+  {
+    "trigger_context": "Trend hybrydowe PV",
+    "golden_response": "15% Tesli z PV na wtórnym +10k zł wartości.",
+    "tags": [
+      "trend hybrydowe",
+      "PV"
+    ],
+    "category": "resale",
+    "id": "871b8053-2d01-4bec-9881-4fdc34702db4"
+  },
+  {
+    "trigger_context": "Redukcja CO2 Model Y",
+    "golden_response": "-60 t CO2/10 lat vs spalinowy – zielone obligacje firmowe.",
+    "tags": [
+      "CO2 redukcja",
+      "obligacje"
+    ],
+    "category": "environmental",
+    "id": "975f1a17-b085-4b3f-862f-8ee54f5b31c7"
+  },
+  {
+    "trigger_context": "Zerowa akcyza oszczędność",
+    "golden_response": "3.1% ceny dla Model 3 + zwolnienie LEZ opłat.",
+    "tags": [
+      "akcyza zerowa",
+      "LEZ"
+    ],
+    "category": "environmental",
+    "id": "561a3258-b490-47d3-bfd2-01c931284a6c"
+  },
+  {
+    "trigger_context": "TCO emisja produkcja",
+    "golden_response": "-20% emisja vs BMW i4 – atut ESG raporty PL.",
+    "tags": [
+      "TCO emisja",
+      "ESG"
+    ],
+    "category": "environmental",
+    "id": "0c1c09ce-15a1-4309-84a7-26649b17f7c4"
+  },
+  {
+    "trigger_context": "Recykling 95% baterii",
+    "golden_response": "95% NCM/LFP – partner Orlen stacje recyklingu PL.",
+    "tags": [
+      "recykling",
+      "Orlen"
+    ],
+    "category": "environmental",
+    "id": "bec4dac3-0f58-44db-b008-c580b11b314a"
+  },
+  {
+    "trigger_context": "Czyste Powietrze PV",
+    "golden_response": "+5k zł na PV + charging – -40% ślad węglowy.",
+    "tags": [
+      "Czyste Powietrze",
+      "PV"
+    ],
+    "category": "environmental",
+    "id": "5e063334-17d2-41c7-b2bf-f4be5740e824"
+  },
+  {
+    "trigger_context": "Zima pompa vs Ioniq",
+    "golden_response": "-12% strata vs -35% Ioniq 5 – mniej zużycie sieci PL.",
+    "tags": [
+      "zima pompa",
+      "Ioniq 5"
+    ],
+    "category": "environmental",
+    "id": "161aa5b0-161a-4b18-b541-13b6586eeb0c"
+  },
+  {
+    "trigger_context": "ETS opłaty EV",
+    "golden_response": "Zwolnienie 100 zł/t CO2 – 2k zł/rok flot.",
+    "tags": [
+      "ETS",
+      "opłaty CO2"
+    ],
+    "category": "environmental",
+    "id": "101e2c6a-49a3-4cfe-85dd-91c00950210d"
+  },
+  {
+    "trigger_context": "Hałas 0 dB regulacje",
+    "golden_response": "0 dB miasto – zgodne UE 2025 strefy ciszy PL.",
+    "tags": [
+      "hałas 0 dB",
+      "UE 2025"
+    ],
+    "category": "environmental",
+    "id": "94881185-9fcc-42b5-b0a6-82a4a2c350b9"
+  },
+  {
+    "trigger_context": "Efektywność obciążenie sieci",
+    "golden_response": "14 kWh/100 km Model Y vs 18 Q4 – -30% obciążenie PGE.",
+    "tags": [
+      "efektywność",
+      "PGE"
+    ],
+    "category": "environmental",
+    "id": "6d617606-c7ce-4ed7-a524-c51cfd22f805"
+  },
+  {
+    "trigger_context": "Zielone tablice Warszawa",
+    "golden_response": "Bez ograniczeń wjazdowych centrów (Warszawa 2025) – plus commuters.",
+    "tags": [
+      "zielone tablice",
+      "Warszawa"
+    ],
+    "category": "environmental",
+    "id": "f1763a5c-5c71-405f-a32b-51deee490b13"
+  },
+  {
+    "trigger_context": "Cykl życia vs diesel",
+    "golden_response": "Bateria 500k km = 1/3 emisji nowego vs diesel co 150k km.",
+    "tags": [
+      "cykl życia",
+      "diesel"
+    ],
+    "category": "environmental",
+    "id": "1f1789cf-6745-4a9a-a601-a7bc3dcf4c65"
+  },
+  {
+    "trigger_context": "Tauron zielona energia",
+    "golden_response": "Tania zielona energia owners – -25% rachunki.",
+    "tags": [
+      "Tauron",
+      "zielona energia"
+    ],
+    "category": "environmental",
+    "id": "9da8af88-97c1-4b18-a573-0f1d2626caea"
+  },
+  {
+    "trigger_context": "Robotaxi testy PL",
+    "golden_response": "FSD v15 unsupervised – testy A1/A2 Q1 2026.",
+    "tags": [
+      "Robotaxi",
+      "FSD v15"
+    ],
+    "category": "future",
+    "id": "89a1516a-75ea-47ba-bb92-1a31d924c1c6"
+  },
+  {
+    "trigger_context": "V4 Superchargery nowe",
+    "golden_response": "10 nowych PL do 2026, 500 kW – 400 km/10 min z NFA.",
+    "tags": [
+      "V4 Supercharger",
+      "500 kW"
+    ],
+    "category": "future",
+    "id": "5b54937f-a6aa-467b-86f0-df931137a8e3"
+  },
+  {
+    "trigger_context": "Model 2 debiut",
+    "golden_response": "~120k zł, 400 km – 20% rynku PL 2026.",
+    "tags": [
+      "Model 2",
+      "debiut 2026"
+    ],
+    "category": "future",
+    "id": "66594162-028b-4bb1-81c3-a395d61064c4"
+  },
+  {
+    "trigger_context": "OTA v15 SLANG",
+    "golden_response": "Ulepszony FSD z polskim SLANG – +20% znaki PL.",
+    "tags": [
+      "OTA v15",
+      "polski SLANG"
+    ],
+    "category": "future",
+    "id": "5679e265-3ede-4747-914a-d880ec503f34"
+  },
+  {
+    "trigger_context": "Powerwall 3 VPP",
+    "golden_response": "13.5 kWh 25k zł – stabilizacja Tauron VPP.",
+    "tags": [
+      "Powerwall 3",
+      "VPP"
+    ],
+    "category": "future",
+    "id": "3eac8161-810d-417b-992c-95c4bc824218"
+  },
+  {
+    "trigger_context": "Semi dostawy DHL",
+    "golden_response": "Dostawy PL 2026, 800 km – -50% emisji DHL.",
+    "tags": [
+      "Semi",
+      "DHL"
+    ],
+    "category": "future",
+    "id": "cb0c3b57-d6d0-41c1-aeb4-f65f51483b58"
+  },
+  {
+    "trigger_context": "Lifting Model 2 LFP",
+    "golden_response": "Tańszy ID.3 z LFP – 5k szt./rok PL.",
+    "tags": [
+      "Model 2 lifting",
+      "LFP"
+    ],
+    "category": "future",
+    "id": "ea7bb97d-008b-4e3c-8e81-cf537578a5e2"
+  },
+  {
+    "trigger_context": "eRoaming Superchargery",
+    "golden_response": "Dla wszystkich EV PL 2026, 1.50 zł/kWh.",
+    "tags": [
+      "eRoaming",
+      "wszystkie EV"
+    ],
+    "category": "future",
+    "id": "d41b24d2-866d-4a8c-b0a4-eef09594cc74"
+  },
+  {
+    "trigger_context": "Optimus serwis",
+    "golden_response": "Asystent Tesla Center 2026 – -30% koszty.",
+    "tags": [
+      "Optimus",
+      "serwis"
+    ],
+    "category": "future",
+    "id": "c8556561-1940-4439-8439-54b79acfa1e6"
+  },
+  {
+    "trigger_context": "Cel 10k Tesli 2026",
+    "golden_response": "10k szt. PL, 50% EV dzięki Robotaxi leasingowi.",
+    "tags": [
+      "cel sprzedaż 2026",
+      "50% EV"
+    ],
+    "category": "future",
+    "id": "415edd62-c43e-4ef4-b6df-3612e3e8c635"
+  },
+  {
+    "trigger_context": "Klient pyta o gigacasting masę",
+    "golden_response": "Gigacasting zastępuje 400 części jednym odlewem – Model 3 RWD 1884 kg z 62.5 kWh, 5.6 s 0-100.",
+    "tags": [
+      "gigacasting",
+      "masa",
+      "Model 3"
+    ],
+    "category": "technical",
+    "id": "e037b0d3-eced-4636-b352-d3f7e8fcf884"
+  },
+  {
+    "trigger_context": "Wyjaśnij 48V Cybertruck",
+    "golden_response": "48V cieńsze przewody, mniej miedzi, steer-by-wire – otwarty standard dla Forda od 2023.",
+    "tags": [
+      "48V",
+      "Cybertruck",
+      "steer-by-wire"
+    ],
+    "category": "technical",
+    "id": "3ac32a86-b399-4567-acf7-6e03ab0b79be"
+  },
+  {
+    "trigger_context": "Porównaj LFP NCA gęstość",
+    "golden_response": "LFP 130-160 Wh/kg, 4000 cykli bezpieczna; NCA 322 Wh/kg wysoka gęstość termiczne.",
+    "tags": [
+      "LFP NCA",
+      "gęstość Wh/kg"
+    ],
+    "category": "technical",
+    "id": "5b54ae39-30fe-4fb8-ac5e-ddce2146b6c6"
+  },
+  {
+    "trigger_context": "Spec CATL LFP Model 3",
+    "golden_response": "62.5 kWh netto, 170 kW DC, 430-490 km WLTP; real lato 350-400 km, zima 270-320 km; <5% degradacja 100k km.",
+    "tags": [
+      "CATL LFP",
+      "Model 3",
+      "degradacja"
+    ],
+    "category": "technical",
+    "id": "9c52f8aa-b666-4630-b6a4-386a40821db0"
+  },
+  {
+    "trigger_context": "Ładowanie LFP temperatura PL",
+    "golden_response": "Poniżej 10°C wolniejsze; BMS podgrzewa; średnia 8°C: strata 20-30% zima jak spalinowe +30% paliwa.",
+    "tags": [
+      "temperatura PL",
+      "ładowanie LFP"
+    ],
+    "category": "technical",
+    "id": "734adfd0-06e0-4237-a6f0-57dac1fe4304"
+  },
+  {
+    "trigger_context": "Wall Connector spec",
+    "golden_response": "2350 zł, 22 kW trójfazowa, 71 km/h, Wi-Fi IP55, -30 do +50°C.",
+    "tags": [
+      "Wall Connector",
+      "spec"
+    ],
+    "category": "technical",
+    "id": "214f3f08-abc5-4249-b954-900b22dfdc7b"
+  },
+  {
+    "trigger_context": "Koszt instalacji Wall",
+    "golden_response": "700-7000 zł: wallbox 2350 + okablowanie 300-1000 + robocizna 700-2500 + modernizacja do 1000.",
+    "tags": [
+      "instalacja koszt",
+      "Wall Connector"
+    ],
+    "category": "technical",
+    "id": "c97aa45d-8448-48b1-9f46-3612b2892d1c"
+  },
+  {
+    "trigger_context": "TN-C-S Wall zgodność",
+    "golden_response": "PEN 10 mm² miedź, uziemienie <10 Ω, RCD 32A, obwód 16.5 kW dla 11 kW.",
+    "tags": [
+      "TN-C-S",
+      "zgodność"
+    ],
+    "category": "technical",
+    "id": "0877d71f-05c1-4598-9fba-eac8bd109b91"
+  },
+  {
+    "trigger_context": "Status Summon PL",
+    "golden_response": "FSD/Summon niedostępne UE (DCAS Faza 3); plan 2025 Holandia/DE/FR pierwsze; płacisz za obietnicę.",
+    "tags": [
+      "Summon status",
+      "FSD UE"
+    ],
+    "category": "technical",
+    "id": "e81c7ae9-0e9f-46a6-bbf5-1975688cec4a"
+  },
+  {
+    "trigger_context": "Art. 65k autonomia",
+    "golden_response": "Wymaga prawa jazdy B, kierowca przejmie kontrolę; Level 5 zabronione; Autopilot wspomaganie.",
+    "tags": [
+      "Art. 65k",
+      "prawo jazdy"
+    ],
+    "category": "technical",
+    "id": "a3afee0a-0087-486f-bd7c-9d1cacee5795"
+  },
+  {
+    "trigger_context": "StVZO vs PL porównanie",
+    "golden_response": "DE: bezpieczny z kierowcą, FSD pilotaż 2025; UE R157 zatwierdzenie; PL Art. 65k – kierowca kontrola.",
+    "tags": [
+      "StVZO PL",
+      "FSD DE"
+    ],
+    "category": "technical",
+    "id": "0817c4d6-bc42-4b76-bf94-acb1928aecf3"
+  },
+  {
+    "trigger_context": "Sprzedaż BEV PL prognoza",
+    "golden_response": "2024 14.8k (-3.5%); 2025 17-19k (+4-5%); udział 3.1% do 4-5%; Tesla #1.",
+    "tags": [
+      "BEV sprzedaż",
+      "prognoza 2025"
+    ],
+    "category": "market",
+    "id": "ec1d103e-2f19-4be8-8f5f-63fc9b99942c"
+  },
+  {
+    "trigger_context": "Ceny Tesla listopad 2025",
+    "golden_response": "Model 3 RWD 184990 LFP; Performance 239700 NCA; Model Y Standard 184990 LFP; Performance 269990 NCA.",
+    "tags": [
+      "ceny listopad 2025",
+      "Model 3 Y"
+    ],
+    "category": "market",
+    "id": "f5f125e6-c1f7-4678-8644-c44fd3e3bc7d"
+  },
+  {
+    "trigger_context": "Mój Elektryk 2.0 warunki",
+    "golden_response": "1.6 mld PLN; max 40k (18.75k +10k złom +11.25k niskodochodowi); limit 225k netto; do 30.06.2026.",
+    "tags": [
+      "Mój Elektryk 2.0",
+      "warunki dotacji"
+    ],
+    "category": "market",
+    "id": "ab98ab49-fb14-41b3-b454-5646ec4b18a4"
+  },
+  {
+    "trigger_context": "Wyniki Mój Elektryk edycja I",
+    "golden_response": "27k wniosków; BEV +155% 2021-2023; dostawcze +500%.",
+    "tags": [
+      "wyniki edycja I",
+      "BEV +155%"
+    ],
+    "category": "market",
+    "id": "afac00c4-8a3a-4438-8bda-9b359c2374d3"
+  },
+  {
+    "trigger_context": "RV Model S po latach",
+    "golden_response": "Model 3 65% 3 lata 70% 5; Model S 60% 3/5; Model X 55-58% 3, 58% 5; Model Y 70% 3, 70%+ 5.",
+    "tags": [
+      "RV po latach",
+      "Model S 60%"
+    ],
+    "category": "financial",
+    "id": "2bbd764d-e0c8-43c3-8f59-384940efac7a"
+  },
+  {
+    "trigger_context": "RV porównanie konkurencja",
+    "golden_response": "BMW i3 57% 3 lata; Taycan 61.4%; Model S średnio.",
+    "tags": [
+      "RV BMW Taycan",
+      "porównanie"
+    ],
+    "category": "financial",
+    "id": "444724ea-d328-491a-b44d-1770d339d072"
+  },
+  {
+    "trigger_context": "Kredyt 0% Model 3 warunki",
+    "golden_response": "0% RRSO, wkład 29.1k, 24-60 mies.; rata 4337/36 mies., 2117/60 mies.",
+    "tags": [
+      "kredyt 0% warunki",
+      "rata Model 3"
+    ],
+    "category": "financial",
+    "id": "d943ac41-4358-4694-92cb-7853a3fb2074"
+  },
+  {
+    "trigger_context": "Finansowanie Model Y 0% 2025",
+    "golden_response": "0% od 1.01.2025, wkład 0%, do 60 mies.; odbiór 7 dni.",
+    "tags": [
+      "finansowanie Model Y 0%",
+      "2025"
+    ],
+    "category": "financial",
+    "id": "281f926d-8baa-49a5-bd1d-84c5d8a5cf9e"
+  },
+  {
+    "trigger_context": "Cybertruck 0% FSD",
+    "golden_response": "0% z FSD do 30.06.2025; 5.54% bez; wkład 4% + podatki; import USA PL.",
+    "tags": [
+      "Cybertruck 0% FSD",
+      "import"
+    ],
+    "category": "financial",
+    "id": "4f51f447-ae63-4c24-95d7-b3921ef7907b"
+  },
+  {
+    "trigger_context": "Leasing Drivalia warunki",
+    "golden_response": "0-45% wkład, 24-60 mies.; 0% Model 3 2025; rata 2117-5323 zł netto.",
+    "tags": [
+      "Drivalia leasing",
+      "0% Model 3"
+    ],
+    "category": "financial",
+    "id": "e527fb3c-a48a-4da0-a936-eef0a1f6d76f"
+  },
+  {
+    "trigger_context": "PKO Leasing warunki",
+    "golden_response": "Wkład 0%, 2-7 lat; zmienne oprocentowanie; PLN/EUR; ubezpieczenie w ratach.",
+    "tags": [
+      "PKO leasing",
+      "zmienne"
+    ],
+    "category": "financial",
+    "id": "e785ba7e-b345-4b59-ad24-d36e5a4fbde3"
+  },
+  {
+    "trigger_context": "Cybertruck import ceny",
+    "golden_response": "RWD 240-360k; AWD 360-500k; Cyberbeast 436-584k; brak leasingu fabrycznego.",
+    "tags": [
+      "Cybertruck ceny import",
+      "brak leasing"
+    ],
+    "category": "financial",
+    "id": "0601ab48-450d-4772-90f3-8ed911f27a0b"
+  },
+  {
+    "trigger_context": "Mój Elektryk prywatne",
+    "golden_response": "18.75k bazowo; KDR +30k; niskodochodowi +11.25k; złom +10k; max 40k; 225k limit; do 30.06.2026.",
+    "tags": [
+      "dotacje prywatne",
+      "KDR +30k"
+    ],
+    "category": "financial",
+    "id": "dbc8bed0-d329-4658-a1f5-b7cadffbd22c"
+  },
+  {
+    "trigger_context": "NaszEauto firmy",
+    "golden_response": "Min 30k; KDR 35k.",
+    "tags": [
+      "NaszEauto firmy",
+      "35k KDR"
+    ],
+    "category": "financial",
+    "id": "e558c824-d31d-45a1-b17b-cdc4a7b83620"
+  },
+  {
+    "trigger_context": "Niemcy dotacje 2026 warunki",
+    "golden_response": "4k EUR max, limit 45k EUR netto, niskodochodowi 3.8k EUR/mies.; BEV tylko, używane; 3 mld EUR 2026-2029; S/X poza limitem.",
+    "tags": [
+      "Niemcy 2026",
+      "4k EUR"
+    ],
+    "category": "financial",
+    "id": "0fefc8b5-1862-47a4-92a3-a2abb8322364"
+  },
+  {
+    "trigger_context": "Francja Bonus warunki",
+    "golden_response": "3.1-4.2k EUR +1k baterie UE; max 5.2k EUR; leasing socjalny 100-150 EUR/mies.; FSD jeśli CO2 limit.",
+    "tags": [
+      "Bonus Écologique",
+      "baterie UE"
+    ],
+    "category": "financial",
+    "id": "07512afd-0b7a-4897-ac8f-bfc075a45dd9"
+  },
+  {
+    "trigger_context": "Holandia ulgi BPM",
+    "golden_response": "BPM -75% do 2025 (wygasz 2030); podatek drogowy -75%; SEBA dostawcze 5k EUR; S/X do 2025.",
+    "tags": [
+      "Holandia BPM -75%",
+      "SEBA 5k"
+    ],
+    "category": "financial",
+    "id": "7223d924-4a03-48f8-a3ba-c1fcf22e166b"
+  },
+  {
+    "trigger_context": "Ubezpieczenie Model S OC AC",
+    "golden_response": "OC 698 zł/rok; OC+AC+NNW+Assistance 9547-10303 zł; OC+AC+NNW 8500-9500 zł.",
+    "tags": [
+      "ubezpieczenie Model S",
+      "9547-10303 zł"
+    ],
+    "category": "financial",
+    "id": "cf468869-c74a-4421-827d-4172fec9752f"
+  },
+  {
+    "trigger_context": "OC Tesla modele porównanie",
+    "golden_response": "Spring 462 zł; Y 573 zł; 3 596 zł; S 698 zł – premium wyższe.",
+    "tags": [
+      "OC porównanie modele",
+      "S 698 zł"
+    ],
+    "category": "financial",
+    "id": "b8e19faa-8f7d-48cb-a832-00dc2a9f6d32"
+  },
+  {
+    "trigger_context": "Ubezpieczenie DE PL różnica",
+    "golden_response": "DE AC +30% vs 2023 (baterie); PL AC +10-15% vs spalinowe; OC EU bez różnicy.",
+    "tags": [
+      "DE PL AC +30%",
+      "baterie naprawy"
+    ],
+    "category": "financial",
+    "id": "02b69407-e3d4-49c0-8db1-fb0742fb46cd"
+  },
+  {
+    "trigger_context": "Ubezpieczmojatesle oferty",
+    "golden_response": "Model 3 4212 zł/rok; Y 4428 zł; S 9547 zł; X 10303 zł; -25% VAT firmy.",
+    "tags": [
+      "ubezpieczmojatesle",
+      "-25% VAT"
+    ],
+    "category": "financial",
+    "id": "7d7ad75e-07a0-473e-b230-749729209b71"
+  },
+  {
+    "trigger_context": "TCO Model 3 3 lata szczegóły",
+    "golden_response": "Zakup 184990; OC 1788/3 lata; AC 12-15k; energia 5850; serwis 1-2k; podatek 0; razem 205-210k; RV 120k; efektywny 85k; 34-35 PLN/1k km.",
+    "tags": [
+      "TCO szczegóły",
+      "efektywny 85k"
+    ],
+    "category": "financial",
+    "id": "5e059e07-9bb1-40c2-99a3-616aacda60cc"
+  },
+  {
+    "trigger_context": "TCO Model S szczegóły",
+    "golden_response": "Zakup 240-270k; AC 25-30k; energia 8500; serwis 2-5k; razem 275-312k; RV 144-162k; efektywny 113-168k; 60-75 PLN/1k km.",
+    "tags": [
+      "TCO Model S",
+      "efektywny 113-168k"
+    ],
+    "category": "financial",
+    "id": "c72b558d-b4c3-4932-8e44-f4ee7328a0a2"
+  },
+  {
+    "trigger_context": "RV prognozy luki",
+    "golden_response": "Brak ADAC/Eurotax do 2030; zależne baterii, dotacji, czasu pracy.",
+    "tags": [
+      "RV luki",
+      "ADAC Eurotax"
+    ],
+    "category": "financial",
+    "id": "76c2c47c-3197-4a7e-bb05-296fa0fefee7"
+  },
+  {
+    "trigger_context": "Ubezpieczenie Plaid DE luki",
+    "golden_response": "Brak stawek 40-latka bezszkodowego; AC +30% vs spalinowe naprawy baterii.",
+    "tags": [
+      "Plaid DE luki",
+      "+30% AC"
+    ],
+    "category": "financial",
+    "id": "6df9af9e-3c66-40c1-a1bb-7b5fd3932bf1"
+  },
+  {
+    "trigger_context": "Cybertruck finans luki",
+    "golden_response": "Brak oficjalnego PL; import prywatny z ograniczeniami rejestracyjnymi.",
+    "tags": [
+      "Cybertruck luki",
+      "import ograniczenia"
+    ],
+    "category": "financial",
+    "id": "4eb9b5db-b926-42fc-add6-98e753487864"
+  },
+  {
+    "trigger_context": "EOG Norwegia Model X luki",
+    "golden_response": "Ulgi ogólne VAT opłaty; Model X poza limitami cenowymi.",
+    "tags": [
+      "Norwegia luki",
+      "poza limitem"
+    ],
+    "category": "financial",
+    "id": "bf1052f7-4e18-4005-b3d5-f65d59330ea9"
+  },
+  {
+    "trigger_context": "Schwartz 10 typów tabela",
+    "golden_response": "Hedonizm przyjemność 'frajda jazdy'; Bezpieczeństwo ochrona 'gwarancje'; Status prestiż 'prestiż osób'; Oszczędność racjonalność 'TCO'.",
+    "tags": [
+      "Schwartz tabela",
+      "Hedonizm Bezpieczeństwo"
+    ],
+    "category": "psychology",
+    "id": "06fe75f7-9060-4515-998e-f9e350fffdd5"
+  },
+  {
+    "trigger_context": "DISC tabela wskaźniki",
+    "golden_response": "D 'wynik końcowy' szybkie tempo; I 'buzz' energia; S 'gwarancje' spokojny; C 'dane NCAP' notatki.",
+    "tags": [
+      "DISC tabela",
+      "wskaźniki werbalne"
+    ],
+    "category": "psychology",
+    "id": "74074d1f-89a3-439e-be7f-d99a84693b23"
+  },
+  {
+    "trigger_context": "Ekman emocje tabela",
+    "golden_response": "Radość uśmiech – intensyfikuj; Smutek brwi – zapytaj; Strach oczy – uspokój NCAP; Złość brwi – zmień temat.",
+    "tags": [
+      "Ekman tabela",
+      "radość uśmiech"
+    ],
+    "category": "psychology",
+    "id": "cc3bba6a-089b-451d-a770-52a1d7af6522"
+  },
+  {
+    "trigger_context": "Mowa ciała tabela",
+    "golden_response": "Wzrok 60-70% zaufanie; postawa otwarta zainteresowanie; pocieranie ucha nieszczerość; otwarte dłonie szczerość.",
+    "tags": [
+      "mowa ciała tabela",
+      "wzrok 60-70%"
+    ],
+    "category": "psychology",
+    "id": "1b13703a-ff97-4b70-9908-5ff191c06388"
+  },
+  {
+    "trigger_context": "Identyfikacja motywacji scenariusz",
+    "golden_response": "Status: pyta prestiż wzrok Model S; Oszczędność: cena notatki; Hedonizm: osiągi błysk; Bezpieczeństwo: gwarancje ostrożny.",
+    "tags": [
+      "identyfikacja scenariusz",
+      "Status prestiż"
+    ],
+    "category": "psychology",
+    "id": "c4fa018b-177a-439f-9959-31ce692e334f"
+  },
+  {
+    "trigger_context": "Matryca 5 min",
+    "golden_response": "'Co powstrzymuje?'; nonwerbalne tempo wzrok energia; reaguj dostosuj.",
+    "tags": [
+      "matryca 5 min",
+      "powstrzymuje"
+    ],
+    "category": "psychology",
+    "id": "caefb6cc-171c-425c-b09d-659f6b19f9eb"
+  },
+  {
+    "trigger_context": "Dostosowanie DISC tempo",
+    "golden_response": "D szybkie 'wynik'; I emocjonalne 'buzz'; S wolne 'gwarancja'; C precyzyjne 'NCAP'; 80-140 słów/min.",
+    "tags": [
+      "dostosowanie DISC",
+      "tempo 80-140"
+    ],
+    "category": "psychology",
+    "id": "9249f425-74cc-4293-bb83-af9c04459527"
+  },
+  {
+    "trigger_context": "Pytania otwarte DISC",
+    "golden_response": "D 'wynik chcesz?'; I 'zmieni życie?'; S 'bezpieczeństwo najważniejsze?'; C 'dane analizy?'.",
+    "tags": [
+      "pytania otwarte",
+      "DISC"
+    ],
+    "category": "psychology",
+    "id": "e2f396fa-365a-43cf-8141-bd73fec0f7cc"
+  },
+  {
+    "trigger_context": "Scenariusz D Hedonizm",
+    "golden_response": "Wchodzi szybko pyta Performance; '3.3s szybszy M3'; test natychmiast.",
+    "tags": [
+      "scenariusz D Hedonizm",
+      "3.3s M3"
+    ],
+    "category": "psychology",
+    "id": "2ef4c43c-19ba-4687-a902-85eed862e619"
+  },
+  {
+    "trigger_context": "Luki psychologia",
+    "golden_response": "Brak progów DISC EV PL; brak % typ D; brak NLP konwersji; brak psychometrii DISC Schwartz.",
+    "tags": [
+      "luki psychologia",
+      "% typ D"
+    ],
+    "category": "psychology",
+    "id": "b0296dc3-c7f7-4e3e-a9b8-e1d13cff326a"
+  },
+  {
+    "trigger_context": "Rekomendacje profilowanie",
+    "golden_response": "Matryca 5 min obserwuj; test 'powstrzymuje?'; unikaj detali D, emocji C.",
+    "tags": [
+      "rekomendacje",
+      "matryca 5 min"
+    ],
+    "category": "psychology",
+    "id": "10f9425a-f900-419a-9d79-82884d179799"
+  },
+  {
+    "trigger_context": "LAER metoda",
+    "golden_response": "Listen wysłuchaj; Acknowledge potwierdź; Explore eksploruj; Respond reframing.",
+    "tags": [
+      "LAER",
+      "zbijanie"
+    ],
+    "category": "objection",
+    "id": "eea43efb-86cc-4357-8623-9b778c2767d6"
+  },
+  {
+    "trigger_context": "FEEL-FELT-FOUND przykład",
+    "golden_response": "'Czujesz zimna maszyna'; 'Inni czuli podobnie'; 'Odkryli czysty adrenaline'.",
+    "tags": [
+      "FEEL-FELT-FOUND",
+      "przykład"
+    ],
+    "category": "objection",
+    "id": "8e3fe036-ad2e-4137-9df5-771597c9eb69"
+  },
+  {
+    "trigger_context": "Obiekcja dusza frazy",
+    "golden_response": "'660 Nm natychmiast dreszcz'; 'Czystsze V8 precyzja'; '200k klientów test zmieni'.",
+    "tags": [
+      "dusza frazy",
+      "660 Nm"
+    ],
+    "category": "objection",
+    "id": "02cb545b-c045-4571-b366-1b7e92eb59a1"
+  },
+  {
+    "trigger_context": "Obiekcja wnętrze frazy",
+    "golden_response": "'Minimalizm świadomy Apple'; 'Czystość poznawcza'; 'Trwałość dekada'.",
+    "tags": [
+      "wnętrze frazy",
+      "Apple minimalizm"
+    ],
+    "category": "objection",
+    "id": "4ff402cd-850c-4d1e-9282-f94d8cd60a92"
+  },
+  {
+    "trigger_context": "Obiekcja Musk frazy",
+    "golden_response": "'1.5M aut 10k inżynierów'; 'Dane NCAP TCO'; 'Wszystkie marki sekrety'.",
+    "tags": [
+      "Musk frazy",
+      "1.5M aut"
+    ],
+    "category": "objection",
+    "id": "4ef52860-13a5-4b6b-b1c3-f24530fcdab7"
+  },
+  {
+    "trigger_context": "Obiekcja wszyscy frazy",
+    "golden_response": "'Twój FSD unikat'; 'Pionier Model S zero'; 'Luksus możliwość'.",
+    "tags": [
+      "wszyscy frazy",
+      "FSD unikat"
+    ],
+    "category": "objection",
+    "id": "1d27e134-251e-4966-97a1-d62423b5ee03"
+  },
+  {
+    "trigger_context": "Obiekcja tech frazy",
+    "golden_response": "'OTA +100 funkcji'; 'LFP 600k km'; 'Czekanie strata TCO'.",
+    "tags": [
+      "tech frazy",
+      "OTA +100"
+    ],
+    "category": "objection",
+    "id": "1fd471b1-addb-4b83-90d6-d4e0f20734a6"
+  },
+  {
+    "trigger_context": "APK pytania",
+    "golden_response": "A 'Auto teraz?'; P 'Problemy?'; I 'Wpływ codzienność?'; K 'Idealna sytuacja?'.",
+    "tags": [
+      "APK",
+      "pytania"
+    ],
+    "category": "objection",
+    "id": "a991387c-f92b-4567-b5b2-55657d4671d3"
+  },
+  {
+    "trigger_context": "Pytania 10 min",
+    "golden_response": "1-2 'Powstrzymuje?'; 3-4 'Obawy [temat]?'; 5-6 'Konsekwencje?'; 7-8 'Głos kto?'; 9-10 'Rozwiązali co zmieni?'.",
+    "tags": [
+      "pytania 10 min",
+      "powstrzymuje"
+    ],
+    "category": "objection",
+    "id": "c5ac801f-c0b8-4ac8-a0f8-0c3e02a134d5"
+  },
+  {
+    "trigger_context": "NLP reframing 5 technik",
+    "golden_response": "Boomerang odbicie korzyść; Perspektywizacja punkt widzenia; Zwrotka pozytywna; Dowód inni; Przesunięcie czasowe.",
+    "tags": [
+      "NLP 5 technik",
+      "Boomerang"
+    ],
+    "category": "objection",
+    "id": "f5211d56-1964-4f83-9505-613f047164e5"
+  },
+  {
+    "trigger_context": "Scenariusz zbicia dusza",
+    "golden_response": "Listen; Acknowledge emocjonalne; Explore 'Co w BMW?'; Respond '660 Nm czysty – test zmieni'.",
+    "tags": [
+      "zbicia dusza",
+      "LAER 660 Nm"
+    ],
+    "category": "objection",
+    "id": "c1232660-fbbd-4077-a7a2-5e24691a600a"
+  },
+  {
+    "trigger_context": "Luki zbijanie",
+    "golden_response": "Brak % obiekcji PL; brak A/B reframingu; brak wagi rodziny racjonalność Tesla.",
+    "tags": [
+      "luki zbijanie",
+      "A/B reframing"
+    ],
+    "category": "objection",
+    "id": "cfe19a2d-2508-4576-b5ea-045450614b9b"
+  },
+  {
+    "trigger_context": "Minimalizm frazy 1",
+    "golden_response": "'Minimalizm świadomy design Apple/LV – luksus inteligentny'.",
+    "tags": [
+      "minimalizm fraza 1",
+      "Apple LV"
+    ],
+    "category": "framing",
+    "id": "4c63c3cc-b2e3-44b9-99ac-a830087654b4"
+  },
+  {
+    "trigger_context": "Minimalizm frazy 2",
+    "golden_response": "'Czystość poznawcza – mniej rozproszenia, produktywność rośnie'.",
+    "tags": [
+      "minimalizm fraza 2",
+      "poznawcza"
+    ],
+    "category": "framing",
+    "id": "3971f3c2-b0a0-41b9-886e-b048e3df9ef0"
+  },
+  {
+    "trigger_context": "Minimalizm frazy 3",
+    "golden_response": "'Trwałość luksus – dekada bez psucia vs Mercedes 5 lat'.",
+    "tags": [
+      "minimalizm fraza 3",
+      "trwałość"
+    ],
+    "category": "framing",
+    "id": "6f4f7509-0f45-4c06-a952-7958d650f522"
+  },
+  {
+    "trigger_context": "OTA frazy 1",
+    "golden_response": "'OTA inwestycja – +50% lepszy za rok, zwrot w roku'.",
+    "tags": [
+      "OTA fraza 1",
+      "inwestycja +50%"
+    ],
+    "category": "framing",
+    "id": "d570e42f-74a9-415d-9319-96fb7c40d63d"
+  },
+  {
+    "trigger_context": "OTA frazy 2",
+    "golden_response": "'Wikipedia na kołach – OTA co miesiąc, konkurencja rok po roku'.",
+    "tags": [
+      "OTA fraza 2",
+      "Wikipedia"
+    ],
+    "category": "framing",
+    "id": "214ea3e8-b9d2-4f91-b7f1-e1aa7c516a6d"
+  },
+  {
+    "trigger_context": "OTA frazy 3",
+    "golden_response": "'Personalizacja OTA – Twój Model unikat za rok'.",
+    "tags": [
+      "OTA fraza 3",
+      "personalizacja unikat"
+    ],
+    "category": "framing",
+    "id": "c4c4c87d-da7d-42d2-9e1a-f00f52bac9a2"
+  },
+  {
+    "trigger_context": "SPIN przykłady",
+    "golden_response": "S 'Ile km dziennie?'; P 'Problemy tankowanie?'; I 'Wpływ czas?'; N 'Pełna bateria rano wartość?'.",
+    "tags": [
+      "SPIN przykłady",
+      "tankowanie"
+    ],
+    "category": "framing",
+    "id": "2d33b140-0edf-4e53-b4e4-8734e1d1d737"
+  },
+  {
+    "trigger_context": "5 Whys cena przykład",
+    "golden_response": "Why 1 'Dlaczego drogo?'; ... Why 5 'Rata 3k Performance?'; efekt: problem finansowania, nie cena.",
+    "tags": [
+      "5 Whys cena",
+      "Performance rata"
+    ],
+    "category": "framing",
+    "id": "aa476373-2364-4826-9470-2fd7837df4e0"
+  },
+  {
+    "trigger_context": "Value framework przykład",
+    "golden_response": "Autopilot cecha tempomat; korzyść precyzja; motywacja Status 'przyszłość', Oszczędność 'mniej zmęczenia'.",
+    "tags": [
+      "value framework",
+      "Autopilot przykład"
+    ],
+    "category": "framing",
+    "id": "ec79087b-fe1d-4e01-a8d9-c3e41d2e1779"
+  },
+  {
+    "trigger_context": "Value Hedonizm Autopilot",
+    "golden_response": "'Autopilot dron precyzja – czucie przyszłości'.",
+    "tags": [
+      "Hedonizm Autopilot",
+      "dron"
+    ],
+    "category": "framing",
+    "id": "9ddf3963-dbaf-4b0a-811c-20ee8e9587a3"
+  },
+  {
+    "trigger_context": "Value Status Autopilot",
+    "golden_response": "'Autopilot lider – bez rąk ludzie myślą przyszłość'.",
+    "tags": [
+      "Status Autopilot",
+      "lider bez rąk"
+    ],
+    "category": "framing",
+    "id": "cf0e5116-6d8f-4221-9b3f-fa4c2ed28601"
+  },
+  {
+    "trigger_context": "Value Bezpieczeństwo Autopilot",
+    "golden_response": "'Autopilot 10x szybciej – ochrona rodziny trasach'.",
+    "tags": [
+      "Bezpieczeństwo Autopilot",
+      "10x szybciej"
+    ],
+    "category": "framing",
+    "id": "34224abc-6de8-4896-b73c-ad91290155cb"
+  },
+  {
+    "trigger_context": "Value Oszczędność LFP",
+    "golden_response": "'LFP 8 lat darmo – oszczędza 115k vs BMW'.",
+    "tags": [
+      "Oszczędność LFP",
+      "115k BMW"
+    ],
+    "category": "framing",
+    "id": "7d1b7ec3-ba65-47cb-9803-7d4644c1965c"
+  },
+  {
+    "trigger_context": "Value Status LFP",
+    "golden_response": "'Najdłuższa gwarancja – symbol pewności Musk'.",
+    "tags": [
+      "Status LFP",
+      "gwarancja Musk"
+    ],
+    "category": "framing",
+    "id": "3b62c5bd-43e2-40b5-9d75-c74203f4cebe"
+  },
+  {
+    "trigger_context": "Matryca funkcje motywacja szczegół",
+    "golden_response": "660 Nm Ekologia zero, Status szybciej M3, Hedonizm dreszcz, Oszczędność brak strat; OTA Ekologia odpadów, Status trendsetter.",
+    "tags": [
+      "matryca szczegół",
+      "660 Nm OTA"
+    ],
+    "category": "framing",
+    "id": "c45b18ee-ff79-480a-b234-12c78a78a49d"
+  },
+  {
+    "trigger_context": "Personalizacja Ekologia",
+    "golden_response": "CO2 kalkulator 3.5t/rok oszczędności; Supercharger zielona; '3.5t = 100 drzew'.",
+    "tags": [
+      "personalizacja Ekologia",
+      "CO2 3.5t"
+    ],
+    "category": "framing",
+    "id": "ec6bf4db-2a2d-4fa7-b6cb-76087dfc07c3"
+  },
+  {
+    "trigger_context": "Personalizacja Status",
+    "golden_response": "Logo Supercharger FSD OTA; 'Parkujesz S – symbol Valley'.",
+    "tags": [
+      "personalizacja Status",
+      "symbol Valley"
+    ],
+    "category": "framing",
+    "id": "711650a7-3b0b-485e-9cbd-6d2ff12969ca"
+  },
+  {
+    "trigger_context": "Personalizacja Oszczędność",
+    "golden_response": "TCO kalkulator 150k 5 lat; 'Zwrot rok – inwestycja'.",
+    "tags": [
+      "personalizacja Oszczędność",
+      "150k TCO"
+    ],
+    "category": "framing",
+    "id": "174418ac-616d-4884-9a02-85e264d7dc5d"
+  },
+  {
+    "trigger_context": "Demo przyspieszenia best practice",
+    "golden_response": "Tor klient pasażer; 'Poczuj 660 Nm dreszcz'; po 'Obawiałeś nudna? Frajda codzienna'.",
+    "tags": [
+      "demo przyspieszenia",
+      "660 Nm dreszcz"
+    ],
+    "category": "sales",
+    "id": "d0cdde2d-5641-4bb3-9c88-da057e6e676e"
+  },
+  {
+    "trigger_context": "Autopilot demo best practice",
+    "golden_response": "Autostrada; 'Auto prowadzi Ty kontrola'; po 'Pilot samolot – obserwuj'.",
+    "tags": [
+      "Autopilot demo",
+      "pilot kontrola"
+    ],
+    "category": "sales",
+    "id": "b968465c-b5a4-4dd9-9bf2-aab433c7da63"
+  },
+  {
+    "trigger_context": "Personalizacja muzyki best practice",
+    "golden_response": "'Jaka muzyka?'; Spotify Dolby; 'Pamięta playlistę – Twoje auto'.",
+    "tags": [
+      "muzyka personalizacja",
+      "Spotify pamięta"
+    ],
+    "category": "sales",
+    "id": "8d8d6aef-7905-4632-a823-928b02946713"
+  },
+  {
+    "trigger_context": "Follow-up brak kontaktu",
+    "golden_response": "Email Wow Recap + Extended 7 dni; SMS '7-dniowy test darmo do domu'.",
+    "tags": [
+      "follow-up brak",
+      "extended 7 dni"
+    ],
+    "category": "sales",
+    "id": "5524cda9-b3e5-4f31-a826-763891f57008"
+  },
+  {
+    "trigger_context": "Follow-up TCO 5 dni",
+    "golden_response": "Email z TCO_[Imię].xlsx; 'Oszczędności 9.5k/rok'.",
+    "tags": [
+      "follow-up TCO",
+      "9.5k oszczędności"
+    ],
+    "category": "sales",
+    "id": "453e0aa4-bd07-43cb-8567-58f9706d2543"
+  },
+  {
+    "trigger_context": "Follow-up pozytywna jazda",
+    "golden_response": "SMS '0% rata 2.8k do 15.11'; Email 'Oferta + kalendarz'.",
+    "tags": [
+      "follow-up pozytywna",
+      "0% 2.8k"
+    ],
+    "category": "sales",
+    "id": "6c558092-dfcf-4091-bfff-101272323e72"
+  },
+  {
+    "trigger_context": "CRM automatyzacja",
+    "golden_response": "Test Drive: email 48h SMS 72h; No Response 48h: TCO; 5 dni: ostatnia szansa.",
+    "tags": [
+      "CRM triggery",
+      "48h 72h"
+    ],
+    "category": "sales",
+    "id": "dcec3559-e534-452a-8ffd-9dc1b6500730"
+  },
+  {
+    "trigger_context": "Cykl sprzedaży etapy",
+    "golden_response": "1 Profilowanie 10 min; 2 Przedprezentacja; 3 Test Drive 20 min; 4 Follow-Up 0-24h; 5 Nurture 24-72h; 6 Push 5-14 dni; 7 Post-Sale.",
+    "tags": [
+      "cykl etapy",
+      "profilowanie test"
+    ],
+    "category": "sales",
+    "id": "aae7e422-cfe2-46ee-a825-5bf366e0332d"
+  },
+  {
+    "trigger_context": "Konwersja statystyki",
+    "golden_response": "Wizyta 100%; Test 65%; Odbył 50 (77%); Odpowiedź 15 (30%); Extended 8 (53%); Kup 5 (62%); Final 5%.",
+    "tags": [
+      "konwersja 5%",
+      "extended 62%"
+    ],
+    "category": "sales",
+    "id": "783ed701-8e0f-43da-8178-381e4e53a98d"
+  },
+  {
+    "trigger_context": "Podsumowanie RAG 7 raportów",
+    "golden_response": "Produkt baterie Wall FSD; Finanse 0% dotacje TCO 85k; Konkurencja 3 vs EV6 usterki i4; Psychologia Schwartz DISC mowa; Obiekcje LAER 5 obiekcji; Frazy reframing OTA SPIN 5 Whys; Proces test WOW follow-up CRM.",
+    "tags": [
+      "RAG podsumowanie",
+      "7 raportów"
+    ],
+    "category": "summary",
+    "id": "b0a42b81-0d79-4434-9973-d63dbe9f0d8f"
+  },
+  {
+    "trigger_context": "Klient pyta o zasięg Model 3 w zimie",
+    "golden_response": "Świetne pytanie! Model 3 Long Range ma zasięg WLTP 629 km. W zimie (poniżej 0°C) realistycznie spodziewaj się 480-520 km, czyli redukcja ~20-30%. To normalne dla wszystkich EVs - bateria pracuje optymalnie w 20-25°C. Ale mamy rozwiązania: pre-heating (ogrzewanie przed jazdą gdy auto jest na ładowarce - zużycie energii z sieci, nie z baterii), pompa ciepła (standard w nowych Model 3, zwiększa efektywność o 10-15%), tryb ekonomiczny. Po 1-2 tygodniach użytkowania nauczysz się planować zasięg naturalnie - to jak z telefonem, przestajesz o tym myśleć.",
+    "tags": [
+      "zasięg",
+      "zima",
+      "model_3"
+    ],
+    "category": "technical",
+    "id": "ff3fd405-9568-4ee1-a7ae-e59c5c2f0e0e"
+  },
+  {
+    "trigger_context": "Klient obawia się długiego czasu ładowania",
+    "golden_response": "Rozumiem tę obawę - to najczęstsza obiekcja. Ale zmieńmy perspektywę. W aucie spalinowym tankujesz ~5 min, ale tracisz czas na dojazd do stacji, czekanie w kolejce. Średnio 2x w miesiącu = 240 minut rocznie. Z Teslą: 95% ładowań odbywa się w domu/pracy - podłączasz wieczorem jak telefon, rano masz pełny zasięg. Czas faktycznie poświęcony? 5 sekund na podłączenie. Na dłuższe trasy: Supercharger ładuje 300 km w 15 minut - dokładnie tyle ile potrzebujesz na kawę i toaletę. Klienci mówią, że po przejściu na EV nigdy więcej nie stoją na stacji benzynowej w deszczu o 7 rano.",
+    "tags": [
+      "ładowanie",
+      "czas",
+      "obiekcja"
+    ],
+    "category": "objection_handling",
+    "id": "c5c90196-9f8f-48ab-8de0-be1f221917be"
+  },
+  {
+    "trigger_context": "Klient pyta o koszty eksploatacji Model 3 vs auto spalinowe",
+    "golden_response": "Doskonałe pytanie - tu Tesla wygrywa. Porównajmy Model 3 vs BMW 320i (podobna klasa). Tesla: ładowanie domowe ~0.70 zł/kWh × 15 kWh/100km = 10.50 zł/100km. BMW: 7L/100km × 7 zł/L = 49 zł/100km. Oszczędność: 38.50 zł/100km. Przy 20,000 km/rok to 7,700 zł. Serwis: Tesla - praktycznie brak (płyn spryskiwaczy, opony, płyn hamulcowy co 2 lata). BMW: przeglądy co 15k km (~1500 zł/rok), olej, filtry, świece, paski, hamulce co 30k. W 5 lat różnica to ~50,000-60,000 zł. Plus brak akcyzy, niższe ubezpieczenie dla EV. Tesla zwraca się po 3-4 latach, potem czyste oszczędności.",
+    "tags": [
+      "koszty",
+      "oszczędności",
+      "tco"
+    ],
+    "category": "financial",
+    "id": "bd77348f-2a41-46a8-8d19-cad6288a363f"
+  },
+  {
+    "trigger_context": "Klient porównuje Teslę z BMW i4",
+    "golden_response": "Świetne porównanie - oba to doskonałe auta. BMW i4 to solidny wybór, ale Tesla ma kilka przewag: 1) Zasięg: Model 3 LR 629 km vs i4 eDrive40 590 km WLTP. Real-world przewaga Tesli ~30-40 km. 2) Ładowanie: Supercharger network (50+ stacji w PL, 250 kW moc) vs mieszane ładowarki BMW (często zajęte, wolniejsze). 3) Software: OTA updates - Tesla dostaje nowe funkcje co miesiąc (ostatnio: lepszy Autopilot, +5% zasięg software-only). BMW updates tylko w ASO. 4) Autopilot vs Driving Assistant Pro - Tesla bardziej zaawansowany i tańszy. 5) Cena: Model 3 LR ~230k, BMW i4 ~280k. Oszczędność 50k pozwala na FSD lub ładowarkę domową + 3 lata darmowych przejazdów. BMW wygrywa w wykończeniu wnętrza (skóra, materiały) - jeśli to priorytet, warto rozważyć. Dla technologii, zasięgu i value for money - Tesla jest lepsza.",
+    "tags": [
+      "porównanie",
+      "bmw",
+      "i4",
+      "konkurencja"
+    ],
+    "category": "competitive",
+    "id": "b217ffdf-094c-4527-9b2b-184c66cf26c4"
+  },
+  {
+    "trigger_context": "Klient pyta o leasing dla firmy",
+    "golden_response": "Leasing operacyjny Tesla dla firmy to świetna decyzja finansowa. Korzyści: 1) 100% raty leasingowej = koszt uzyskania przychodu (KUP). 2) VAT marża 23% - pełne odliczenie (samochód spalinowy: tylko 50% VAT do 150k). 3) 0% emisji = brak podatku od środków transportu (~2000 zł/rok oszczędności). 4) Brak limitów amortyzacji (spalinowe max 150k - reszta 'marnotrawstwo'). 5) Niskie OpEx: ~10 zł/100km energia vs ~50 zł paliwo. Przykład Model 3 LR (250k): wpłata 20% (50k), 48 m-cy, rata ~2800 zł netto. Miesięczny koszt realny dla firmy ~2100 zł (po odliczeniach). Porównaj z BMW 320i leasing ~3500-4000 zł + wyższe paliwo + serwis. ROI: Tesla zwraca się w 3-4 lata, potem czyste oszczędności. Dodam: prestiż marki Tesla wśród klientów B2B (innowacyjność, ekologia) = wartość wizerunkowa.",
+    "tags": [
+      "leasing",
+      "firma",
+      "b2b",
+      "vat"
+    ],
+    "category": "financial",
+    "id": "c7945064-c888-4e50-9c2f-ac538192e1c6"
+  }
+]

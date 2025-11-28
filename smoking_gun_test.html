@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRA v3.1 - Smoking Gun Test</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #4ec9b0;
+            margin-top: 0;
+        }
+        h2 {
+            color: #569cd6;
+            border-bottom: 1px solid #3e3e42;
+            padding-bottom: 10px;
+        }
+        button {
+            background: #0e639c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #1177bb;
+        }
+        button:disabled {
+            background: #3e3e42;
+            cursor: not-allowed;
+        }
+        .log {
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            padding: 15px;
+            border-radius: 4px;
+            max-height: 500px;
+            overflow-y: auto;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .log-entry {
+            margin: 5px 0;
+            padding: 5px;
+            border-left: 3px solid transparent;
+        }
+        .log-info { border-left-color: #569cd6; color: #569cd6; }
+        .log-success { border-left-color: #4ec9b0; color: #4ec9b0; }
+        .log-warning { border-left-color: #ce9178; color: #ce9178; }
+        .log-error { border-left-color: #f48771; color: #f48771; }
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status-connected { background: #4ec9b0; color: #1e1e1e; }
+        .status-disconnected { background: #f48771; color: #1e1e1e; }
+        .status-waiting { background: #ce9178; color: #1e1e1e; }
+        .metric {
+            display: inline-block;
+            background: #3e3e42;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        .metric-label {
+            color: #858585;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        .metric-value {
+            color: #4ec9b0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔬 ULTRA v3.1 - Smoking Gun Test</h1>
+        <p>Full Stack Verification: RAG (Qdrant) → Fast Path (Gemini) → Slow Path (DeepSeek)</p>
+        
+        <div>
+            <button id="connectBtn" onclick="runTest()">🚀 START TEST</button>
+            <span id="status" class="status status-disconnected">DISCONNECTED</span>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <div class="metric">
+                <div class="metric-label">Fast Path</div>
+                <div class="metric-value" id="fastStatus">⏳</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">Slow Path</div>
+                <div class="metric-value" id="slowStatus">⏳</div>
+            </div>
+            <div class="metric">
+                <div class="metric-label">RAG Nuggets</div>
+                <div class="metric-value" id="ragCount">-</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>📋 Test Logs</h2>
+        <div id="logs" class="log">
+            <div class="log-entry log-info">Ready to start test...</div>
+        </div>
+    </div>
+
+    <script>
+        let ws = null;
+        let testStartTime = null;
+
+        function log(message, type = 'info') {
+            const logsDiv = document.getElementById('logs');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            const timestamp = new Date().toLocaleTimeString();
+            entry.textContent = `[${timestamp}] ${message}`;
+            logsDiv.appendChild(entry);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+        }
+
+        function updateStatus(connected) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = connected ? 'CONNECTED' : 'DISCONNECTED';
+            statusEl.className = `status ${connected ? 'status-connected' : 'status-disconnected'}`;
+        }
+
+        function runTest() {
+            const btn = document.getElementById('connectBtn');
+            btn.disabled = true;
+            testStartTime = Date.now();
+            
+            log('🔌 Connecting to WebSocket...', 'info');
+            
+            ws = new WebSocket('ws://localhost:8000/ws/chat/SMOKING_GUN_TEST');
+            
+            ws.onopen = () => {
+                log('✅ WebSocket connected!', 'success');
+                updateStatus(true);
+                
+                const testMessage = {
+                    content: "Klient mówi, że Tesla Model Y jest za droga w porównaniu do Audi Q4. Jest analityczny, pyta o konkretne koszty serwisu i utratę wartości. Wydaje się sceptyczny co do jakości wykonania."
+                };
+                
+                log('📤 Sending test message...', 'info');
+                log(`   Message: "${testMessage.content}"`, 'info');
+                ws.send(JSON.stringify(testMessage));
+            };
+            
+            ws.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                const elapsed = ((Date.now() - testStartTime) / 1000).toFixed(2);
+                
+                log(`📩 Received: ${data.type} (+${elapsed}s)`, 'info');
+                
+                if (data.type === 'processing') {
+                    log('   Status: Processing...', 'info');
+                }
+                
+                else if (data.type === 'fast_response') {
+                    document.getElementById('fastStatus').textContent = '✅';
+                    const response = data.data;
+                    log('⚡ FAST PATH COMPLETE!', 'success');
+                    log(`   Confidence: ${(response.confidence * 100).toFixed(0)}%`, 'info');
+                    log(`   Strategy: ${response.confidenceReason}`, 'info');
+                    log(`   Response: ${response.content.substring(0, 100)}...`, 'info');
+                }
+                
+                else if (data.type === 'analysis_status') {
+                    if (data.data.status === 'analyzing') {
+                        document.getElementById('slowStatus').textContent = '🔄';
+                        log('🧠 SLOW PATH ANALYZING...', 'warning');
+                    }
+                }
+                
+                else if (data.type === 'analysis_update') {
+                    document.getElementById('slowStatus').textContent = '✅';
+                    const analysis = data.data;
+                    
+                    log('🎉 SLOW PATH COMPLETE!', 'success');
+                    log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'success');
+                    
+                    if (analysis.summary) {
+                        log(`📝 Summary: ${analysis.summary}`, 'info');
+                    }
+                    
+                    if (analysis.psychometrics) {
+                        const psycho = analysis.psychometrics;
+                        log(`🧠 Psychometrics:`, 'info');
+                        log(`   DISC Type: ${psycho.disc_type} (${psycho.disc_confidence}% confidence)`, 'info');
+                        log(`   Motivation: ${psycho.main_motivation}`, 'info');
+                        log(`   Communication: ${psycho.communication_style}`, 'info');
+                    }
+                    
+                    if (analysis.sales_metrics) {
+                        const metrics = analysis.sales_metrics;
+                        log(`📊 Sales Metrics:`, 'info');
+                        log(`   Purchase Probability: ${metrics.purchase_probability}%`, 'info');
+                        log(`   Temperature: ${metrics.sales_temperature}`, 'info');
+                        if (metrics.objections) {
+                            log(`   Objections: ${metrics.objections.join(', ')}`, 'warning');
+                        }
+                    }
+                    
+                    if (analysis.next_move) {
+                        log(`🎯 Strategic Advice: ${analysis.next_move.strategic_advice}`, 'success');
+                        log(`   Tactic: ${analysis.next_move.recommended_tactic}`, 'info');
+                    }
+                    
+                    if (analysis.journey_stage) {
+                        log(`🗺️ Journey: ${analysis.journey_stage.current_stage} (${analysis.journey_stage.confidence}%)`, 'info');
+                    }
+                    
+                    log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', 'success');
+                    log('✅ TEST COMPLETE - CHECK BACKEND LOGS!', 'success');
+                    
+                    btn.disabled = false;
+                    btn.textContent = '🔄 RUN AGAIN';
+                }
+            };
+            
+            ws.onerror = (error) => {
+                log('❌ WebSocket error!', 'error');
+                log(`   ${error}`, 'error');
+                updateStatus(false);
+                btn.disabled = false;
+            };
+            
+            ws.onclose = () => {
+                log('🔌 WebSocket closed', 'warning');
+                updateStatus(false);
+            };
+        }
+    </script>
+</body>
+</html>

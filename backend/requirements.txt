@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+websockets
+google-genai
+sqlalchemy
+aiosqlite
+numpy
+python-dotenv
+pydantic
+qdrant-client
+sentence-transformers
+ollama
+tenacity
+httpx
