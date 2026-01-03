@@ -276,7 +276,7 @@ class RAGListResponse(BaseModel):
 class FeedbackRequest(BaseModel):
     """
     Request schema for submitting user feedback on AI suggestions.
-    
+
     Used by POST /api/v1/sessions/feedback (Endpoint 6).
     """
     session_id: str = Field(..., description="Session identifier")
@@ -284,6 +284,54 @@ class FeedbackRequest(BaseModel):
     sentiment: Literal["positive", "negative"] = Field(..., description="Feedback type")
     user_comment: str = Field(..., description="Seller's feedback comment")
     context: str = Field(..., description="Original AI suggestion being rated")
+
+
+# =============================================================================
+# Tesla-Gotham ULTRA v4.0 - Burning House Score
+# =============================================================================
+
+class BurningHouseScore(BaseModel):
+    """
+    Burning House Score - Urgency scoring for Tesla purchase decision.
+
+    Calculates financial urgency based on:
+    - Fuel costs (current combustion vehicle)
+    - NaszEauto subsidy expiration risk
+    - Depreciation limits (225k/100k for business)
+    - Vehicle age and replacement timing
+
+    Used in Tesla-Gotham ULTRA v4.0 for sales prioritization.
+    """
+    score: int = Field(..., ge=0, le=100, description="Overall urgency score (0-100, higher = more urgent)")
+    fire_level: Literal["cold", "warm", "hot", "burning"] = Field(..., description="Visual fire intensity")
+    monthly_delay_cost_pln: int = Field(..., description="Estimated monthly cost of delaying purchase (PLN)")
+    factors: Dict[str, Union[int, str, bool]] = Field(
+        ...,
+        description="Individual factor scores and details",
+        example={
+            "fuel_cost_monthly": 1200,
+            "subsidy_expires_days": 45,
+            "depreciation_risk": "high",
+            "vehicle_age_months": 36,
+            "has_business_benefit": True
+        }
+    )
+    urgency_message: str = Field(..., description="Human-readable urgency explanation in client's language")
+
+
+class BHSCalculationRequest(BaseModel):
+    """
+    Request for calculating Burning House Score.
+    Used internally or via API endpoint.
+    """
+    current_fuel_consumption_l_100km: Optional[float] = Field(None, description="Current car fuel consumption (liters per 100km)")
+    monthly_distance_km: Optional[int] = Field(None, description="Monthly driving distance in km")
+    fuel_price_pln_l: Optional[float] = Field(1.50, description="Current fuel price (PLN/liter)")
+    vehicle_age_months: Optional[int] = Field(None, description="Age of current vehicle in months")
+    purchase_type: Optional[Literal["private", "business"]] = Field("private", description="Purchase type")
+    vehicle_price_planned: Optional[int] = Field(None, description="Planned Tesla price (for depreciation calculation)")
+    subsidy_deadline_days: Optional[int] = Field(None, description="Days until NaszEauto subsidy expires (if applicable)")
+    language: Literal["pl", "en"] = Field("pl", description="Language for urgency message")
 
 
 # =============================================================================

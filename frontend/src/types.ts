@@ -248,6 +248,61 @@ export interface IGlobalAPIResponse<T> {
 
 
 // =============================================================================
+// Tesla-Gotham ULTRA v4.0 - Burning House Score
+// =============================================================================
+
+/**
+ * Burning House Score - Purchase urgency scoring
+ *
+ * Used in Tesla-Gotham v4.0 to quantify financial urgency based on:
+ * - Fuel cost savings potential
+ * - Subsidy expiration risk
+ * - Tax depreciation benefits
+ * - Vehicle replacement timing
+ */
+export interface IBurningHouseScore {
+  /** Overall urgency score (0-100, higher = more urgent) */
+  score: number;
+  /** Visual fire intensity level */
+  fire_level: "cold" | "warm" | "hot" | "burning";
+  /** Estimated monthly cost of delaying purchase (PLN) */
+  monthly_delay_cost_pln: number;
+  /** Individual factor scores and details */
+  factors: {
+    fuel_cost_monthly?: number;
+    fuel_savings_monthly?: number;
+    current_consumption_l_100km?: number;
+    subsidy_expires_days?: number | null;
+    subsidy_urgency?: string;
+    subsidy_value_pln?: number;
+    has_business_benefit?: boolean;
+    depreciation_benefit_pln?: number;
+    depreciation_risk?: string;
+    vehicle_price_planned?: number;
+    vehicle_age_months?: number | null;
+    age_category?: string;
+    [key: string]: any; // Allow additional factors
+  };
+  /** Human-readable urgency explanation in client's language */
+  urgency_message: string;
+}
+
+/**
+ * Request payload for calculating Burning House Score
+ */
+export interface IBHSCalculationRequest {
+  current_fuel_consumption_l_100km?: number;
+  monthly_distance_km?: number;
+  fuel_price_pln_l?: number;
+  vehicle_age_months?: number;
+  purchase_type?: "private" | "business";
+  vehicle_price_planned?: number;
+  subsidy_deadline_days?: number;
+  language?: TLanguage;
+}
+
+
+// =============================================================================
 // Endpoint-Specific Response Interfaces
 // =============================================================================
 

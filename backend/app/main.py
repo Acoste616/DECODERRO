@@ -57,7 +57,11 @@ from app.models import (
     NuggetPayload,
     STAGE_TO_EN,
     STAGE_TO_PL,
+    BurningHouseScore,
+    BHSCalculationRequest,
 )
+from app.utils import calculate_burning_house_score
+from app.services.gotham import generate_strategic_context
 
 # =============================================================================
 # Configuration and Logging
@@ -669,13 +673,24 @@ Respond ONLY in this JSON format:
 {{ "refined_suggestion": "string (Your new, refined suggestion in the correct language)" }}
 """
 
-def build_prompt_4_slow_path(language: str, session_history: str, journey_stage: str, nuggets_context: str) -> str:
+def build_prompt_4_slow_path(
+    language: str,
+    session_history: str,
+    journey_stage: str,
+    nuggets_context: str,
+    gotham_context: str = ""
+) -> str:
     """
-    Prompt 4.4: Slow Path - Opus Magnum Deep Analysis (SUPER-BLUEPRINT Section 4.4)
+    Prompt 4.4: Slow Path - Opus Magnum Deep Analysis (TESLA-GOTHAM v4.0)
+
+    ENHANCED with Gotham Intelligence:
+    - Real-time market context (fuel prices, subsidies, infrastructure)
+    - Regional intelligence (leasing expiry, wealth mapping)
+    - Strategic angles beyond client conversation
     """
     # Map journey stage to English for LLM
     stage_en = STAGE_TO_EN.get(journey_stage, journey_stage)
-    
+
     return f"""You are the "Opus Magnum" Oracle – a holistic sales psychologist and strategist for Tesla sales. Your mission: Analyze the entire client session in ONE cohesive synthesis, then generate a complete Strategic Panel for the seller. Ensure ALL modules derive from this single, unified client understanding – no contradictions.
 
 Core Principles:
@@ -685,6 +700,7 @@ Core Principles:
 - Analyze only the linguistic patterns, objections, and intents present in the history.
 - Tailor to Tesla context: Emphasize TCO, innovation, safety, ecosystem.
 - Incorporate Journey Stage to filter outputs.
+- **NEW (v4.0)**: Use Gotham Strategic Context to enrich analysis with market intelligence.
 - Output MUST be ONE complete, valid JSON object. Self-validate.
 - LANGUAGE REQUIREMENT: ALL text outputs in JSON (holistic_summary, main_motivation, key_insight, strategy, etc.) MUST be in {language}. If "pl" (Polish), use ONLY Polish. If "en" (English), use ONLY English.
 
@@ -695,6 +711,8 @@ Context:
 - Session History: {session_history}
 - Journey Stage: {stage_en}
 - Relevant Knowledge: {nuggets_context}
+
+{gotham_context}
 
 Output ONLY this exact JSON structure. No additional text.
 {{
@@ -1185,13 +1203,33 @@ async def run_slow_path(session_id: str, language: str, journey_stage: str):
         # Get latest seller note for RAG context
         latest_note = next((h['content'] for h in reversed(history) if h['role'] == "Sprzedawca"), "")
         rag_context = query_rag(latest_note, language)
-        
-        # Build Slow Path prompt
-        prompt4 = build_prompt_4_slow_path(language, session_history, journey_stage, rag_context)
+
+        # Generate Gotham Strategic Context (Tesla-Gotham v4.0)
+        try:
+            gotham_context = generate_strategic_context(
+                voivodeship="śląskie",  # TODO: Extract from client location or seller config
+                include_leasing_intel=True,
+                include_infrastructure=True,
+                include_fuel_prices=True,
+                include_subsidies=True
+            )
+            logger.info(f"✓ Gotham context generated: {len(gotham_context)} chars")
+        except Exception as gotham_err:
+            logger.warning(f"⚠️ Gotham context generation failed: {gotham_err}")
+            gotham_context = ""
+
+        # Build Slow Path prompt with Gotham intelligence
+        prompt4 = build_prompt_4_slow_path(language, session_history, journey_stage, rag_context, gotham_context)
         
         logger.info(f"🤖 Calling Ollama Cloud for {session_id}...")
-        
-        # Call Ollama Cloud - THIS IS THE CRITICAL POINT THAT CAN FAIL
+
+        # ENHANCED (Tesla-Gotham v4.0): Retry policy with Gemini fallback
+        # Primary: Ollama Cloud (DeepSeek 671B) for deep analysis
+        # Fallback: Google Gemini 1.5 Pro if Ollama fails/times out
+        opus_magnum = None
+        primary_failed = False
+
+        # Try Ollama Cloud first (primary deep analysis model)
         try:
             opus_magnum = call_ollama_slow_path(prompt4)
             logger.info(f"✓ Ollama Cloud response received for {session_id}")
@@ -1203,15 +1241,44 @@ async def run_slow_path(session_id: str, language: str, journey_stage: str):
             else:
                 error_msg = f"Ollama API error ({http_err.status_code}): {http_err.detail}"
                 logger.error(f"🌐 HTTP ERROR for {session_id}: {error_msg}")
-            raise Exception(error_msg)
+            primary_failed = True
         except json.JSONDecodeError as json_err:
             error_msg = f"Invalid JSON response from Ollama: {str(json_err)}"
             logger.error(f"📄 JSON PARSE ERROR for {session_id}: {error_msg}")
-            raise Exception(error_msg)
+            primary_failed = True
         except Exception as ollama_err:
             error_msg = f"Ollama Cloud communication failed: {str(ollama_err)}"
             logger.error(f"☁️ OLLAMA ERROR for {session_id}: {error_msg}")
-            raise Exception(error_msg)
+            primary_failed = True
+
+        # FALLBACK: Try Gemini 1.5 Pro if Ollama failed
+        if primary_failed and opus_magnum is None:
+            logger.warning(f"⚠️ PRIMARY FAILED - Attempting Gemini fallback for {session_id}")
+            try:
+                # Use Gemini with same Opus Magnum prompt
+                # Note: Gemini may have different token limits, so we might need to truncate
+                opus_magnum = call_gemini_fast_path(
+                    prompt4,
+                    temperature=0.3,  # Match Ollama's creative temperature
+                    max_tokens=4096   # Gemini supports up to 8192, but 4096 is safer
+                )
+                logger.info(f"✅ FALLBACK SUCCESS - Gemini 1.5 Pro response received for {session_id}")
+
+                # Add metadata to indicate fallback was used
+                opus_magnum["_fallback_used"] = True
+                opus_magnum["_primary_model"] = "ollama_cloud_deepseek_671b"
+                opus_magnum["_fallback_model"] = "gemini_1.5_pro"
+                opus_magnum["_fallback_reason"] = error_msg
+
+            except Exception as gemini_err:
+                # Both primary and fallback failed - critical error
+                final_error_msg = f"CRITICAL: Both Ollama and Gemini fallback failed. Ollama: {error_msg}. Gemini: {str(gemini_err)}"
+                logger.critical(f"❌ TOTAL FAILURE for {session_id}: {final_error_msg}")
+                raise Exception(final_error_msg)
+
+        # If we still don't have opus_magnum, something went very wrong
+        if opus_magnum is None:
+            raise Exception("Opus Magnum analysis failed - no valid response from any model")
         
         # Save to slow_path_logs
         try:
@@ -2238,6 +2305,50 @@ async def websocket_session(websocket: WebSocket, session_id: str):
             del websocket_connections[session_id]
 
 # =============================================================================
+# Endpoint 15: [POST] /api/v1/gotham/burning-house-score (Tesla-Gotham v4.0)
+# =============================================================================
+
+@app.post("/api/v1/gotham/burning-house-score")
+async def calculate_bhs(request: BHSCalculationRequest):
+    """
+    Calculate Burning House Score for Tesla purchase urgency.
+
+    Part of Tesla-Gotham ULTRA v4.0 - provides urgency scoring based on:
+    - Fuel cost savings potential
+    - NaszEauto subsidy expiration
+    - Tax depreciation benefits
+    - Vehicle replacement timing
+
+    Returns:
+        BurningHouseScore with overall score, fire level, monthly delay cost, and urgency message
+    """
+    try:
+        bhs = calculate_burning_house_score(
+            current_fuel_consumption_l_100km=request.current_fuel_consumption_l_100km,
+            monthly_distance_km=request.monthly_distance_km,
+            fuel_price_pln_l=request.fuel_price_pln_l,
+            vehicle_age_months=request.vehicle_age_months,
+            purchase_type=request.purchase_type,
+            vehicle_price_planned=request.vehicle_price_planned,
+            subsidy_deadline_days=request.subsidy_deadline_days,
+            language=request.language
+        )
+
+        logger.info(f"✓ BHS calculated: score={bhs.score}, fire_level={bhs.fire_level}, delay_cost={bhs.monthly_delay_cost_pln} PLN/month")
+
+        return GlobalAPIResponse(
+            status="success",
+            data=bhs.dict()
+        )
+
+    except Exception as e:
+        logger.error(f"✗ BHS calculation failed: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+# =============================================================================
 # Health Check Endpoint
 # =============================================================================
 
@@ -2246,7 +2357,7 @@ async def health_check():
     """
     Health check for Railway/Docker
     """
-    return {"status": "healthy", "version": "3.0.0"}
+    return {"status": "healthy", "version": "4.0.0"}
 
 # =============================================================================
 # Root Endpoint
