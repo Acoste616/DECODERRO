@@ -1,11 +1,12 @@
 /**
  * ULTRA v3.0 - View 1: Dashboard (Session Management)
  * ====================================================
- * 
+ *
  * Implements:
  * - F-1.1: Start New Session (Optimistic UI)
  * - F-1.2: Resume Session by ID
  * - F-1.3: Recent Sessions List (localStorage)
+ * - F-4.0: Burning House Widget (Tesla-Gotham v4.0)
  */
 
 import { useState, useEffect } from 'react';
@@ -14,6 +15,7 @@ import { PlusIcon, ArrowRightIcon, ClockIcon } from '@heroicons/react/24/outline
 import { useStore } from '../store/useStore';
 import { useTranslation } from '../utils/i18n';
 import { api } from '../utils/api';
+import BurningHouseWidget from '../components/BurningHouseWidget';
 
 interface RecentSession {
   id: string;
@@ -86,15 +88,25 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6">
-      <div className="w-full max-w-2xl space-y-8">
-        {/* Title */}
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-2">{t('view1_dashboard.title')}</h1>
-          <p className="text-text-secondary-light dark:text-text-secondary-dark">
-            Cognitive Sales Engine for Tesla
-          </p>
-        </div>
+    <div className="min-h-screen relative p-6">
+      {/* Tesla-Gotham v4.0: Burning House Widget - Top Right */}
+      <div className="fixed top-20 right-6 z-50 w-96 hidden lg:block">
+        <BurningHouseWidget
+          language={currentLanguage as 'pl' | 'en'}
+          demoMode={true}
+        />
+      </div>
+
+      {/* Main Content - Centered */}
+      <div className="flex items-center justify-center min-h-[calc(100vh-3rem)]">
+        <div className="w-full max-w-2xl space-y-8">
+          {/* Title */}
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-2">{t('view1_dashboard.title')}</h1>
+            <p className="text-text-secondary-light dark:text-text-secondary-dark">
+              Cognitive Sales Engine for Tesla
+            </p>
+          </div>
 
         {/* F-1.1: New Session Button */}
         <button
@@ -180,6 +192,7 @@ export default function Dashboard() {
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   );
