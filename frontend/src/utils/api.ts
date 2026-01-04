@@ -193,4 +193,33 @@ export const api = {
     const response = await apiClient.get(`/admin/analytics/v1_dashboard?${queryParams}`);
     return response.data;
   },
+
+  // ============================================
+  // Tesla-Gotham v4.0 Endpoints
+  // ============================================
+
+  /**
+   * Calculate Burning House Score for purchase urgency analysis.
+   *
+   * @param data - Input parameters for BHS calculation
+   * @returns BHS result with score, fire level, and urgency factors
+   */
+  async calculateBurningHouseScore(data: {
+    current_fuel_consumption_l_100km?: number;
+    monthly_distance_km?: number;
+    fuel_price_pln_l?: number;
+    vehicle_age_months?: number;
+    purchase_type?: 'private' | 'business';
+    vehicle_price_planned?: number;
+    subsidy_deadline_days?: number;
+    language?: 'pl' | 'en';
+  }) {
+    try {
+      const response = await apiClient.post('/gotham/burning-house-score', data);
+      return response.data;
+    } catch (error) {
+      console.error('BHS calculation error:', error);
+      throw error;
+    }
+  },
 };
