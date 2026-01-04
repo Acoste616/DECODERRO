@@ -9,6 +9,7 @@
  * - F-2.5: Loading state and error state with retry button
  */
 
+import { useState, useEffect } from 'react';
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import { useStore } from '../store/useStore';
 import { useTranslation } from '../utils/i18n';
@@ -23,6 +24,10 @@ import M5_PredictivePaths from './modules/M5_PredictivePaths';
 import M6_StrategicPlaybook from './modules/M6_StrategicPlaybook';
 import M7_DecisionVectors from './modules/M7_DecisionVectors';
 
+// Tesla-Gotham v4.0: Burning House Score
+import BurningHouseScore from './BurningHouseScore';
+import type { IBurningHouseScore } from '../types';
+
 export default function OpusMagnumPanel() {
   const { t } = useTranslation();
   const {
@@ -31,7 +36,44 @@ export default function OpusMagnumPanel() {
     app_status,
     slow_path_error,
     setAppStatus,
+    current_language,
   } = useStore();
+
+  // Tesla-Gotham v4.0: Burning House Score State
+  const [bhsData, setBhsData] = useState<IBurningHouseScore | null>(null);
+  const [bhsLoading, setBhsLoading] = useState(false);
+
+  // Tesla-Gotham v4.0: Fetch BHS when Slow Path data is available
+  useEffect(() => {
+    const fetchBHS = async () => {
+      if (!slow_path_data || bhsLoading) return;
+
+      setBhsLoading(true);
+      try {
+        // Sample data - in production, extract from conversation context
+        const response = await api.calculateBurningHouseScore({
+          current_fuel_consumption_l_100km: 8.5,
+          monthly_distance_km: 2500,
+          fuel_price_pln_l: 6.03,
+          vehicle_age_months: 42,
+          purchase_type: 'business' as const,
+          vehicle_price_planned: 250000,
+          subsidy_deadline_days: 75,
+          language: current_language as 'pl' | 'en',
+        });
+
+        if (response.status === 'success' && response.data) {
+          setBhsData(response.data);
+        }
+      } catch (error) {
+        console.error('BHS fetch error:', error);
+      } finally {
+        setBhsLoading(false);
+      }
+    };
+
+    fetchBHS();
+  }, [slow_path_data, current_language, bhsLoading]);
 
   // F-2.5: Retry Slow Path
   const handleRetrySlowPath = async () => {
@@ -108,6 +150,16 @@ export default function OpusMagnumPanel() {
           {t('view2_conversation.opus_magnum_desc')}
         </p>
       </div>
+
+      {/* Tesla-Gotham v4.0: Burning House Score - Only show if score > 50 */}
+      {bhsData && bhsData.score > 50 && (
+        <div className="animate-fade-in">
+          <BurningHouseScore
+            bhs={bhsData}
+            language={current_language as 'pl' | 'en'}
+          />
+        </div>
+      )}
 
       {/* Module 1: DNA Client */}
       <M1_DnaClient data={slow_path_data.modules.dna_client} />

@@ -156,13 +156,17 @@ async def lifespan(app: FastAPI):
     global db_conn, qdrant_client, embedding_model
     
     logger.info("🚀 Starting ULTRA v3.0 Backend...")
-    
-    # Initialize Gemini
-    if GEMINI_API_KEY:
-        genai.configure(api_key=GEMINI_API_KEY)  # pyright: ignore[reportPrivateImportUsage]
-        logger.info("✓ Gemini API configured")
-    else:
-        logger.warning("⚠ GEMINI_API_KEY not set")
+
+    # Initialize Gemini with error handling
+    try:
+        if GEMINI_API_KEY:
+            genai.configure(api_key=GEMINI_API_KEY)  # pyright: ignore[reportPrivateImportUsage]
+            logger.info("✓ Gemini API configured")
+        else:
+            logger.warning("⚠ GEMINI_API_KEY not set - Fast Path will be unavailable")
+    except Exception as e:
+        logger.error(f"✗ Gemini initialization failed: {e}")
+        logger.warning("⚠ Fast Path AI will be unavailable")
     
     # Initialize PostgreSQL
     try:
@@ -485,7 +489,7 @@ def call_ollama_slow_path(prompt: str, temperature: float = 0.3, max_tokens: int
     """
     try:
         if not OLLAMA_API_KEY:
-            logger.error("❌ OLLAMA_API_KEY not configured")
+            logger.warning("⚠️ OLLAMA_API_KEY not configured - falling back to Gemini")
             raise ValueError("OLLAMA_API_KEY not configured in environment")
         
         logger.info(f"🤖 Initializing Ollama Cloud client...")
