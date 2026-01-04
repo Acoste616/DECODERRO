@@ -60,8 +60,8 @@ from app.models import (
     BurningHouseScore,
     BHSCalculationRequest,
 )
-from app.utils import calculate_burning_house_score
-from app.services.gotham import generate_strategic_context
+from app.utils.burning_house import calculate_burning_house_score, BurningHouseCalculator
+from app.services.gotham import generate_strategic_context, get_leasing_stats_for_prompt
 
 # =============================================================================
 # Configuration and Logging
@@ -572,6 +572,84 @@ def call_ollama_slow_path(prompt: str, temperature: float = 0.3, max_tokens: int
                 detail=f"Ollama Cloud error: {error_type}: {str(e)}"
             )
 
+
+async def analyze_with_fallback(
+    prompt: str,
+    temperature: float = 0.3,
+    max_tokens: int = 4096,
+    session_id: str = ""
+) -> Dict[str, Any]:
+    """
+    Unified AI analysis function with automatic fallback.
+
+    Strategy:
+    1. Try Ollama Cloud (DeepSeek 671B) - best for deep analysis
+    2. If Ollama fails/timeouts -> Fallback to Gemini 1.5 Flash
+    3. Returns result with metadata about which model was used
+
+    Args:
+        prompt: The analysis prompt
+        temperature: Model temperature (0.0-1.0)
+        max_tokens: Maximum tokens in response
+        session_id: Optional session ID for logging
+
+    Returns:
+        Dictionary with:
+        - result: The parsed JSON response
+        - model_used: Which model provided the response
+        - fallback_used: Whether fallback was triggered
+        - error: Error message if any
+    """
+    result = None
+    model_used = None
+    fallback_used = False
+    error_message = None
+
+    # Step 1: Try Ollama Cloud (Primary - Deep Analysis)
+    try:
+        logger.info(f"🤖 [analyze_with_fallback] Attempting Ollama Cloud for {session_id or 'unknown'}")
+        result = call_ollama_slow_path(prompt, temperature=temperature, max_tokens=max_tokens)
+        model_used = f"ollama_cloud_{OLLAMA_MODEL}"
+        logger.info(f"✅ [analyze_with_fallback] Ollama Cloud success for {session_id or 'unknown'}")
+
+    except HTTPException as http_err:
+        error_message = f"Ollama HTTP error ({http_err.status_code}): {http_err.detail}"
+        logger.warning(f"⚠️ [analyze_with_fallback] {error_message}")
+        fallback_used = True
+
+    except Exception as ollama_err:
+        error_message = f"Ollama error: {type(ollama_err).__name__}: {str(ollama_err)}"
+        logger.warning(f"⚠️ [analyze_with_fallback] {error_message}")
+        fallback_used = True
+
+    # Step 2: Fallback to Gemini if Ollama failed
+    if fallback_used and result is None:
+        try:
+            logger.info(f"🔄 [analyze_with_fallback] Falling back to Gemini for {session_id or 'unknown'}")
+            result = call_gemini_fast_path(prompt, temperature=temperature, max_tokens=max_tokens)
+            model_used = f"gemini_{GEMINI_MODEL}"
+            logger.info(f"✅ [analyze_with_fallback] Gemini fallback success for {session_id or 'unknown'}")
+
+            # Add fallback metadata to result
+            if isinstance(result, dict):
+                result["_fallback_used"] = True
+                result["_primary_model"] = f"ollama_cloud_{OLLAMA_MODEL}"
+                result["_fallback_model"] = f"gemini_{GEMINI_MODEL}"
+                result["_fallback_reason"] = error_message
+
+        except Exception as gemini_err:
+            final_error = f"Both Ollama and Gemini failed. Ollama: {error_message}. Gemini: {str(gemini_err)}"
+            logger.error(f"❌ [analyze_with_fallback] {final_error}")
+            raise Exception(final_error)
+
+    return {
+        "result": result,
+        "model_used": model_used,
+        "fallback_used": fallback_used,
+        "error": error_message if fallback_used else None
+    }
+
+
 def build_prompt_1(language: str, session_history: str, last_seller_input: str, relevant_context: str) -> str:
     """
     Fast Path v2.0: JARVIS - AI Coach for Salesperson in Real-Time
@@ -678,7 +756,8 @@ def build_prompt_4_slow_path(
     session_history: str,
     journey_stage: str,
     nuggets_context: str,
-    gotham_context: str = ""
+    gotham_context: str = "",
+    bhs_context: str = ""
 ) -> str:
     """
     Prompt 4.4: Slow Path - Opus Magnum Deep Analysis (TESLA-GOTHAM v4.0)
@@ -687,9 +766,22 @@ def build_prompt_4_slow_path(
     - Real-time market context (fuel prices, subsidies, infrastructure)
     - Regional intelligence (leasing expiry, wealth mapping)
     - Strategic angles beyond client conversation
+    - Burning House Score data injection
+
+    Args:
+        bhs_context: Burning House Score data to inject (e.g., "System wykrył stratę 1400 PLN/mc")
     """
     # Map journey stage to English for LLM
     stage_en = STAGE_TO_EN.get(journey_stage, journey_stage)
+
+    # Build BHS section if available
+    bhs_section = ""
+    if bhs_context:
+        bhs_section = f"""
+🔥 BURNING HOUSE ANALYSIS (Critical Urgency Data):
+{bhs_context}
+Use this data to enhance urgency arguments and TCO comparisons in your analysis.
+"""
 
     return f"""You are the "Opus Magnum" Oracle – a holistic sales psychologist and strategist for Tesla sales. Your mission: Analyze the entire client session in ONE cohesive synthesis, then generate a complete Strategic Panel for the seller. Ensure ALL modules derive from this single, unified client understanding – no contradictions.
 
@@ -713,6 +805,8 @@ Context:
 - Relevant Knowledge: {nuggets_context}
 
 {gotham_context}
+
+{bhs_section}
 
 Output ONLY this exact JSON structure. No additional text.
 {{
@@ -1218,8 +1312,41 @@ async def run_slow_path(session_id: str, language: str, journey_stage: str):
             logger.warning(f"⚠️ Gotham context generation failed: {gotham_err}")
             gotham_context = ""
 
-        # Build Slow Path prompt with Gotham intelligence
-        prompt4 = build_prompt_4_slow_path(language, session_history, journey_stage, rag_context, gotham_context)
+        # Generate Burning House Score context (Tesla-Gotham v4.0)
+        # This injects urgency data into the AI prompt
+        bhs_context = ""
+        try:
+            # Calculate example BHS for B2B client with typical premium vehicle
+            # In production, this would be extracted from conversation context
+            calc = BurningHouseCalculator(
+                fuel_cost_monthly=1200,  # Typical premium sedan fuel cost
+                vehicle_age_months=42,   # Typical leasing end
+                client_type="B2B",       # Assume B2B for max impact
+                vehicle_value_pln=250000,  # Premium segment
+                is_ice=True,
+                subsidy_days_remaining=75,  # NaszEauto urgency
+                monthly_distance_km=2500,
+                language=language
+            )
+            bhs_result = calc.calculate()
+
+            if bhs_result.score > 30:  # Only inject if there's notable urgency
+                bhs_context = f"""
+BURNING HOUSE SCORE: {bhs_result.score}/100 ({bhs_result.fire_level.upper()})
+MIESIĘCZNY KOSZT ZWŁOKI: {bhs_result.monthly_loss:,} PLN
+
+Kluczowe argumenty pilności:
+{chr(10).join(['- ' + msg for msg in bhs_result.messages])}
+
+UŻYJ tych danych do wzmocnienia argumentacji TCO i pilności zakupu w analizie.
+"""
+                logger.info(f"✓ BHS context generated: score={bhs_result.score}, loss={bhs_result.monthly_loss} PLN/month")
+        except Exception as bhs_err:
+            logger.warning(f"⚠️ BHS context generation failed: {bhs_err}")
+            bhs_context = ""
+
+        # Build Slow Path prompt with Gotham intelligence + BHS
+        prompt4 = build_prompt_4_slow_path(language, session_history, journey_stage, rag_context, gotham_context, bhs_context)
         
         logger.info(f"🤖 Calling Ollama Cloud for {session_id}...")
 

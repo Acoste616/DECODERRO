@@ -19,14 +19,39 @@ Provides strategic market context and data enrichment for Tesla sales:
    - Subsidy program updates (NaszEauto, Mój Elektryk)
    - Competitive intelligence (new EV launches)
    - Seasonal buying patterns
+
+ENHANCED (v4.0): Added check_infrastructure and get_leasing_opportunities functions
 """
 
-from .cepik_connector import fetch_leasing_expiry_candidates
-from .eipa_connector import fetch_charging_infrastructure_wealth_map
+from .cepik_connector import (
+    fetch_leasing_expiry_candidates,
+    get_leasing_opportunities,
+    get_leasing_expiry_summary,
+    get_leasing_stats_for_prompt,
+)
+from .eipa_connector import (
+    fetch_charging_infrastructure_wealth_map,
+    fetch_charging_stations,
+    fetch_municipal_wealth_data,
+    check_infrastructure,
+    get_infrastructure_summary,
+    get_city_infrastructure_for_prompt,
+)
 from .context_engine import generate_strategic_context
 
 __all__ = [
+    # CEPiK
     "fetch_leasing_expiry_candidates",
+    "get_leasing_opportunities",
+    "get_leasing_expiry_summary",
+    "get_leasing_stats_for_prompt",
+    # EIPA
     "fetch_charging_infrastructure_wealth_map",
-    "generate_strategic_context"
+    "fetch_charging_stations",
+    "fetch_municipal_wealth_data",
+    "check_infrastructure",
+    "get_infrastructure_summary",
+    "get_city_infrastructure_for_prompt",
+    # Context Engine
+    "generate_strategic_context",
 ]
