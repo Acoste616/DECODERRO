@@ -59,9 +59,25 @@ from app.models import (
     STAGE_TO_PL,
     BurningHouseScore,
     BHSCalculationRequest,
+    CEPiKVehicleData,
+    CEPiKDictionaryEntry,
+    CEPiKStatistics,
+    GUSVoivodeship,
+    GUSRegionalDemographics,
+    GUSMarketIntelligence,
 )
 from app.utils.burning_house import calculate_burning_house_score, BurningHouseCalculator
-from app.services.gotham import generate_strategic_context, get_leasing_stats_for_prompt
+from app.services.gotham import (
+    generate_strategic_context,
+    get_leasing_stats_for_prompt,
+    get_cepik_dictionaries,
+    get_cepik_dictionary,
+    get_cepik_statistics,
+    get_teryt_voivodeships,
+    get_market_intelligence_for_voivodeship,
+    get_gus_summary_for_prompt,
+    get_regional_demographics,
+)
 
 # =============================================================================
 # Configuration and Logging
@@ -2476,6 +2492,264 @@ async def calculate_bhs(request: BHSCalculationRequest):
         )
 
 # =============================================================================
+# Endpoint 16: [GET] /api/v1/gotham/cepik/dictionaries (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/cepik/dictionaries")
+async def get_cepik_dicts():
+    """
+    Get available CEPiK dictionaries.
+
+    Returns list of available dictionaries for vehicle data lookups
+    (e.g., brands, fuel types, vehicle categories).
+
+    No authentication required - public CEPiK API.
+    """
+    try:
+        dictionaries = get_cepik_dictionaries()
+        logger.info(f"✓ CEPiK dictionaries fetched: {len(dictionaries.get('data', []))} dictionaries")
+
+        return GlobalAPIResponse(
+            status="success",
+            data=dictionaries
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch CEPiK dictionaries: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
+# Endpoint 17: [GET] /api/v1/gotham/cepik/dictionary/{name} (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/cepik/dictionary/{dictionary_name}")
+async def get_cepik_dict(dictionary_name: str):
+    """
+    Get specific CEPiK dictionary values.
+
+    Useful dictionaries:
+    - marki-pojazdow (vehicle brands)
+    - paliwa (fuel types)
+    - kategorie-pojazdow (vehicle categories)
+
+    Args:
+        dictionary_name: Name of the dictionary
+
+    Returns:
+        Dictionary entries with occurrence counts
+    """
+    try:
+        dictionary = get_cepik_dictionary(dictionary_name)
+        logger.info(f"✓ CEPiK dictionary '{dictionary_name}' fetched: {len(dictionary.get('data', []))} entries")
+
+        return GlobalAPIResponse(
+            status="success",
+            data=dictionary
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch CEPiK dictionary '{dictionary_name}': {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
+# Endpoint 18: [GET] /api/v1/gotham/cepik/statistics (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/cepik/statistics")
+async def get_cepik_stats(
+    date: str = Query(..., description="Date in YYYYMMDD format"),
+    voivodeship: Optional[str] = Query(None, description="Optional voivodeship TERYT code")
+):
+    """
+    Get CEPiK daily statistics.
+
+    Args:
+        date: Date in YYYYMMDD format (e.g., "20250104")
+        voivodeship: Optional TERYT code for voivodeship filtering (e.g., "24" for Śląskie)
+
+    Returns:
+        Daily vehicle registration statistics
+    """
+    try:
+        stats = get_cepik_statistics(date, voivodeship)
+        logger.info(f"✓ CEPiK statistics fetched for {date}")
+
+        return GlobalAPIResponse(
+            status="success",
+            data=stats
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch CEPiK statistics: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
+# Endpoint 19: [GET] /api/v1/gotham/gus/voivodeships (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/gus/voivodeships")
+async def get_gus_voivodeships():
+    """
+    Get list of all Polish voivodeships with TERYT codes.
+
+    Returns reference data for territorial division (TERYT standard).
+    No authentication required - public reference data.
+    """
+    try:
+        voivodeships = get_teryt_voivodeships()
+        logger.info(f"✓ GUS voivodeships fetched: {len(voivodeships)} voivodeships")
+
+        return GlobalAPIResponse(
+            status="success",
+            data={"voivodeships": voivodeships}
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch GUS voivodeships: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
+# Endpoint 20: [GET] /api/v1/gotham/gus/demographics/{voivodeship} (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/gus/demographics/{voivodeship}")
+async def get_gus_demographics(voivodeship: str):
+    """
+    Get demographic data for a voivodeship from GUS BDL API.
+
+    Args:
+        voivodeship: Voivodeship name (e.g., "śląskie", "mazowieckie")
+
+    Returns:
+        Population, average salary, and other demographic indicators
+    """
+    try:
+        from app.services.gotham.gus_connector import get_teryt_code_for_voivodeship
+
+        teryt_code = get_teryt_code_for_voivodeship(voivodeship)
+        if not teryt_code:
+            return GlobalAPIResponse(
+                status="fail",
+                message=f"Voivodeship '{voivodeship}' not found"
+            )
+
+        demographics = get_regional_demographics(teryt_code)
+        demographics["voivodeship"] = voivodeship
+        demographics["teryt_code"] = teryt_code
+
+        logger.info(f"✓ GUS demographics fetched for {voivodeship}")
+
+        return GlobalAPIResponse(
+            status="success",
+            data=demographics
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch GUS demographics: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
+# Endpoint 21: [GET] /api/v1/gotham/gus/market-intelligence/{voivodeship} (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/gus/market-intelligence/{voivodeship}")
+async def get_gus_market_intel(voivodeship: str):
+    """
+    Get comprehensive market intelligence for a voivodeship from GUS data.
+
+    Combines multiple GUS data sources to provide:
+    - Demographics (population, salary)
+    - Market potential score (0-100)
+    - Strategic insights for sales targeting
+
+    Args:
+        voivodeship: Voivodeship name (e.g., "śląskie", "mazowieckie")
+
+    Returns:
+        Market intelligence with potential score and recommendations
+    """
+    try:
+        intelligence = get_market_intelligence_for_voivodeship(voivodeship)
+
+        if "error" in intelligence:
+            return GlobalAPIResponse(
+                status="fail",
+                message=intelligence["error"]
+            )
+
+        logger.info(f"✓ GUS market intelligence generated for {voivodeship}: score={intelligence.get('market_potential_score', 0)}")
+
+        return GlobalAPIResponse(
+            status="success",
+            data=intelligence
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to generate GUS market intelligence: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
+# Endpoint 22: [GET] /api/v1/gotham/gus/summary/{voivodeship} (Tesla-Gotham v4.5)
+# =============================================================================
+
+@app.get("/api/v1/gotham/gus/summary/{voivodeship}")
+async def get_gus_summary_endpoint(voivodeship: str):
+    """
+    Get human-readable GUS intelligence summary for a voivodeship.
+
+    Provides formatted text summary suitable for:
+    - AI prompt injection
+    - Sales team briefings
+    - Dashboard displays
+
+    Args:
+        voivodeship: Voivodeship name (e.g., "śląskie", "mazowieckie")
+
+    Returns:
+        Formatted markdown summary with key insights
+    """
+    try:
+        summary = get_gus_summary_for_prompt(voivodeship)
+        logger.info(f"✓ GUS summary generated for {voivodeship}")
+
+        return GlobalAPIResponse(
+            status="success",
+            data={"summary": summary, "voivodeship": voivodeship}
+        )
+
+    except Exception as e:
+        logger.error(f"✗ Failed to generate GUS summary: {e}")
+        return GlobalAPIResponse(
+            status="error",
+            message=str(e)
+        )
+
+
+# =============================================================================
 # Health Check Endpoint
 # =============================================================================
 
@@ -2484,7 +2758,7 @@ async def health_check():
     """
     Health check for Railway/Docker
     """
-    return {"status": "healthy", "version": "4.0.0"}
+    return {"status": "healthy", "version": "4.5.0"}
 
 # =============================================================================
 # Root Endpoint
@@ -2496,8 +2770,18 @@ async def root():
     API root endpoint
     """
     return {
-        "name": "ULTRA v3.0 API",
-        "version": "3.0.0",
-        "description": "Cognitive Sales Engine for Tesla",
-        "docs": "/docs"
+        "name": "ULTRA v4.5 API",
+        "version": "4.5.0",
+        "description": "Cognitive Sales Engine for Tesla - Enhanced with CEPiK & GUS APIs",
+        "docs": "/docs",
+        "gotham_intelligence": {
+            "cepik_api": "Polish Vehicle Registration Database",
+            "gus_api": "Polish Statistical Office Data",
+            "features": [
+                "Real-time vehicle registration data",
+                "Regional market intelligence",
+                "Demographic and economic indicators",
+                "No authentication required - public APIs"
+            ]
+        }
     }
