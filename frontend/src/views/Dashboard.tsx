@@ -11,13 +11,10 @@
 
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PlusIcon, ArrowRightIcon, ClockIcon, FireIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import { PlusIcon, ArrowRightIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { useStore } from '../store/useStore';
 import { useTranslation } from '../utils/i18n';
 import { api } from '../utils/api';
-import BurningHouseWidget from '../components/BurningHouseWidget';
-import BurningHouseScore from '../components/BurningHouseScore';
-import type { IBurningHouseScore } from '../types';
 
 interface RecentSession {
   id: string;
@@ -33,12 +30,6 @@ export default function Dashboard() {
   const [resumeId, setResumeId] = useState('');
   const [resumeError, setResumeError] = useState('');
   const [recentSessions, setRecentSessions] = useState<RecentSession[]>([]);
-
-  // Tesla-Gotham v4.0: Burning House Score State
-  const [bhsData, setBhsData] = useState<IBurningHouseScore | null>(null);
-  const [bhsLoading, setBhsLoading] = useState(false);
-  const [bhsError, setBhsError] = useState<string | null>(null);
-  const [showBhsPanel, setShowBhsPanel] = useState(false);
 
   // Load recent sessions from localStorage
   useEffect(() => {
@@ -95,67 +86,8 @@ export default function Dashboard() {
     handleResumeSession(sessionId);
   };
 
-  // Tesla-Gotham v4.0: Calculate Burning House Score
-  const handleCalculateBHS = async () => {
-    setBhsLoading(true);
-    setBhsError(null);
-
-    // Sample input data for demonstration
-    // In production, this would come from a form or session context
-    const sampleData = {
-      current_fuel_consumption_l_100km: 8.5,
-      monthly_distance_km: 2500,
-      fuel_price_pln_l: 6.03,
-      vehicle_age_months: 42,
-      purchase_type: 'business' as const,
-      vehicle_price_planned: 250000,
-      subsidy_deadline_days: 75,
-      language: current_language as 'pl' | 'en',
-    };
-
-    try {
-      const response = await api.calculateBurningHouseScore(sampleData);
-      if (response.status === 'success' && response.data) {
-        setBhsData(response.data);
-        setShowBhsPanel(true);
-      } else {
-        setBhsError(response.message || 'Failed to calculate score');
-      }
-    } catch (error) {
-      console.error('BHS calculation error:', error);
-      setBhsError(current_language === 'pl'
-        ? 'Błąd połączenia z serwerem. Sprawdź czy backend jest uruchomiony.'
-        : 'Connection error. Check if backend is running.');
-    } finally {
-      setBhsLoading(false);
-    }
-  };
-
   return (
     <div className="min-h-screen relative p-6">
-      {/* Tesla-Gotham v4.0: Burning House Widget or Live Score - Top Right */}
-      <div className="fixed top-20 right-6 z-50 w-96 hidden lg:block">
-        {bhsData && showBhsPanel ? (
-          <div className="relative">
-            <button
-              onClick={() => setShowBhsPanel(false)}
-              className="absolute -top-2 -right-2 z-10 bg-gray-800 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm hover:bg-gray-700"
-            >
-              ×
-            </button>
-            <BurningHouseScore
-              bhs={bhsData}
-              language={current_language as 'pl' | 'en'}
-            />
-          </div>
-        ) : (
-          <BurningHouseWidget
-            language={current_language as 'pl' | 'en'}
-            demoMode={true}
-          />
-        )}
-      </div>
-
       {/* Main Content - Centered */}
       <div className="flex items-center justify-center min-h-[calc(100vh-3rem)]">
         <div className="w-full max-w-2xl space-y-8">
@@ -175,36 +107,6 @@ export default function Dashboard() {
           <PlusIcon className="w-6 h-6" />
           {t('view1_dashboard.new_session')}
         </button>
-
-        {/* Tesla-Gotham v4.0: High-Energy Risk Analysis Button */}
-        <button
-          onClick={handleCalculateBHS}
-          disabled={bhsLoading}
-          className={`w-full flex items-center justify-center gap-3 px-8 py-5 text-lg font-bold rounded-xl shadow-xl transition-all duration-300 ${
-            bhsLoading
-              ? 'bg-gray-400 cursor-not-allowed'
-              : 'bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 hover:from-red-600 hover:via-orange-600 hover:to-yellow-600 hover:scale-[1.02] hover:shadow-2xl'
-          } text-white`}
-        >
-          {bhsLoading ? (
-            <>
-              <SparklesIcon className="w-6 h-6 animate-spin" />
-              {current_language === 'pl' ? 'Analizuję...' : 'Analyzing...'}
-            </>
-          ) : (
-            <>
-              <FireIcon className="w-6 h-6 animate-pulse" />
-              {current_language === 'pl' ? '🔥 Analizuj Ryzyko (Gotham)' : '🔥 Analyze Risk (Gotham)'}
-            </>
-          )}
-        </button>
-
-        {/* BHS Error Display */}
-        {bhsError && (
-          <div className="p-4 bg-red-100 dark:bg-red-900/30 border border-red-500 rounded-lg text-red-800 dark:text-red-300 text-sm">
-            {bhsError}
-          </div>
-        )}
 
         {/* Divider */}
         <div className="relative">
