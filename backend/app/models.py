@@ -335,6 +335,79 @@ class BHSCalculationRequest(BaseModel):
 
 
 # =============================================================================
+# Tesla-Gotham v4.5 - CEPiK and GUS API Models
+# =============================================================================
+
+class CEPiKVehicleData(BaseModel):
+    """
+    CEPiK vehicle data from real API.
+
+    Represents a single vehicle record from CEPiK database with key attributes.
+    """
+    id: Optional[str] = Field(None, description="CEPiK vehicle ID")
+    vin: Optional[str] = Field(None, description="Vehicle Identification Number (partial)")
+    brand: Optional[str] = Field(None, description="Vehicle brand/manufacturer")
+    model: Optional[str] = Field(None, description="Vehicle model")
+    registration_date: Optional[str] = Field(None, description="First registration date (YYYY-MM-DD)")
+    voivodeship: Optional[str] = Field(None, description="Voivodeship of registration")
+    county: Optional[str] = Field(None, description="County (powiat) of registration")
+    fuel_type: Optional[str] = Field(None, description="Fuel type")
+    engine_capacity: Optional[int] = Field(None, description="Engine displacement (cm³)")
+    power_kw: Optional[float] = Field(None, description="Engine power (kW)")
+    co2_emission: Optional[float] = Field(None, description="CO₂ emissions (g/km)")
+
+
+class CEPiKDictionaryEntry(BaseModel):
+    """
+    Single entry from CEPiK dictionary.
+    """
+    name: str = Field(..., description="Dictionary entry name/value")
+    count: Optional[int] = Field(None, description="Occurrence count in database")
+
+
+class CEPiKStatistics(BaseModel):
+    """
+    Daily statistics from CEPiK API.
+    """
+    date: str = Field(..., description="Statistics date (YYYYMMDD)")
+    voivodeship: Optional[str] = Field(None, description="Voivodeship filter")
+    total_searches: Optional[int] = Field(None, description="Total searches for the date")
+
+
+class GUSVoivodeship(BaseModel):
+    """
+    Polish voivodeship with TERYT code.
+    """
+    teryt: str = Field(..., description="TERYT code (2 digits)")
+    name: str = Field(..., description="Polish name (e.g., 'śląskie')")
+    en: str = Field(..., description="English name (e.g., 'Silesian')")
+
+
+class GUSRegionalDemographics(BaseModel):
+    """
+    Regional demographic data from GUS BDL API.
+    """
+    voivodeship: str = Field(..., description="Voivodeship name")
+    teryt_code: str = Field(..., description="TERYT code")
+    population: Optional[int] = Field(None, description="Total population")
+    population_year: Optional[int] = Field(None, description="Year of population data")
+    avg_salary_pln: Optional[float] = Field(None, description="Average monthly gross salary (PLN)")
+    salary_year: Optional[int] = Field(None, description="Year of salary data")
+
+
+class GUSMarketIntelligence(BaseModel):
+    """
+    Comprehensive market intelligence for a voivodeship from GUS data.
+    """
+    voivodeship: str = Field(..., description="Voivodeship name")
+    teryt_code: str = Field(..., description="TERYT code")
+    demographics: GUSRegionalDemographics = Field(..., description="Demographic indicators")
+    market_potential_score: int = Field(..., ge=0, le=100, description="Market potential score (0-100)")
+    data_source: str = Field(default="GUS API (BDL)", description="Data source")
+    timestamp: str = Field(..., description="Data fetch timestamp (ISO format)")
+
+
+# =============================================================================
 # Language Mapping Utilities (K3)
 # =============================================================================
 

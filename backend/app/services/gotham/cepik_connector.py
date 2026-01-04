@@ -12,8 +12,15 @@ Use case:
 - Proactive outreach during decision window (3-6 months before expiration)
 
 API Reference: https://api.cepik.gov.pl/
+Documentation: https://api.cepik.gov.pl/swagger/apicepik.json
 
-ENHANCED (v4.0): 50 companies mock data for Śląsk region
+Real API Endpoints:
+- GET /pojazdy - List vehicles with filters
+- GET /pojazdy/{id} - Single vehicle details
+- GET /słowniki - Available dictionaries
+- GET /statystyki/pojazdy/{date} - Daily statistics
+
+ENHANCED (v4.0): Real API integration + 50 companies mock data for Śląsk region
 """
 
 import os
@@ -26,8 +33,175 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 logger = logging.getLogger(__name__)
 
-CEPIK_API_URL = os.getenv("CEPIK_API_URL", "https://api.cepik.gov.pl/")
-CEPIK_API_KEY = os.getenv("CEPIK_API_KEY")  # Optional: if API requires authentication
+CEPIK_API_URL = os.getenv("CEPIK_API_URL", "https://api.cepik.gov.pl")
+CEPIK_USE_MOCK = os.getenv("CEPIK_USE_MOCK", "true").lower() == "true"  # Use mock data by default
+
+# Mapping województw to TERYT codes
+VOIVODESHIP_TERYT = {
+    "śląskie": "24",
+    "mazowieckie": "14",
+    "wielkopolskie": "30",
+    "małopolskie": "12",
+    "dolnośląskie": "02",
+    "pomorskie": "22",
+    "zachodniopomorskie": "32",
+    "łódzkie": "10",
+    "kujawsko-pomorskie": "04",
+    "lubelskie": "06",
+    "lubuskie": "08",
+    "opolskie": "16",
+    "podkarpackie": "18",
+    "podlaskie": "20",
+    "świętokrzyskie": "26",
+    "warmińsko-mazurskie": "28",
+}
+
+
+# =============================================================================
+# REAL CEPiK API FUNCTIONS
+# =============================================================================
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=2, max=10)
+)
+def fetch_vehicles_from_cepik(
+    wojewodztwo_teryt: str,
+    data_od: str,
+    data_do: Optional[str] = None,
+    typ_daty: int = 1,
+    tylko_zarejestrowane: bool = True,
+    limit: int = 500,
+    page: int = 1
+) -> Dict:
+    """
+    Fetch vehicles from real CEPiK API.
+
+    Args:
+        wojewodztwo_teryt: TERYT code for voivodeship (e.g., "24" for Śląskie)
+        data_od: Start date in YYYYMMDD format
+        data_do: End date in YYYYMMDD format (optional, defaults to current date)
+        typ_daty: Date type (1=first registration, 2=last registration)
+        tylko_zarejestrowane: Only registered vehicles (default True)
+        limit: Results per page (max 500)
+        page: Page number
+
+    Returns:
+        JSON response from CEPiK API
+    """
+    try:
+        url = f"{CEPIK_API_URL}/pojazdy"
+        params = {
+            "wojewodztwo": wojewodztwo_teryt,
+            "data-od": data_od,
+            "typ-daty": typ_daty,
+            "tylko-zarejestrowane": tylko_zarejestrowane,
+            "limit": limit,
+            "page": page
+        }
+
+        if data_do:
+            params["data-do"] = data_do
+
+        logger.info(f"🔍 Fetching CEPiK data: {url} with params {params}")
+
+        response = requests.get(url, params=params, timeout=30)
+        response.raise_for_status()
+
+        data = response.json()
+        logger.info(f"✓ CEPiK API returned {len(data.get('data', []))} vehicles")
+
+        return data
+
+    except requests.exceptions.RequestException as e:
+        logger.error(f"✗ CEPiK API request failed: {e}")
+        raise
+    except Exception as e:
+        logger.error(f"✗ CEPiK API error: {e}")
+        raise
+
+
+def get_cepik_dictionaries() -> Dict:
+    """
+    Get available dictionaries from CEPiK API.
+
+    Returns:
+        List of available dictionary names
+    """
+    try:
+        url = f"{CEPIK_API_URL}/słowniki"
+        logger.info(f"📚 Fetching CEPiK dictionaries from {url}")
+
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+
+        data = response.json()
+        logger.info(f"✓ Found {len(data.get('data', []))} dictionaries")
+
+        return data
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch CEPiK dictionaries: {e}")
+        return {"data": []}
+
+
+def get_cepik_dictionary(dictionary_name: str) -> Dict:
+    """
+    Get specific dictionary values from CEPiK API.
+
+    Args:
+        dictionary_name: Name of dictionary (e.g., "marki-pojazdow", "paliwa")
+
+    Returns:
+        Dictionary values with occurrence counts
+    """
+    try:
+        url = f"{CEPIK_API_URL}/słowniki/{dictionary_name}"
+        logger.info(f"📖 Fetching CEPiK dictionary: {dictionary_name}")
+
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+
+        data = response.json()
+        logger.info(f"✓ Dictionary {dictionary_name} has {len(data.get('data', []))} entries")
+
+        return data
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch dictionary {dictionary_name}: {e}")
+        return {"data": []}
+
+
+def get_cepik_statistics(date: str, wojewodztwo_teryt: Optional[str] = None) -> Dict:
+    """
+    Get vehicle statistics from CEPiK API.
+
+    Args:
+        date: Date in YYYYMMDD format
+        wojewodztwo_teryt: Optional TERYT code for voivodeship filtering
+
+    Returns:
+        Daily vehicle statistics
+    """
+    try:
+        if wojewodztwo_teryt:
+            url = f"{CEPIK_API_URL}/statystyki/pojazdy/{date}/{wojewodztwo_teryt}"
+        else:
+            url = f"{CEPIK_API_URL}/statystyki/pojazdy/{date}"
+
+        logger.info(f"📊 Fetching CEPiK statistics from {url}")
+
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+
+        data = response.json()
+        logger.info(f"✓ Statistics fetched for {date}")
+
+        return data
+
+    except Exception as e:
+        logger.error(f"✗ Failed to fetch statistics: {e}")
+        return {"data": {}}
 
 
 # =============================================================================

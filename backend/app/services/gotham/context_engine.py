@@ -5,13 +5,16 @@ Gotham Strategic Context Engine
 Aggregates intelligence from multiple sources to provide real-time market context:
 
 1. CEPiK - Leasing expiry candidates
-2. EIPA - Charging infrastructure + wealth mapping
-3. External APIs - Fuel prices, subsidy updates, news
-4. Tesla internal - Inventory, promotions, delivery timelines
+2. GUS - Regional demographics and market intelligence
+3. EIPA - Charging infrastructure + wealth mapping
+4. External APIs - Fuel prices, subsidy updates, news
+5. Tesla internal - Inventory, promotions, delivery timelines
 
 Output:
 - Strategic context string for AI prompt injection
 - Enables "Bloomberg Brain" - AI sees market dynamics, not just client conversation
+
+ENHANCED (v4.5): Integrated GUS API for regional market intelligence
 """
 
 import logging
@@ -19,6 +22,7 @@ from typing import Dict, Optional
 from datetime import datetime
 
 from .cepik_connector import get_leasing_expiry_summary
+from .gus_connector import get_gus_summary_for_prompt
 from .eipa_connector import get_infrastructure_summary
 
 logger = logging.getLogger(__name__)
@@ -98,6 +102,7 @@ def get_subsidy_context() -> str:
 def generate_strategic_context(
     voivodeship: str = "śląskie",
     include_leasing_intel: bool = True,
+    include_gus_intel: bool = True,
     include_infrastructure: bool = True,
     include_fuel_prices: bool = True,
     include_subsidies: bool = True
@@ -111,6 +116,7 @@ def generate_strategic_context(
     Args:
         voivodeship: Geographic focus area
         include_leasing_intel: Include CEPiK leasing expiry data
+        include_gus_intel: Include GUS regional market intelligence
         include_infrastructure: Include EIPA charging/wealth analysis
         include_fuel_prices: Include current fuel price TCO comparison
         include_subsidies: Include subsidy program status
@@ -141,6 +147,13 @@ def generate_strategic_context(
             context_blocks.append(subsidy_context)
         except Exception as e:
             logger.warning(f"⚠️ Could not fetch subsidy context: {e}")
+
+    if include_gus_intel:
+        try:
+            gus_context = get_gus_summary_for_prompt(voivodeship)
+            context_blocks.append(gus_context)
+        except Exception as e:
+            logger.warning(f"⚠️ Could not fetch GUS market intelligence: {e}")
 
     if include_leasing_intel:
         try:
